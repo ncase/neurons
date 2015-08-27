@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	background: #333;
+}
+
+#DEBUG_STATS{
+	/*display: none;*/
+}
+
+#canvas{
+	background: #000;
+
+	display:block;
+	position: absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin: auto;
+
+	width: 960;
+	height: 540;
+	border: 1px solid white;
+}
