@@ -5,7 +5,7 @@ function Connection(){
 	// Connection properties
 	self.from = null;
 	self.to = null;
-	self.speed = 3;
+	self.speed = 5;
 
 	// Strength
 	self.strength = 1;
@@ -34,13 +34,14 @@ function Connection(){
 	// Strengthen - Increase by 50%
 	self.strengthen = function(){
 		self.strength += 0.5;
+		//self.strength += 1;
 		if(self.strength>1) self.strength=1;
-
 	};
 
 	// Weaken - Decrease by 20%
 	self.weaken = function(){
 		self.strength -= 0.20;
+		//self.strength -= 1;
 		if(self.strength<0.25) self.strength=0;
 	};
 
@@ -76,9 +77,13 @@ function Connection(){
 			}
 		}
 
+		// Animation
+		self.strengthEased = self.strengthEased*0.9 + self.strength*0.1;
+
 	};
 
-	self.strokeStyle = "#BFBFBF";
+	//self.strokeStyle = "#BFBFBF";
+	self.strokeStyle = "#444444";
 	self.strokeStyleFaded = "#A9A9A9";
 	self.lineWidth = 3;
 	self.easedLineWidth = self.lineWidth;
@@ -100,26 +105,31 @@ function Connection(){
 		ctx.translate(from.nx,from.ny);
 		ctx.rotate(angle+Math.PI);
 
-		// draw a line
-		ctx.strokeStyle = self.strokeStyle;
-		ctx.lineWidth = self.lineWidth;
-		ctx.lineCap = 'butt';
-		ctx.beginPath();
-		ctx.moveTo(0,0);
-		var endX = (distance*self.strength)-self.endDistance;
-		ctx.lineTo(endX,0);
-		ctx.lineTo(endX+self.pulseRadius,-self.pulseRadius);
-		ctx.moveTo(endX,0);
-		ctx.lineTo(endX+self.pulseRadius,self.pulseRadius);
-		ctx.stroke();
+		// Draw connection at all?!
+		var endX = (distance*self.strengthEased)-self.endDistance;
+		if(endX>0){
+
+			// draw a line
+			var offsetY = 7;
+			ctx.strokeStyle = self.strokeStyle;
+			ctx.lineWidth = self.lineWidth;
+			ctx.lineCap = 'butt';
+			ctx.beginPath();
+			ctx.moveTo(0, offsetY);
+			ctx.lineTo(endX, offsetY);
+			ctx.lineTo(endX+self.pulseRadius, offsetY-self.pulseRadius);
+			ctx.moveTo(endX, offsetY);
+			ctx.lineTo(endX+self.pulseRadius, offsetY+self.pulseRadius);
+			ctx.stroke();
+
+		}
 
 		// draw all pulses
 		for(var i=0;i<self.pulses.length;i++){
 			var pulse = self.pulses[i];
-			var alpha = Math.round(100*pulse.strength/4)/100;
-			ctx.fillStyle = "rgba(255,255,255,"+alpha+")";
+			ctx.fillStyle = "#fff";
 			ctx.beginPath();
-			ctx.arc(pulse.distance, 0, self.pulseRadius, 0, 2*Math.PI, false);
+			ctx.arc(pulse.distance, offsetY, self.pulseRadius*((pulse.strength+1)/5), 0, 2*Math.PI, false);
 			ctx.fill();
 		}
 

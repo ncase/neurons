@@ -27,6 +27,9 @@ Experiment.render = function(){
 	for(var i=0;i<neurons.length;i++) neurons[i].draw(ctx);
 	for(var i=0;i<sprites.length;i++) sprites[i].draw(ctx);
 
+	// Shade
+	ctx.drawImage(images.shade,0,0);
+
 };
 
 // Reset
@@ -55,7 +58,7 @@ document.body.appendChild(stats.domElement);
 
 // Actually start rendering & update loop
 Experiment.reset();
-Experiment.redraw = true;
+Experiment.redraw = false;
 (function animloop(){
 	requestAnimationFrame(animloop);
 	if(Experiment.redraw){

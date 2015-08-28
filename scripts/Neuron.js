@@ -40,16 +40,36 @@ function Neuron(){
 		// There MUST be a connection initialized before.
 		for(var i=0;i<neurons.length;i++){
 			var neuron = neurons[i];
-			if(neuron.hebbian>0){
 
-				// Good! This neuron is accepting hebbian connections.
-				// Find a connection FROM that TO this.
-				for(var j=0;j<connections.length;j++){
-					var connection = connections[j];
-					if(connection.from==neuron && connection.to==self){
-						connection.strengthen();
+			// Is actually hebb-activated and is NOT self.
+			if(neuron.hebbian>0 && neuron!=self){
+
+				// And is close enough
+				var dx = neuron.x-self.x;
+				var dy = neuron.y-self.y;
+				var radius = 200;
+				if(dx*dx+dy*dy<radius*radius){
+
+					// Good! This neuron is accepting hebbian connections.
+					// Find a connection FROM that TO this.
+					var foundConnection = false;
+					for(var j=0;j<connections.length;j++){
+						var connection = connections[j];
+						if(connection.from==neuron && connection.to==self){
+							connection.strengthen();
+							neuron.strengthenedConnections.push(connection);
+							foundConnection = true;
+						}
+					}
+
+					// If no such connection, MAKE one.
+					if(!foundConnection){
+						var connection = new Connection();
+						connection.connect(neuron,self);
+						connections.push(connection);
 						neuron.strengthenedConnections.push(connection);
 					}
+
 				}
 
 			}
@@ -163,6 +183,7 @@ function Neuron(){
 		self.smoosh += self.smooshVelocity;
 		self.smooshVelocity += (1-self.smoosh) * self.smooshSpring;
 		self.smooshVelocity *= self.smooshDampening;
+		if(self.smoosh>1.5) self.smoosh=1.5;
 
 		// Neuron's Wobbly Position
 		self.wobble += self.wobbleVelocity*0.05;
@@ -216,21 +237,17 @@ function Neuron(){
 		ctx.scale(scale,scale);
 		ctx.rotate(self.rotation);
 
-		// hebbian grabbiness
+		// hebbian flash & grabbiness
 		if(self.hebbian>0){
 
-			/**
+			// Flash
 			ctx.save();
-			ctx.fillStyle = "#fff";
-			ctx.globalAlpha = 0.5*self.hebbian;
-			ctx.beginPath();
-			var ripple = Math.sin(self.hebbian*30);
-			ctx.arc(0, 0, 80+ripple*10, 0, 2*Math.PI, false);
-			ctx.fill();
+			ctx.scale(1/scale,1/scale);
+			ctx.drawImage(images.flash,-175,-175);
 			ctx.restore();
-			**/
 
-			var grabScale;
+			// Grabby
+			/*var grabScale;
 			if(self.hebbian>0.9){
 				grabScale = 1-((self.hebbian-0.9)/0.1); // 0 to 1
 			}else if(self.hebbian>0.1){
@@ -240,8 +257,7 @@ function Neuron(){
 			}
 			self.grabbySprite.scale = grabScale;
 			self.grabbySprite.draw(ctx);
-			self.grabbySprite.currentFrame = (self.grabbySprite.currentFrame+1)%self.grabbySprite.frameTotal;
-			//ctx.drawImage(img_grabby,-65,-65);
+			self.grabbySprite.currentFrame = (self.grabbySprite.currentFrame+1)%self.grabbySprite.frameTotal;*/
 			
 		}
 

@@ -6,8 +6,13 @@ loadImages([
 	
 	// Neuron images
 	{id:"neuron_grab", src:"assets/sprites/grabby.png"},
-	{id:"neuron_body", src:"assets/sprites/body_lighter.png"},
-	{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"}
+	//{id:"neuron_body", src:"assets/sprites/body_lighter.png"},
+	{id:"neuron_body", src:"assets/sprites/body_dark.png"},
+	{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
+	{id:"flash", src:"assets/sprites/hebb_flash.png"},
+
+	// Shade
+	{id:"shade", src:"assets/sprites/shade.png"}
 
 ]);
 
@@ -45,16 +50,24 @@ subscribe("/init",function(){
 	var unconnected;
 	var giveUp = 10000;
 	while((unconnected=findLonelyNeuron()) && --giveUp>0){
-		var partners = getRandomPartners(unconnected,space*1.5);
+		var partners = getRandomPartners(unconnected,space*1.75);
 		for(var i=0;i<partners.length;i++){
+			
+			// One-way connections
 			var connection = new Connection();
-			connection.strokeStyle = "#444444";
-			if(Math.random()<0.5){
-				connection.connect(unconnected,partners[i]);
-			}else{
-				connection.connect(partners[i],unconnected);
-			}
+			var chance = Math.random();
+			if(chance<0.5) connection.connect(unconnected,partners[i]);
+			else connection.connect(partners[i],unconnected);
 			connections.push(connection);
+
+			// Two-way connection - OPPOSITE!
+			if(Math.random()<0.2){
+				var connection = new Connection();
+				if(chance<0.5) connection.connect(partners[i],unconnected);
+				else connection.connect(unconnected,partners[i]);
+				connections.push(connection);
+			}
+
 		}
 	}
 	function findLonelyNeuron(){
