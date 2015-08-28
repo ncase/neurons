@@ -1,57 +1,40 @@
-window.neurons = [];
-window.connections = [];
-window.sprites = [];
-window.words = [];
-window.wires = [];
-
 window.canvas = document.getElementById("canvas");
 window.ctx = canvas.getContext("2d");
 
+window.Experiment = {};
+
 // Update
-function update(){
+Experiment.update = function(){
 
 	publish("/update");
 	canvas.style.cursor = "default";
 
-	// Neurons, Connections, and Sprites stay constant.
+	// Neurons, Connections, and Sprites
 	for(var i=0;i<neurons.length;i++) neurons[i].update();
 	for(var i=0;i<connections.length;i++) connections[i].update();
 	for(var i=0;i<sprites.length;i++) sprites[i].update();
 
-	// Words & Wires can disappear
-	for(var i=0;i<words.length;i++){
-		var w = words[i];
-		w.update();
-		if(w.dead){
-			words.splice(i,1);
-			i--;
-		}
-	}
-	for(var i=0;i<wires.length;i++){
-		var w = wires[i];
-		w.update();
-		if(w.dead){
-			wires.splice(i,1);
-			i--;
-		}
-	}
-
-}
+};
 
 // Render
-function render(){
+Experiment.render = function(){
 	
 	publish("/render");
-
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 	
-	for(var i=0;i<wires.length;i++) wires[i].draw(ctx);
+	// Neurons, Connections, and Sprites
 	for(var i=0;i<connections.length;i++) connections[i].draw(ctx);
 	for(var i=0;i<neurons.length;i++) neurons[i].draw(ctx);
 	for(var i=0;i<sprites.length;i++) sprites[i].draw(ctx);
-	for(var i=0;i<words.length;i++) words[i].draw(ctx);
 
-}
+};
+
+// Reset
+Experiment.reset = function(){
+	window.neurons = [];
+	window.connections = [];
+	window.sprites = [];
+};
 
 // Request Animation Frame shim
 window.requestAnimationFrame = (function(){
@@ -71,17 +54,18 @@ stats.domElement.style.top = '0px';
 document.body.appendChild(stats.domElement);
 
 // Actually start rendering & update loop
-window.redrawCanvas = true;
+Experiment.reset();
+Experiment.redraw = true;
 (function animloop(){
 	requestAnimationFrame(animloop);
-	if(window.redrawCanvas){
+	if(Experiment.redraw){
 		stats.begin();
-		render();
+		Experiment.render();
 		stats.end();
-		window.redrawCanvas = false;
+		Experiment.redraw = false;
 	}
 })();
 setInterval(function(){
-	update();
-	window.redrawCanvas = true;
+	Experiment.update();
+	Experiment.redraw = true;
 },1000/30);

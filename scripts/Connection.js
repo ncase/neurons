@@ -2,26 +2,57 @@ function Connection(){
 	
 	var self = this;
 
+	// Connection properties
 	self.from = null;
 	self.to = null;
-
 	self.speed = 3;
 
+	// Strength
+	self.strength = 1;
+	self.strengthEased = 0;
+
+	// Pulses
 	self.pulses = [];
 	self.pulse = function(signal){
-		signal.distance = 0; // reset distance!
-		self.pulses.push(signal);
+
+		// Only send down the signal if the strength is actually good!
+		if(self.isConnected()){
+			signal.distance = 0; // reset signal's distance!
+			self.pulses.push(signal);
+		}
+
 	};
 
+	// Connect
 	self.connect = function(from,to){
 		self.from = from;
 		self.to = to;
 		from.senders.push(self);
 		to.receivers.push(self);
 	};
-	
+
+	// Strengthen - Increase by 50%
+	self.strengthen = function(){
+		self.strength += 0.5;
+		if(self.strength>1) self.strength=1;
+
+	};
+
+	// Weaken - Decrease by 20%
+	self.weaken = function(){
+		self.strength -= 0.20;
+		if(self.strength<0.25) self.strength=0;
+	};
+
+	// Am I Connected? Threshold: 2/3
+	self.isConnected = function(){
+		return(self.strength>=0.66);
+	};
+
+	// UPDATE
 	self.update = function(){
 
+		// Pythagorean Distance
 		var dx = self.from.x-self.to.x;
 		var dy = self.from.y-self.to.y;
 		var distance = Math.sqrt(dx*dx+dy*dy);
@@ -48,9 +79,11 @@ function Connection(){
 	};
 
 	self.strokeStyle = "#BFBFBF";
-	self.lineWidth = 2;
-	self.pulseRadius = 5;
-	self.endDistance = 25;
+	self.strokeStyleFaded = "#A9A9A9";
+	self.lineWidth = 3;
+	self.easedLineWidth = self.lineWidth;
+	self.pulseRadius = 8;
+	self.endDistance = 35;
 
 	self.draw = function(ctx){
 
@@ -60,11 +93,11 @@ function Connection(){
 		// translate & rotate so it's from LEFT TO RIGHT
 		var from = self.from;
 		var to = self.to;
-		var dx = from.x-to.x;
-		var dy = from.y-to.y;
-		var distance = Math.sqrt(dx*dx+dy*dy);// - 2*radius;
+		var dx = from.nx-to.nx;
+		var dy = from.ny-to.ny;
+		var distance = Math.sqrt(dx*dx+dy*dy);
 		var angle = Math.atan2(dy,dx);
-		ctx.translate(from.x,from.y);
+		ctx.translate(from.nx,from.ny);
 		ctx.rotate(angle+Math.PI);
 
 		// draw a line
@@ -73,7 +106,7 @@ function Connection(){
 		ctx.lineCap = 'butt';
 		ctx.beginPath();
 		ctx.moveTo(0,0);
-		var endX = distance-self.endDistance;
+		var endX = (distance*self.strength)-self.endDistance;
 		ctx.lineTo(endX,0);
 		ctx.lineTo(endX+self.pulseRadius,-self.pulseRadius);
 		ctx.moveTo(endX,0);
