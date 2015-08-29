@@ -21,8 +21,6 @@ function Neuron(){
 	self.textBubble = null;
 	self.icon = null;
 
-	var img_body = window.images.neuron_body;
-	var img_highlight = window.images.neuron_highlight;
 	self.grabbySprite = new Sprite({
 		pivotX:0.5, pivotY:0.5,
 		spritesheet: images.neuron_grab,
@@ -30,11 +28,15 @@ function Neuron(){
 		frameTotal:8
 	});
 
+	self.flash = new Flash(self);
+	flashes.push(self.flash);
+
 	self.strengthenedConnections = [];
 	self.strengthenHebb = function(){
 
 		// Hebbian highlight!
 		self.hebbian = 1;
+		self.flash.pulse();
 
 		// Find NOT-THIS-ONE neurons with hebbians, strengthen the connection from them to this.
 		// There MUST be a connection initialized before.
@@ -66,6 +68,7 @@ function Neuron(){
 					if(!foundConnection){
 						var connection = new Connection();
 						connection.connect(neuron,self);
+						connection.strengthen();
 						connections.push(connection);
 						neuron.strengthenedConnections.push(connection);
 					}
@@ -107,16 +110,9 @@ function Neuron(){
 			signal.strength--;
 		}else{
 			signal = {
-				startingStrength: self.startingStrength,
-				strength: self.startingStrength,
-				from: self.id
+				strength: self.startingStrength
 			};
 			self.strengthenHebb();
-		}
-
-		// Send message with signal
-		if(self.id){
-			publish("/neuron/"+self.id, [signal]);
 		}
 
 		// Smoosh
@@ -125,42 +121,20 @@ function Neuron(){
 		// Highlight!
 		self.highlight = 1;
 
-		// If there's still strength in the neuron,
-		// pass it down immediately to all connectors.
-		// (CLONE THE SIGNAL.)
-		// And ADD SELF as sender.
+		// If there's still strength in the neuron, pass it down immediately.
 		if(signal.strength>0){
 			for(var i=0;i<self.senders.length;i++){
 				var sender = self.senders[i];
 				sender.pulse({
-					startingStrength: self.startingStrength,
-					strength: signal.strength,
-					from: self.id
+					strength: signal.strength
 				});
 			}
-		}
-
-		// Create some words, if there's any.
-		if(self.textBubble){
-			
-			var tb = new TextBubble();
-			tb.x = self.x;
-			tb.y = self.y;
-			
-			var conf = self.textBubble;
-			if(conf){
-				if(conf.messages && signal.from){
-					conf.message = conf.messages[signal.from];
-				}
-				tb.configure(conf);
-			}
-			window.words.push(tb);
-
 		}
 
 	}
 	
 	self.hebbSignalDuration = 2; // 2 seconds, sorta
+
 	self.update = function(){
 
 		// Highlight!
@@ -192,14 +166,23 @@ function Neuron(){
 		self.ny = self.y + Math.sin(self.wobble)*self.wobbleRadius*scale*20;
 
 		// Mouse
+		var gotoHoverAlpha = 0;
 		if(self.isMouseOver()){
 			canvas.style.cursor = "pointer";
+			gotoHoverAlpha = 1;
+		}else{
+			gotoHoverAlpha = 0;
 		}
+		self.hoverAlpha = self.hoverAlpha*0.5 + gotoHoverAlpha*0.5;
 
 	};
 
 	// CLICK & HOVER
+	self.hoverAlpha = 0;
 	self.isMouseOver = function(){
+
+		// Refractory period!
+		if(self.hebbian>0) return;
 
 		// If so, is it within that circle?
 		var dx = Mouse.x-self.x;
@@ -209,7 +192,7 @@ function Neuron(){
 
 	};
 	subscribe("/mouse/down",function(){
-		if(self.isMouseOver()){// && !self.clickRecovering){
+		if(self.isMouseOver()){
 			self.pulse();
 		}
 	});
@@ -223,6 +206,7 @@ function Neuron(){
 	self.wobble = Math.random()*Math.PI*2;
 	self.wobbleRadius = Math.random();
 	self.wobbleVelocity = Math.random()*2-1;
+	self.ticker = 0;
 
 	self.draw = function(ctx){
 
@@ -232,56 +216,31 @@ function Neuron(){
 		// translate
 		ctx.translate(self.nx,self.ny);
 
-		// transform
+		// Draw NEURON 
 		var scale = self.scale*self.smoosh;
+		ctx.save();
 		ctx.scale(scale,scale);
-		ctx.rotate(self.rotation);
-
-		// hebbian flash & grabbiness
 		if(self.hebbian>0){
-
-			// Flash
-			ctx.save();
-			ctx.scale(1/scale,1/scale);
-			ctx.drawImage(images.flash,-175,-175);
-			ctx.restore();
-
-			// Grabby
-			/*var grabScale;
-			if(self.hebbian>0.9){
-				grabScale = 1-((self.hebbian-0.9)/0.1); // 0 to 1
-			}else if(self.hebbian>0.1){
-				grabScale = 1; // 1 to 1
-			}else{
-				grabScale = self.hebbian/0.1; // 1 to 0
-			}
-			self.grabbySprite.scale = grabScale;
-			self.grabbySprite.draw(ctx);
-			self.grabbySprite.currentFrame = (self.grabbySprite.currentFrame+1)%self.grabbySprite.frameTotal;*/
-			
+			self.ticker++;
+			var wobbledScale = (1-Math.sin(self.ticker)*0.05);
+			ctx.scale(wobbledScale,wobbledScale);
 		}
-
-		// draw a spiky body
-		ctx.drawImage(img_body,-50,-50);
-
-		// highlight!
-		ctx.globalAlpha = self.highlight;
-		ctx.drawImage(img_highlight,-50,-50);
+		ctx.rotate(self.rotation);
+		ctx.globalAlpha = self.hoverAlpha;
+		ctx.drawImage(images.neuron_hover,-60,-60);
 		ctx.globalAlpha = 1;
+		ctx.drawImage(images.neuron_body,-50,-50);
+		ctx.globalAlpha = self.highlight;
+		ctx.drawImage(images.neuron_highlight,-50,-50);
+		ctx.restore();
 
 		// highlight circle!
 		if(self.highlight>=0.01){
 			ctx.fillStyle = "rgba(255,255,255,"+self.highlight/2+")";
 			ctx.beginPath();
-			ctx.arc(0, 0, 60, 0, 2*Math.PI, false);
+			var radius = 25 + (1-self.highlight)*25;
+			ctx.arc(0, 0, radius, 0, 2*Math.PI, false);
 			ctx.fill();
-		}
-
-		// icon
-		if(self.icon){
-			ctx.rotate(-self.rotation);
-			ctx.globalAlpha = 0.5;
-			ctx.drawImage(self.icon,-30,-30,60,60);
 		}
 
 		// restore

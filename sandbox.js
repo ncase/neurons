@@ -2,19 +2,25 @@
 /////// LOAD ASSETS & SUCH ///////
 //////////////////////////////////
 
-loadImages([
+Preload({
+	images:[
 	
-	// Neuron images
-	{id:"neuron_grab", src:"assets/sprites/grabby.png"},
-	//{id:"neuron_body", src:"assets/sprites/body_lighter.png"},
-	{id:"neuron_body", src:"assets/sprites/body_dark.png"},
-	{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
-	{id:"flash", src:"assets/sprites/hebb_flash.png"},
+		// Neuron images
+		{id:"neuron_grab", src:"assets/sprites/grabby.png"},
+		//{id:"neuron_body", src:"assets/sprites/body_lighter.png"},
+		{id:"neuron_body", src:"assets/sprites/body_dark.png"},
+		{id:"neuron_hover", src:"assets/sprites/body_hover.png"},
+		{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
+		{id:"flash", src:"assets/sprites/hebb_flash_2.png"},
 
-	// Shade
-	{id:"shade", src:"assets/sprites/shade.png"}
+		// Shade
+		{id:"shade", src:"assets/sprites/shade.png"}
 
-]);
+	],
+	sounds:[
+		{id:"voice_intro", src:"assets/voices/intro.mp3"}
+	]
+});
 
 //////////////////////////////////
 // CREATE NEURONS & CONNECTIONS //
@@ -55,16 +61,22 @@ subscribe("/init",function(){
 			
 			// One-way connections
 			var connection = new Connection();
-			var chance = Math.random();
-			if(chance<0.5) connection.connect(unconnected,partners[i]);
-			else connection.connect(partners[i],unconnected);
+			// sorta guarantees every neuron will result in cool propagation
+			if(i%2==0){
+				connection.connect(unconnected,partners[i]);
+			}else{
+				connection.connect(partners[i],unconnected);
+			}
 			connections.push(connection);
 
 			// Two-way connection - OPPOSITE!
-			if(Math.random()<0.2){
+			if(Math.random()<0.1){
 				var connection = new Connection();
-				if(chance<0.5) connection.connect(partners[i],unconnected);
-				else connection.connect(unconnected,partners[i]);
+				if(i%2==0){
+					connection.connect(partners[i],unconnected);
+				}else{
+					connection.connect(unconnected,partners[i]);
+				}
 				connections.push(connection);
 			}
 

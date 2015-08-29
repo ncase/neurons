@@ -3,17 +3,36 @@ window.ctx = canvas.getContext("2d");
 
 window.Experiment = {};
 
+// Reset
+Experiment.reset = function(){
+	window.neurons = [];
+	window.connections = [];
+	window.sprites = [];
+	window.flashes = [];
+};
+
 // Update
 Experiment.update = function(){
 
 	publish("/update");
 	canvas.style.cursor = "default";
 
-	// Neurons, Connections, and Sprites
-	for(var i=0;i<neurons.length;i++) neurons[i].update();
-	for(var i=0;i<connections.length;i++) connections[i].update();
-	for(var i=0;i<sprites.length;i++) sprites[i].update();
+	// Update all the things
+	_update(neurons);
+	_update(connections);
+	_update(sprites);
+	_update(flashes);
 
+};
+var _update = function(array){
+	for(var i=0;i<array.length;i++){
+		var a = array[i];
+		a.update();
+		if(a.dead){
+			array.splice(i,1);
+			i--;
+		}
+	}
 };
 
 // Render
@@ -22,21 +41,18 @@ Experiment.render = function(){
 	publish("/render");
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 	
-	// Neurons, Connections, and Sprites
-	for(var i=0;i<connections.length;i++) connections[i].draw(ctx);
-	for(var i=0;i<neurons.length;i++) neurons[i].draw(ctx);
-	for(var i=0;i<sprites.length;i++) sprites[i].draw(ctx);
+	// Render all the things
+	_render(connections);
+	_render(neurons);
+	_render(sprites);
+	_render(flashes);
 
 	// Shade
 	ctx.drawImage(images.shade,0,0);
 
 };
-
-// Reset
-Experiment.reset = function(){
-	window.neurons = [];
-	window.connections = [];
-	window.sprites = [];
+var _render = function(array){
+	for(var i=0;i<array.length;i++) array[i].draw(ctx);
 };
 
 // Request Animation Frame shim

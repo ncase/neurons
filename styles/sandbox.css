@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: #333;
+	background: #000;
 }
 
 #DEBUG_STATS{
@@ -17,5 +17,5 @@ body {
 
 	width: 960;
 	height: 540;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 }

@@ -5,11 +5,14 @@ function Connection(){
 	// Connection properties
 	self.from = null;
 	self.to = null;
-	self.speed = 5;
+	self.speed = 3.5;
 
 	// Strength
 	self.strength = 1;
 	self.strengthEased = 0;
+
+	// Zap
+	self.zap = 0;
 
 	// Pulses
 	self.pulses = [];
@@ -31,31 +34,31 @@ function Connection(){
 		to.receivers.push(self);
 	};
 
-	// Strengthen - Increase by 50%
+	// Strengthen
 	self.strengthen = function(){
-		self.strength += 0.5;
-		//self.strength += 1;
+		self.zap = 1;
+		self.strength += 1;
 		if(self.strength>1) self.strength=1;
 	};
 
-	// Weaken - Decrease by 20%
+	// Weaken
 	self.weaken = function(){
-		self.strength -= 0.20;
-		//self.strength -= 1;
-		if(self.strength<0.25) self.strength=0;
+		self.zap = 0.5;
+		self.strength -= 0.05;
+		if(!self.isConnected()) self.strength=0;
 	};
 
-	// Am I Connected? Threshold: 2/3
+	// Am I Connected?
 	self.isConnected = function(){
-		return(self.strength>=0.66);
+		return(self.strength>=0.94);
 	};
 
 	// UPDATE
 	self.update = function(){
 
 		// Pythagorean Distance
-		var dx = self.from.x-self.to.x;
-		var dy = self.from.y-self.to.y;
+		var dx = self.from.nx-self.to.nx;
+		var dy = self.from.ny-self.to.ny;
 		var distance = Math.sqrt(dx*dx+dy*dy);
 
 		// Have all signals go down the wire
@@ -79,12 +82,12 @@ function Connection(){
 
 		// Animation
 		self.strengthEased = self.strengthEased*0.9 + self.strength*0.1;
+		self.zap *= 0.8;
+		if(self.zap<0.01) self.zap=0;
 
 	};
 
-	//self.strokeStyle = "#BFBFBF";
-	self.strokeStyle = "#444444";
-	self.strokeStyleFaded = "#A9A9A9";
+	self.strokeStyle = "#333333";
 	self.lineWidth = 3;
 	self.easedLineWidth = self.lineWidth;
 	self.pulseRadius = 8;
@@ -123,6 +126,18 @@ function Connection(){
 			ctx.stroke();
 
 		}
+
+		// ZAP
+		/*if(self.zap>0){
+			var density = self.zap*0.1;
+			var num = distance * density;
+			for(var i=0;i<num;i++){
+				ctx.fillStyle = "#0099CC";
+				ctx.beginPath();
+				ctx.arc(Math.random()*distance, offsetY+Math.random()*6-3, 3, 0, 2*Math.PI, false);
+				ctx.fill();
+			}
+		}*/
 
 		// draw all pulses
 		for(var i=0;i<self.pulses.length;i++){
