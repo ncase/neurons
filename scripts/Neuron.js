@@ -115,6 +115,10 @@ function Neuron(){
 			self.strengthenHebb();
 		}
 
+		// Sound Effect!
+		var volume = (signal.strength+1)/(self.startingStrength+1); // so it's not zero
+		createjs.Sound.play("sfx_spark",{volume:volume});
+
 		// Smoosh
 		self.smooshVelocity += 0.05*(signal.strength+1);
 

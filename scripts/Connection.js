@@ -87,8 +87,8 @@ function Connection(){
 
 	};
 
-	self.strokeStyle = "#333333";
-	self.lineWidth = 3;
+	self.strokeStyle = "#444444";
+	self.lineWidth = 4;
 	self.easedLineWidth = self.lineWidth;
 	self.pulseRadius = 8;
 	self.endDistance = 35;
