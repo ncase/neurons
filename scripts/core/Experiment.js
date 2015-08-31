@@ -23,6 +23,9 @@ Experiment.update = function(){
 	_update(sprites);
 	_update(flashes);
 
+	// Update Narrator
+	Narrator.update();
+
 };
 var _update = function(array){
 	for(var i=0;i<array.length;i++){
@@ -44,11 +47,10 @@ Experiment.render = function(){
 	// Render all the things
 	_render(connections);
 	_render(neurons);
-	_render(sprites);
 	_render(flashes);
 
-	// Shade
 	ctx.drawImage(images.shade,0,0);
+	_render(sprites);
 
 };
 var _render = function(array){
@@ -64,13 +66,13 @@ window.requestAnimationFrame = (function(){
 })();
 
 // Stats
-var stats = new Stats();
+/*var stats = new Stats();
 stats.setMode(0); // 0: fps, 1: ms
 stats.domElement.id="DEBUG_STATS";
 stats.domElement.style.position = 'absolute';
 stats.domElement.style.right = '0px';
 stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
+document.body.appendChild(stats.domElement);*/
 
 // Actually start rendering & update loop
 Experiment.reset();
@@ -78,9 +80,9 @@ Experiment.redraw = false;
 (function animloop(){
 	requestAnimationFrame(animloop);
 	if(Experiment.redraw){
-		stats.begin();
+		//stats.begin();
 		Experiment.render();
-		stats.end();
+		//stats.end();
 		Experiment.redraw = false;
 	}
 })();

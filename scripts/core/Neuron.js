@@ -117,7 +117,7 @@ function Neuron(){
 
 		// Sound Effect!
 		var volume = (signal.strength+1)/(self.startingStrength+1); // so it's not zero
-		createjs.Sound.play("sfx_spark",{volume:volume});
+		createjs.Sound.play("sfx_spark",{volume:volume*0.6});
 
 		// Smoosh
 		self.smooshVelocity += 0.05*(signal.strength+1);
@@ -198,6 +198,7 @@ function Neuron(){
 	subscribe("/mouse/down",function(){
 		if(self.isMouseOver()){
 			self.pulse();
+			publish("/neuron/click",[self]);
 		}
 	});
 

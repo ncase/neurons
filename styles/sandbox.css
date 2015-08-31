@@ -7,15 +7,40 @@ body {
 	/*display: none;*/
 }
 
-#canvas{
-	background: #000;
-
-	display:block;
+#container{
 	position: absolute;
 	top:0; bottom:0; left:0; right:0;
 	margin: auto;
-
-	width: 960;
-	height: 540;
-	/*border: 1px solid white;*/
+	width: 960px;
+	height: 600px;
 }
+
+#canvas{
+	background-color: #000;
+	display:block;
+	width: 960px;
+	height: 540px;
+}
+
+#canvas[loading=yes]{
+	background-image: url(../assets/sprites/loading.png); 
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#info{
+	width: 960px;
+	height: 60px;
+
+	margin-top:20px;
+
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	line-height: 30px;
+}
+
+a{ color: #cc2727; }
+a:hover{ color: #ee3939; }

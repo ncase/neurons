@@ -7,11 +7,13 @@ Preload({
 	
 		// Neuron images
 		{id:"neuron_grab", src:"assets/sprites/grabby.png"},
-		//{id:"neuron_body", src:"assets/sprites/body_lighter.png"},
 		{id:"neuron_body", src:"assets/sprites/body_dark.png"},
 		{id:"neuron_hover", src:"assets/sprites/body_hover.png"},
 		{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
 		{id:"flash", src:"assets/sprites/hebb_flash_2.png"},
+
+		// Hebbian Instructions
+		{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
 
 		// Shade
 		{id:"shade", src:"assets/sprites/shade.png"}
@@ -49,65 +51,145 @@ Narrator.init({
 	}
 });
 
-Narrator.addStates({
+Narrator.setStates({
 
 	INTRO: {
+	// 1 -> 2 -> CLICK
+	// [interrupted with good -> InterruptedGood]
+	// [interrupted with boring -> InterruptedBoring]
 		start: function(){
-			// 1 -> 2 -> 3 -> Click
-			Narrator.talk("1","2","3").state("CLICK");
-		},
-		during: function(){
-			// [interrupted with good -> InterruptedGood]
-			// [interrupted with boring -> InterruptedBoring]
+
+			Narrator.talk("1","2").do(function(){
+				unsubscribe(_interrupted);
+			}).goto("CLICK");
+
+			var _interrupted = subscribe("/neuron/click",function(neuron){
+				if(neuron.senders.length==0){
+					Narrator.stop().goto("INTERRUPT_BORING");
+				}else{
+					Narrator.stop().goto("INTERRUPT_GOOD");
+				}
+				unsubscribe(_interrupted);
+			});
+
 		}
 	},
 
 	CLICK: {
-		during: function(){
-			// [boring neuron] -> ClickBoring (only ONCE, though.)
-			// [good neuron] -> ClickGood
-			// [clicking everything] -> ClickWild
+	// 3 -> Click
+	// [boring neuron] -> ClickBoring (only ONCE, though.)
+	// [good neuron] -> ClickGood
+	// [clicking everything] -> ClickWild
+		start: function(state){
+
+			if(!state.instructionsGiven){
+				Narrator.talk("3").do(function(){
+					state.instructionsCompleted = true;
+				});
+			}
+
+			state.timer = 45; // 1.5 seconds
+			state.clickedNeurons = [];
+			state.instructionsGiven = true;
+			state.instructionsCompleted = state.instructionsCompleted || false;
+			state.saidItsBoring = state.saidItsBoring || false;
+
+			state._listener = subscribe("/neuron/click",function(neuron){
+
+				if(state.saidItsBoring && neuron.senders.length==0){
+					return; // ignore it
+				}
+
+				state.clickedNeurons.push(neuron);
+
+			});
+
+		},
+		during: function(state){
+			var clicked = state.clickedNeurons;
+			if(clicked.length>0){
+				state.timer--;
+
+				// Now decide where to go from here
+				if(state.timer<0 && state.instructionsCompleted){
+
+					// Unsubscribe
+					unsubscribe(state._listener);
+
+					// Clicking wildly, probably.
+					if(clicked.length>1){
+						Narrator.stop().goto("CLICK_WILD");
+						return;
+					}else{
+
+						// Was it a boring one?
+						if(clicked[0].senders.length==0){
+							state.saidItsBoring = true;
+							Narrator.stop().goto("CLICK_BORING");
+						}else{
+							Narrator.stop().goto("CLICK_GOOD");
+						}
+
+					}
+				}
+
+			}
 		}
 	},
 
 	CLICK_BORING: {
+	// 5 -> Click
 		start: function(){
-			// 5 -> Click
-			Narrator.talk("5").state("CLICK");
+			Narrator.talk("5").goto("CLICK");
 		}
 	},
 
 	CLICK_GOOD: {
+	// 6 -> 7 -> 8 -> ClickMore
 		start: function(){
-			// 6 -> 7 -> 8 -> ClickMore
-			Narrator.talk("6","7","8").state("CLICK_MORE");
+			Narrator.talk("6","7","8").goto("CLICK_MORE");
 		}
 	}, 
 
 	CLICK_WILD: {
+	// 9 -> 7 -> Ending
 		start: function(){
-			// 9 -> 7 -> Ending
-			Narrator.talk("9","7").state("ENDING");
+			Narrator.talk("9","7").goto("ENDING");
 		}
 	}, 
 
 	CLICK_MORE: {
-		during: function(){
-			// [two more not-boring clicks] -> [wait half a second] -> Ending
+	// [three more not-boring clicks] -> [wait half a second] -> Ending
+		start: function(state){
+			state.clickedNeurons = [];
+			state._listener = subscribe("/neuron/click",function(neuron){
+				if(neuron.senders.length>0){
+					state.clickedNeurons.push(neuron);
+					if(state.clickedNeurons.length>=3){
+
+						// Unsubscribe
+						unsubscribe(state._listener);
+
+						// Ending!
+						Narrator.wait(0.5).goto("ENDING");
+
+					}
+				}
+			});
 		}
 	},
 
 	INTERRUPT_GOOD: {
+	// 4 -> 7 -> 8 -> ClickMore
 		start: function(){
-			// 4 -> 7 -> Ending
-			Narrator.talk("4","7").state("ENDING");
+			Narrator.talk("4","7","8").goto("CLICK_MORE");
 		}
 	},
 
 	INTERRUPT_BORING: {
+	// 4 -> 8 -> ClickMore
 		start: function(){
-			// 4 -> 8 -> ClickMore
-			Narrator.talk("4","8").state("CLICK_MORE");
+			Narrator.talk("4","8").goto("CLICK_MORE");
 		}
 	},
 
@@ -116,9 +198,13 @@ Narrator.addStates({
 			// 10 -> 11 -> [remove connections] -> 12 -> [show rules] -> 13 -> 14
 			Narrator.talk("10","11")
 				.do(function(){
+					for(var i=0;i<connections.length;i++){
+						connections[i].strength = 0;
+					}
 				})
 				.talk("12")
 				.do(function(){
+					publish("event/instructions");
 				})
 				.talk("13","14");
 		}
@@ -130,14 +216,8 @@ Narrator.addStates({
 // CREATE NEURONS & CONNECTIONS //
 //////////////////////////////////
 
-subscribe("/init",function(){
+function CreateNeurons(){
 
-	// Reset Experiment
-	Experiment.reset();
-
-	// Play music loop
-	createjs.Sound.play("sfx_loop",{loop:-1});
-	
 	// Randomly yet uniformly distributed neurons
 	var space = 120;
 	for(var x=-space; x<canvas.width+space; x+=space){
@@ -213,5 +293,67 @@ subscribe("/init",function(){
 		});
 		return nearby;
 	}
+
+}
+
+
+//////////////////////////////////
+// SPRITES AND ANIMATIONS STUFF //
+//////////////////////////////////
+
+function HebbInstruction(){
+
+	var self = this;
+	Sprite.call(self,{
+		pivotX:0, pivotY:0,
+		spritesheet: images.hebb_instructions,
+		frameWidth:400, frameHeight:300,
+		frameTotal:1
+	});
+
+	// Start Off
+	self.visible = false;
+	self.x = -400;
+	self.y = 0;
+	self.gotoX = self.x;
+
+	// Show
+	subscribe("event/instructions",function(){
+		self.visible = true;
+		self.gotoX = 0;
+	});
+
+	// UPDATE
+	var _prevUpdate = self.update;
+	self.update = function(){
+		self.x = self.x*0.7 + self.gotoX*0.3;
+		_prevUpdate.call(self);
+	};
+
+}
+
+////////////////
+// INITIALIZE //
+////////////////
+
+subscribe("/init",function(){
+
+	// Remove Preloader Message
+	canvas.setAttribute("loading","no");
+
+	// Reset Experiment
+	Experiment.reset();
+
+	// Play music loop
+	createjs.Sound.play("sfx_loop",{loop:-1, volume:0.6});
+
+	// Start Narration.
+	Narrator.goto("INTRO");
+	
+	// Create Neurons
+	CreateNeurons();
+
+	// Hebbian Instruction
+	sprites.push(new HebbInstruction());
 
 });

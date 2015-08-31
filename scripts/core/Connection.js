@@ -11,9 +11,6 @@ function Connection(){
 	self.strength = 1;
 	self.strengthEased = 0;
 
-	// Zap
-	self.zap = 0;
-
 	// Pulses
 	self.pulses = [];
 	self.pulse = function(signal){
@@ -34,17 +31,23 @@ function Connection(){
 		to.receivers.push(self);
 	};
 
+	// Disconnect
+	self.disconnect = function(){
+		self.dead = true;
+		self.from.senders.splice(self.from.senders.indexOf(self),1);
+		self.to.receivers.splice(self.to.receivers.indexOf(self),1);
+	};
+
 	// Strengthen
 	self.strengthen = function(){
-		self.zap = 1;
 		self.strength += 1;
 		if(self.strength>1) self.strength=1;
 	};
 
 	// Weaken
 	self.weaken = function(){
-		self.zap = 0.5;
 		self.strength -= 0.05;
+		//self.strength -= 1;
 		if(!self.isConnected()) self.strength=0;
 	};
 
@@ -81,13 +84,18 @@ function Connection(){
 		}
 
 		// Animation
+		self.lineWidth = (self.strength<1) ? 2 : 4;
 		self.strengthEased = self.strengthEased*0.9 + self.strength*0.1;
-		self.zap *= 0.8;
-		if(self.zap<0.01) self.zap=0;
+		self.easedLineWidth = self.easedLineWidth*0.9 + self.lineWidth*0.1;
+
+		// ACTUALLY REMOVE THIS ONE?
+		if(self.strengthEased<0.01){
+			self.disconnect();
+		}
 
 	};
 
-	self.strokeStyle = "#444444";
+	self.strokeStyle = "#555555";
 	self.lineWidth = 4;
 	self.easedLineWidth = self.lineWidth;
 	self.pulseRadius = 8;
@@ -115,7 +123,7 @@ function Connection(){
 			// draw a line
 			var offsetY = 7;
 			ctx.strokeStyle = self.strokeStyle;
-			ctx.lineWidth = self.lineWidth;
+			ctx.lineWidth = self.easedLineWidth;
 			ctx.lineCap = 'butt';
 			ctx.beginPath();
 			ctx.moveTo(0, offsetY);
@@ -126,18 +134,6 @@ function Connection(){
 			ctx.stroke();
 
 		}
-
-		// ZAP
-		/*if(self.zap>0){
-			var density = self.zap*0.1;
-			var num = distance * density;
-			for(var i=0;i<num;i++){
-				ctx.fillStyle = "#0099CC";
-				ctx.beginPath();
-				ctx.arc(Math.random()*distance, offsetY+Math.random()*6-3, 3, 0, 2*Math.PI, false);
-				ctx.fill();
-			}
-		}*/
 
 		// draw all pulses
 		for(var i=0;i<self.pulses.length;i++){
