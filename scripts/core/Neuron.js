@@ -15,7 +15,10 @@ function Neuron(scene){
 	self.receivers = [];
 	self.startingStrength = 4;
 	self.highlight = 0;
+
+	// Hebbian
 	self.hebbian = 0;
+	self.hebbianRadius = 200;
 
 	// Flash
 	self.flash = new Flash(self);
@@ -41,7 +44,7 @@ function Neuron(scene){
 				// And is close enough
 				var dx = neuron.x-self.x;
 				var dy = neuron.y-self.y;
-				var radius = 200;
+				var radius = self.hebbianRadius;
 				if(dx*dx+dy*dy<radius*radius){
 
 					// Good! This neuron is accepting hebbian connections.
@@ -265,6 +268,9 @@ Neuron.add = function(x,y,scene){
 
 	// For serialization: ID
 	neuron.id = neurons.length-1;
+
+	// Return that neuron
+	return neuron;
 	
 };
 

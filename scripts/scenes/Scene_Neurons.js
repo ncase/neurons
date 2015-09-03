@@ -1,4 +1,4 @@
-function Scene_Crap(){
+function Scene_Blank(){
 
 	var self = this;
 	BrainScene.call(self);
@@ -8,7 +8,25 @@ function Scene_Crap(){
 	
 	// Whee
 	// One that looks nice & uniform and no "boring" neurons
-	Neuron.unserialize(self,'{"neurons":[[200,200],[500,200]],"connections":[[0,1]]}');
+	Neuron.unserialize(self,'{"neurons":[[209,-110],[749,-110],[385,180],[565,180],[209,270],[475,270],[749,270],[119,360],[299,360],[659,360],[839,360],[475,650]],"connections":[[0,4],[1,6],[11,5],[4,7],[5,2],[6,9]]}');
+
+	// Modify all connections: already done, and faster.
+	for(var i=0;i<self.connections.length;i++){
+		var c = self.connections[i];
+		c.strengthEased = 1;
+		c.speed = 5;
+	}
+
+	// Modify all neurons: smaller hebb radius
+	for(var i=0;i<self.neurons.length;i++){
+		var n = self.neurons[i];
+		n.hebbianRadius = 137.5;
+	}	
+
+	// Force pulse
+	self.neurons[0].pulse({ strength:3 });
+	self.neurons[1].pulse({ strength:3 });
+	self.neurons[11].pulse({ strength:3 });
 
 }
 
@@ -33,7 +51,7 @@ function Scene_Neurons(){
 		if(timer--<0){
 			self.camera.x = 1600;
 			if(self.cameraEased.x>1600){
-				Interactive.goto(Scene_Crap);
+				Interactive.goto(Scene_Blank);
 				var cam = Interactive.scene.cameraEased;
 				cam.x = -1120;
 				return;

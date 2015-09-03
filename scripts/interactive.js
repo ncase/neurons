@@ -15,6 +15,9 @@ Preload({
 		// Hebbian Instructions
 		//{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
 
+		// Crap Background
+		{id:"crapBG", src:"assets/images/nicky.png"},
+
 		// Shade
 		{id:"shade", src:"assets/sprites/shade.png"}
 
@@ -56,6 +59,6 @@ subscribe("/init",function(){
 
 	// Scene!
 	Interactive.init();
-	Interactive.goto(Scene_Neurons);
+	Interactive.goto(Scene_Nicky);
 
 });
