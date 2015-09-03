@@ -254,3 +254,17 @@ function Neuron(){
 	};
 
 };
+
+Neuron.add = function(x,y){
+
+	var neuron = new Neuron();
+	neuron.x = x;
+	neuron.y = y;
+	neuron.scale = 0.5;
+	neuron.clickable = true;
+	neurons.push(neuron);
+
+	// For serialization: ID
+	neuron.id = neurons.length-1;
+	
+};

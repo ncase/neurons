@@ -150,3 +150,9 @@ function Connection(){
 	};
 
 };
+
+Connection.add = function(from,to){
+	var connection = new Connection();
+	connection.connect(from,to);
+	connections.push(connection);
+};
