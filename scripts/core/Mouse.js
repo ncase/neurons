@@ -2,8 +2,8 @@
 
 	// Singleton
 	var Mouse = {
-		x: 0,
-		y: 0,
+		x: 0, y: 0,
+		realX: 0, realY: 0,
 		pressed: false
 	};
 	exports.Mouse = Mouse;
@@ -25,12 +25,20 @@
 
 	canvas.addEventListener("mousemove",onMouseMove = function(e){
 
-		if(e.offsetX) {
-			Mouse.x = e.offsetX;
-			Mouse.y = e.offsetY;
+		// Real X & Y
+		if(e.offsetX){
+			Mouse.realX = e.offsetX;
+			Mouse.realY = e.offsetY;
 		}else if(e.layerX) {
-			Mouse.x = e.layerX;
-			Mouse.y = e.layerY;
+			Mouse.realX = e.layerX;
+			Mouse.realY = e.layerY;
+		}
+
+		// Adjusted for the camera
+		if(window.Interactive && Interactive.scene && Interactive.scene.cameraEased){
+			var cam = Interactive.scene.cameraEased;
+			Mouse.x = (Mouse.realX - canvas.width/2)/cam.zoom + cam.x;
+			Mouse.y = (Mouse.realY - canvas.height/2)/cam.zoom + cam.y;
 		}
 
 		publish("/mouse/move");

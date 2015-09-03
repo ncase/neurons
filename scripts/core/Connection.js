@@ -1,4 +1,4 @@
-function Connection(){
+function Connection(scene){
 	
 	var self = this;
 
@@ -151,8 +151,16 @@ function Connection(){
 
 };
 
-Connection.add = function(from,to){
+Connection.add = function(from,to,scene){
+	
+	scene = scene || Interactive.scene;
+
+	// Create the connection
 	var connection = new Connection();
 	connection.connect(from,to);
+
+	// Add it
+	var connections = scene.connections;
 	connections.push(connection);
+
 };

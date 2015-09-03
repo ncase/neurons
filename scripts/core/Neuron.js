@@ -1,9 +1,8 @@
-function Neuron(){
-	
+function Neuron(scene){
+
 	var self = this;
 
-	self.id = null;
-
+	// Transform
 	self.x = 0;
 	self.y = 0;
 	self.nx = 0;
@@ -11,26 +10,18 @@ function Neuron(){
 	self.scale = 1;
 	self.rotation = Math.random()*Math.PI*2;
 
+	// Connections & Pulsing
 	self.senders = [];
 	self.receivers = [];
-
 	self.startingStrength = 4;
 	self.highlight = 0;
 	self.hebbian = 0;
 
-	self.textBubble = null;
-	self.icon = null;
-
-	self.grabbySprite = new Sprite({
-		pivotX:0.5, pivotY:0.5,
-		spritesheet: images.neuron_grab,
-		frameWidth:150, frameHeight:150,
-		frameTotal:8
-	});
-
+	// Flash
 	self.flash = new Flash(self);
-	flashes.push(self.flash);
+	scene.flashes.push(self.flash);
 
+	// To prevent weakening the connections you JUST made.
 	self.strengthenedConnections = [];
 	self.strengthenHebb = function(){
 
@@ -40,6 +31,7 @@ function Neuron(){
 
 		// Find NOT-THIS-ONE neurons with hebbians, strengthen the connection from them to this.
 		// There MUST be a connection initialized before.
+		var neurons = scene.neurons;
 		for(var i=0;i<neurons.length;i++){
 			var neuron = neurons[i];
 
@@ -55,6 +47,7 @@ function Neuron(){
 					// Good! This neuron is accepting hebbian connections.
 					// Find a connection FROM that TO this.
 					var foundConnection = false;
+					var connections = scene.connections;
 					for(var j=0;j<connections.length;j++){
 						var connection = connections[j];
 						if(connection.from==neuron && connection.to==self){
@@ -255,16 +248,71 @@ function Neuron(){
 
 };
 
-Neuron.add = function(x,y){
+Neuron.add = function(x,y,scene){
 
-	var neuron = new Neuron();
+	scene = scene || Interactive.scene;
+
+	// Create the neuron
+	var neuron = new Neuron(scene);
 	neuron.x = x;
 	neuron.y = y;
 	neuron.scale = 0.5;
 	neuron.clickable = true;
+
+	// Push it
+	var neurons = scene.neurons;
 	neurons.push(neuron);
 
 	// For serialization: ID
 	neuron.id = neurons.length-1;
 	
+};
+
+Neuron.serialize = function(scene){
+
+	scene = scene || Interactive.scene;
+
+	// Prepare output
+	var output = {
+		neurons:[], // [x,y], [x,y], [x,y]...
+		connections:[] // [from,to], [from,to], [from,to]...
+	};
+
+	// Get positions of all neurons
+	var neurons = scene.neurons;
+	for(var i=0;i<neurons.length;i++){
+		var neuron = neurons[i];
+		output.neurons.push([Math.round(neuron.x),Math.round(neuron.y)]);
+	}
+
+	// Get all connections, and the IDs of the neurons they're connected to.
+	var connections = scene.connections;
+	for(var i=0;i<connections.length;i++){
+		var connection = connections[i];
+		output.connections.push([connection.from.id, connection.to.id]);
+	}
+
+	// Return the string.
+	return JSON.stringify(output);
+
+};
+
+Neuron.unserialize = function(scene,string){
+
+	// Prepare input
+	var input = JSON.parse(string);
+
+	// Create neurons
+	for(var i=0;i<input.neurons.length;i++){
+		var neuron = input.neurons[i];
+		Neuron.add(neuron[0], neuron[1], scene);
+	}
+
+	// Create connections
+	var neurons = scene.neurons;
+	for(var i=0;i<input.connections.length;i++){
+		var connection = input.connections[i];
+		Connection.add(neurons[connection[0]], neurons[connection[1]], scene);
+	}
+
 };
