@@ -1,4 +1,4 @@
-function Scene_Blank(){
+function Scene_Anxiety(){
 
 	var self = this;
 	BrainScene.call(self);
@@ -20,8 +20,33 @@ function Scene_Blank(){
 	// Modify all neurons: smaller hebb radius
 	for(var i=0;i<self.neurons.length;i++){
 		var n = self.neurons[i];
-		n.hebbianRadius = 137.5;
-	}	
+		n.scale = 0.7;
+		n.hebbianRadius = 150;
+	}
+
+	// Some red & blue neurons
+	self.neurons[2].body_image = images.neuron_body_red;
+	self.neurons[3].body_image = images.neuron_body_blue;
+	self.neurons[7].body_image = images.neuron_body_red;
+	self.neurons[8].body_image = images.neuron_body_blue;
+	self.neurons[9].body_image = images.neuron_body_red;
+	self.neurons[10].body_image = images.neuron_body_blue;
+
+	// Update: Because connections come & go, gotta keep these constant:
+	var _prevUpdate = self.update;
+	self.update = function(){
+
+		// Modify all connections: fitting the fat neurons
+		for(var i=0;i<self.connections.length;i++){
+			var c = self.connections[i];
+			c.pulseRadius = 10;
+			c.endDistance = 50;
+		}
+
+		// Previous Update
+		_prevUpdate.call(self);
+
+	};
 
 	// Force pulse
 	self.neurons[0].pulse({ strength:3 });
@@ -51,7 +76,7 @@ function Scene_Neurons(){
 		if(timer--<0){
 			self.camera.x = 1600;
 			if(self.cameraEased.x>1600){
-				Interactive.goto(Scene_Blank);
+				Interactive.goto(Scene_Anxiety);
 				var cam = Interactive.scene.cameraEased;
 				cam.x = -1120;
 				return;

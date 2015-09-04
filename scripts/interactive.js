@@ -6,11 +6,12 @@ Preload({
 	images:[
 	
 		// Neuron images
-		{id:"neuron_grab", src:"assets/sprites/grabby.png"},
 		{id:"neuron_body", src:"assets/sprites/body_dark.png"},
+		{id:"neuron_body_red", src:"assets/sprites/body_red.png"},
+		{id:"neuron_body_blue", src:"assets/sprites/body_blue.png"},
 		{id:"neuron_hover", src:"assets/sprites/body_hover.png"},
 		{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
-		{id:"flash", src:"assets/sprites/hebb_flash_2.png"},
+		{id:"flash", src:"assets/sprites/hebb_flash.png"},
 
 		// Hebbian Instructions
 		//{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
@@ -59,6 +60,6 @@ subscribe("/init",function(){
 
 	// Scene!
 	Interactive.init();
-	Interactive.goto(Scene_Nicky);
+	Interactive.goto(Scene_Anxiety);
 
 });

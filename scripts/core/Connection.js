@@ -84,7 +84,7 @@ function Connection(scene){
 		}
 
 		// Animation
-		self.lineWidth = (self.strength<1) ? 2 : 4;
+		self.lineWidth = (self.strength<1) ? self.fullLineWidth/2 : self.fullLineWidth;
 		self.strengthEased = self.strengthEased*0.9 + self.strength*0.1;
 		self.easedLineWidth = self.easedLineWidth*0.9 + self.lineWidth*0.1;
 
@@ -96,7 +96,8 @@ function Connection(scene){
 	};
 
 	self.strokeStyle = "#555555";
-	self.lineWidth = 4;
+	self.fullLineWidth = 4;
+	self.lineWidth = self.fullLineWidth;
 	self.easedLineWidth = self.lineWidth;
 	self.pulseRadius = 8;
 	self.endDistance = 35;

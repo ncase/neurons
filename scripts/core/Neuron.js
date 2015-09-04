@@ -209,6 +209,9 @@ function Neuron(scene){
 	self.wobbleVelocity = Math.random()*2-1;
 	self.ticker = 0;
 
+	// Draw
+	self.body_image = images.neuron_body;
+
 	self.draw = function(ctx){
 
 		// save
@@ -230,7 +233,7 @@ function Neuron(scene){
 		ctx.globalAlpha = self.hoverAlpha;
 		ctx.drawImage(images.neuron_hover,-60,-60);
 		ctx.globalAlpha = 1;
-		ctx.drawImage(images.neuron_body,-50,-50);
+		ctx.drawImage(self.body_image,-50,-50);
 		ctx.globalAlpha = self.highlight;
 		ctx.drawImage(images.neuron_highlight,-50,-50);
 		ctx.restore();
