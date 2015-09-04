@@ -29,6 +29,12 @@ function Connection(scene){
 		self.to = to;
 		from.senders.push(self);
 		to.receivers.push(self);
+
+		// For special-colored neurons
+		if(from.connectionStrokeStyle){
+			self.strokeStyle = from.connectionStrokeStyle;
+		}
+
 	};
 
 	// Disconnect

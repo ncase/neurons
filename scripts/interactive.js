@@ -13,6 +13,10 @@ Preload({
 		{id:"neuron_highlight", src:"assets/sprites/body_highlight.png"},
 		{id:"flash", src:"assets/sprites/hebb_flash.png"},
 
+		// Icons
+		{id:"icon_anxious", src:"assets/sprites/icon_anxious.png"},
+		{id:"icon_calm", src:"assets/sprites/icon_calm.png"},
+
 		// Hebbian Instructions
 		//{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
 

@@ -1,3 +1,41 @@
+function StoryScene(){
+
+	var self = this;
+	Scene.call(self);
+	
+	// Properties
+	self.sprites = [];
+
+	// Update
+	var _prevUpdate = self.update;
+	self.update = function(){
+
+		// Camera
+		_prevUpdate.call(self);
+
+		// My Things
+		for(var i=0;i<self.sprites.length;i++) self.sprites[i].update();
+
+	};
+
+	// Render
+	var _prevRender = self.render;
+	self.render = function(ctx){
+
+		// Save
+		ctx.save();
+		_prevRender.call(self,ctx); // Camera
+
+		// My Things
+		for(var i=0;i<self.sprites.length;i++) self.sprites[i].draw(ctx);
+
+		// Restore
+		ctx.restore();
+
+	};
+
+}
+
 function BrainScene(){
 
 	var self = this;

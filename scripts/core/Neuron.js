@@ -9,6 +9,7 @@ function Neuron(scene){
 	self.ny = 0;
 	self.scale = 1;
 	self.rotation = Math.random()*Math.PI*2;
+	self.iconRotation = (Math.random()*2-1)*0.3;
 
 	// Connections & Pulsing
 	self.senders = [];
@@ -135,10 +136,13 @@ function Neuron(scene){
 	
 	self.hebbSignalDuration = 2; // 2 seconds, sorta
 
+	// Highlight
+	self.highlightFade = 0.8;
+
 	self.update = function(){
 
 		// Highlight!
-		self.highlight *= 0.8;
+		self.highlight *= self.highlightFade;
 		if(self.highlight<0.01){
 			self.highlight = 0;
 		}
@@ -212,6 +216,11 @@ function Neuron(scene){
 	// Draw
 	self.body_image = images.neuron_body;
 
+	// Highlight
+	self.highlightRadius = 25;
+	self.highlightFill = "#fff";
+	self.highlightBaseAlpha = 0.5;
+
 	self.draw = function(ctx){
 
 		// save
@@ -229,6 +238,9 @@ function Neuron(scene){
 			var wobbledScale = (1-Math.sin(self.ticker)*0.05);
 			ctx.scale(wobbledScale,wobbledScale);
 		}
+
+		// Body, hover, highlight.
+		ctx.save();
 		ctx.rotate(self.rotation);
 		ctx.globalAlpha = self.hoverAlpha;
 		ctx.drawImage(images.neuron_hover,-60,-60);
@@ -238,11 +250,20 @@ function Neuron(scene){
 		ctx.drawImage(images.neuron_highlight,-50,-50);
 		ctx.restore();
 
+		// Icon, with its own rotation
+		if(self.icon){
+			ctx.rotate(self.iconRotation);
+			ctx.drawImage(self.icon,-50,-50);
+		}
+
+		ctx.restore();
+
 		// highlight circle!
 		if(self.highlight>=0.01){
-			ctx.fillStyle = "rgba(255,255,255,"+self.highlight/2+")";
+			ctx.globalAlpha = self.highlight*self.highlightBaseAlpha;
+			ctx.fillStyle = self.highlightFill;
 			ctx.beginPath();
-			var radius = 25 + (1-self.highlight)*25;
+			var radius = 25 + (1-self.highlight)*self.highlightRadius;
 			ctx.arc(0, 0, radius, 0, 2*Math.PI, false);
 			ctx.fill();
 		}
