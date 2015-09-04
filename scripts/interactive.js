@@ -16,12 +16,16 @@ Preload({
 		// Icons
 		{id:"icon_anxious", src:"assets/sprites/icon_anxious.png"},
 		{id:"icon_calm", src:"assets/sprites/icon_calm.png"},
+		{id:"icon_social", src:"assets/sprites/icon_social.png"},
+		{id:"icon_failure", src:"assets/sprites/icon_failure.png"},
+		{id:"icon_holes", src:"assets/sprites/icon_holes.png"},
 
 		// Hebbian Instructions
 		//{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
 
-		// Crap Background
+		// Placeholder Crap
 		{id:"crapBG", src:"assets/images/nicky.png"},
+		{id:"credits", src:"assets/images/credits.png"},
 
 		// Shade
 		{id:"shade", src:"assets/sprites/shade.png"}

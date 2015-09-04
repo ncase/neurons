@@ -84,7 +84,7 @@ function BrainScene(){
 		_render(self.connections,ctx);
 		_render(self.neurons,ctx);
 		_render(self.flashes,ctx);
-		_render(self.sprites);
+		_render(self.sprites,ctx);
 
 		// Restore
 		ctx.restore();
