@@ -4,6 +4,7 @@ How it works:
 - Audio track with markers on start & end
 - Queueing the tracks & functions up.
 - Logic for finite states.
+- Also, controls Interactive, the Scene Manager.
 
 Narrator.init({
 	file: "what_it_was_in_SoundJS",
@@ -105,16 +106,6 @@ window.Narrator = new (function(){
 		return self;
 
 	};
-	self.wait = function(duration){
-		_chain(function(){
-			var p = new promise.Promise();
-			setTimeout(function(){
-				p.done();
-			},duration*1000);
-			return p;
-		});
-		return self;
-	};
 
 	// STATES
 	self.update = function(){
@@ -122,14 +113,24 @@ window.Narrator = new (function(){
 		self.currentState.during(self.currentState);
 	};
 	self.goto = function(stateName){
-		_chain(function(){
-			var p = new promise.Promise();
+		return self.do(function(){
 			self.currentState = self.states[stateName];
 			self.currentState.start(self.currentState);
-			p.done();
-			return p;
 		});
-		return self;
+	};
+
+	// SCENES
+	self.scene = function(sceneName){
+		return self.do(function(){
+			Interactive.transitionTo(window["Scene_"+sceneName]);
+		});
+	};
+
+	// MESSAGING
+	self.message = function(message){
+		return self.do(function(){
+			publish(message);
+		});
 	};
 
 	// TALKING

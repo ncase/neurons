@@ -198,9 +198,6 @@ function Neuron(scene){
 	subscribe("/mouse/down",function(){
 		if(self.isMouseOver()){
 
-			// DEBUG:
-			console.log(self.id);
-
 			self.pulse();
 			publish("/neuron/click",[self]);
 

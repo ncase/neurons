@@ -6,15 +6,24 @@ function Scene_Anxiety(){
 	// Camera
 	self.setCamera(480,270,1);
 	
+	// Scene Transitions
+	self.transitionIn = function(){
+		self.cameraEased.x = -1120;
+	};
+	self.transitionOut = function(){
+		self.camera.x = -1120;
+		return function(){return (self.cameraEased.x<-1120);}; // done when this is
+	};
+
 	// Whee
 	// One that looks nice & uniform and no "boring" neurons
 	Neuron.unserialize(self,'{"neurons":[[209,-110],[749,-110],[385,180],[565,180],[209,270],[475,270],[749,270],[119,360],[299,360],[659,360],[839,360],[475,650]],"connections":[[0,4],[1,6],[11,5],[4,7],[5,2],[6,9]]}');
 
-	// Modify all connections: already done, and faster.
+	// Modify all connections: already done, and SLOWER.
 	for(var i=0;i<self.connections.length;i++){
 		var c = self.connections[i];
 		c.strengthEased = 1;
-		c.speed = 5;
+		c.speed = 2.5;
 	}
 
 	// Modify all neurons: smaller hebb radius
@@ -56,6 +65,7 @@ function Scene_Anxiety(){
 	// Update: Because connections come & go, gotta keep these constant:
 	var timer = 0;
 	var _prevUpdate = self.update;
+	var _whenToFire = [4.0, 6.0, 8.0];
 	self.update = function(){
 
 		// Modify all connections: fitting the fat neurons
@@ -66,10 +76,10 @@ function Scene_Anxiety(){
 		}
 
 		// Auto pulse, whatever
-		/*if(timer%60==0) self.neurons[0].pulse({ strength:3 });
-		if(timer%60==20) self.neurons[11].pulse({ strength:3 });
-		if(timer%60==40) self.neurons[1].pulse({ strength:3 });
-		timer++;*/
+		if(timer==_whenToFire[0]*30) self.neurons[0].pulse({ strength:3 });
+		if(timer==_whenToFire[1]*30) self.neurons[11].pulse({ strength:3 });
+		if(timer==_whenToFire[2]*30) self.neurons[1].pulse({ strength:3 });
+		timer++;
 
 		// Previous Update
 		_prevUpdate.call(self);

@@ -8,25 +8,11 @@ function Scene_Intro(){
 
 	// Nicky Sprite
 	self.sprites.push(new CrapBackground());
-	
-	// Update: after a while, swipe to a Crap Scene
-	var timer = 60;
-	var _prevUpdate = self.update;
-	self.update = function(){
 
-		// Swipe on over?
-		if(timer--<0){
-			self.camera.zoom = 6;
-			if(self.cameraEased.zoom>4){
-				Interactive.goto(Scene_Neurons);
-				var cam = Interactive.scene.cameraEased;
-				return;
-			}
-		}
-
-		// Previous Update
-		_prevUpdate.call(self);
-
+	// Scene Transitions
+	self.transitionOut = function(){
+		self.camera.zoom = 6;
+		return function(){return (self.cameraEased.zoom>4);}; // done when this is
 	};
 
 	////////////////////
