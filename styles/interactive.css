@@ -68,6 +68,7 @@ a:hover{ color: #ee3939; }*/
     width: 100%;
     text-align: center;
     bottom: 50px;
+    display: none;
 }
 #captions > span{
     font-size: 20px;

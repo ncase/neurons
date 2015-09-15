@@ -187,9 +187,13 @@ window.Narrator = new (function(){
 			return;
 		}
 
-		// But if there is, show that caption!
+		// But if there is, show that caption! (No caption? BE LOUD WITH ERROR)
 		var caption = Captions[chosenLanguageID].captions[markerID];
-		_showCaption(caption);
+		if(caption){
+			_showCaption(caption);
+		}else{
+			_showCaption("[YOU FORGOT TO ADD A CAPTION HERE]");
+		}
 
 	};
 	var _showCaption = function(caption){

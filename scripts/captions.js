@@ -14,7 +14,7 @@ window.Captions = {
 			"intro0": "Intro. What was going on...",
 			"intro1": "...in my brain.",
 			
-			"prop0": "This is my interactive animation",
+			//"prop0": "This is my interactive animation",
 			"prop1": "Click on neuron, see what happens",
 			"prop2": "Yeah! Click some more.",
 			"prop3": "That's how it works, but in the anxious brain...",
@@ -44,15 +44,15 @@ window.Captions = {
 		}
 	},
 
-	// Derp
+	// Derp - Just here to test captions. Oh god do not push to prod.
 	"dp": {
 		label: "Derp",
 		captions: {
-			"intro0": "herp derp herpy derp",
-			"intro1": "derp derp herp",
+			"intro0": "herp",
+			"intro1": "derp",
 			
-			"prop0": "herp derp herpy derp",
-			"prop1": "herpy derpy herpy derpy",
+			"prop0": "殠 濞濢 垥娀庣 樛槷殦,",
+			"prop1": "ووووووويتّفق قُدُماً باستحداث", // Looks left-to-right here, but shows as right-to-left.
 			"prop2": "herp derp herpy derp",
 			"prop3": "herp derp herp derpy herpy",
 			
