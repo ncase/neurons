@@ -66,6 +66,7 @@ a:hover{ color: #ee3939; }*/
 	background: rgba(0,0,0,0.5);
 }
 #control_play{
+	float: left;
 	width: 59px;
 	height: 40px;
 	background-image: url(../assets/ui/play.png);
@@ -82,4 +83,16 @@ a:hover{ color: #ee3939; }*/
 }
 #control_play[playing=false]:hover{
 	background-position: 59px 0px;
+}
+#control_volume{
+	float: left;
+	width: 47px;
+	height: 40px;
+	background-image: url(../assets/ui/volume.png);
+	cursor: pointer;
+}
+#control_volume_slider{
+	float: left;
+	width: 50px;
+    margin-top: 13px;
 }
