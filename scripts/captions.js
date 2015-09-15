@@ -44,8 +44,9 @@ window.Captions = {
 		}
 	},
 
-	// Derp - Just here to test captions. Oh god do not push to prod.
-	"dp": {
+	// Derp - Just here to test captions.
+	// Oh gawd, do NOT push this to production.
+	"derp": {
 		label: "Derp",
 		captions: {
 			"intro0": "herp",

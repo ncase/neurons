@@ -12,21 +12,20 @@
 	})();
 
 	// Stats
-	var stats = new Stats();
+	/*var stats = new Stats();
 	stats.setMode(0); // 0: fps, 1: ms
-	stats.domElement.id="DEBUG_STATS";
 	stats.domElement.style.position = 'absolute';
 	stats.domElement.style.right = '0px';
 	stats.domElement.style.top = '0px';
-	document.body.appendChild(stats.domElement);
+	document.body.appendChild(stats.domElement);*/
 
 	// Actually start rendering & update loop
 	var _redraw = false;
 	(function animloop(){
 		if(_redraw){
-			stats.begin();
+			//stats.begin();
 			publish("/render");
-			stats.end();
+			//stats.end();
 			_redraw = false;
 		}
 		requestAnimationFrame(animloop);

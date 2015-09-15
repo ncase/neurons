@@ -3,10 +3,6 @@ body {
 	background: #fff;
 }
 
-#DEBUG_STATS{
-	/*display: none;*/
-}
-
 div, canvas{
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -15,19 +11,27 @@ div, canvas{
 }
 
 #container{
-	/*position: absolute;
-	top:0; bottom:0; left:0; right:0;
-	margin: auto;*/
+	background:#000;
 	position: relative;
+	
 	width: 960px;
 	height: 540px;
+	/*width: 100%;
+	max-height: 100%;*/
 }
 
 #canvas{
 	background-color: #000;
 	display:block;
+
 	width: 960px;
 	height: 540px;
+	/*width: 100%;
+	max-height: 100%;*/
+
+	position: absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin: auto;
 }
 
 #canvas[loading=yes]{

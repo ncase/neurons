@@ -28,6 +28,7 @@ subscribe("/mouse/down",function(){
 var volumeIcon = document.getElementById("control_volume");
 var volumeSlider = document.getElementById("control_volume_slider");
 
+// Icon
 var _lastVolume = 1;
 volumeIcon.onclick = function(){
 
@@ -50,13 +51,6 @@ volumeIcon.onclick = function(){
 	_updateVolumeIcon();
 
 };
-
-volumeSlider.oninput = function(){
-	createjs.Sound.muted = false;
-	createjs.Sound.volume = volumeSlider.value;
-	_updateVolumeIcon();
-};
-
 var _updateVolumeIcon = function(){
 	var state = 0;
 	if(createjs.Sound.muted || createjs.Sound.volume==0){
@@ -68,12 +62,19 @@ var _updateVolumeIcon = function(){
 	volumeIcon.style.backgroundPosition = (-state*47)+"px 0px";
 };
 
+// The slider
+volumeSlider.oninput = function(){
+	createjs.Sound.muted = false;
+	createjs.Sound.volume = volumeSlider.value;
+	_updateVolumeIcon();
+};
 
 
 //////////////////////
 //// CAPTIONS, YO ////
 //////////////////////
 
+// Icon
 var captionsIcon = document.getElementById("control_captions");
 var _lastLanguage = "en";
 captionsIcon.onclick = function(){
@@ -90,6 +91,7 @@ var _updateCaptionsUI = function(){
 	captionsSelect.value = CAPTION_LANGUAGE;
 };
 
+// The list
 var captionsSelect = document.getElementById("control_captions_select");
 
 // Populate List. Also, the default option.
