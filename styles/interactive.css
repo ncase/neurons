@@ -7,6 +7,13 @@ body {
 	/*display: none;*/
 }
 
+div, canvas{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 #container{
 	/*position: absolute;
 	top:0; bottom:0; left:0; right:0;
@@ -56,5 +63,23 @@ a:hover{ color: #ee3939; }*/
 #controls{
 	width: 100%;
 	height: 40px;
-	background-image: url("../assets/ui/mockup.png");
+	background: rgba(0,0,0,0.5);
+}
+#control_play{
+	width: 59px;
+	height: 40px;
+	background-image: url(../assets/ui/play.png);
+	cursor: pointer;
+}
+#control_play[playing=true]{
+	background-position: 0px 40px;
+}
+#control_play[playing=true]:hover{
+	background-position: 59px 40px;
+}
+#control_play[playing=false]{
+	background-position: 0px 0px;
+}
+#control_play[playing=false]:hover{
+	background-position: 59px 0px;
 }

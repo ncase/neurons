@@ -18,12 +18,10 @@ Preload({
 		{id:"icon_calm", src:"assets/sprites/icon_calm.png"},
 		{id:"icon_social", src:"assets/sprites/icon_social.png"},
 		{id:"icon_failure", src:"assets/sprites/icon_failure.png"},
-		{id:"icon_holes", src:"assets/sprites/icon_holes.png"},
-
-		// Hebbian Instructions
-		//{id:"hebb_instructions", src:"assets/sprites/hebb_instructions.png"},
+		{id:"icon_holes", src:"assets/sprites/icon_holes.png"},		
 
 		// Placeholder Crap
+		{id:"hebb_instructions", src:"assets/images/hebb_instructions.png"},
 		{id:"crapBG", src:"assets/images/nicky.png"},
 		{id:"credits", src:"assets/images/credits.png"},
 
@@ -85,11 +83,9 @@ Narrator.setStates({
 
 	INTRO:{
 		start:function(){
-			Narrator.scene("Intro").talk("intro0")
-					.scene("Propagation")
-					.do(function(){
-						createjs.Sound.play("sfx_loop",{volume:0.05,loop:-1});
-					})
+			//Narrator.scene("Intro").talk("intro0")
+			Narrator.scene("Propagation")
+					.music("sfx_loop",{volume:0.05,loop:-1})
 					.talk("intro1","prop0","prop1")
 					.goto("PROP_CLICK");
 		}
@@ -132,11 +128,22 @@ Narrator.setStates({
 			Narrator.talk("hebb0")
 					.message("/scene/removeConnections")
 					.talk("hebb1")
-					.message("/scene/addInstructions");
+					.message("/scene/addInstructions").
+					do(function(){
+						alert("END OF PROTOTYPE SO FAR");
+					});
 					/*.talk("hebb2","hebb3")
 					.goto("HEBBIAN_CLICK");*/
 		}
+	},
+
+	THERAPY:{
+		start:function(){
+			Narrator.scene("Therapy");
+		}
 	}
+
+
 
 });
 

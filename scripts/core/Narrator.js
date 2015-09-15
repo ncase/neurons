@@ -133,6 +133,26 @@ window.Narrator = new (function(){
 		});
 	};
 
+	// PAUSE/PLAY ALL
+	self.pause = function(){
+		for(var i=0;i<self.soundInstances.length;i++){
+			self.soundInstances[i].paused = true;
+		}
+	};
+	self.play = function(){
+		for(var i=0;i<self.soundInstances.length;i++){
+			self.soundInstances[i].paused = false;
+		}
+	};
+
+	// MUSIC -- kinda hacky...
+	self.music = function(musicID,options){
+		return self.do(function(){
+			var soundInstance = createjs.Sound.play(musicID,options);
+			self.soundInstances.push(soundInstance);
+		});
+	};
+
 	// TALKING
 	self.talk = function(/*marker_1, marker_2, ... marker_N*/){
 

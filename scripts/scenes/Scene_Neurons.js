@@ -17,6 +17,18 @@ function Scene_Hebbian(){
 		c.strengthEased = 1;
 	}
 
+	// Scene Messages
+	var _listener1 = subscribe("/scene/removeConnections",function(){
+		unsubscribe(_listener1);
+		for(var i=0;i<self.connections.length;i++){
+			self.connections[i].strength = 0;
+		}
+	});
+	var _listener2 = subscribe("/scene/addInstructions",function(){
+		unsubscribe(_listener2);
+		self.sprites.push(new HebbInstruction());
+	});
+
 	// Scene Transitions
 	self.transitionIn = function(){
 		self.cameraEased.x = 1600;
@@ -25,6 +37,34 @@ function Scene_Hebbian(){
 		self.camera.x = 1600;
 		return function(){return (self.cameraEased.x>1600);}; // done when this is
 	};
+
+	//////////////////////////////////
+	// SPRITES AND ANIMATIONS STUFF //
+	//////////////////////////////////
+
+	function HebbInstruction(){
+
+		var self = this;
+		Sprite.call(self,{
+			pivotX:0, pivotY:0,
+			spritesheet: images.hebb_instructions,
+			frameWidth:400, frameHeight:300,
+			frameTotal:1
+		});
+
+		// Start Off
+		self.x = -400;
+		self.y = 0;
+		self.gotoX = 0;
+		
+		// UPDATE
+		var _prevUpdate = self.update;
+		self.update = function(){
+			self.x = self.x*0.7 + self.gotoX*0.3;
+			_prevUpdate.call(self);
+		};
+
+	}
 
 }
 

@@ -23,6 +23,11 @@ window.Interactive = new (function(){
 	};
 	self.update = function(){
 		canvas.style.cursor = "default";
+
+		// Is Paused? Do nothing.
+		if(!self.PLAYING) return;
+
+		// No scene? Stahp.
 		if(self.scene) self.scene.update();
 
 		// If Scene Transition is done, go to that.
@@ -34,8 +39,14 @@ window.Interactive = new (function(){
 
 	};
 	self.render = function(){
+
+		// Is Paused? Do nothing.
+		if(!self.PLAYING) return;
+
+		// Then actually draw it.
 		ctx.clearRect(0,0,canvas.width,canvas.height);
 		if(self.scene) self.scene.render(ctx);
+		
 	};
 
 	// Scene Transitions
@@ -49,5 +60,16 @@ window.Interactive = new (function(){
 		}
 
 	}
+
+	// Pause & Play
+	self.PLAYING = true;
+	self.pause = function(){
+		self.PLAYING = false;
+		Narrator.pause();
+	};
+	self.play = function(){
+		self.PLAYING = true;
+		Narrator.play();
+	};
 
 })();
