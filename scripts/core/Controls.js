@@ -74,6 +74,22 @@ var _updateVolumeIcon = function(){
 //// CAPTIONS, YO ////
 //////////////////////
 
+var captionsIcon = document.getElementById("control_captions");
+var _lastLanguage = "en";
+captionsIcon.onclick = function(){
+	if(CAPTION_LANGUAGE==""){
+		CAPTION_LANGUAGE = _lastLanguage;
+	}else{
+		_lastLanguage = CAPTION_LANGUAGE;
+		CAPTION_LANGUAGE = "";
+	}
+	_updateCaptionsUI();
+};
+var _updateCaptionsUI = function(){
+	captionsIcon.style.backgroundPosition = (CAPTION_LANGUAGE=="") ? "47px 0px" : "0px 0px";
+	captionsSelect.value = CAPTION_LANGUAGE;
+};
+
 var captionsSelect = document.getElementById("control_captions_select");
 
 // Populate List. Also, the default option.

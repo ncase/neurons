@@ -192,7 +192,7 @@ window.Narrator = new (function(){
 		if(caption){
 			_showCaption(caption);
 		}else{
-			_showCaption("[YOU FORGOT TO ADD A CAPTION HERE]");
+			_showCaption("[YOU FORGOT TO ADD A CAPTION HERE, YOU GOOF]");
 		}
 
 	};

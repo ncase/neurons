@@ -85,6 +85,9 @@ a:hover{ color: #ee3939; }*/
 	height: 40px;
 	background: rgba(0,0,0,0.5);
 }
+#controls > div:hover{
+	background-color: rgba(0,0,0,0.8);
+}
 #control_play{
 	float: left;
 	width: 59px;
@@ -95,14 +98,8 @@ a:hover{ color: #ee3939; }*/
 #control_play[playing=true]{
 	background-position: 0px 40px;
 }
-#control_play[playing=true]:hover{
-	background-position: 59px 40px;
-}
 #control_play[playing=false]{
 	background-position: 0px 0px;
-}
-#control_play[playing=false]:hover{
-	background-position: 59px 0px;
 }
 #control_volume{
 	float: left;
@@ -116,8 +113,15 @@ a:hover{ color: #ee3939; }*/
 	width: 50px;
     margin-top: 13px;
 }
+#control_captions{
+	float: right;
+	width: 47px;
+	height: 40px;
+	background-image: url(../assets/ui/captions.png);
+	cursor: pointer;
+}
 #control_captions_select{
 	float:right;
 	width: 80px;
-	margin-top: 13px;
+	margin-top: 12px;
 }
