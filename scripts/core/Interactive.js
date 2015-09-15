@@ -30,6 +30,9 @@ window.Interactive = new (function(){
 		// No scene? Stahp.
 		if(self.scene) self.scene.update();
 
+		// Narrator update
+		Narrator.update();
+
 		// If Scene Transition is done, go to that.
 		if(self.transitionCallback && self.transitionCallback()){
 			self.goto(self.transitionToScene);

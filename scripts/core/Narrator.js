@@ -17,11 +17,15 @@ Narrator.init({
 	}
 });
 
-Narrator.addState("Intro",{
-	start:function(){
+Narrator.setStates({
+
+	INTRO:{
+		start:function(){},
+		during:function(){},
 	},
-	during:function(){
-	},
+
+	...
+
 });
 
 ********************/
@@ -145,12 +149,56 @@ window.Narrator = new (function(){
 		}
 	};
 
-	// MUSIC -- kinda hacky...
+	// MUSIC
 	self.music = function(musicID,options){
 		return self.do(function(){
 			var soundInstance = createjs.Sound.play(musicID,options);
+			soundInstance._TYPE_ = "music";
 			self.soundInstances.push(soundInstance);
 		});
+	};
+
+	// UPDATE - Just captions, I guess.
+	self.captionsDOM = document.getElementById("captions");
+	self.captionsText = document.querySelector("#captions > span");
+	self.update = function(){
+
+		// Currently chosen language.
+		var chosenLanguageID = CAPTION_LANGUAGE;
+
+		// If language is "", that means None.
+		if(chosenLanguageID==""){
+			_hideCaption();
+			return;
+		}
+
+		// Otherwise, find the currently playing voice clip.
+		// If none, no captions.
+		var markerID = null;
+		for(var i=0;i<self.soundInstances.length;i++){
+			var soundInstance = self.soundInstances[i];
+			if(soundInstance._TYPE_=="voice"){
+				markerID = soundInstance._MARKER_ID_;
+				break;
+			}
+		}
+		if(!markerID){
+			_hideCaption();
+			return;
+		}
+
+		// But if there is, show that caption!
+		var caption = Captions[chosenLanguageID].captions[markerID];
+		_showCaption(caption);
+
+	};
+	var _showCaption = function(caption){
+		self.captionsText.textContent = caption;
+		self.captionsText.innerText = caption;
+		self.captionsDOM.style.display = "block";
+	};
+	var _hideCaption = function(caption){
+		self.captionsDOM.style.display = "none";
 	};
 
 	// TALKING
@@ -168,6 +216,8 @@ window.Narrator = new (function(){
 						startTime: marker[0],
 						duration: marker[1]-marker[0]
 					});
+					soundInstance._TYPE_ = "voice";
+					soundInstance._MARKER_ID_ = markerID;
 					self.soundInstances.push(soundInstance);
 
 					soundInstance.on("complete", function(){

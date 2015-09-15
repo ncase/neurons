@@ -68,4 +68,40 @@ var _updateVolumeIcon = function(){
 	volumeIcon.style.backgroundPosition = (-state*47)+"px 0px";
 };
 
+
+
+//////////////////////
+//// CAPTIONS, YO ////
+//////////////////////
+
+var captionsSelect = document.getElementById("control_captions_select");
+
+// Populate List. Also, the default option.
+var languageList = [{
+	value: "",
+	label: "None"
+}];
+for(var languageID in window.Captions){
+	var language = Captions[languageID];
+	languageList.push({
+		value: languageID,
+		label: language.label
+	});
+}
+var html = "";
+for(var i=0;i<languageList.length;i++){
+	var language = languageList[i];
+	html += '<option '+(language.value==CAPTION_LANGUAGE ? 'selected ' : '')+
+					'value="'+language.value+'">'+
+					language.label+
+					'</option>';
+	captionsSelect.innerHTML = html;
+}
+
+// When the language is changed...
+captionsSelect.onchange = function(){
+	CAPTION_LANGUAGE = captionsSelect.value;
+};
+
+
 })();

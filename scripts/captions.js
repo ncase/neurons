@@ -1,3 +1,10 @@
+////////////////////////////////////////
+// Due to random accidents of history,
+// English will be the default caption.
+////////////////////////////////////////
+
+window.CAPTION_LANGUAGE = "en";
+
 window.Captions = {
 
 	// English
@@ -35,7 +42,7 @@ window.Captions = {
 			"ther0": "Now that you know how to learn/unlearn, let's revisit...",
 			"ther1": "THIS"
 		}
-	}
+	},
 
 	// Derp
 	"dp": {
