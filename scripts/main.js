@@ -30,10 +30,13 @@ Preload({
 
 	],
 	sounds:[
-		{id:"voice", src:"assets/voices/combined.mp3"},
+		
+		{id:"0_intro", src:"assets/voices/0_intro.mp3"},
+
 		{id:"sfx_spark", src:"assets/sfx/spark.mp3"},
 		{id:"sfx_loop", src:"assets/sfx/Hebbian.mp3"},
 		{id:"sfx_blah", src:"assets/sfx/blah.mp3"}
+
 	]
 });
 
@@ -41,6 +44,7 @@ Preload({
 // REAL-TIME VOICEOVER, JUST LIKE BASTION //
 ////////////////////////////////////////////
 
+/*
 Narrator.init({
 	file: "voice",
 	markers:{
@@ -132,8 +136,8 @@ Narrator.setStates({
 					do(function(){
 						alert("END OF PROTOTYPE SO FAR");
 					});
-					/*.talk("hebb2","hebb3")
-					.goto("HEBBIAN_CLICK");*/
+					.talk("hebb2","hebb3")
+					.goto("HEBBIAN_CLICK");
 		}
 	},
 
@@ -143,9 +147,7 @@ Narrator.setStates({
 		}
 	}
 
-
-
-});
+});*/
 
 ////////////////
 // INITIALIZE //

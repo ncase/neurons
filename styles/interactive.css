@@ -80,6 +80,8 @@ a:hover{ color: #ee3939; }*/
     font-weight: 200;
     background-color: rgba(0,0,0,0.5);
     color:#fff;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
 /** CONTROLS **/
@@ -128,4 +130,5 @@ a:hover{ color: #ee3939; }*/
 	float:right;
 	width: 80px;
 	margin-top: 12px;
+	margin-right: 10px;
 }

@@ -35,15 +35,14 @@ window.Narrator = new (function(){
 	var self = this;
 
 	// Properties
-	self.voice = null;
-	self.states = null;
+	self.voices = {};
+	self.states = {};
 	self.currentState = null;
 	self.currentPromise = null;
 	self.soundInstances = [];
 
 	// Configuration
-	self.init = function(voiceConfig){
-		self.voice = voiceConfig;
+	self.addNarration = function(voiceConfig){
 
 		// Convert all timestamps to MILLISECONDS.
 		var _helper = function(input){
@@ -59,21 +58,23 @@ window.Narrator = new (function(){
 			}
 			alert("I MESSED UP");
 		};
-		for(var markerID in self.voice.markers){
-			var interval = self.voice.markers[markerID];
-			interval[0] = _helper(interval[0]);
-			interval[1] = _helper(interval[1]);
+
+		// For each marker
+		for(var markerID in voiceConfig.markers){
+			var interval = voiceConfig.markers[markerID];
+			var voice = [voiceConfig.file, _helper(interval[0]), _helper(interval[1])];
+			self.voices[markerID] = voice;
 		}
 
 	};
-	self.setStates = function(statesConfig){
-		self.states = statesConfig;
+	self.addStates = function(statesConfig){
 
-		// By default, null start/during, for simplicity
-		for(var stateID in self.states){
-			var state = self.states[stateID];
+		// Add a placeholder start/during, for simplicity
+		for(var stateID in statesConfig){
+			var state = statesConfig[stateID];
 			state.start = state.start || function(){}; 
 			state.during = state.during || function(){};
+			self.states[stateID] = state;
 		}
 
 	};
@@ -192,7 +193,7 @@ window.Narrator = new (function(){
 		if(caption){
 			_showCaption(caption);
 		}else{
-			_showCaption("[YOU FORGOT TO ADD A CAPTION HERE, YOU GOOF]");
+			_hideCaption();
 		}
 
 	};
@@ -215,10 +216,10 @@ window.Narrator = new (function(){
 					
 					var p = new promise.Promise();
 
-					var marker = self.voice.markers[markerID];
-					var soundInstance = createjs.Sound.play(self.voice.file,{
-						startTime: marker[0],
-						duration: marker[1]-marker[0]
+					var marker = self.voices[markerID];
+					var soundInstance = createjs.Sound.play(marker[0],{
+						startTime: marker[1],
+						duration: marker[2]-marker[1]
 					});
 					soundInstance._TYPE_ = "voice";
 					soundInstance._MARKER_ID_ = markerID;
