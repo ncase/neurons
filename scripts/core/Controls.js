@@ -119,6 +119,7 @@ for(var i=0;i<languageList.length;i++){
 // When the language is changed...
 captionsSelect.onchange = function(){
 	CAPTION_LANGUAGE = captionsSelect.value;
+	_updateCaptionsUI();
 };
 
 

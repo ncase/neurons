@@ -169,7 +169,7 @@ window.Narrator = new (function(){
 
 		// If language is "", that means None.
 		if(chosenLanguageID==""){
-			_hideCaption();
+			self.hideCaption();
 			return;
 		}
 
@@ -184,25 +184,25 @@ window.Narrator = new (function(){
 			}
 		}
 		if(!markerID){
-			_hideCaption();
+			self.hideCaption();
 			return;
 		}
 
-		// But if there is, show that caption! (No caption? BE LOUD WITH ERROR)
+		// But if there is, show that caption! (and if not, hiiiide it)
 		var caption = Captions[chosenLanguageID].captions[markerID];
-		if(caption){
-			_showCaption(caption);
+		if(caption && caption!=""){
+			self.showCaption(caption);
 		}else{
-			_hideCaption();
+			self.hideCaption();
 		}
 
 	};
-	var _showCaption = function(caption){
+	self.showCaption = function(caption){
 		self.captionsText.textContent = caption;
 		self.captionsText.innerText = caption;
 		self.captionsDOM.style.display = "block";
 	};
-	var _hideCaption = function(caption){
+	self.hideCaption = function(caption){
 		self.captionsDOM.style.display = "none";
 	};
 

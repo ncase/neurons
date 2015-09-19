@@ -14,6 +14,7 @@ Narrator.addNarration({
 		"prop4": ["0:25.4", "0:27.8"], // and click on a neuron, and see what happens?
 
 		"prop5": ["0:29.0", "0:31.7"], // Ex-CUSE me, I was talking!... I'm just kidding.
+
 		"prop6": ["0:33.0", "0:35.4"], // Okay, wow, you're really into this, clicking EVERYTHING,
 		"prop7": ["0:35.4", "0:36.5"], // COOL. GOT IT. AWESOME.
 
@@ -32,8 +33,10 @@ Narrator.addNarration({
 		"fear3": ["1:08.1", "1:10.2"], // of being close to people,
 		"fear4": ["1:10.2", "1:11.3"], // and of...
 		"fear5": ["1:11.3", "1:12.0"], // holes.
-		"fear6": ["1:12.0", "1:15.0"], // They creep me out, I don't know why,
-		"fear7": ["1:15.0", "1:18.5"], // but holy ■■■■ I do NOT like holes. 
+		"fear6": ["1:12.0", "1:15.5"], // Coz... I don't know why, but tightly clustered holes
+		"fear7": ["1:15.5", "1:18.5"], // just kinda creep me out, y'know? I dunno.
+
+		"extra": ["1:20.0", "1:22.2"], // Kind of mesmerizing, isn't it?
 
 	}
 });
