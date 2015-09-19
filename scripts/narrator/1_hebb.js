@@ -35,4 +35,41 @@ Narrator.addNarration({
 });
 
 Narrator.addStates({
+
+	HEBBIAN:{
+		start:function(state){
+			Narrator.scene("Hebbian")
+					.talk("hebb0","hebb1","hebb2")
+					.do(function(){ publish("/scene/removeConnections"); })
+					.talk("hebb3")
+					.do(function(){ publish("/scene/addInstructions"); })
+					.talk("hebb4","hebb6","hebb7","hebb8","hebb9","hebb10")
+					.goto("HEBBIAN_TRY_1");
+		}
+	},
+
+	HEBBIAN_TRY_1:{
+		start:function(state){
+			Narrator.talk("hebb11");
+		}
+	},
+
+	HEBBIAN_EXPLAIN_1:{
+		start:function(state){
+			Narrator.talk("hebb14","hebb15","hebb16","hebb17");
+		}
+	},
+
+	HEBBIAN_TRY_2:{
+		start:function(state){
+			Narrator.talk("hebb18");
+		}
+	},
+
+	HEBBIAN_EXPLAIN_2:{
+		start:function(state){
+			Narrator.talk("hebb19","hebb20","hebb21","hebb22");
+		}
+	}
+
 });

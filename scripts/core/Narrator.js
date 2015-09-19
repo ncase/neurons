@@ -69,11 +69,12 @@ window.Narrator = new (function(){
 	};
 	self.addStates = function(statesConfig){
 
-		// Add a placeholder start/during, for simplicity
+		// Add a placeholder start/during/kill, for simplicity
 		for(var stateID in statesConfig){
 			var state = statesConfig[stateID];
 			state.start = state.start || function(){}; 
 			state.during = state.during || function(){};
+			state.kill = state.kill || function(){};
 			self.states[stateID] = state;
 		}
 
@@ -96,29 +97,31 @@ window.Narrator = new (function(){
 		});
 		return self;
 	};
-	self.stop = function(){
+
+	// INTERRUPT TALKING
+	self.interrupt = function(){
 
 		// No more promises
 		self.currentPromise = null;
 
-		// Kill all sound instances
+		// Kill all VOICE sound instances
 		for(var i=0;i<self.soundInstances.length;i++){
 			var soundInstance = self.soundInstances[i];
-			soundInstance.stop();
+			if(soundInstance._TYPE_=="voice"){
+				soundInstance.stop();
+				self.soundInstances.splice(i,1);
+				i--;
+			}
 		}
-		self.soundInstances = [];
 
 		return self;
 
 	};
 
 	// STATES
-	self.update = function(){
-		if(!self.currentState) return;
-		self.currentState.during(self.currentState);
-	};
 	self.goto = function(stateName){
 		return self.do(function(){
+			if(self.currentState) self.currentState.kill(self.currentState);
 			self.currentState = self.states[stateName];
 			self.currentState.start(self.currentState);
 		});
@@ -163,6 +166,11 @@ window.Narrator = new (function(){
 	self.captionsDOM = document.getElementById("captions");
 	self.captionsText = document.querySelector("#captions > span");
 	self.update = function(){
+
+		// During!
+		if(self.currentState){
+			self.currentState.during(self.currentState);
+		}
 
 		// Currently chosen language.
 		var chosenLanguageID = CAPTION_LANGUAGE;

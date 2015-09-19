@@ -18,7 +18,8 @@ Narrator.addNarration({
 		"prop6": ["0:33.0", "0:35.4"], // Okay, wow, you're really into this, clicking EVERYTHING,
 		"prop7": ["0:35.4", "0:36.5"], // COOL. GOT IT. AWESOME.
 
-		"prop8": ["0:38.0", "0:40.5"], // Yeah! Watch how the signals propagate down,
+		"prop8": ["0:38.0", "0:38.7"], // Yeah!
+		"prop8.5": ["0:38.7", "0:40.5"], // Watch how the signals propagate down,
 		"prop9": ["0:40.5", "0:42.6"], // from neuron to neuron to neuron.
 		"prop10": ["0:45.0", "0:46.1"], // Try clicking some more.
 
@@ -36,18 +37,93 @@ Narrator.addNarration({
 		"fear6": ["1:12.0", "1:15.5"], // Coz... I don't know why, but tightly clustered holes
 		"fear7": ["1:15.5", "1:18.5"], // just kinda creep me out, y'know? I dunno.
 
-		"extra": ["1:20.0", "1:22.2"], // Kind of mesmerizing, isn't it?
+		"extra1": ["1:20.0", "1:22.2"], // Kind of mesmerizing, isn't it?
+		//"extra2": ["1:20.0", "1:22.2"], // Anyway...
 
 	}
 });
 
 Narrator.addStates({
+
 	INTRO:{
-		start:function(){
+		start:function(state){
 			Narrator.scene("Intro").talk("intro0","intro1","intro2")
 					.scene("Propagation")
 					.music("sfx_loop",{volume:0.05,loop:-1})
-					.talk("intro3");
+					.talk("intro3")
+					.goto("PROP_INTERRUPTABLE");
+		}
+	},
+
+	PROP_INTERRUPTABLE:{
+		start:function(state){
+			Narrator.talk("prop0","prop1","prop2").goto("PROP_CLICK");
+			state._listener = subscribe("/neuron/click",function(neuron){
+				unsubscribe(state._listener);
+				Narrator.interrupt().talk("prop5").goto("PROP_EXPLAIN");
+			});
+		},
+		kill:function(state){
+			unsubscribe(state._listener);
+		}
+	},
+
+	PROP_CLICK:{
+		start:function(state){
+			Narrator.talk("prop3","prop4");
+			state._listener = subscribe("/neuron/click",function(neuron){
+				unsubscribe(state._listener);
+				Narrator.talk("prop8").goto("PROP_EXPLAIN");
+			});
+		},
+		kill:function(state){
+			unsubscribe(state._listener);
+		}
+	},
+
+	PROP_EXPLAIN:{
+		start:function(state){
+			Narrator.talk("prop8.5","prop9","extra1","prop10").goto("PROP_CLICK_MORE");
+		}
+	},	
+
+	PROP_CLICK_MORE:{
+		start:function(state){
+
+			state._ticker = -1;
+			state._clicked = 0;
+			state._listener = subscribe("/neuron/click",function(neuron){
+				
+				if(state._ticker<0) state._ticker=40;
+				state._clicked++;
+				if(state._clicked==3){
+					unsubscribe(state._listener);
+					if(state._ticker>0){
+						Narrator.talk("prop6","prop7").goto("FEAR");
+					}else{
+						Narrator.goto("FEAR");
+					}
+				}
+
+			});
+
+		},
+		during:function(state){
+			if(state._ticker>0){
+				console.log("DO EET");
+				state._ticker--;
+			}
+		}
+	},
+
+	FEAR:{
+		start:function(state){
+			Narrator.talk("prop11","prop12","prop13","prop14")
+					.scene("Anxiety")
+					.talk("fear0","fear1","fear2","fear3",
+						  "fear4","fear5","fear6","fear7")
+					.goto("HEBBIAN")
 		}
 	}
+
 });
