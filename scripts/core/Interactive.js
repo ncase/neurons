@@ -18,6 +18,7 @@ window.Interactive = new (function(){
 		subscribe("/render",self.render);
 	};
 	self.goto = function(SceneClass){
+		if(self.scene && self.scene.kill) self.scene.kill(); // kill last scene.
 		self.scene = new SceneClass();
 		if(self.scene.transitionIn) self.scene.transitionIn();
 	};

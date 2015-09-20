@@ -28,7 +28,10 @@ Preload({
 
 		// Misc Crap
 		{id:"crapBG", src:"assets/images/nicky.png"},
+		{id:"introBG", src:"assets/images/intro.png"},
+		{id:"outroBG", src:"assets/images/outro.png"},
 		{id:"credits", src:"assets/images/credits.png"},
+		{id:"credits_crap", src:"assets/images/credits_crap.png"},
 
 		// Shade
 		{id:"shade", src:"assets/sprites/shade.png"}
@@ -61,12 +64,6 @@ subscribe("/init",function(){
 
 	// Initialize Shtuff
 	Interactive.init();
-	//Narrator.goto("INTRO");
-
-	// TESTING INDIVIDUAL SCENES
-	Narrator.music("sfx_loop",{volume:0.05,loop:-1})
-			.scene("Propagation")
-			.wait(0.5)
-			.goto("THERAPY");
+	Narrator.goto("INTRO");
 
 });

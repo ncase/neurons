@@ -39,8 +39,8 @@ Narrator.addStates({
 
 	CREDITS:{
 		start:function(){
-			Narrator.music("sfx_loop",{volume:0.05,loop:-1})
-					.scene("Credits")
+			//Narrator.music("sfx_loop",{volume:0.05,loop:-1})
+			Narrator.scene("Credits")
 					.talk("cred0","cred1","cred2","cred3","cred4")
 					.message("/scene/nicky")
 					.talk("cred5")

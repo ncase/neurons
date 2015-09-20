@@ -9,7 +9,7 @@ function Scene_Hebbian(){
 	self.setCamera(480, 270, 1);
 	
 	// Whee! One that looks nice & uniform and no "boring" neurons
-	Neuron.unserialize(self,NEURONS_SERIALIZED);
+	Neuron.unserialize(self,NEURONS_SERIALIZED,true);
 
 	// Modify all connections: already done
 	for(var i=0;i<self.connections.length;i++){
@@ -132,7 +132,7 @@ function Scene_Propagation(){
 		self.cameraEased.zoom = 0.2;
 	};
 	self.transitionOut = function(){
-		NEURONS_SERIALIZED = Neuron.serialize();
+		NEURONS_SERIALIZED = Neuron.serialize(self,true);
 		self.camera.x = 1600;
 		return function(){return (self.cameraEased.x>1600);}; // done when this is
 	};

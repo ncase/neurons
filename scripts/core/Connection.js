@@ -170,4 +170,7 @@ Connection.add = function(from,to,scene){
 	var connections = scene.connections;
 	connections.push(connection);
 
+	// Return
+	return connection;
+
 };

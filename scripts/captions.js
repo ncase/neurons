@@ -111,7 +111,7 @@ window.Captions = {
 			"hebb13": "Not close enough. Try a different pair of neurons.",
 
 			"hebb14": "And that's how we learn!",
-			"hebb15": "(Of course, we don't learn *that* quickly in real life.)",
+			"hebb15": "Of course, we don't learn that quickly in real life,",
 			"hebb16": "I sped this simulation up, eh, but still.",
 			"hebb17": "Now play around, make a few more connections,",
 			"hebb18": "maybe make a chain or something.",
@@ -135,7 +135,7 @@ window.Captions = {
 			"anti4": "So - if you already have a connection from one neuron to another,",
 			"anti5": "and you fire the first neuron WITHOUT firing the second neuron,",
 			"anti6": "the connection weakens.",
-			"anti7": "Again, try it out!",
+			"anti7": "Again, try it out.",
 
 			"anti8": "That neuron didn't have any connections.",
 			"anti9": "You need to find one that's connected.",

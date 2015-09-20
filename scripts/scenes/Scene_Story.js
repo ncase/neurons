@@ -23,11 +23,15 @@ function Scene_Intro(){
 
 		var self = this;
 		Sprite.call(self,{
-			pivotX:0, pivotY:0,
-			spritesheet: images.crapBG,
-			frameWidth:960, frameHeight:540,
+			pivotX:0.5, pivotY:0.5,
+			spritesheet: images.introBG,
+			frameWidth:1920, frameHeight:1080,
 			frameTotal:1
 		});
+
+		self.x = 480;
+		self.y = 270;
+		self.scale = 0.5;
 
 	}
 
@@ -57,11 +61,15 @@ function Scene_Outro(){
 
 		var self = this;
 		Sprite.call(self,{
-			pivotX:0, pivotY:0,
-			spritesheet: images.crapBG,
-			frameWidth:960, frameHeight:540,
+			pivotX:0.5, pivotY:0.5,
+			spritesheet: images.outroBG,
+			frameWidth:1920, frameHeight:1080,
 			frameTotal:1
 		});
+
+		self.x = 480;
+		self.y = 270;
+		self.scale = 0.5;
 
 	}
 

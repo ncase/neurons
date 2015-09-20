@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	background: #000;
+}
+
+iframe{
+	display:block;
+	position: absolute;
+	margin: auto;
+	top:0; left:0; right:0; bottom:0;
+	border: 1px solid #333;
+}

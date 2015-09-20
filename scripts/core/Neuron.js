@@ -200,14 +200,16 @@ function Neuron(scene){
 		return (dx*dx+dy*dy<r*r);
 
 	};
-	subscribe("/mouse/down",function(){
+	self.listener = subscribe("/mouse/down",function(){
 		if(self.isMouseOver()){
-
 			self.pulse();
 			publish("/neuron/click",[self]);
-
 		}
 	});
+
+	self.kill = function(){
+		unsubscribe(self.listener);
+	};
 
 
 	// Animation
@@ -305,7 +307,7 @@ Neuron.add = function(x,y,scene){
 	
 };
 
-Neuron.serialize = function(scene){
+Neuron.serialize = function(scene,detailed){
 
 	scene = scene || Interactive.scene;
 
@@ -313,6 +315,7 @@ Neuron.serialize = function(scene){
 	var output = {
 		neurons:[], // [x,y], [x,y], [x,y]...
 		connections:[] // [from,to], [from,to], [from,to]...
+					   //  or... [from,to,strength]...
 	};
 
 	// Get positions of all neurons
@@ -326,7 +329,11 @@ Neuron.serialize = function(scene){
 	var connections = scene.connections;
 	for(var i=0;i<connections.length;i++){
 		var connection = connections[i];
-		output.connections.push([connection.from.id, connection.to.id]);
+		if(detailed){
+			output.connections.push([connection.from.id, connection.to.id, connection.strength]);
+		}else{
+			output.connections.push([connection.from.id, connection.to.id]);
+		}
 	}
 
 	// Return the string.
@@ -334,7 +341,7 @@ Neuron.serialize = function(scene){
 
 };
 
-Neuron.unserialize = function(scene,string){
+Neuron.unserialize = function(scene,string,detailed){
 
 	// Prepare input
 	var input = JSON.parse(string);
@@ -349,7 +356,10 @@ Neuron.unserialize = function(scene,string){
 	var neurons = scene.neurons;
 	for(var i=0;i<input.connections.length;i++){
 		var connection = input.connections[i];
-		Connection.add(neurons[connection[0]], neurons[connection[1]], scene);
+		var newConnection = Connection.add(neurons[connection[0]], neurons[connection[1]], scene);
+		if(detailed){
+			newConnection.strength = connection[2];
+		}
 	}
 
 };

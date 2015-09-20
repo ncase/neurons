@@ -66,6 +66,7 @@ function BrainScene(){
 			var a = array[i];
 			a.update();
 			if(a.dead){
+				if(a.kill) a.kill();
 				array.splice(i,1);
 				i--;
 			}
@@ -92,6 +93,12 @@ function BrainScene(){
 	};
 	var _render = function(array,ctx){
 		for(var i=0;i<array.length;i++) array[i].draw(ctx);
+	};
+
+	// KILL: Neurons & sprites
+	self.kill = function(){
+		for(var i=0;i<self.neurons.length;i++) self.neurons[i].kill();
+		for(var i=0;i<self.sprites.length;i++) self.sprites[i].kill();
 	};
 
 }

@@ -54,13 +54,18 @@ function Sprite(config){
 		return (Mouse.x>s.x+r.x && Mouse.y>s.y+r.y && Mouse.x<s.x+r.x+r.width && Mouse.y<s.y+r.y+r.height);
 
 	};
-	subscribe("/mouse/down",function(){
+	self.listener = subscribe("/mouse/down",function(){
 		if(self.onClick && self.isMouseOver()){// && !self.clickRecovering){
 			self.onClick();
 			//self.clickRecovering = true;
 			self.hoverAlpha = 0;
 		}
 	});
+
+	self.kill = function(){
+		unsubscribe(self.listener);
+	};
+
 
 	// Update
 	self.hoverAlpha = 0;

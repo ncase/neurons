@@ -101,7 +101,7 @@ Narrator.addStates({
 					if(state._ticker>0){
 						Narrator.talk("prop6","prop7").goto("FEAR");
 					}else{
-						Narrator.goto("FEAR");
+						Narrator.wait(1.0).goto("FEAR");
 					}
 				}
 
