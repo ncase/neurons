@@ -30,12 +30,12 @@ subscribe("/mouse/down",function(){
 		_updatePauseUI();
 	}
 });
-window.top.onblur = window.onblur = function(){
+/*window.top.onblur = window.onblur = function(){
 	if(Interactive.PLAYING){
 		Interactive.pause();
 		_updatePauseUI();
 	}
-};
+};*/
 var resume_screen = document.getElementById("resume");
 var resume_button = document.getElementById("resume_button");
 resume_screen.onclick = function(){
