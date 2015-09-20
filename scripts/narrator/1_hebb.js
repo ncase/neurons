@@ -115,7 +115,7 @@ Narrator.addStates({
 
 	HEBBIAN_EXPLAIN_1:{
 		start:function(state){
-			Narrator.wait(1.0).talk("hebb14","hebb15","hebb16").goto("HEBBIAN_TRY_2");
+			Narrator.wait(0.5).talk("hebb14","hebb15","hebb16").goto("HEBBIAN_TRY_2");
 		}
 	},
 

@@ -26,7 +26,10 @@ window.Interactive = new (function(){
 		canvas.style.cursor = "default";
 
 		// Is Paused? Do nothing.
-		if(!self.PLAYING) return;
+		if(!self.PLAYING){
+			self.pause();
+			return;
+		}
 
 		// No scene? Stahp.
 		if(self.scene) self.scene.update();

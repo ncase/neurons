@@ -63,7 +63,7 @@ function Scene_Outro(){
 	// Update
 	var _prevUpdate = self.update;
 	self.update = function(){
-		self.camera.y -= 0.18;
+		self.camera.y += 0.18;
 		_prevUpdate.call(self);
 	};
 	self._updateProperty = function(name){
@@ -87,7 +87,7 @@ function Scene_Outro(){
 		});
 
 		self.x = 480;
-		self.y = 240;
+		self.y = 300;
 		self.scale = 0.5;
 
 	}

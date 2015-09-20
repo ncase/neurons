@@ -20,6 +20,7 @@ function Sprite(config){
 	self.frameTotal = config.frameTotal;
 
 	// Animation
+	self.gotoSmoosh = 1;
 	self.smoosh = 1;
 	self.smooshVelocity = 0;
 	self.smooshSpring = 0.4;
@@ -87,7 +88,7 @@ function Sprite(config){
 		self.swayVelocity += (0-self.sway) * self.swaySpring;
 		self.swayVelocity *= self.swayDampening;
 		self.smoosh += self.smooshVelocity;
-		self.smooshVelocity += (1-self.smoosh) * self.smooshSpring;
+		self.smooshVelocity += (self.gotoSmoosh-self.smoosh) * self.smooshSpring;
 		self.smooshVelocity *= self.smooshDampening;
 
 	};

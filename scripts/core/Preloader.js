@@ -6,12 +6,22 @@ window.Preload = function(manifest){
 	var sounds = manifest.sounds;
 
 	// When all's loaded, call the callback.
+	var _assetsTotal = images.length + sounds.length;
 	var _assetsLeft = 0;
 	var onAssetLoad = function(){
 		_assetsLeft--;
+
+		// Percent loaded
+		var ratio = (_assetsTotal-_assetsLeft)/_assetsTotal;
+		publish("/load",[ratio]);
+
+		// DUN LOADING
 		if(_assetsLeft==0){
-			publish("/init");
+			setTimeout(function(){
+				publish("/init");
+			},500);
 		}
+		
 	}
 
 	// Load images

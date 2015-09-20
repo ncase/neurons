@@ -64,6 +64,5 @@ subscribe("/init",function(){
 	// Initialize Shtuff
 	Interactive.init();
 	Narrator.goto("INTRO");
-	//Narrator.goto("CREDITS");
 
 });

@@ -1,5 +1,16 @@
 (function(){
 
+///////////////////
+//// PRELOADER ////
+///////////////////
+
+var preloadBar = document.getElementById("loading_bar_connection");
+subscribe("/load",function(ratio){
+	ratio = ratio*ratio*ratio*ratio*ratio; // to make it look like it's accelerating.
+	preloadBar.style.left = Math.round(-225*(1-ratio))+"px";
+});
+
+
 //////////////////////
 //// PLAY & PAUSE ////
 //////////////////////
@@ -8,22 +19,36 @@ var play = document.getElementById("control_play");
 play.onclick = function(){
 	if(Interactive.PLAYING){
 		Interactive.pause();
-		play.setAttribute("playing","false");
 	}else{
 		Interactive.play();
-		play.setAttribute("playing","true");
 	}
+	_updatePauseUI();
 };
 subscribe("/mouse/down",function(){
 	if(!Interactive.PLAYING){
 		Interactive.play();
-		play.setAttribute("playing","true");
+		_updatePauseUI();
 	}
 });
 window.top.onblur = window.onblur = function(){
 	if(Interactive.PLAYING){
 		Interactive.pause();
+		_updatePauseUI();
+	}
+};
+var resume_screen = document.getElementById("resume");
+var resume_button = document.getElementById("resume_button");
+resume_screen.onclick = function(){
+	Interactive.play();
+	_updatePauseUI();
+};
+var _updatePauseUI = function(){
+	if(Interactive.PLAYING){
 		play.setAttribute("playing","false");
+		resume.style.display = "none";
+	}else{
+		play.setAttribute("playing","true");
+		resume.style.display = "block";
 	}
 };
 

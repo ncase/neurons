@@ -18,6 +18,7 @@ function Scene_Credits(){
 	});
 	self.sprites.push(self.thx);
 	self.thx.timer = 0;
+	self.thx.visible = false;
 	self.thx.x = 1180;
 	self.thx.y = 300;
 	self.thx.scale = (1/self.cameraEased.zoom)*0.9;
@@ -41,18 +42,28 @@ function Scene_Credits(){
 		// THANKS
 		self.thx.timer++;
 		//self.thx.visible = (self.thx.timer<40);
-		if(self.thx.timer>=45){
+		if(self.thx.timer>=40){
 			self.thx.timer = 0;
-			self.thx.sway = 0.1;
-			if(self.thx.currentFrame<self.thx.frameTotal-1){
-				self.thx.currentFrame++;
+			if(!self.thx.visible){
+				self.thx.smoosh = 0.1;
+				self.thx.visible = true;
 			}else{
-				self.thx.dead = true;
+				self.thx.smoosh = 0.9;
+				if(self.thx.currentFrame<self.thx.frameTotal-1){
+					self.thx.currentFrame++;
+				}else{
+					self.thx.gotoSmoosh = 0;
+				}
 			}
 		}
 
 		// Previous Update
 		_prevUpdate.call(self);
+
+		// DED
+		if(self.thx.smoosh<0.09){
+			self.thx.dead = true;
+		}
 
 	};
 
