@@ -10,7 +10,7 @@ Narrator.addNarration({
 		"cred5": ["0:14.3", "0:15.5"], // check out my Patreon!
 
 		"cred6": ["0:17.0", "0:20.0"], // The music you're listening to was made by the wonderful Phyrnna,
-		"cred7": ["0:20.0", "0:23.3"], // who I've collaborated with before on two projects I failed to finish.
+		"cred7": ["0:20.0", "0:23.6"], // who I've collaborated with before on two projects I failed to finish.
 
 		"cred8": ["0:25.0", "0:28.7"], // For another interactive explanation, check out Parable of the Polygons!
 		"cred9": ["0:28.7", "0:31.7"], // It was a collaboration I did with Vi Hart -- yes, *that* Vi Hart! :D --

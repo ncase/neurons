@@ -27,7 +27,6 @@ Preload({
 		{id:"antihebb_words", src:"assets/images/antihebb_words.png"},
 
 		// Misc Crap
-		{id:"crapBG", src:"assets/images/nicky.png"},
 		{id:"introBG", src:"assets/images/intro.png"},
 		{id:"outroBG", src:"assets/images/outro.png"},
 		{id:"credits", src:"assets/images/credits.png"},

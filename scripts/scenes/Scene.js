@@ -47,6 +47,21 @@ function BrainScene(){
 	self.flashes = [];
 	self.sprites = [];
 
+	// ADDING A SHADE
+	self.shade = new Sprite({
+		pivotX:0.5, pivotY:0.5,
+		spritesheet: images.shade,
+		frameWidth:960, frameHeight:540,
+		frameTotal:1
+	});
+	//var _prevUpdate = self.shade.update;
+	self.shade.update = function(){
+		self.shade.x = self.cameraEased.x;
+		self.shade.y = self.cameraEased.y;
+		self.shade.scale = 1/self.cameraEased.zoom;
+	};
+	self.sprites.push(self.shade);
+
 	// Update
 	var _prevUpdate = self.update;
 	self.update = function(){
