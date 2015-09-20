@@ -17,6 +17,7 @@ Narrator.addNarration({
 		"ther9": ["0:40.1", "0:42.2"], // I. STILL. DON'T. LIKE. HOLES.
 
 		"ther10": ["0:44.0", "0:45.6"], // And... you did it!
+
 		"ther11": ["0:45.6", "0:48.7"], // What you just did is called 'exposure therapy'.
 		"ther12": ["0:48.7", "0:52.0"], // It's one of the most evidence-backed therapies out there
 		"ther13": ["0:52.0", "0:57.5"], // for treating specific phobias, PTSD, and other anxiety disorders.
@@ -29,5 +30,87 @@ Narrator.addNarration({
 	}
 });
 
+// Get rid of this, maybe? It's not immediately obvious how this is related to exposure therapy.
+// Or, do a conciser recording: face your fears, but in a SAFE SPACE.
+// Ugh I hate voice recording we gon' have to do it agaaaaaaaaaaaain.
+// At first, "thing" then "fear". Expose self to "thing" then "safe".
+
+
 Narrator.addStates({
+
+	THERAPY:{
+		start:function(state){
+			Narrator.talk("ther0")
+					.scene("Therapy")
+					.goto("THERAPY_DO_IT");
+		}
+	},
+
+	THERAPY_DO_IT:{
+		start:function(state){
+			Narrator.talk("ther1","ther2","ther3","ther4");
+
+			state._listeners = {};
+			state._numRewired = 0;
+
+			// HOLES.
+			state._listeners.holes = subscribe("/neuron/click",function(neuron){
+				if(neuron.name=="holes"){
+					unsubscribe(state._listeners.holes);
+					Narrator.talk("ther9");
+				}
+			});
+
+		},
+		during:function(state){
+			
+			var scene = Interactive.scene;
+			if(!scene.isRewired) return; // NOT THE RIGHT SCENE YET. TRANSITIONS.
+			
+			// How many are rewired?
+			var rewired = 0;
+			if(scene.isRewired("failure")) rewired++;
+			if(scene.isRewired("social")) rewired++;
+			if(scene.isRewired("holes")) rewired++;
+
+			if(rewired>state._numRewired){
+				state._numRewired++;
+				if(state._numRewired==1){
+					Narrator.talk("ther7");
+				}
+				if(state._numRewired==2){
+					Narrator.talk("ther8");
+				}
+				if(state._numRewired==3){
+					Narrator.goto("THERAPY_SUCCESS");
+				}
+			}
+
+		},
+		kill:function(state){
+			for(var listener in state._listeners){
+				unsubscribe(state._listeners[listener]);
+			}
+		}
+	},
+
+	THERAPY_SUCCESS:{
+		start:function(){
+			Narrator.message("/scene/celebrate")
+					.talk("ther10","ther11","ther12","ther13")
+					.goto("OUTRO");
+		}
+	},
+
+	OUTRO:{
+		start:function(){
+			Narrator.scene("Outro")
+					.talk("outro0","outro1","outro2")
+					.scene("Blank")
+					.talk("outro3")
+					.wait(1.0)
+					.goto("CREDITS");
+		}
+	}
+
 });

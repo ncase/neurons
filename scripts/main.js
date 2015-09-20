@@ -20,8 +20,13 @@ Preload({
 		{id:"icon_failure", src:"assets/sprites/icon_failure.png"},
 		{id:"icon_holes", src:"assets/sprites/icon_holes.png"},		
 
-		// Placeholder Crap
-		{id:"hebb_instructions", src:"assets/images/hebb_instructions.png"},
+		// Instructions
+		{id:"hebb", src:"assets/images/hebb.png"},
+		{id:"antihebb", src:"assets/images/antihebb.png"},
+		{id:"hebb_words", src:"assets/images/hebb_words.png"},
+		{id:"antihebb_words", src:"assets/images/antihebb_words.png"},
+
+		// Misc Crap
 		{id:"crapBG", src:"assets/images/nicky.png"},
 		{id:"credits", src:"assets/images/credits.png"},
 
@@ -38,11 +43,9 @@ Preload({
 		{id:"3_therapy", src:"assets/voices/3_therapy.mp3"},
 		{id:"4_credits", src:"assets/voices/4_credits.mp3"},
 
-
 		// Sounds & Shtuff
 		{id:"sfx_spark", src:"assets/sfx/spark.mp3"},
-		{id:"sfx_loop", src:"assets/sfx/Hebb.mp3"},
-		{id:"sfx_blah", src:"assets/sfx/blah.mp3"}
+		{id:"sfx_loop", src:"assets/sfx/Hebb.mp3"}
 
 	]
 });
@@ -51,13 +54,6 @@ Preload({
 // INITIALIZE //
 ////////////////
 
-Narrator.addNarration({
-	file: "sfx_blah",
-	markers:{
-		"blah":["0:00.0","0:04.2"]
-	}
-});
-
 subscribe("/init",function(){
 
 	// Remove Preloader Message
@@ -65,12 +61,12 @@ subscribe("/init",function(){
 
 	// Initialize Shtuff
 	Interactive.init();
-	
 	//Narrator.goto("INTRO");
 
+	// TESTING INDIVIDUAL SCENES
 	Narrator.music("sfx_loop",{volume:0.05,loop:-1})
-			.scene("Anxiety")
-			.talk("blah")
-			.goto("HEBBIAN");
+			.scene("Propagation")
+			.wait(0.5)
+			.goto("THERAPY");
 
 });

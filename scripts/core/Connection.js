@@ -95,7 +95,7 @@ function Connection(scene){
 		self.easedLineWidth = self.easedLineWidth*0.9 + self.lineWidth*0.1;
 
 		// ACTUALLY REMOVE THIS ONE?
-		if(self.strengthEased<0.01){
+		if(self.strength<0.1 && self.strengthEased<0.1){
 			self.disconnect();
 		}
 

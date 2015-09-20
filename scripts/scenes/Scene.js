@@ -122,13 +122,15 @@ function Scene(){
 		_updateProperty("y");
 		_updateProperty("zoom");
 	};
+	self.CAM_SPRING = 0.2;
+	self.CAM_DAMPENING = 0.64;
 	var _updateProperty = function(name){
 		var cam = self.camera;
 		var vel = self.cameraVelocity;
 		var eased = self.cameraEased;
 		eased[name] += vel[name];
-		vel[name] += (cam[name]-eased[name]) * 0.2; // spring
-		vel[name] *= 0.64; // dampening
+		vel[name] += (cam[name]-eased[name]) * self.CAM_SPRING; // spring
+		vel[name] *= self.CAM_DAMPENING; // dampening
 	};
 
 	// "Render" - just transforms matrix. Please ctx.save() before this.

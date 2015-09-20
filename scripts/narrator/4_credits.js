@@ -30,8 +30,27 @@ Narrator.addNarration({
 		"cred20": ["0:56.5", "0:57.3"], // plotching.
 		"cred21": ["0:57.3", "0:59.2"], // Thank you so so much for plotching.
 
+		"breath": ["0:55.7", "0:56.1"], // 0.4 SECOND BREATH
+
 	}
 });
 
 Narrator.addStates({
+
+	CREDITS:{
+		start:function(){
+			Narrator.music("sfx_loop",{volume:0.05,loop:-1})
+					.scene("Credits")
+					.talk("cred0","cred1","cred2","cred3","cred4")
+					.message("/scene/nicky")
+					.talk("cred5")
+					.message("/scene/phyrnna")
+					.talk("cred6","cred7")
+					.message("/scene/potp")
+					.talk("cred8","cred9","cred10","cred11","cred12","cred13")
+					.talk("cred14","cred15","cred16","cred17","cred18","cred19")
+					.talk("cred20","cred21");
+		}
+	}
+
 });

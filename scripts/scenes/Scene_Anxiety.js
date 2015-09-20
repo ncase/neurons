@@ -5,6 +5,36 @@ function Scene_Therapy(){
 	var self = this;
 	Scene_Anxiety_Base.call(self);
 
+	self.transitionOut = function(){
+		self.camera.zoom = 0.2;
+		return function(){return (self.cameraEased.zoom<0.2);}; // done when this is
+	};
+
+	// Scene Messages
+	self.celebrate = false;
+	var _listener1 = subscribe("/scene/celebrate",function(){
+		unsubscribe(_listener1);
+		self.celebrate = true;
+	});
+
+	// Update: Because connections come & go, gotta keep these constant:
+	var timer = 0;
+	var _prevUpdate = self.update;
+	self.update = function(){
+
+		// Celebratory pulse!
+		if(self.celebrate){
+			if(timer==0) self.neurons[0].pulse(null,true);
+			if(timer==10) self.neurons[11].pulse(null,true);
+			if(timer==20) self.neurons[1].pulse(null,true);
+			timer = (timer+1) % 30;
+		}
+
+		// Previous Update
+		_prevUpdate.call(self);
+
+	};
+
 }
 
 function Scene_Anxiety(){
@@ -19,9 +49,9 @@ function Scene_Anxiety(){
 	self.update = function(){
 
 		// Auto pulse, whatever
-		if(timer==_whenToFire[0]*30) self.neurons[0].pulse({ strength:3 });
-		if(timer==_whenToFire[1]*30) self.neurons[11].pulse({ strength:3 });
-		if(timer==_whenToFire[2]*30) self.neurons[1].pulse({ strength:3 });
+		if(timer==_whenToFire[0]*30) self.neurons[0].pulse(null,true);
+		if(timer==_whenToFire[1]*30) self.neurons[11].pulse(null,true);
+		if(timer==_whenToFire[2]*30) self.neurons[1].pulse(null,true);
 		timer++;
 
 		// Previous Update
@@ -77,6 +107,7 @@ function Scene_Anxiety_Base(){
 		n.highlightFade = 0.93;
 		n.highlightBaseAlpha = 0.8;
 		n.icon = images.icon_anxious;
+		n.name = "anxiety";
 	}
 	var blueNeurons = [3,8,10];
 	for(var i=0;i<blueNeurons.length;i++){
@@ -88,23 +119,48 @@ function Scene_Anxiety_Base(){
 		n.highlightFade = 0.93;
 		n.highlightBaseAlpha = 0.8;
 		n.icon = images.icon_calm;
+		n.name = "calm";
 	}
 
 	// The FEAR neurons
 	self.neurons[4].icon = images.icon_failure;
+	self.neurons[4].name = "failure";
 	self.neurons[5].icon = images.icon_social;
+	self.neurons[5].name = "social";
 	self.neurons[6].icon = images.icon_holes;
+	self.neurons[6].name = "holes";
+
+	// Hack - Helper Method: Is This Neuron Rewired?
+	self.isRewired = function(neuronName){
+		
+		// Neuron
+		var index;
+		if(neuronName=="failure") index=4;
+		if(neuronName=="social") index=5;
+		if(neuronName=="holes") index=6;
+		var neuron = self.neurons[index];
+
+		// Is retrained if there's exactly ONE sender connection...
+		if(neuron.senders.length!=1) return false;
+
+		// ...and it's sending to a CALM
+		if(neuron.senders[0].to.name!="calm") return false;
+		return true;
+
+	};
 
 	// Update: Because connections come & go, gotta keep these constant:
 	var _prevUpdate = self.update;
 	self.update = function(){
 
-		// Modify all connections: fitting the fat neurons
+		// Modify all connections: fitting the fat neurons and SLOWER.
 		for(var i=0;i<self.connections.length;i++){
 			var c = self.connections[i];
 			c.pulseRadius = 10;
 			c.endDistance = 50;
+			c.speed = 2.5;
 		}
+
 		// Previous Update
 		_prevUpdate.call(self);
 

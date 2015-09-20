@@ -40,35 +40,102 @@ Narrator.addStates({
 		start:function(state){
 			Narrator.scene("Hebbian")
 					.talk("hebb0","hebb1","hebb2")
-					.do(function(){ publish("/scene/removeConnections"); })
+					.message("/scene/removeConnections")
 					.talk("hebb3")
-					.do(function(){ publish("/scene/addInstructions"); })
-					.talk("hebb4","hebb6","hebb7","hebb8","hebb9","hebb10")
+					.message("/scene/addHebb")
+					.talk("hebb4","hebb6","hebb7","hebb8"/*,"hebb9","hebb10"*/)
 					.goto("HEBBIAN_TRY_1");
 		}
 	},
 
 	HEBBIAN_TRY_1:{
 		start:function(state){
+
+			var neurons = Interactive.scene.neurons;
+			var connections = Interactive.scene.connections;
+
 			Narrator.talk("hebb11");
+			state._numConnections = connections.length;
+			state._STAHP = false;
+			
+			// Too slow
+			state._listener1 = subscribe("/neuron/weakenHebb",function(){
+				if(state._STAHP) return;
+				unsubscribe(state._listener1);
+				Narrator.talk("hebb12");
+			});
+
+			// Not close enough - two hebbian flashes but NOT close enough
+			state._listener2 = subscribe("/neuron/click",function(){
+				if(state._STAHP) return;
+
+				// Get first two hebby neurons
+				var hebby = [];
+				for(var i=0;i<neurons.length;i++){
+					if(neurons[i].hebbian>0) hebby.push(neurons[i]);
+				}
+
+				// Are there at least two?
+				if(hebby.length<2) return;
+
+				// If so, are they close enough?
+				var dx = hebby[0].x-hebby[1].x;
+				var dy = hebby[0].y-hebby[1].y;
+				var radius = hebby[0].hebbianRadius;
+				if(dx*dx+dy*dy<radius*radius) return;
+
+				// If not, WHOOPS
+				unsubscribe(state._listener1); // also I don't wanna deal with this.
+				unsubscribe(state._listener2);
+				Narrator.talk("hebb13");
+
+			});
+
+		},
+		during:function(state){
+
+			if(state._STAHP) return;
+
+			var connections = Interactive.scene.connections;
+
+			if(connections.length > state._numConnections){
+				state._STAHP = true;
+				Narrator.goto("HEBBIAN_EXPLAIN_1");
+			}else{
+				// So it can adapt to DECREASES, somehow.
+				state._numConnections = connections.length;
+			}
+
+		},
+		kill:function(state){
+			if(state._listener1) unsubscribe(state._listener1);
+			if(state._listener2) unsubscribe(state._listener2);
 		}
 	},
 
 	HEBBIAN_EXPLAIN_1:{
 		start:function(state){
-			Narrator.talk("hebb14","hebb15","hebb16","hebb17");
+			Narrator.wait(1.0).talk("hebb14","hebb15","hebb16").goto("HEBBIAN_TRY_2");
 		}
 	},
 
 	HEBBIAN_TRY_2:{
 		start:function(state){
-			Narrator.talk("hebb18");
+			state._STAHP = false;
+			Narrator.talk("hebb17","hebb18");
+			state._numConnections = Interactive.scene.connections.length;
+		},
+		during:function(state){
+			if(!state._STAHP && Interactive.scene.connections.length>state._numConnections+3){ // make three more
+				state._STAHP = true;
+				Narrator.goto("HEBBIAN_EXPLAIN_2");
+			}
 		}
 	},
 
 	HEBBIAN_EXPLAIN_2:{
 		start:function(state){
-			Narrator.talk("hebb19","hebb20","hebb21","hebb22");
+			Narrator.wait(1.0).talk("hebb19","hebb20","hebb21","hebb22").goto("ANTIHEBB");
 		}
 	}
 

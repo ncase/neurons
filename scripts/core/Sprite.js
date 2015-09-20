@@ -34,6 +34,7 @@ function Sprite(config){
 	self.swayDampening = 0.81;
 	self.visible = true;
 	self.rotation = 0;
+	self.alpha = 1;
 
 	// Click Area
 	self.clickable = true;
@@ -109,6 +110,9 @@ function Sprite(config){
 		ctx.scale(self.smoosh,self.smoosh);
 		ctx.scale(self.bounce,1/self.bounce);
 		ctx.rotate(self.rotation+self.sway);
+
+		// Alpha
+		ctx.globalAlpha = self.alpha;
 
 		// Draw spritesheets
 		var width = Math.floor(self.spritesheet.width/self.frameWidth);

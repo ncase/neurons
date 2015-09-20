@@ -33,4 +33,97 @@ Narrator.addNarration({
 });
 
 Narrator.addStates({
+	
+	ANTIHEBB: {
+		start:function(state){
+			Narrator.talk("anti0")
+					.message("/scene/addAntiHebb")
+					.talk("anti2","anti3")
+					.goto("ANTIHEBB_TRY_1");
+		}
+	},
+
+	// 
+	ANTIHEBB_TRY_1:{
+		start:function(state){
+
+			Narrator.talk("anti7");
+
+			state._saidError1 = false;
+			state._saidError2 = false;
+
+			state._listener = subscribe("/neuron/click",function(neuron){
+
+				// No connections
+				if(neuron.senders.length==0 && neuron.receivers.length==0){
+					if(!state._saidError1){
+						state._saidError1 = true;
+						Narrator.talk("anti8","anti9");
+					}
+					return;
+				}
+
+				// Connected TO but not FROM
+				if(neuron.senders.length==0 && neuron.receivers.length>0){
+					if(!state._saidError2){
+						state._saidError2 = true;
+						Narrator.talk("anti10","anti11");
+					}
+					return;
+				}
+
+				// WAIT FOR IT
+				unsubscribe(state._listener);
+				Narrator.goto("ANTIHEBB_WAIT");
+				Narrator._GLOBAL_.antiHebbNeuron = neuron;
+
+			});
+
+		},
+		kill:function(state){
+			unsubscribe(state._listener);
+		}
+	},
+
+	ANTIHEBB_WAIT:{
+		start:function(state){
+			Narrator.talk("anti12");
+			state._listener = subscribe("/neuron/weakenHebb",function(){
+				unsubscribe(state._listener);
+				Narrator.talk("anti13").goto("ANTIHEBB_WAIT_2");
+			});
+		}
+	},
+
+	// Just a decider state
+	ANTIHEBB_WAIT_2:{
+		start:function(state){
+			if(Narrator._GLOBAL_.antiHebbNeuron.senders.length>0){
+				Narrator.goto("ANTIHEBB_TRY_2");
+			}else{
+				Narrator.goto("ANTIHEBB_EXPLAIN");
+			}
+		}
+	},
+
+	// Just wait til that neuron has no more senders
+	ANTIHEBB_TRY_2:{
+		start:function(state){
+			state._STAHP = false;
+			Narrator.talk("anti14");
+		},
+		during:function(state){
+			if(!state._STAHP && Narrator._GLOBAL_.antiHebbNeuron.senders.length==0){
+				state._STAHP = true;
+				Narrator.goto("ANTIHEBB_EXPLAIN");
+			}
+		}
+	},
+
+	ANTIHEBB_EXPLAIN:{
+		start:function(state){
+			Narrator.talk("anti15","anti16","anti17","anti18","anti19").goto("THERAPY");
+		}
+	}
+
 });

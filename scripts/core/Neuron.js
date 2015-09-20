@@ -99,7 +99,7 @@ function Neuron(scene){
 
 	};
 
-	self.pulse = function(signal){
+	self.pulse = function(signal,FAKE){
 
 		// It should lose strength in the neuron
 		// If there's no passed-on signal, create a brand new one.
@@ -109,12 +109,16 @@ function Neuron(scene){
 			signal = {
 				strength: self.startingStrength
 			};
-			self.strengthenHebb();
+			if(!FAKE){
+				self.strengthenHebb();
+			}
 		}
 
 		// Sound Effect!
-		var volume = (signal.strength+1)/(self.startingStrength+1); // so it's not zero
-		createjs.Sound.play("sfx_spark",{volume:volume*0.6});
+		if(!FAKE){
+			var volume = (signal.strength+1)/(self.startingStrength+1); // so it's not zero
+			createjs.Sound.play("sfx_spark",{volume:volume*0.6});
+		}
 
 		// Smoosh
 		self.smooshVelocity += 0.05*(signal.strength+1);
@@ -151,6 +155,7 @@ function Neuron(scene){
 		if(self.hebbian>0){
 			self.hebbian -= 1/(30*self.hebbSignalDuration);
 			if(self.hebbian<0){
+				publish("/neuron/weakenHebb",[self]); // too slow!
 				self.weakenHebb();
 			}
 		}else{

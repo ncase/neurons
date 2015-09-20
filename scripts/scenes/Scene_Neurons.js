@@ -24,9 +24,15 @@ function Scene_Hebbian(){
 			self.connections[i].strength = 0;
 		}
 	});
-	var _listener2 = subscribe("/scene/addInstructions",function(){
+	var _listener2 = subscribe("/scene/addHebb",function(){
 		unsubscribe(_listener2);
-		self.sprites.push(new HebbInstruction());
+		self.sprites.push(new HebbWords("hebb"));
+		self.sprites.push(new HebbComic("hebb"));
+	});
+	var _listener3 = subscribe("/scene/addAntiHebb",function(){
+		unsubscribe(_listener3);
+		self.sprites.push(new HebbWords("antihebb"));
+		self.sprites.push(new HebbComic("antihebb"));
 	});
 
 	// Scene Transitions
@@ -42,25 +48,67 @@ function Scene_Hebbian(){
 	// SPRITES AND ANIMATIONS STUFF //
 	//////////////////////////////////
 
-	function HebbInstruction(){
+	function HebbComic(type){
 
 		var self = this;
 		Sprite.call(self,{
 			pivotX:0, pivotY:0,
-			spritesheet: images.hebb_instructions,
-			frameWidth:400, frameHeight:300,
+			spritesheet: (type=="hebb") ? images.hebb : images.antihebb,
+			frameWidth:260, frameHeight:400,
 			frameTotal:1
 		});
 
 		// Start Off
-		self.x = -400;
-		self.y = 0;
-		self.gotoX = 0;
+		self.y = 50;
+		if(type=="hebb"){
+			self.x = -260;
+			self.gotoX = 0;
+		}else{
+			self.x = 960;
+			self.gotoX = 700;
+		}
 		
 		// UPDATE
 		var _prevUpdate = self.update;
 		self.update = function(){
 			self.x = self.x*0.7 + self.gotoX*0.3;
+			_prevUpdate.call(self);
+		};
+
+	}
+
+	function HebbWords(type){
+
+		var self = this;
+		Sprite.call(self,{
+			pivotX:0, pivotY:0,
+			spritesheet: (type=="hebb") ? images.hebb_words : images.antihebb_words,
+			frameWidth:440, frameHeight:240,
+			frameTotal:1
+		});
+
+		// Start Off
+		self.y = 130;
+		if(type=="hebb"){
+			self.x = -440;
+			self.gotoX = 260;
+		}else{
+			self.x = 960;
+			self.gotoX = 260;
+		}
+		
+		// UPDATE
+		self.timer = 3.7 * 30; // A bit over three seconds.
+		var _prevUpdate = self.update;
+		self.update = function(){
+			self.x = self.x*0.7 + self.gotoX*0.3;
+			if(self.timer--<0){
+				self.alpha -= 0.1;
+				if(self.alpha<0){
+					self.alpha=0;
+					self.dead = true;
+				}
+			}
 			_prevUpdate.call(self);
 		};
 

@@ -110,7 +110,6 @@ Narrator.addStates({
 		},
 		during:function(state){
 			if(state._ticker>0){
-				console.log("DO EET");
 				state._ticker--;
 			}
 		}

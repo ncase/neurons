@@ -40,6 +40,7 @@ window.Narrator = new (function(){
 	self.currentState = null;
 	self.currentPromise = null;
 	self.soundInstances = [];
+	self._GLOBAL_ = {}; // global vars for when I give up on life.
 
 	// Configuration
 	self.addNarration = function(voiceConfig){
@@ -159,10 +160,21 @@ window.Narrator = new (function(){
 			var soundInstance = createjs.Sound.play(musicID,options);
 			soundInstance._TYPE_ = "music";
 			self.soundInstances.push(soundInstance);
+			// TO DO: KILL OTHER MUSIC?!
 		});
 	};
 
-	// UPDATE - Just captions, I guess.
+	// WAIT
+	self.wait = function(duration){
+		_chain(function(){
+			var p = new promise.Promise();
+			setTimeout(function(){ p.done(); },duration*1000);
+			return p;
+		});
+		return self;	
+	};
+
+	// UPDATE 
 	self.captionsDOM = document.getElementById("captions");
 	self.captionsText = document.querySelector("#captions > span");
 	self.update = function(){
