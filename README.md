@@ -2,12 +2,11 @@
 
 All code and art is dedicated to the public domain via
 [CC0](http://creativecommons.org/publicdomain/zero/1.0/),
-with the exception of a few external libraries and sound effects I didn't make.
+with the exception of a few external libraries and audio stuff I didn't make.
 
 ---
 
-**Thank you to my Patreon supporters for making this possible!**    
-(don't worry, you'll also be credited in the final version, too, whenever that's done)
+**Thank you to my Patreon supporters for making this possible!**
 
 * Aimee Jarboe
 * Ben Lin
@@ -21,6 +20,7 @@ with the exception of a few external libraries and sound effects I didn't make.
 * Darri Arnarson
 * Dee
 * Delrian
+* Dylan Field
 * Fahrstuhl
 * George 
 * Glen Ivey
@@ -43,9 +43,23 @@ with the exception of a few external libraries and sound effects I didn't make.
 * Xander MeowMix C
 * Xavier Gaeta
 
+**Special thanks to these lovely peeps, too!**
+
+* Bret Victor,
+* Dylan Field
+* Rachel Nabors
+* Rin Ray
+* Rio Guthrie-Honea
+* Janessa Munt
+* Vanessa Shen
+* YOU. haha
+
 ---
+
+**Music by Phyrnna**
 
 **Sound Credits**
 
 * [Neuron Clicky-Clicky Sound](http://freesound.org/people/BMacZero/sounds/94132/) (CC0)
-* [Ambient Underwater Loop](http://freesound.org/people/akemov/sounds/255597/) (CC-BY)
+
+**Code Libraries**

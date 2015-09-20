@@ -41,9 +41,9 @@ Narrator.addStates({
 		start:function(){
 			//Narrator.music("sfx_loop",{volume:0.05,loop:-1})
 			Narrator.scene("Credits")
-					.talk("cred0","cred1","cred2","cred3","cred4")
+					.talk("cred0","cred1","cred2")
 					.message("/scene/nicky")
-					.talk("cred5")
+					.talk("cred3","cred4","cred5")
 					.message("/scene/phyrnna")
 					.talk("cred6","cred7")
 					.message("/scene/potp")

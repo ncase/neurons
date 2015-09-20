@@ -20,6 +20,12 @@ subscribe("/mouse/down",function(){
 		play.setAttribute("playing","true");
 	}
 });
+window.top.onblur = window.onblur = function(){
+	if(Interactive.PLAYING){
+		Interactive.pause();
+		play.setAttribute("playing","false");
+	}
+};
 
 //////////////////////
 /// VOLUME CONTROL ///

@@ -140,13 +140,13 @@ function Scene(){
 
 	// Update
 	self.update = function(){
-		_updateProperty("x");
-		_updateProperty("y");
-		_updateProperty("zoom");
+		self._updateProperty("x");
+		self._updateProperty("y");
+		self._updateProperty("zoom");
 	};
 	self.CAM_SPRING = 0.2;
 	self.CAM_DAMPENING = 0.64;
-	var _updateProperty = function(name){
+	self._updateProperty = function(name){
 		var cam = self.camera;
 		var vel = self.cameraVelocity;
 		var eased = self.cameraEased;

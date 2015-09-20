@@ -39,7 +39,6 @@ function Sprite(config){
 	// Click Area
 	self.clickable = true;
 	self.clickRectangle = null;
-	//self.clickRecovering = false;
 	self.onClick = function(){};
 	self.onHover = function(){};
 	self.isMouseOver = function(){
@@ -57,8 +56,6 @@ function Sprite(config){
 	self.listener = subscribe("/mouse/down",function(){
 		if(self.onClick && self.isMouseOver()){// && !self.clickRecovering){
 			self.onClick();
-			//self.clickRecovering = true;
-			self.hoverAlpha = 0;
 		}
 	});
 
@@ -68,22 +65,18 @@ function Sprite(config){
 
 
 	// Update
-	self.hoverAlpha = 0;
+	var lastHovered = false;
 	self.update = function(){
 
-		// Is click recovered?
-		/*var imo = self.isMouseOver();
-		if(!imo) self.clickRecovering=false;*/
-
 		// Mouse
-		if(self.isMouseOver()){// && !self.clickRecovering){
-			if(self.hoverAlpha==0) self.onHover();
-			self.hoverAlpha = self.hoverAlpha*0.5 + 1*0.5;
-			if(self.hoverAlpha>0.99) self.hoverAlpha=1;
+		if(self.isMouseOver()){
+			if(!lastHovered){
+				lastHovered=true;
+				self.onHover();
+			}
 			canvas.style.cursor = "pointer";
 		}else{
-			self.hoverAlpha = self.hoverAlpha*0.5 + 0*0.5;
-			if(self.hoverAlpha<0.01) self.hoverAlpha=0;
+			lastHovered = false;
 		}
 
 		// Animation
@@ -129,11 +122,6 @@ function Sprite(config){
 		var dy = -self.height*self.pivotY;
 		var dw = self.width;
 		var dh = self.height;
-		if(self.hover && self.hoverAlpha>0){
-			ctx.globalAlpha = self.hoverAlpha;
-			ctx.drawImage(self.hover, sx,sy,sw,sh, dx,dy,dw,dh);
-			ctx.globalAlpha = 1;
-		}
 		ctx.drawImage(self.spritesheet, sx,sy,sw,sh, dx,dy,dw,dh);
 		
 		ctx.restore();

@@ -29,8 +29,8 @@ Preload({
 		// Misc Crap
 		{id:"introBG", src:"assets/images/intro.png"},
 		{id:"outroBG", src:"assets/images/outro.png"},
-		{id:"credits", src:"assets/images/credits.png"},
-		{id:"credits_crap", src:"assets/images/credits_crap.png"},
+		{id:"credits", src:"assets/sprites/credits.png"},
+		{id:"thx", src:"assets/sprites/thx.png"},
 
 		// Shade
 		{id:"shade", src:"assets/sprites/shade.png"}
@@ -64,5 +64,6 @@ subscribe("/init",function(){
 	// Initialize Shtuff
 	Interactive.init();
 	Narrator.goto("INTRO");
+	//Narrator.goto("CREDITS");
 
 });
