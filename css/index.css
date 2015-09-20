@@ -1,12 +1,65 @@
 body {
 	margin: 0;
-	background: #fff;
+	background: #111;
 }
 
 iframe{
 	display:block;
-	position: absolute;
-	margin: auto;
-	top:0; left:0; right:0; bottom:0;
+	margin: 50px auto 0 auto;
 	border: 1px solid #333;
+}
+
+#description{
+	background: #333;
+	margin: 0px auto 50px auto;
+	padding: 50px;
+	width:860px;
+	color:#fff;
+
+	font-size: 20px;
+	font-family: Raleway, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+
+	line-height: 1.4em;
+}
+#description > .title{
+	font-size:45px;
+	line-height: 1.0em;
+}
+#description > .subtitle{
+	font-size:35px;
+}
+a{
+	color: #cc2727;
+	font-weight: 500;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+a:hover{
+	color: #ee3939;
+}
+
+#sharing{
+	text-align: center;
+	margin-bottom: 50px;
+}
+ul.share-buttons{
+	list-style: none;
+	padding: 0;
+}
+ul.share-buttons li{
+	display: inline;
+	margin: 0px 3px;
+	position: relative;
+	top:0px;
+	-webkit-transition: top 0.2s;
+	-moz-transition: top 0.2s;
+	-ms-transition: top 0.2s;
+    transition: top 0.2s;
+    cursor: pointer;
+}
+ul.share-buttons li:hover{
+	top:-5px;
 }
