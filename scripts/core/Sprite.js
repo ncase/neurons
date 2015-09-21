@@ -54,7 +54,7 @@ function Sprite(config){
 		return (Mouse.x>s.x+r.x && Mouse.y>s.y+r.y && Mouse.x<s.x+r.x+r.width && Mouse.y<s.y+r.y+r.height);
 
 	};
-	self.listener = subscribe("/mouse/down",function(){
+	self.listener = subscribe("/mouse/click",function(){
 		if(self.onClick && self.isMouseOver()){// && !self.clickRecovering){
 			self.onClick();
 		}

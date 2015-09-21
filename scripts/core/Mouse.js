@@ -18,6 +18,13 @@
 	    publish("/mouse/down");
 	},false);
 
+	canvas.addEventListener("click",function(event){
+	    Mouse.pressed = true;
+	    onMouseMove(event);
+	    publish("/mouse/click"); // ALSO a click, why not.
+	    publish("/mouse/down");
+	},false);
+
 	canvas.addEventListener("mouseup",function(event){
 	    Mouse.pressed = false;
 	    publish("/mouse/up");

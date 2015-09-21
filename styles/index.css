@@ -35,6 +35,8 @@ iframe{
 }
 
 .info{
+	overflow: hidden;
+
 	background: #333;
 	margin: 0px auto 50px auto;
 	padding: 50px;
@@ -47,12 +49,21 @@ iframe{
 
 	line-height: 1.4em;
 }
-.info > .title{
-	font-size:45px;
+.info .title{
+	font-size:41px;
 	line-height: 1.0em;
 }
-.info > .subtitle{
-	font-size:35px;
+.info .subtitle{
+	font-size:30px;
+}
+#description{
+	width:640px;
+	float:left;
+	text-align: justify;
+}
+#sharing{
+	width: 180px;
+	float: right;
 }
 #bonus{
 	background: none;
