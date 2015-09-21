@@ -50,10 +50,10 @@ resume_screen.onclick = function(){
 };
 var _updatePauseUI = function(){
 	if(Interactive.PLAYING){
-		play.setAttribute("playing","false");
+		play.setAttribute("playing","true");
 		resume.style.display = "none";
 	}else{
-		play.setAttribute("playing","true");
+		play.setAttribute("playing","false");
 		resume.style.display = "block";
 	}
 };
