@@ -43,7 +43,7 @@ Narrator.addStates({
 					.message("/scene/removeConnections")
 					.talk("hebb3")
 					.message("/scene/addHebb")
-					.talk("hebb4","hebb6","hebb7","hebb8"/*,"hebb9","hebb10"*/)
+					.talk("hebb4","hebb5","hebb7","hebb8","hebb9","hebb10")
 					.goto("HEBBIAN_TRY_1");
 		}
 	},

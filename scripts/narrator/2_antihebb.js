@@ -4,7 +4,7 @@ Narrator.addNarration({
 		
 		"anti0": ["0:00.0", "0:04.0"], // Anyway, if that's how we learn, here's how we un-learn.
 		
-		"anti1": ["0:04.0", "0:06.0"], // ANTI-HEBBIAN LEARNING
+		"anti1": ["0:06.2", "0:08.0"], // ANTI-HEBBIAN LEARNING
 		"anti2": ["0:10.4", "0:13.5"], // Neurons that fire out of sync, lose their link.
 		
 		"anti3": ["0:15.1", "0:17.4"], // Another rule of thumb neuroscientists have!
@@ -38,7 +38,7 @@ Narrator.addStates({
 		start:function(state){
 			Narrator.talk("anti0")
 					.message("/scene/addAntiHebb")
-					.talk("anti2","anti3")
+					.talk("anti1","anti3","anti4","anti5","anti6")
 					.goto("ANTIHEBB_TRY_1");
 		}
 	},

@@ -127,7 +127,7 @@ window.Captions = {
 
 			"anti0": "Anyway, if that's how we learn, here's how we un-learn.",
 			
-			"anti1": "ANTI-HEBBIAN LEARNING",
+			"anti1": "Anti-Hebbian Learning!",
 			"anti2": "“Neurons that fire out of sync, lose their link.”",
 			
 			"anti3": "Another rule of thumb neuroscientists have!",

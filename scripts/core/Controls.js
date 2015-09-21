@@ -16,6 +16,12 @@ subscribe("/load",function(ratio){
 //////////////////////
 
 var play = document.getElementById("control_play");
+subscribe("/pause",function(){
+	if(Interactive.PLAYING){
+		Interactive.pause();
+	}
+	_updatePauseUI();
+});
 play.onclick = function(){
 	if(Interactive.PLAYING){
 		Interactive.pause();
@@ -24,12 +30,12 @@ play.onclick = function(){
 	}
 	_updatePauseUI();
 };
-subscribe("/mouse/down",function(){
+/*subscribe("/mouse/down",function(){
 	if(!Interactive.PLAYING){
 		Interactive.play();
 		_updatePauseUI();
 	}
-});
+});*/
 /*window.top.onblur = window.onblur = function(){
 	if(Interactive.PLAYING){
 		Interactive.pause();

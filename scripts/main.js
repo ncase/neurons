@@ -29,7 +29,7 @@ Preload({
 		// Misc Crap
 		{id:"introBG", src:"assets/images/intro.png"},
 		{id:"outroBG", src:"assets/images/outro.png"},
-		{id:"credits", src:"assets/sprites/credits.png"},
+		{id:"credits", src:"assets/sprites/credits2.png"},
 		{id:"thx", src:"assets/sprites/thx.png"},
 
 		// Shade
@@ -46,8 +46,8 @@ Preload({
 		{id:"4_credits", src:"assets/voices/4_credits.mp3"},
 
 		// Sounds & Shtuff
-		{id:"sfx_spark", src:"assets/sfx/spark.mp3"},
-		{id:"sfx_loop", src:"assets/sfx/Hebb.mp3"}
+		{id:"sfx_spark", src:"assets/sounds/spark.mp3"},
+		{id:"sfx_loop", src:"assets/sounds/Headspace.mp3"}
 
 	]
 });
@@ -63,6 +63,6 @@ subscribe("/init",function(){
 
 	// Initialize Shtuff
 	Interactive.init();
-	Narrator.goto("CREDITS");
+	Narrator.goto("INTRO");
 
 });

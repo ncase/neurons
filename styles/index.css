@@ -1,0 +1,94 @@
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(Raleway-ExtraLight.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(Raleway-Medium.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(Raleway-Bold.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	margin: 0;
+	background: #111;
+}
+
+iframe{
+	display:block;
+	margin: 50px auto 0 auto;
+	border: 1px solid #333;
+}
+
+.info{
+	background: #333;
+	margin: 0px auto 50px auto;
+	padding: 50px;
+	width:860px;
+	color:#fff;
+
+	font-size: 20px;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+
+	line-height: 1.4em;
+}
+.info > .title{
+	font-size:45px;
+	line-height: 1.0em;
+}
+.info > .subtitle{
+	font-size:35px;
+}
+#bonus{
+	background: none;
+	margin: 0px auto 0px auto;
+}
+a{
+	color: #dd3838;
+	font-weight: 500;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+a:hover{
+	color: #ff4949;
+}
+
+#sharing{
+	text-align: center;
+	margin-bottom: 50px;
+}
+ul.share-buttons{
+	list-style: none;
+	padding: 0;
+}
+ul.share-buttons li{
+	display: inline;
+	margin: 0px 3px;
+	position: relative;
+	top:0px;
+	-webkit-transition: top 0.2s;
+	-moz-transition: top 0.2s;
+	-ms-transition: top 0.2s;
+    transition: top 0.2s;
+    cursor: pointer;
+}
+ul.share-buttons li:hover{
+	top:-5px;
+}
