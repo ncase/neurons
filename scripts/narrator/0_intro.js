@@ -99,7 +99,7 @@ Narrator.addStates({
 				if(state._clicked==3){
 					unsubscribe(state._listener);
 					if(state._ticker>0){
-						Narrator.talk("prop6","prop7").goto("FEAR");
+						Narrator.wait(0.5).talk("prop6","prop7").goto("FEAR");
 					}else{
 						Narrator.wait(1.0).goto("FEAR");
 					}
