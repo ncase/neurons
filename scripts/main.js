@@ -44,6 +44,7 @@ Preload({
 		{id:"2_antihebb", src:"assets/voices/2_antihebb.mp3"},
 		{id:"3_therapy", src:"assets/voices/3_therapy.mp3"},
 		{id:"4_credits", src:"assets/voices/4_credits.mp3"},
+		{id:"5_extra", src:"assets/voices/5_extra.mp3"},
 
 		// Sounds & Shtuff
 		{id:"sfx_spark", src:"assets/sounds/spark.mp3"},
@@ -64,5 +65,6 @@ subscribe("/init",function(){
 	// Initialize Shtuff
 	Interactive.init();
 	Narrator.goto("INTRO");
+	//Narrator.music("sfx_loop",{volume:0.05,loop:-1}).goto("THERAPY");
 
 });

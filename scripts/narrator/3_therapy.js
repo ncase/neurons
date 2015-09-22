@@ -97,7 +97,7 @@ Narrator.addStates({
 	THERAPY_SUCCESS:{
 		start:function(){
 			Narrator.message("/scene/celebrate")
-					.talk("ther10","ther11","ther12","ther13")
+					.talk("ther10","extra6","extra7","ther11","ther12","ther13","extra8")
 					.goto("OUTRO");
 		}
 	},

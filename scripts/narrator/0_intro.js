@@ -37,8 +37,7 @@ Narrator.addNarration({
 		"fear6": ["1:12.0", "1:15.5"], // Coz... I don't know why, but tightly clustered holes
 		"fear7": ["1:15.5", "1:18.5"], // just kinda creep me out, y'know? I dunno.
 
-		"extra1": ["1:20.0", "1:22.2"], // Kind of mesmerizing, isn't it?
-		//"extra2": ["1:20.0", "1:22.2"], // Anyway...
+		"mesmerizing": ["1:20.0", "1:22.2"], // Kind of mesmerizing, isn't it?
 
 	}
 });
@@ -83,7 +82,7 @@ Narrator.addStates({
 
 	PROP_EXPLAIN:{
 		start:function(state){
-			Narrator.talk("prop8.5","prop9","extra1","prop10").goto("PROP_CLICK_MORE");
+			Narrator.talk("prop8.5","prop9","mesmerizing","prop10").goto("PROP_CLICK_MORE");
 		}
 	},	
 

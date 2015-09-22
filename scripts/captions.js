@@ -1,35 +1,6 @@
-/*///////////////////////////////////////
-
-GUIDE TO ADDING TRANSLATED CAPTIONS:
-
-1) Copy & paste the entire "en" section, as a starting template.
-
-2) Change "en" to whatever your target language's two-letter code is. (e.g. "zh" for Chinese)
-   Change "English" to whatever your target language's native name is. (e.g. "中文" for Chinese)
-
-   Refer to this: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-
-3) Translate each line of English to your target language.
-   
-   For example:
-   "intro0": "So, I always used to get anxiety.",
-   becomes
-   "intro0": "所以，我总是用得到的焦虑。",
-
-   Note: ONLY translate the stuff on the right side of the ":".
-   Also, don't forget to give yourself translator credit at the end! :D
-
-4) Send me a push request on Github, and wait for me to get off my lazy bum,
-   and upload your translation.
-
-5) Yay! Now you can share your translation by adding ?lang=[two_letter_code] to the URL, like so:
-   http://ncase.me/######?lang=zh
-
-   PARTY HARD
-
-///////////////////////////////////////*/
-
-window.CAPTION_LANGUAGE = "en"; // Due to random accidents of history, English is the default.
+// Due to random accidents of history,
+// English is the default.
+window.CAPTION_LANGUAGE = "en";
 
 window.Captions = {
 
@@ -72,8 +43,7 @@ window.Captions = {
 			"prop13": "One thought fires the next, and so on,",
 			"prop14": "but... in the ANXIOUS brain...",
 
-			"extra1": "Kind of mesmerizing, isn't it?",
-			"extra2": "Anyway...",
+			"mesmerizing": "Kind of mesmerizing, isn't it?",
 
 			//////////////
 			// MY FEARS //
@@ -221,8 +191,18 @@ window.Captions = {
 			// EXTRA SHTUFF //
 			//////////////////
 
-			"blah": "blah blah blah blah blah blah blah",
-			"captions": "[English captions by Nicky Case. Wanna help translate this? Details below!]"
+			"extra0": "Rewiring yourself may cause anxiety in the short term,",
+			"extra1": "but it's so worth it in the long term.",
+
+			"extra2": "A conditioned fear.",
+			"extra3": "The fear is extinguished.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "See, the trick is to EXPOSE yourself to what you're afraid of,",
+			"extra7": "but in a safe manner.",
+			"extra8": "Face your fears in a safe space.",
 			
 		}
 	},
