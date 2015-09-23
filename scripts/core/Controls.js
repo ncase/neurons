@@ -159,5 +159,18 @@ captionsSelect.onchange = function(){
 	_updateCaptionsUI();
 };
 
+// IF THERE IS A ?lang=es var, set to THAT.
+function getParameterByName(name){
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(window.top.location.search); // TOP.
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var lang = getParameterByName("lang");
+if(lang && window.Captions[lang]){
+	captionsSelect.value = lang;
+	CAPTION_LANGUAGE = captionsSelect.value;
+	_updateCaptionsUI();
+}
 
 })();
