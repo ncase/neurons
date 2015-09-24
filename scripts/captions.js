@@ -408,19 +408,209 @@ window.Captions = {
 			"extra8": "Enfrente a sus miedos en un espacio seguro.",
 				
 		}
-	}
+	},
 
-	// Derp - Just here to test captions.
-	// Oh my god, do NOT push this to production.
-	/*"derp": {
-		label: "Derp",
+	// Dutch
+	"nl": {
+		label: "Nederlands",
 		captions: {
-			
-			"intro0": "殠 濞濢 垥娀庣 樛槷殦,",
-			"intro1": "ووووووويتّفق قُدُماً باستحداث",
-			"intro2": "herp derp herpy derp",
 
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Eerder kreeg ik altijd angstaanvallen.",
+			"intro1": "Toen kreeg ik angstaanvallen over mijn angstaanvallen",
+			"intro2": "Het was een opeen stapeling van angstaanvallen.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Hoi, Ik ben Nicky Case,",
+			"prop1": "en dit is een interactieve demonstratie over neuronen.",
+			"prop2": "Inderdaad! Jij kunt echt interacteren met dit,",
+			"prop3": "♬ dus waarom probeer jij dat niet ♬",
+			"prop4": "en klik op een neuron, en kijk wat er gebeurd?",
+
+			"prop5": "par-DON, Ik was aan het praten!... grapje.",
+
+			"prop6": "Okay, wow, jij bent goed bezig, je klikt op ALLES,",
+			"prop7": "COOL. JE HEBT HET. GEWELDIG.",
+
+			"prop8": "Yeah!",
+			"prop8.5": "Kijk hoe de signalen verplaatsen,",
+			"prop9": "van neuron naar neuron naar neuron.",
+			"prop10": "Probeer nog meer klikken.",
+
+			"prop11": "Dit is natuurlijk een versimpled model,",
+			"prop12": "maar het is ongeveer hoe neuronen werken.",
+			"prop13": "Een gedachten vuurt de volgende, enzovoort,",
+			"prop14": "maar... in een ANGSTIG brein...",
+
+			"mesmerizing": "Best betoverend, toch?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "Gebeurd er DIT.",
+			"fear1": "Onschuldige gedachten zijn verbonden met angstige gedachten.",
+			"fear2": "Persoonlijk was ik bang om als een mislukking gezien te worden,",
+			"fear3": "of dicht bij mensen te zijn,",
+			"fear4": "en voor...",
+			"fear5": "gaten.",
+			"fear6": "Omdat... Ik weet niet waarom, maar een cluster van gaten",
+			"fear7": "ik vond het griezelig, weet je? Ik weet ook niet waarom.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[GELUID]",
+			"hebb1": "Hoe dan ook... hoe leren wij die angsten eigenlijk aan?",
+			"hebb2": "Nauw, omdat uit te leggen, laat mij dit even verwijderen...",
+			"hebb3": "geef ik je...",
+			"hebb4": "dit!",
+
+			"hebb5": "Hebbiaans Leren.",
+			"hebb6": "“Neuron die samen vuren worden verbonden.”",
+
+			"hebb7": "Dit is een vuistregel die neuro-wetenschappers gebruiken om te beschrijven hoe",
+			"hebb8": "neuronen nieuwe verbindingen maken.",
+			"hebb9": "In de basis geldt, als je een neuron vuurt, en daarna vuurt een ander neuron,",
+			"hebb10": "dan zal de eerste neuron een verbinding leggen naar de tweede neuron.",
+			"hebb11": "Probeer het maar zelf!",
+
+			"hebb12": "Te langzaam! Je hebt niet snel genoeg geklikt. Probeer maar opnieuw?",
+			"hebb13": "Niet dichtbij genoeg. Probeer een ander paar van neuronen.",
+
+			"hebb14": "En zo leren wij!",
+			"hebb15": "Natuurlijk leren wij niet zo snel in het echt,",
+			"hebb16": "Ik heb de simulatie versneld, eh, maar toch.",
+			"hebb17": "Speel maar wat, maak een paar verbindingen,",
+			"hebb18": "misschien een keten of iets dergelijks.",
+
+			"hebb19": "Deze regel is de reden dat, wanneer je als kind gebeten bent door een hond,",
+			"hebb20": "je misschien angst voor honden ontwikkeld!",
+			"hebb21": "Omdat jou 'hond' neuron vuurt en daarna jou 'pijn' neuron vuurt.",
+			"hebb22": "En daarom is 'hond' verbonden met 'pijn'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Hoe dan ook, als dat is hoe we leren, dan is dit hoe wij afleren.",
+			
+			"anti1": "Anti-Hebbiaans Leren.",
+			"anti2": "“Neuronen die niet synchroon vuren, verliezen hun verbinding.”",
+			
+			"anti3": "Is een andere vuistregel van neuro-wetenschappers!",
+
+			"anti4": "Dus - als je al een verbindinge hebt van een neuron naar een andere,",
+			"anti5": "en je vuurt de eerste neuron ZONDER dat de andere vuurt,",
+			"anti6": "wordt de verbinding zwakker.",
+			"anti7": "Probeer het maar",
+
+			"anti8": "Die neuron had helemaal geen verbindigen.",
+			"anti9": "Je moet er een vinden die verbonden is.",
+			"anti10": "Ah, deze neuron heeft alleen binnenkomende verbindingen geen uitgaande verbindingen.",
+			"anti11": "Je moet er een vinden die uitgaande verbindingen heeft.",
+
+			"anti12": "Nauw opgelet...",
+			"anti13": "Kijk! De verbinding word zwakker.",
+			"anti14": "Doe het nog eens. Deze keer wordt de verbindingen volledig vernietigt",
+
+			"anti15": "En deze afleer regel leert ons dat, als je angst voor handen hebt,",
+			"anti16": "en je wordt herhaaldelijk blootgesteld aan vriendelijke honden,",
+			"anti17": "je die angst kunt afleren.",
+			"anti18": "De 'Hond' neuron vuurt, ZONDER dat de 'pijn' neuron vuurt,",
+			"anti19": "daardoor - verzwakt de verbinding.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Nu we weten hoe wij leren en afleren, laten wij het samenvatten...",
+			"ther1": "...dit.",
+
+			"ther2": "Ik wil dat jij deze hersens hertraint.",
+			"ther3": "Verbind al deze dingen opnieuw,",
+			"ther4": "van een angstgevoel, naar een prettig gevoel.",
+
+			"ther5": "Kijk, jezelf opnieuw verbinden kan voor ansten zorgen op de korte termijn...",
+			"ther6": "...maar het is ZO VEEL waard op de lange termijn.",
+
+			"ther7": "Een is gelukt, nog twee te gaan.",
+			"ther8": "Twee zijn er gelukt, nog een te gaan.",
+			"ther9": "Ik. vind. gaten. nog. steeds. niet. leuk.",
+
+			"ther10": "En... het is jou gelukt!",
+
+			"ther11": "Wat wij net hebben gedaan is 'blootstellingstherapie'.",
+			"ther12": "Het is een van de meest bewezen effectieve therapieën die bestaat",
+			"ther13": "voor het behandelen van angsten, PTSS en andere angststoornissen.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Ik herhaal, in het echte leven gaat afleren niet zo snel,",
+			"outro1": "maar het is mogelijk.",
+			"outro2": "Ik ben er levend bewijs van",
+			"outro3": "het is mogelijk.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hey, dankjewel voor al mijn Patreon supporters, want zonder hen,",
+			"cred1": "zou ik niet deze vreemde interactieve dingen kunnen maken,",
+			"cred2": "en zou ik waarschijnlijk verplicht worden om een echt baan te vinden.",
+			"cred3": "Dus als jij mij wil helpen dit soort dingen te maken,",
+			"cred4": "waarvoor je bedankt wordt in het volgende wat ik maak,",
+			"cred5": "ga dan naar Patreon!",
+
+			"cred6": "De music waar je naar geluisterd hebt is gemaakt door de geweldige Phyrnna,",
+			"cred7": "met wie ik eerder heb samengewerkt op twee onafgemaakte projecten.",
+
+			"cred8": "Voor een ander interactive uitleg, bekijk de Parabel van de Polygonen!",
+			"cred9": "Dat was in samenwerking met Vi Hart -- ja, *die* Vi Hart! :D --",
+			"cred10": "over systematische voorkeuren en diversiteit.",
+
+			"cred11": "En onthoud, deze interactieve uitleg was maar een introductie.",
+			"cred12": "Als jij meer wilt leren, bekijk de referenties",
+			"cred13": "in de beschrijving hier beneden. ",
+
+			"cred14": "Offfff je kunt spelen met de zandbak aan de linkerkant",
+			"cred15": "omdat het erg leuk is.",
+
+			"cred16": "Hoe dan ook, enorm bedankt voor het kijken.",
+			"cred17": "",
+			"cred18": "um, spelen?... kijken?",
+			"cred19": "",
+			"cred20": "splijken.",
+			"cred21": "Enorm bedankt voor het splijken.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Jezelf herbedraden kan voor angsten zorgen op de korte termijn,",
+			"extra1": "maar het is het waard op de lange termijn.",
+
+			"extra2": "Een geconditioneerde angst",
+			"extra3": "De angst is verwijderd.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "De truuk is om zelf BLOOT TE STELLEN aan je aangst,",
+			"extra7": "maar op een veilige manier.",
+			"extra8": "Kom je angsten onder ogen in een veilige situatie.",
+				
 		}
-	}*/
+	}
 
 };
