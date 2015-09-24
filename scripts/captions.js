@@ -1405,6 +1405,205 @@ window.Captions = {
 			"extra8": "Renkontu viajn timojn en sekura spaco.",
 
 		}
-	}
+	},
 
+	"cs": {
+		label: "Česky",
+		captions: {
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Vždycky jsem trpěl úzkostí.",
+			"intro1": "A pak jsem trpěl úzkostí Z ÚZKOSTI.",
+			"intro2": "Byla to úzkost až na dno.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Ahoj, já jsem Nicky Case,",
+			"prop1": "a toto je interaktivní výklad o neuronech.",
+			"prop2": "Přesně tak! Můžeš si tu s tím hrát",
+			"prop3": "♬ tak proč to nezkusíš? ♬",
+			"prop4": "Klikni na neuron a uvidíš, co se stane.",
+
+			"prop5": "S DOVOLENÍM, nevadí ti že s tebou mluvím?! Ale ne, dělám si srandu.",
+
+			"prop6": "Ok, super, vážně ti to jde klikat na VŠECHNO,",
+			"prop7": "BEZVA. MÁŠ TO. SKVĚLE.",
+
+			"prop8": "Jo!",
+			"prop8.5": "Sleduj jak se signály šíří dále,",
+			"prop9": "od neuronu k neuronu k neuronu.",
+			"prop10": "Zkus kliknout na nějaké další.",
+
+			"prop11": "Samozřejmě, tohle je zjednodušený model,",
+			"prop12": "ale zhruba takhle nějak neurony fungují.",
+			"prop13": "Jedna myšlenka spustí další a tak dále,",
+			"prop14": "ale… v ÚZKOSTLIVÉM mozku…",
+
+			"mesmerizing": "Fascinující, že?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "se stane TOHLE.",
+			"fear1": "Nevinné myšlenky jsou spojené s úzkostnými myšlenkami.",
+			"fear2": "Sám jsem se tak bál že v očích ostaních selžu,",
+			"fear3": "blízkosti k jiným lidem,",
+			"fear4": "a…",
+			"fear5": "děr.",
+			"fear6": "Protože… Nevím proč, ale úzké shluky děr",
+			"fear7": "mě vážně děsí, rozumíš? Fakt.",
+
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[Fuj]",
+			"hebb1": "Nicméně… jak se vůbec naučíme takovým obavám?",
+			"hebb2": "Abych tohle vysvětlil, nejprve se zbavíme tohohle všeho…",
+			"hebb3": "a místo toho se podíváme…",
+			"hebb4": "na tohle!",
+
+			"hebb5": "Hebbovské účení.",
+			"hebb6": "Neurony které se společně aktivují se i společně propojí.",
+
+			"hebb7": "Tímto pravidlem neurovědci popisují",
+			"hebb8": "jak neurony utváří nová spojení.",
+			"hebb9": "V podstatě když aktivuješ jeden neuron a potom druhý neuron,",
+			"hebb10": "první neuron se připojí K DRUHÉMU neuronu.",
+			"hebb11": "Zkus si to!",
+
+			"hebb12": "Moc pomalu! Musíš na neurony klikat rychleji. Zkusíš to ještě?",
+			"hebb13": "Tyhle neurony jsou od sebe moc daleko. Zkus jiné dva páry.",
+
+			"hebb14": "A tak funguje učení!",
+			"hebb15": "Ve skutečném životě se samozřejmě neučíme tak rychle,",
+			"hebb16": "tahle simulace je zrychlená, ale princip je stejný.",
+			"hebb17": "Zkus si s tím teď trochu pohrát, vytvoř další spojení,",
+			"hebb18": "zkus udělat řetěz nebo něco jiného.",
+
+			"hebb19": "Kdyby tě v dětství kousnul pes, tak toto pravidlo učení vysvětluje",
+			"hebb20": "proč budeš mít strach ze psů!",
+			"hebb21": "Protože se aktivoval neuron ‚pes‘ a pak se aktivoval neron ‚bolest‘.",
+			"hebb22": "A tak se ‚pes‘ spojil s ‚bolestí‘.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Takže takhle se učíme. A teď se podíváme jak se něco odnaučit.",
+
+			"anti1": "Anti-hebbovské učení.",
+			"anti2": "Neurony které se aktivují nezávisle ztratí spojení",
+
+			"anti3": "Další pravidlo od neurovědců!",
+
+			"anti4": "Pokud už máš spojený jeden neuron s druhým",
+			"anti5": "a aktivuješ první neuron BEZ aktivace druhého neuronu,",
+			"anti6": "spojení se oslabí.",
+			"anti7": "Opět si to zkus.",
+
+			"anti8": "Tenhle neuron nemá žádná spojení.",
+			"anti9": "Musíš najít nějaký který je propojený.",
+			"anti10": "Aha, ale tenhle neuron má pouze spojení K SOBĚ, ne OD SEBE.",
+			"anti11": "Musíš najít jiný který má spojení OD SEBE.",
+
+			"anti12": "Teď vydrž…",
+			"anti13": "Vidíš to?! Spojení je slabší.",
+			"anti14": "Zkus to ještě jednou a spojení zcela přerušíš.",
+
+			"anti15": "Takže podle pravidla odnaučení: pokud máš strach ze psů,",
+			"anti16": "a budeš se opakovaně potkávat s přátelskými psy,",
+			"anti17": "můžeš se tak strachu odnaučit.",
+			"anti18": "Neuron ‚pes‘ se aktivuje BEZ aktivace neuronu ‚bolest‘,",
+			"anti19": "a proto se spojení oslabí.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Takže teď když už víme jak se něco naučit a odnaučit, vraťme se zpět…",
+			"ther1": "…sem.",
+
+			"ther2": "Chci po tobě přeučit tento mozek.",
+			"ther3": "Přepoj každou z těchto tří věcí",
+			"ther4": "od pocitu strachu k pocitu bezpěčí.",
+
+			"ther5": "Víš, přeučení se sice způsobí krátkodobou úzkost…",
+			"ther6": "…ale TAK MOC se to dlouhodobě vyplatí.",
+
+			"ther7": "První a dvě zbývají.",
+			"ther8": "Dvě máš za sebou, jedna zbývá.",
+			"ther9": "pořád. nemám. rád. díry.",
+
+			"ther10": "A je to!",
+
+			"ther11": "To co se ti právě povedlo se nazývá ‚expoziční terapie.‘",
+			"ther12": "Je to jedna z nejlépe ověřených terapií",
+			"ther13": "pro léčbu fóbií, PTSP, a jiných úzkostných poruch.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Samozřejmě že ve skutečném životě není přeučení tak snadné, tak rychlé,",
+			"outro1": "ale je to možné.",
+			"outro2": "Vím o čem mluvím – já jsem toho důkazem –",
+			"outro3": "Je to možné.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Díky všem mým podporovatelům na Patreonu, protože bez nich",
+			"cred1": "bych nemohl tvořit tyhle interaktivní podivnosti",
+			"cred2": "a asi bych si musel najít skutečnou práci.",
+			"cred3": "Takže pokud mi chceš pomoct s tvorbou",
+			"cred4": "a být v titulcích u dalšího díla,",
+			"cred5": "koukni na můj Patreon!",
+
+			"cred6": "Hudbu, kterou slyšíš, vytvořila skvělá Phyrnna,",
+			"cred7": "se kterou jsem dříve pracoval na dalších dvou projektech které jsem nedokončil.",
+
+			"cred8": "Pro další interaktivní výklad mrkni na Bajku o tvarech!",
+			"cred9": "Je to výsledek spolupráce s Vi Hart – ano, *tou* Vi Hart! :D –",
+			"cred10": "o společenských předsudích a diverzitě",
+
+			"cred11": "A především tenhle interaktivní výklad byl pouze úvod.",
+			"cred12": "Pokud chceš vědět víc, *rozhodně* prozkoumej další texty",
+			"cred13": "v popisu níže. ",
+
+			"cred14": "A nebooo si můžeš pohrát s neurony vlevo",
+			"cred15": "protože je to docela zábava.",
+
+			"cred16": "Každopádně díky za shlédnutí.",
+			"cred17": "",
+			"cred18": "hm, za hraní?… shlédnutí?",
+			"cred19": "",
+			"cred20": "shranutí.",
+			"cred21": "Díky za shranutí.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Přeučení se ti možná způsobí krátkodobou úzkost,",
+			"extra1": "ale dlouhodobě se rozhodně vyplatí.",
+
+			"extra2": "Podmíněný strach.",
+			"extra3": "Strach je pryč.",
+
+			"extra4": "Hurá!",
+			"extra5": "ta-dááá-",
+
+			"extra6": "Trik je v tom vystavit se něčemu, čeho se bojíš,",
+			"extra7": "ale bezpečným způsobem.",
+			"extra8": "Postav se svému strachu v bezpečí.",
+		}
+	},
 };
