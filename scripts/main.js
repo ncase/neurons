@@ -16,7 +16,7 @@ Preload({
 		// Icons
 		{id:"icon_anxious", src:"assets/sprites/icon_anxious.png"},
 		{id:"icon_calm", src:"assets/sprites/icon_calm.png"},
-		{id:"icon_social", src:"assets/sprites/icon_social.png"},
+		{id:"icon_people", src:"assets/sprites/icon_people.png"},
 		{id:"icon_failure", src:"assets/sprites/icon_failure.png"},
 		{id:"icon_holes", src:"assets/sprites/icon_holes.png"},		
 

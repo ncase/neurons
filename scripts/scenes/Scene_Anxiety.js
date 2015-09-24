@@ -125,7 +125,7 @@ function Scene_Anxiety_Base(){
 	// The FEAR neurons
 	self.neurons[4].icon = images.icon_failure;
 	self.neurons[4].name = "failure";
-	self.neurons[5].icon = images.icon_social;
+	self.neurons[5].icon = images.icon_people;
 	self.neurons[5].name = "social";
 	self.neurons[6].icon = images.icon_holes;
 	self.neurons[6].name = "holes";
