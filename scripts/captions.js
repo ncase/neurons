@@ -611,6 +611,401 @@ window.Captions = {
 			"extra8": "Kom je angsten onder ogen in een veilige situatie.",
 				
 		}
+	},
+
+	// Portuguese
+	"pt": {
+		label: "Português",
+		captions: {
+		}
+	},
+
+	// German
+	"de": {
+		label: "Deutsch",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Also, ich habe früher unter Angststörungen gelitten.",
+			"intro1": "Und dann haben meine Angststörungen neue Angststörungen hervorgerufen.",
+			"intro2": "Angststörung nach Angststörung nach Angststörung…",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Hi, Ich bin Nicky Case,",
+			"prop1": "und das hier ist eine interaktive Ausführung über Neuronen.",
+			"prop2": "Jap! Du kannst hiermit tatsächlich interagieren,",
+			"prop3": "♬ also warum versuchst du es nicht einfach ♬",
+			"prop4": "und klickst auf ein Neuron und probierst es aus?",
+
+			"prop5": "Entschuldigung! Ich habe gerade mit dir gesprochen!… Nur Spaß.",
+
+			"prop6": "Okay, wow, du hast wirklich Spaß daran ALLES zu klicken,",
+			"prop7": "COOL. VERSTANDEN. KLASSE.",
+
+			"prop8": "Yeah!",
+			"prop8.5": "Sieh dir an, wie die Signale sich ausbreiten,",
+			"prop9": "von Neuron zu Neuron zu Neuron.",
+			"prop10": "Klick noch ein paar Neuronen mehr.",
+
+			"prop11": "Natürlich ist das hier ein vereinfachtes Modell,",
+			"prop12": "aber so ungefähr funktionieren Neuronen.",
+			"prop13": "Ein Gedanke aktiviert den nächsten und so weiter,",
+			"prop14": "aber…im Gehirn mit Angststörungen…",
+
+			"mesmerizing": "Irgendwie hypnotisch, oder?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "passiert das hier.",
+			"fear1": "Unschuldige Gedanken verbinden sich mit angsteinlösenden Gedanken.",
+			"fear2": "Ich persönlich hatte Angst davor, als Versager angesehen zu werden,",
+			"fear3": "vor der Nähe zu Menschen,",
+			"fear4": "und vor…",
+			"fear5": "Löchern.",
+			"fear6": "Weil… Ich weiß nicht genau warum, aber dicht zusammenliegende Löcher",
+			"fear7": "bereiten mir irgendwie Unwohlsein, weißt du? Ich weiß es nicht.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[GERÄUSCHE]",
+			"hebb1": "Egal… wir lernen wir diese Dinge überhaupt zu fürchten?",
+			"hebb2": "Nun, um das zu erklären, werden wir erstmal das alles hier los…",
+			"hebb3": "und versuchen es mal…",
+			"hebb4": "hiermit!",
+
+			"hebb5": "Hebbsches Lernen.",
+			"hebb6": "“Neuronen die zusammen aktiviert werden, verbinden sich.”",
+
+			"hebb7": "Das ist eine Faustregel mit der Neurowissenschaftler beschreiben,",
+			"hebb8": "wie Neuronen sich miteinander verbinden.",
+			"hebb9": "Also, wenn du ein Neuron aktivierst und dann ein anderes Neuron aktivierst,",
+			"hebb10": "wird sich das erste Neuron MIT dem ersten Neuron verbinden.",
+			"hebb11": "Versuch's doch einfach mal selbst!",
+
+			"hebb12": "Zu langsam! Du hast nicht schnell genug geklickt. Versuch es doch noch mal!",
+			"hebb13": "Nicht nah genug. Versuch ein anderes Paar Neuronen.",
+
+			"hebb14": "Und so lernen wir!",
+			"hebb15": "Natürlich lernen wir im echten Leben nicht so schnell,",
+			"hebb16": "Ich habe diese Simulation ein wenig beschleunig, aber trotzdem.",
+			"hebb17": "Jetzt spiel ein bisschen damit rum, verbinde ein paar Neuronen",
+			"hebb18": "versuch es doch mal mit einer Kette.",
+
+			"hebb19": "Das ist der Grund, warum wir uns vor Hunden fürchten,",
+			"hebb20": "wenn wir als Kind von einem Hund gebissen worden sind!",
+			"hebb21": "Weil dein 'Hund' Neuron aktiviert wurde, und direkt danach dein 'Schmerz' Neuron.",
+			"hebb22": "Und so, hat sich 'Hund' mit 'Schmerz' verbunden.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Egal, so lernen wir, und so verlernen wir.",
+			
+			"anti1": "Anti-hebbsches Lernen.",
+			"anti2": "“Neuronen, die unabhängig von einander aktiviert werden, lösen ihre Verbindung.”",
+			
+			"anti3": "Eine weitere Faustregel der Neurowissenschaftler!",
+
+			"anti4": "Also - wenn man schon eine Verbindung von einem Neuron zu einem Anderen hat,",
+			"anti5": "und man das erste Neuron OHNE das zweite Neuron aktiviert,",
+			"anti6": "wird die Verbindung schwächer.",
+			"anti7": "Versuch es doch selbst einmal!",
+
+			"anti8": "Diese Neuronen haben keine Verbindung.",
+			"anti9": "Du musst ein Neuron finden, das eine Verbindung hat.",
+			"anti10": "Ah, dieses Neuron hat nur Verbindungen ZU ihm hin und keine, die  VON ihm ausgehen.",
+			"anti11": "Du brauchst ein Neuron, von dem Verbundenen AUSGEHEN.",
+
+			"anti12": "Und jetzt warte…",
+			"anti13": "Schau! Die Verbindung ist jetzt schwächer.",
+			"anti14": "Mach es noch mal und die Verbindung wird komplett gelöst.",
+
+			"anti15": "Und diese Regel des Verlernens ist der Grund, warum deine Angst vor Hunden,",
+			"anti16": "schwächer werden kann, indem du über die Zeit,",
+			"anti17": "immer und immer wieder freundliche Hunde kennenlernst.",
+			"anti18": "Das 'Hund' Neuron wird aktiviert, OHNE das das 'Schmerz' Neuron aktiviert wird,",
+			"anti19": "und deswegen - die Verbindung geschwächt wird.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Jetzt weißt du wie wir Lernen und wieder Verlernen. Sehen wir uns noch mal",
+			"ther1": "…das an.",
+
+			"ther2": "Ich möchte, dass du dieses Gehirn umprogrammierst.",
+			"ther3": "Verkabele und verbinde diese drei Dinge neu,",
+			"ther4": "vom Gefühl von Angst, zum Gefühl von Sicherheit.",
+
+			"ther5": "Siehst du, sich umzuprogrammieren mag auf kurze Sicht Angst erzeugen",
+			"ther6": "…aber auf Dauer lohnt es sich auf JEDEN FALL.",
+
+			"ther7": "Eins weg, noch zwei.",
+			"ther8": "Zwei weg, nur noch eins.",
+			"ther9": "ich. mag. immer noch. keine. löcher.",
+
+			"ther10": "Und… du hast es geschafft!",
+
+			"ther11": "Was du gerade getan hast, nennt sich 'Konfrontationstherapie'.",
+			"ther12": "Das ist eine der best bewiesenen Therapieformen",
+			"ther13": "um Krankheiten wie Posttraumatisches Stresssyndrom und andere Angststörungen zu behandeln.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Und noch mal, sich im echten Leben umzuprogrammieren ist nicht so einfach, nicht so schnell,",
+			"outro1": "aber man kann es schaffen.",
+			"outro2": "Ich verspreche es dir -- Ich bin der Beweis --",
+			"outro3": "Man kann es schaffen.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hey, vielen Dank an alle meine Unterstützer auf Patreon. Ohne sie",
+			"cred1": "könnte ich diese verrückten interaktiven Dinger nicht machen,",
+			"cred2": "und ich müsste mir wahrscheinlich einen echten Job suchen.",
+			"cred3": "Wenn du mir also helfen möchtest diese Dinger hier zu machen,",
+			"cred4": "und in meinem nächsten Projekt erwähnt werden willst,",
+			"cred5": "schau dir einfach meine Patreon-Seite an!",
+
+			"cred6": "Die Musik, die du gerade hörst, kommt von der wundervollen Phyrnna,",
+			"cred7": "die mir schon bei zwei anderen Projekten geholfen hat, die ich nicht beendet habe.",
+
+			"cred8": "Eine weitere interaktive Ausführung ist die 'Parable of the Polygons!'",
+			"cred9": "Das war eine Zusammenarbeit mit Vi Hart -- ja, *der* Vi Hart! :D --",
+			"cred10": "über systematische Benachteiligungen und Vielfalt.",
+
+			"cred11": "Und nicht vergessen: diese interaktive Ausführung war nur eine Einführung.",
+			"cred12": "Wenn du also mehr lernen willst, solltest du *auf jeden Fall* die weiteren Quellen",
+			"cred13": "in der Beschreibung unten ansehen. ",
+
+			"cred14": "Oder du spielst ein bisschen mit der Sandbox auf der linken Seite herum",
+			"cred15": "weil das nämlich viel Spaß macht.",
+
+			"cred16": "Egal was du jetzt machst, vielen Dank für's zusehen.",
+			"cred17": "",
+			"cred18": "ähm, spielen?… zusehen?",
+			"cred19": "",
+			"cred20": "spielsehen.",
+			"cred21": "Vielen Dank für's spielsehen.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Siehst du, sich umzuprogrammieren mag auf kurze Sicht Angst erzeugen,",
+			"extra1": "…aber auf Dauer lohnt es sich auf JEDEN FALL.",
+
+			"extra2": "Eine gelernte Angst.",
+			"extra3": "Die Angst ist eliminiert.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "Weißt du, der Trick ist es sich dem ZU STELLEN, vordem man Angst hat,",
+			"extra7": "auf eine sichere Art und Weise.",
+			"extra8": "Stell dich deiner Angst in einer sicheren Umgebung.",
+				
+		}
+	},
+
+	// Italian
+	"it": {
+		label: "Italiano",
+		captions: {
+
+			// INTRODUZIONE
+
+			"intro0": "Per me era normale essere ansioso.",
+			"intro1": "Poi diventavo ansioso PER IL FATTO DI avere l’ansia.",
+			"intro2": "Non c’era altro che ansia.",
+			"intro3": "",
+
+			// PROPAGAZIONE
+
+			"prop0": "Ciao, sono Nicky Case.",
+			"prop1": "e questa è una spiegazione interattiva riguardo ai neuroni.",
+			"prop2": "Yup! Puoi davvero interagire con questo,",
+			"prop3": "♬ perciò, perché non provi a farlo, ♬",
+			"prop4": "e clikki su un neurone per vedere che cosa accade ?",
+
+			"prop5": "Ehi, scusa, stavo parlando!... Sto scherzando.",
+
+			"prop6": "Bene, wow, ti sei davvero appassionato, stai clikkando QUALSIASI COSA,",
+			"prop7": "FANTASTICO. CI SEI. SPLENDIDO.",
+
+			"prop8": "Yeah!",
+			"prop8.5": "Osserva come i segnali si propagano,",
+			"prop9": "da neurone a neurone a neurone.",
+			"prop10": "Prova a clikkarne degli altri.",
+
+			"prop11": "Certamente, questo è un modello semplificato,",
+			"prop12": "ma è grossomodo così che lavorano i neuroni.",
+			"prop13": "Un pensiero accende il successivo, e così via,",
+			"prop14": "ma... in un cervello ANSIOSO...",
+
+			"mesmerizing": "È quasi ipnotico, vero?",
+
+			//LE MIE PAURE
+
+			"fear0": "QUESTO è ciò che accade.",
+			"fear1": "Pensieri innocenti si connettono con pensieri ansiosi.",
+			"fear2": "Personalmente, avevo sempre paura di essere visto come un fallito,",
+			"fear3": "di avvicinarmi alle persone,",
+			"fear4": "e dei...",
+			"fear5": "buchi.",
+			"fear6": "Perché... Non so perché, ma tanti buchi vicini tra di loro",
+			"fear7": "mi facevano come rabbrividire, voi lo sapete perché? Io no.",
+
+			// APPRENDIMENTO HEBBIAN
+
+			"hebb0": "[SUONI]",
+			"hebb1": "Comunque... come impariamo queste paure all’inizio?",
+			"hebb2": "Bene, per spiegarlo, lasciate che mi disfi di tutto ciò...",
+			"hebb3": "e che vi dia...",
+			"hebb4": "questo!",
+
+			"hebb5": "L’apprendimento Hebbian.",
+			"hebb6": "Neuroni che si accendono insieme, si collegano insieme.",
+
+			"hebb7": "Questa è una regola generale che i neuroscienziati usano per descrivere come",
+			"hebb8": "i neuroni creino nuove connessioni.",
+			"hebb9": "Di base, se si accende un neurone e poi se ne accende un altro,",
+			"hebb10": "il primo neurone si connetterà CON IL secondo neurone.",
+			"hebb11": "Prova a farlo tu!",
+
+			"hebb12": "Troppo lento! Non hai clikkato abbastanza velocemente. Vuoi riprovare?",
+			"hebb13": "Non abbastanza vicini. Prova con un’altra coppia di neuroni.",
+
+			"hebb14": "Ed è così che impariamo!",
+			"hebb15": "Di sicuro, non impariamo così velocemente nella vita reale,",
+			"hebb16": "ho accelerato un po’ questa simulazione, eh, ma è così.",
+			"hebb17": "Adesso giocaci un po’, crea altre connessioni,",
+			"hebb18": "magari crea una catena o qualcosa del genere.",
+
+			"hebb19": "Questa regola di apprendimento è il motivo per cui, se da bambino sei stato morso da un cane",
+			"hebb20": "potresti aver sviluppato la paura dei cani!",
+			"hebb21": "Poiché il tuo neurone ‘cane’ è stato acceso, allora il tuo neurone ‘dolore’ si è acceso.",
+			"hebb22": "E quindi, ‘cane’ si è connesso a ‘dolore’.”",
+
+			// APPRENDIMENTO ANTI-HEBBIAN
+
+			"anti0": "Ad ogni modo, se è così che impariamo, ecco come disimpariamo.",
+
+			"anti1": "L’apprendimento Anti-Hebbian.",
+			"anti2": "I neuroni che si accendono fuori sincrono, perdono la loro connessione.",
+
+			"anti3": "Un’altra regola generale dei neuroscienziati!",
+
+			"anti4": "Quindi – se hai già una connessione da un neurone a un altro,",
+			"anti5": "e accendi il primo neurone SENZA accendere il secondo,",
+			"anti6": "la connessione si indebolisce.",
+			"anti7": "Di nuovo, provaci.",
+
+			"anti8": "Quel neurone non aveva alcuna connessione.",
+			"anti9": "Devi trovarne uno che sia già connesso.",
+			"anti10": "Ah, però quel neurone ha solo connessioni che vanno VERSO di esso, ma non DA esso.",
+			"anti11": "Devi trovarne uno che abbia anche connessioni DA esso.",
+
+			"anti12": "Ora aspetta...",
+			"anti13": "E guarda! La connessione è più debole.",
+			"anti14": "Fallo di nuovo, e questa volta, la connessione morirà completamente.",
+
+			"anti15": "Questa regola del disimparare è il motivo per cui, se hai paura dei cani,",
+			"anti16": "e vieni continuamente in contatto con cani amichevoli,",
+			"anti17": "potresti disimparare quella paura.",
+			"anti18": "Il neurone ‘cane’ si accende SENZA che si accenda anche il neurone ‘dolore’,",
+			"anti19": "e perciò la connessione si indebolisce.",
+
+			// TERAPIA
+
+			"ther0": "Quindi, ora che sai come impariamo e disimpariamo, rivisitiamo...",
+			"ther1": "...questo.",
+
+			"ther2": "Voglio che ri-addestri questo cervello.",
+			"ther3": "Ricollega, riconnetti ciascuna di queste tre cose,",
+			"ther4": "dal provare paura al sentirsi al sicuro.",
+
+			"ther5": "Vedi, riconnetterti può causare ansietà a breve termine...",
+			"ther6": "... ma ha COSÌ TANTO valore a lungo termine.",
+
+			"ther7": "Fuori uno, ne mancano due.",
+			"ther8": "Fuori due, ne manca uno.",
+			"ther9": "I. buchi. continuano. a. non. piacermi.",
+
+			"ther10": "E... ce l’hai fatta!",
+
+			"ther11": "Ciò che hai appena fatto si chiama ‘terapia con esposizione’",
+			"ther12": "È una delle terapie che più di tutte si basano sulle prove",
+			"ther13": "per trattare fobie specifiche, PTSD e altri disturbi d’ansia.",
+
+			// CONCLUSIONE
+
+			"outro0": "Di nuovo, nella vita reale, rifare i collegamenti non è così semplice e non così veloce,",
+			"outro1": "ma si può fare.",
+			"outro2": "Te lo prometto -- ne sono la prova --",
+			"outro3": "Si può fare.",
+
+			// CREDITS
+
+			"cred0": "Hei, un enorme grazie a tutti i miei sostenitori di Patreon, perché senza di loro,",
+			"cred1": "non sarei stato capace di fare tutte queste strane cose interattive,",
+			"cred2": "e probabilmente sarei stato costretto a trovare un lavoro vero.",
+			"cred3": "Per cui, se volete aiutarmi a continuare a fare cose del genere,",
+			"cred4": "e comparire nei crediti della prossima cosa che farò,",
+			"cred5": "date un’occhiata al mio Patreon!",
+
+			"cred6": "La musica che state ascoltando è stata creata dalla meravigliosa Phyrnna,",
+			"cred7": "con la quale ho già collaborato per due progetti che non sono riuscito a terminare.",
+
+			"cred8": "Per un’altra spiegazione interattiva, guardate ‘La Parabola dei Poligoni!",
+			"cred9": "È stata una collaborazione che feci con Vi Hart -- sì, *quella* Vi Hart! :D -- ",
+			"cred10": "riguardo al pregiudizio sistemico e alla diversità.",
+
+			"cred11": "E ricordate, questa spiegazione interattiva era solo un’introduzione.",
+			"cred12": "Perciò, se volete saperne di più, date *assolutamente* un’occhiata alla lettura successiva",
+			"cred13": "nella descrizione qui sotto.”  ",
+
+			"cred14": "Ooooooppure potreste giocare con l’animazione sulla sinistra",
+			"cred15": "perché è abbastanza divertente.",
+
+			"cred16": "In ogni caso, grazie, grazie mille per aver guardato.",
+			"cred17": "",
+			"cred18": "um, giocato?... guardato?",
+			"cred19": "",
+			"cred20": "giordato",
+			"cred21": "Grazie mille per aver giordato.",
+
+			// COSE EXTRA
+
+			"extra0": "Rifare i collegamenti può creare ansietà nel breve termine,",
+			"extra1": "ma ha così tanto valore a lungo termine.",
+
+			"extra2": "Una paura condizionata.",
+			"extra3": "La paura è scomparsa.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-daaah~",
+
+			"extra6": "Vedi, il trucco è di entrare in contatto con ciò di cui hai paura,",
+			"extra7": "ma in modo sicuro.",
+			"extra8": "Affrontare le tue paure in uno spazio protetto.",
+
+		}
 	}
 
 };
