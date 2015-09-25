@@ -613,10 +613,206 @@ window.Captions = {
 		}
 	},
 
-	// Portuguese
+	// Portugues (Portugal)
 	"pt": {
 		label: "Português",
 		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Bem, eu costumava ficar nervoso.",
+			"intro1": "Depois começava a ficar nervoso PORQUE sabia que ia ficar nervoso.",
+			"intro2": "Era uma espiral de nervosismo.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Olá, sou o Nicky Case,",
+			"prop1": "e esta é uma explicação interativa sobre neurónios.",
+			"prop2": "Sim! Podes mesmo interagir com isto,",
+			"prop3": "♬ então, porque não experimentas interagir ♬",
+			"prop4": "experimenta clicar num neurónio a ver o que acontece",
+
+			"prop5": "DESCULPA, Eu estava a falar!... Não, estou só a brincar.",
+
+			"prop6": "OK, wow, estás mesmo a gostar disto, a clicar EM TODO O LADO,",
+			"prop7": "FIXE. AÍ ESTÁ. BOA.",
+
+			"prop8": "Yeah!",
+			"prop8.5": "Vê como os sinais se propagam,",
+			"prop9": "de um neurónio para outro, e outro.",
+			"prop10": "Tenta lá clicar noutros quantos.",
+
+			"prop11": "Claro, este é um modelo simplificado,",
+			"prop12": "mas é mais ou menos como os neurónios funcionam.",
+			"prop13": "Um pensamento ativa o próximo, e assim por diante,",
+			"prop14": "mas... num cérebro NERVOSO...",
+
+			"mesmerizing": "Fascinante, não é?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "ISTO É o que acontece.",
+			"fear1": "Pensamentos inocentes estão ligados a pensamentos de nervosismo.",
+			"fear2": "Pessoalmente eu customava ter medo de ser visto como um fracasso,",
+			"fear3": "de estar perto de outras pessoas,",
+			"fear4": "e de...",
+			"fear5": "buracos.",
+			"fear6": "Porque... Eu não sei porquê, mas buraquinhos pequeninos",
+			"fear7": "arrepiam-me todo, sabes? Não sei explicar.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SONS]",
+			"hebb1": "De qualquer maneira...como é que aprendemos a ter estes medos?",
+			"hebb2": "Bem, para explicar isso, deixa-me ver livre disto tudo...",
+			"hebb3": "e dar-te...",
+			"hebb4": "isto!",
+
+			"hebb5": "Teoria Hebbiana de aprendizagem.",
+			"hebb6": "“Neurónios que disparam juntos, ficam ligados.”",
+
+			"hebb7": "Esta é uma regra simples que os neurocientistas usam para descrever como",
+			"hebb8": "é que os neurónios estabelecem novas ligações.",
+			"hebb9": "Basicamente, se disparares um neurónio e logo depois outro,",
+			"hebb10": "o primeiro neurónio liga-se ao segundo.",
+			"hebb11": "Tenta tu agora!",
+
+			"hebb12": "Muito lento! Não clicaste depressa o suficiente. Tenta de novo?",
+			"hebb13": "Não estão pertos o suficiente. Tenta um par de neurónios diferente.",
+
+			"hebb14": "E é assim que aprendemos!",
+			"hebb15": "Claro que na vida real não aprendemos assim tão depressa,",
+			"hebb16": "Eu acelerei a simulação, uh, mas sim.",
+			"hebb17": "Agora brinca um pouco, faz mais uma ligações,",
+			"hebb18": "experimenta fazer uma cadeia, ou outra coisa parecida.",
+
+			"hebb19": "Isto é o que faz com que se fores mordido por um cão em criança,",
+			"hebb20": "fiques com medo de cães!",
+			"hebb21": "Porque o teu neurónio 'cão' disparou, e depois o neurónio 'dor' disparou.",
+			"hebb22": "E assim, 'cão' fica ligado a 'dor'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "De qualquer maneira, se é assim que aprendemos, vou-te mostrar como se desaprende.",
+			
+			"anti1": "Teoria Anti-Hebbiana de aprendizagem.",
+			"anti2": "“Neurónio que não disparam ao mesmo tempo, perdem a sua ligação.”",
+			
+			"anti3": "É outra regra simples que os neurocientistas usam!",
+
+			"anti4": "Então - se já tens uma ligação entre dois neurónios,",
+			"anti5": "e disparares o primeiro SEM DISPARARES o segundo,",
+			"anti6": "a ligação entre eles enfraquece.",
+			"anti7": "Tenta lá tu.",
+
+			"anti8": "Esse neurónio não tem nenhuma ligação.",
+			"anti9": "Tens de encontrar um que tenha ligações.",
+			"anti10": "Ah, esse neurónio só tem ligações PARA ele, não tem nenhuma A PARTIR dele.",
+			"anti11": "Tens de encontrar um que tenha ligações A PARTIR dele.",
+
+			"anti12": "Espera...",
+			"anti13": "Vê isto! A ligação está mais fraca.",
+			"anti14": "Faz isso outra vez, e desta vez a ligação vai mesmo morrer.",
+
+			"anti15": "esta regra é o que faz com que se tiveres medo de cães,",
+			"anti16": "e fores exposto a cães amigáveis vezes sem conta,",
+			"anti17": "possas desaprender esse medo.",
+			"anti18": "O neurónio 'cão' dispara, SEM que o neurónio 'dor' dispare também,",
+			"anti19": "e assim a ligação entre eles enfraquece.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Agora que sabes como aprendemos e desaprendemos, vamos rever...",
+			"ther1": "...isto.",
+
+			"ther2": "Quero que treines este cérebro.",
+			"ther3": "Refaz, liga novamente estas três coisas,",
+			"ther4": "que fazem com que este cérebro sinta medo, para passar a sentir segurança.",
+
+			"ther5": "Vês, refazer ligações faz com que sintas ansiedade a curto prazo...",
+			"ther6": "...mas vale bem a pena a longo prazo.",
+
+			"ther7": "Um já está, só faltam dois.",
+			"ther8": "Dois estão. Só mais um.",
+			"ther9": "Eu ainda não gosto de buracos.",
+
+			"ther10": "E... conseguiste!",
+
+			"ther11": "O que acabaste de fazer é chamado de 'terapia de exposição prolongada'.",
+			"ther12": "É uma das terapias com mais provas dadas",
+			"ther13": "para tratar fobias, stress pós-traumático, e outos tipos de ansiedade nervosa.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Claro que na vida real não é fácil refazer as ligações do nosso cérebro. Pelo menos não rápidamente,",
+			"outro1": "mas pode ser feito.",
+			"outro2": "Eu prometo -- sou uma prova viva --",
+			"outro3": "Pode ser feito",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hey, muito obrigado aos meus apoiantes do Patreon, porque sem eles,",
+			"cred1": "eu não podia fazer estas coisas interativas,",
+			"cred2": "e provavelmente tinha de ter um trabalho normal.",
+			"cred3": "Por isso, se gostavas de me ajudar a fazer mais coisas como esta,",
+			"cred4": "e ter o teu nome na próxima coisa que eu faça,",
+			"cred5": "vê o meu perfil do Patreon!",
+
+			"cred6": "A música que estás a ouvir, foi feita pela maravilhosa Phyrnna,",
+			"cred7": "nós já colaboramos antes em dois projetos, mas nunca os acabamos.",
+
+			"cred8": "Se queres ver mais explicações interativas, vê a Parábola dos Poligonos!",
+			"cred9": "Foi uma colaboração com a Vi Hart -- sim, *essa* Vi Hart! :D --",
+			"cred10": "sobre preconceito e diversidade.",
+
+			"cred11": "E lembra-te, esta explicação é apenas uma introdução.",
+			"cred12": "Por isso, se queres aprender mais vê os artigos",
+			"cred13": "que estão na descrição lá em baixo.",
+
+			"cred14": "Ouuuuu podes continuar a brincar aqui à esquerda",
+			"cred15": "porque é bem divertido.",
+
+			"cred16": "De qualquer maneira, muito obrigado por teres visto.",
+			"cred17": "",
+			"cred18": "jogado?... visto?",
+			"cred19": "",
+			"cred20": "jovisto.",
+			"cred21": "Obrigado por teres jovisto.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Refazer ligações faz com que sintas ansiedade a curto prazo,",
+			"extra1": "mas vale bem a pena a longo prazo.",
+
+			"extra2": "Um medo condicionado.",
+			"extra3": "O medo desapareceu.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "O truque é te expores ao que tens medo,",
+			"extra7": "mas de uma maneira segura.",
+			"extra8": "Confronta os teus medos de uma maneira segura.",
+			
 		}
 	},
 
