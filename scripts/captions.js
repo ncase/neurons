@@ -1202,6 +1202,209 @@ window.Captions = {
 			"extra8": "Affrontare le tue paure in uno spazio protetto.",
 
 		}
+	},
+
+	// ESPERANTO?!
+	"eo": {
+		label: "Esperanto",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Do, mi kutimis esti ĉiam anksiema.",
+			"intro1": "Kaj mi anksiis PRI esti anskiema.",
+			"intro2": "Estis anksioj ĝis la fino.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Saluton, mi estas Nicky Case,",
+			"prop1": "kaj ĝi estas interagada klarigo pri neŭronoj.",
+			"prop2": "Jes! Vi fakte povas interagi kun ĉi tio,",
+			"prop3": "♬ do kial ne vi provas tion ♬",
+			"prop4": "kaj klaku en neŭronon, kaj vidu kio okazos?",
+
+			"prop5": "ParDONU min, mi parolas!... Mi nur ŝercas.",
+
+			"prop6": "Okej, ŭaŭ, vi vere ĝuas ĉi tion, klakante ĈION,",
+			"prop7": "MOJOSE. KOMPRENITE. BONEGE.",
+
+			"prop8": "Jes!",
+			"prop8.5": "Rigardu kiel la signaloj movas,",
+			"prop9": "de neŭrono al neŭrono al neŭrono.",
+			"prop10": "Provu klaki plu.",
+
+			"prop11": "Kompreneble, ĉi tio estas simpligita modelo,",
+			"prop12": "sed neŭronoj funkcias proksimume tiel.",
+			"prop13": "Unu penso igas la sekvan, kaj tiel plu,",
+			"prop14": "sed... en la ANKSIEMA cerbo...",
+
+			"mesmerizing": "Iomete hipnota, ĉu ne?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "TIO okazas.",
+			"fear1": "Naivaj pensoj ligas al anksiaj pensoj.",
+			"fear2": "Pri mi mem, mi timis ke oni taksas min perdinto,",
+			"fear3": "kaj esti intima kun homoj,",
+			"fear4": "kaj pri...",
+			"fear5": "truoj.",
+			"fear6": "ĉar... mi ne scias kial, sed dense arigitaj truoj",
+			"fear7": "nur ĝenas min, ĉu vi scias? Mi ne scias.",
+
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SONOJ]",
+			"hebb1": "Ĉiuokaze... kiel oni lernis tiujn timojn?",
+			"hebb2": "Por klarigi tion, mi forigu ĉion ĉi...",
+			"hebb3": "kaj donu al vi...",
+			"hebb4": "tion!",
+
+			"hebb5": "Hebba Lernado.",
+			"hebb6": "\"Neŭronoj kiuj aktiviĝas kune, ligiĝas kune.\"",
+
+			"hebb7": "Tio estas regulo kiun neŭronsciencistoj uzas por priskribi kiel",
+			"hebb8": "neŭronoj faras novajn ligojn.",
+			"hebb9": "Resume, se oni aktivigas unu neŭrono, kaj poste aktivigas alian,",
+			"hebb10": "la unua neŭrono ligiĝos AL la dua.",
+			"hebb11": "Provu vi mem!",
+
+			"hebb12": "Tro malrapide! Vi ne klakis sufiĉe rapide. Reprovu?",
+			"hebb13": "Ne sufiĉe proksime. Provu alian paron de neŭronoj.",
+
+			"hebb14": "Jen kiel oni lernas!",
+			"hebb15": "Kompreneble ni ne lernas tiel rapide en realo,",
+			"hebb16": "Mi rapidigis ĉi tiun simulon, e, sed tamen...",
+			"hebb17": "Nun ludu, kaj faru kelkajn ligojn plu,",
+			"hebb18": "eble faru ĉenon aŭ ion.",
+
+			"hebb19": "Ĉi tiu lernado-regulo estas kial, se vi infane estus mordita de hundo,",
+			"hebb20": "vi eble akirus timon pri hundoj!",
+			"hebb21": "Ĉar via 'hunda' neŭrono aktiviĝis, kaj poste via 'dolora' neŭrono aktiviĝis.",
+			"hebb22": "Kaj tiel, 'hundo' ligiĝis al 'doloro'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Ĉiuokaze, se tiel estas kiel oni LERNAS, jen kiel oni MALlernas.",
+
+			"anti1": "Kontraŭ-Hebba Lernado.",
+			"anti2": "Neŭrono kiu ne faras aktivigon, tiu perdas sian ligon.",
+
+			"anti3": "Alia neŭronsciencista regulo!",
+
+			"anti4": "Do - se oni jam havas ligon de unu neŭrono al alia,",
+			"anti5": "kaj oni aktivigas la unuan SEN aktivigi la duan,",
+			"anti6": "la ligo malfortiĝas.",
+			"anti7": "Denove, provu vi mem.",
+
+			"anti8": "Tiu neŭrono ne havis neniujn ligojn.",
+			"anti9": "Vi bezonas trovi iun ligitan.",
+			"anti10": "Ho, tiu neŭrono havas nur ligojn AL si, sed ne DE si.",
+			"anti11": "Vi bezonas trovi iun kiu havas ligojn DE si.",
+
+			"anti12": "Nun atendu...",
+			"anti13": "Kaj rigardu! La ligo estas pli malforta.",
+			"anti14": "Faru tion plufoje, kaj ĉifoje, la ligo tute foriĝos.",
+
+			"anti15": "Kaj tiu mallernado-regulo estas kial, se vi timas hundojn,",
+			"anti16": "kaj vi renkontas afablajn hundojn je multaj fojoj,",
+			"anti17": "vi eble mallernas tiun timon.",
+			"anti18": "'Hunda' neŭrono aktiviĝas, SEN aktiviĝo de la 'dolora' neŭrono,",
+			"anti19": "kaj tial - la ligo malfortiĝos.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Do ĉar vi nun scias kiel oni lernas kaj mallernas, ni revidu...",
+			"ther1": "...tion.",
+
+			"ther2": "Mi volas ke vi retrejnu ĉi tiun cerbon.",
+			"ther3": "Redratumu, religu ĉiun ĉi tri aferojn,",
+			"ther4": "de senti tima, al senti sekura.",
+
+			"ther5": "Sciu, redratumi vin mem eble kreas anksion baldaŭe...",
+			"ther6": "...sed TRE meritas la peno post longa tempo.",
+
+			"ther7": "Unu farita, du restas.",
+			"ther8": "Du farita, unu restas.",
+			"ther9": "Mi. Ankoraŭ. Ne. Ŝatas. Truojn.",
+
+			"ther10": "Kaj... vi tion faris!",
+
+			"ther11": "Tio kion vi faras nomiĝas 'ekspona terapio'.",
+			"ther12": "Ĝi estas unu el la plej indikaĵo-subtenitaj metodoj",
+			"ther13": "por kuracii specifajn fobiojn, PTSD-on, kaj aliajn anksiajn malsanojn.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Denove, en realo, redratumi vin mem ne estas facile, ne estas rapide,",
+			"outro1": "sed eblas.",
+			"outro2": "Mi promesas -- mi estas pruvo --",
+			"outro3": "ĝi eblas.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hej, koran dankon al ĉiuj miaj apogantoj de Patreon, ĉar sen ili,",
+			"cred1": "mi ne povus fari ĉi tiujn strangajn interagadajn aferojn,",
+			"cred2": "kaj verŝajne mi devus trovi veran laboron.",
+			"cred3": "Do se vi volus helpi min daŭre fari tian aĵon,",
+			"cred4": "kaj esti agnoskita en la sekva afero kiuj mi kreas,",
+			"cred5": "rigardu mian Patreon!",
+
+			"cred6": "La muzikon kiun vi aŭdas faras la bonega Phyrnna,",
+			"cred7": "kun kiu mi kunlaboris en du projektoj kiujn mi malsukcesis fini.",
+
+			"cred8": "Por alia interagada klarigo, rigardu la Parabolo de la Poligonoj!",
+			"cred9": "Ĝi estis kunlaboro kun Vi Hart -- jes, *tiu* Vi Hart! :D --",
+			"cred10": "pri sistema emo kaj diverseco.",
+
+			"cred11": "Kaj memoru, ĉi tiu interagada klarigo estis nur enkonduko.",
+			"cred12": "Do se vi volas scii pli, *nepre* rigardu la pluajn legaĵojn",
+			"cred13": "en la priskribo ĉi-sube. ",
+
+			"cred14": "Aaaaaŭ vi povus nur ludi kun la sabloskatolo en la maldekstro",
+			"cred15": "ĉar ĝi amuzas.",
+
+			"cred16": "Ĉiel, dankon tre, tre, multan pro spekti.",
+			"cred17": "",
+			"cred18": "ee, pro ludi?... spekti?",
+			"cred19": "",
+			"cred20": "spludi.",
+			"cred21": "Multan dankon pro spludi.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Redratumi vin mem eble kreas anksion baldaŭe",
+			"extra1": "sed tre meritas la peno post longa tempo.",
+
+			"extra2": "Cirkonstanca timo.",
+			"extra3": "La timo estingiĝas.",
+
+			"extra4": "Ŭuu!",
+			"extra5": "Jen~",
+
+			"extra6": "Sciu, la metodo estas EKSPONI vin mem al tio kion vi timas,",
+			"extra7": "sen en maniero maldanĝera.",
+			"extra8": "Renkontu viajn timojn en sekura spaco.",
+
+		}
 	}
 
 };

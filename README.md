@@ -44,9 +44,10 @@ with the exception of a few external libraries and audio stuff I didn't make.
 
 ---
 
-**Narcissistically Keeping A List of When This Got Written Up In Press:**
+**Narcissistically Keeping A List Of When This Got Written Up In Press:**
 
-Sep 22: [Mental Floss](http://mentalfloss.com/article/68880/interactive-game-shows-what-your-brain-looks-when-youre-anxious)
+Sep 22: [Mental Floss](http://mentalfloss.com/article/68880/interactive-game-shows-what-your-brain-looks-when-youre-anxious)    
+Sep 25: [KillScreen](http://killscreendaily.com/articles/your-brain-anxiety-interactive-explanation-nicky-case/)    
 
 ---
 
