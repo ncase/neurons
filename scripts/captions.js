@@ -834,21 +834,21 @@ window.Captions = {
 			// PROPAGATION //
 			/////////////////
 
-			"prop0": "Hi, Ich bin Nicky Case,",
+			"prop0": "Hi, ich bin Nicky Case,",
 			"prop1": "und das hier ist eine interaktive Ausführung über Neuronen.",
 			"prop2": "Jap! Du kannst hiermit tatsächlich interagieren,",
 			"prop3": "♬ also warum versuchst du es nicht einfach ♬",
 			"prop4": "und klickst auf ein Neuron und probierst es aus?",
 
-			"prop5": "Entschuldigung! Ich habe gerade mit dir gesprochen!… Nur Spaß.",
+			"prop5": "Hey, ich habe gerade mit dir gesprochen!… Nur Spaß.",
 
-			"prop6": "Okay, wow, du hast wirklich Spaß daran ALLES zu klicken,",
+			"prop6": "Okay, wow, du hast wirklich Spaß daran ALLES anzuklicken,",
 			"prop7": "COOL. VERSTANDEN. KLASSE.",
 
 			"prop8": "Yeah!",
 			"prop8.5": "Sieh dir an, wie die Signale sich ausbreiten,",
 			"prop9": "von Neuron zu Neuron zu Neuron.",
-			"prop10": "Klick noch ein paar Neuronen mehr.",
+			"prop10": "Klick noch ein paar Neuronen mehr an.",
 
 			"prop11": "Natürlich ist das hier ein vereinfachtes Modell,",
 			"prop12": "aber so ungefähr funktionieren Neuronen.",
@@ -862,7 +862,7 @@ window.Captions = {
 			//////////////
 
 			"fear0": "passiert das hier.",
-			"fear1": "Unschuldige Gedanken verbinden sich mit angsteinlösenden Gedanken.",
+			"fear1": "Unschuldige Gedanken verbinden sich mit angsteinflößenden Gedanken.",
 			"fear2": "Ich persönlich hatte Angst davor, als Versager angesehen zu werden,",
 			"fear3": "vor der Nähe zu Menschen,",
 			"fear4": "und vor…",
@@ -881,7 +881,7 @@ window.Captions = {
 			"hebb4": "hiermit!",
 
 			"hebb5": "Hebbsches Lernen.",
-			"hebb6": "“Neuronen die zusammen aktiviert werden, verbinden sich.”",
+			"hebb6": "“Neuronen, die zusammen aktiviert werden, verbinden sich.”",
 
 			"hebb7": "Das ist eine Faustregel mit der Neurowissenschaftler beschreiben,",
 			"hebb8": "wie Neuronen sich miteinander verbinden.",
@@ -894,58 +894,58 @@ window.Captions = {
 
 			"hebb14": "Und so lernen wir!",
 			"hebb15": "Natürlich lernen wir im echten Leben nicht so schnell,",
-			"hebb16": "Ich habe diese Simulation ein wenig beschleunig, aber trotzdem.",
-			"hebb17": "Jetzt spiel ein bisschen damit rum, verbinde ein paar Neuronen",
+			"hebb16": "ich habe diese Simulation ein wenig beschleunigt, aber trotzdem.",
+			"hebb17": "Jetzt spiel ein bisschen damit rum, verbinde ein paar Neuronen,",
 			"hebb18": "versuch es doch mal mit einer Kette.",
 
 			"hebb19": "Das ist der Grund, warum wir uns vor Hunden fürchten,",
 			"hebb20": "wenn wir als Kind von einem Hund gebissen worden sind!",
-			"hebb21": "Weil dein 'Hund' Neuron aktiviert wurde, und direkt danach dein 'Schmerz' Neuron.",
-			"hebb22": "Und so, hat sich 'Hund' mit 'Schmerz' verbunden.",
+			"hebb21": "Weil dein 'Hund'-Neuron aktiviert wurde, und direkt danach dein 'Schmerz'-Neuron.",
+			"hebb22": "Und so hat sich 'Hund' mit 'Schmerz' verbunden.",
 
 			///////////////////////////
 			// ANTI-HEBBIAN LEARNING //
 			///////////////////////////
 
-			"anti0": "Egal, so lernen wir, und so verlernen wir.",
+			"anti0": "Wie auch immer, so lernen wir. Und so verlernen wir:",
 			
-			"anti1": "Anti-hebbsches Lernen.",
-			"anti2": "“Neuronen, die unabhängig von einander aktiviert werden, lösen ihre Verbindung.”",
+			"anti1": "Anti-Hebbsches Lernen.",
+			"anti2": "“Neuronen, die unabhängig voneinander aktiviert werden, lösen ihre Verbindung.”",
 			
 			"anti3": "Eine weitere Faustregel der Neurowissenschaftler!",
 
-			"anti4": "Also - wenn man schon eine Verbindung von einem Neuron zu einem Anderen hat,",
-			"anti5": "und man das erste Neuron OHNE das zweite Neuron aktiviert,",
+			"anti4": "Also – wenn schon eine Verbindung von einem Neuron zu einem anderen besteht,",
+			"anti5": "und das erste Neuron OHNE das zweite Neuron aktiviert wird,",
 			"anti6": "wird die Verbindung schwächer.",
 			"anti7": "Versuch es doch selbst einmal!",
 
 			"anti8": "Diese Neuronen haben keine Verbindung.",
 			"anti9": "Du musst ein Neuron finden, das eine Verbindung hat.",
-			"anti10": "Ah, dieses Neuron hat nur Verbindungen ZU ihm hin und keine, die  VON ihm ausgehen.",
-			"anti11": "Du brauchst ein Neuron, von dem Verbundenen AUSGEHEN.",
+			"anti10": "Ah, dieses Neuron hat nur Verbindungen ZU ihm hin und keine, die VON ihm ausgehen.",
+			"anti11": "Du brauchst ein Neuron, von dem Verbindungen AUSGEHEN.",
 
 			"anti12": "Und jetzt warte…",
 			"anti13": "Schau! Die Verbindung ist jetzt schwächer.",
 			"anti14": "Mach es noch mal und die Verbindung wird komplett gelöst.",
 
-			"anti15": "Und diese Regel des Verlernens ist der Grund, warum deine Angst vor Hunden,",
-			"anti16": "schwächer werden kann, indem du über die Zeit,",
+			"anti15": "Und diese Regel des Verlernens ist der Grund, warum deine Angst vor Hunden",
+			"anti16": "schwächer werden kann, indem du über die Zeit",
 			"anti17": "immer und immer wieder freundliche Hunde kennenlernst.",
-			"anti18": "Das 'Hund' Neuron wird aktiviert, OHNE das das 'Schmerz' Neuron aktiviert wird,",
-			"anti19": "und deswegen - die Verbindung geschwächt wird.",
+			"anti18": "Das 'Hund'-Neuron wird aktiviert OHNE dass das 'Schmerz'-Neuron aktiviert wird,",
+			"anti19": "und so – wird die Verbindung geschwächt.",
 
 			/////////////
 			// THERAPY //
 			/////////////
 
-			"ther0": "Jetzt weißt du wie wir Lernen und wieder Verlernen. Sehen wir uns noch mal",
+			"ther0": "Jetzt weißt du wie wir Lernen und wieder Verlernen. Sehen wir uns noch mal…",
 			"ther1": "…das an.",
 
 			"ther2": "Ich möchte, dass du dieses Gehirn umprogrammierst.",
 			"ther3": "Verkabele und verbinde diese drei Dinge neu,",
 			"ther4": "vom Gefühl von Angst, zum Gefühl von Sicherheit.",
 
-			"ther5": "Siehst du, sich umzuprogrammieren mag auf kurze Sicht Angst erzeugen",
+			"ther5": "Siehst du, sich umzuprogrammieren mag auf kurze Sicht Angst erzeugen…",
 			"ther6": "…aber auf Dauer lohnt es sich auf JEDEN FALL.",
 
 			"ther7": "Eins weg, noch zwei.",
@@ -955,16 +955,16 @@ window.Captions = {
 			"ther10": "Und… du hast es geschafft!",
 
 			"ther11": "Was du gerade getan hast, nennt sich 'Konfrontationstherapie'.",
-			"ther12": "Das ist eine der best bewiesenen Therapieformen",
-			"ther13": "um Krankheiten wie Posttraumatisches Stresssyndrom und andere Angststörungen zu behandeln.",
+			"ther12": "Das ist eine der best belegten Therapieformen",
+			"ther13": "um Krankheiten wie Posttraumatisches Belastungssyndrom und andere Angststörungen zu behandeln.",
 
 			///////////
 			// OUTRO //
 			///////////
 
-			"outro0": "Und noch mal, sich im echten Leben umzuprogrammieren ist nicht so einfach, nicht so schnell,",
+			"outro0": "Und noch mal, sich im echten Leben umzuprogrammieren geht nicht so einfach, nicht so schnell,",
 			"outro1": "aber man kann es schaffen.",
-			"outro2": "Ich verspreche es dir -- Ich bin der Beweis --",
+			"outro2": "Ich verspreche es dir – ich bin der Beweis –",
 			"outro3": "Man kann es schaffen.",
 
 			/////////////
@@ -979,25 +979,25 @@ window.Captions = {
 			"cred5": "schau dir einfach meine Patreon-Seite an!",
 
 			"cred6": "Die Musik, die du gerade hörst, kommt von der wundervollen Phyrnna,",
-			"cred7": "die mir schon bei zwei anderen Projekten geholfen hat, die ich nicht beendet habe.",
+			"cred7": "mir der ich schon bei zwei anderen Projekten zusammengearbeitet habe, die ich nicht beendet habe.",
 
-			"cred8": "Eine weitere interaktive Ausführung ist die 'Parable of the Polygons!'",
-			"cred9": "Das war eine Zusammenarbeit mit Vi Hart -- ja, *der* Vi Hart! :D --",
-			"cred10": "über systematische Benachteiligungen und Vielfalt.",
+			"cred8": "Eine weitere interaktive Ausführung ist die 'Parabel der Polygone'!",
+			"cred9": "Das war eine Zusammenarbeit mit Vi Hart – ja, *der* Vi Hart! :D –",
+			"cred10": "über systemische Benachteiligungen und Vielfalt.",
 
-			"cred11": "Und nicht vergessen: diese interaktive Ausführung war nur eine Einführung.",
+			"cred11": "Und nicht vergessen: Diese interaktive Ausführung war nur eine Einführung.",
 			"cred12": "Wenn du also mehr lernen willst, solltest du *auf jeden Fall* die weiteren Quellen",
 			"cred13": "in der Beschreibung unten ansehen. ",
 
-			"cred14": "Oder du spielst ein bisschen mit der Sandbox auf der linken Seite herum",
+			"cred14": "Oder du spielst ein bisschen mit dem Sandkasten auf der linken Seite herum",
 			"cred15": "weil das nämlich viel Spaß macht.",
 
-			"cred16": "Egal was du jetzt machst, vielen Dank für's zusehen.",
+			"cred16": "Egal was du jetzt machst, vielen Dank fürs Zusehen.",
 			"cred17": "",
-			"cred18": "ähm, spielen?… zusehen?",
+			"cred18": "ähm, Spielen?… Zusehen?",
 			"cred19": "",
-			"cred20": "spielsehen.",
-			"cred21": "Vielen Dank für's spielsehen.",
+			"cred20": "Spielsehen.",
+			"cred21": "Vielen Dank fürs Spielsehen.",
 
 			//////////////////
 			// EXTRA SHTUFF //
@@ -1012,7 +1012,7 @@ window.Captions = {
 			"extra4": "Whoo!",
 			"extra5": "ta-dahhh~",
 
-			"extra6": "Weißt du, der Trick ist es sich dem ZU STELLEN, vordem man Angst hat,",
+			"extra6": "Weißt du, der Trick ist es sich dem zu STELLEN, vor dem man Angst hat,",
 			"extra7": "auf eine sichere Art und Weise.",
 			"extra8": "Stell dich deiner Angst in einer sicheren Umgebung.",
 				
