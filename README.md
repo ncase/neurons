@@ -46,10 +46,10 @@ with the exception of a few external libraries and audio stuff I didn't make.
 
 **Narcissistically Keeping A List Of When This Got Written Up In Press:**
 
-Sep 22: [Mental Floss](http://mentalfloss.com/article/68880/interactive-game-shows-what-your-brain-looks-when-youre-anxious)    
-Sep 23: [FlowingData](https://flowingdata.com/2015/09/24/interactive-explanation-for-how-neurons-work/)   
-Sep 25: [KillScreen](http://killscreendaily.com/articles/your-brain-anxiety-interactive-explanation-nicky-case/)    
-Sep 25: [FastCompany](http://www.fastcodesign.com/3051494/infographic-of-the-day/learn-how-neurons-work-through-an-autobiographical-interactive-story)    
+Sep 22, 2015: [Mental Floss](http://mentalfloss.com/article/68880/interactive-game-shows-what-your-brain-looks-when-youre-anxious)    
+Sep 23, 2015: [FlowingData](https://flowingdata.com/2015/09/24/interactive-explanation-for-how-neurons-work/)   
+Sep 25, 2015: [KillScreen](http://killscreendaily.com/articles/your-brain-anxiety-interactive-explanation-nicky-case/)    
+Sep 25, 2015: [FastCompany](http://www.fastcodesign.com/3051494/infographic-of-the-day/learn-how-neurons-work-through-an-autobiographical-interactive-story)    
 
 ---
 
