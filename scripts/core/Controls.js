@@ -30,18 +30,15 @@ play.onclick = function(){
 	}
 	_updatePauseUI();
 };
-/*subscribe("/mouse/down",function(){
-	if(!Interactive.PLAYING){
-		Interactive.play();
-		_updatePauseUI();
-	}
-});*/
-/*window.top.onblur = window.onblur = function(){
-	if(Interactive.PLAYING){
+
+// Page Visibility
+subscribe("/update", function(){
+	if(Interactive.PLAYING && document.hidden){
 		Interactive.pause();
 		_updatePauseUI();
 	}
-};*/
+});
+
 var resume_screen = document.getElementById("resume");
 var resume_button = document.getElementById("resume_button");
 resume_screen.onclick = function(){
