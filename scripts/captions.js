@@ -1808,6 +1808,209 @@ window.Captions = {
 			"extra8": "在安全环境下面对恐惧.",
 				
 		}
+	},
+
+	// Slovene
+	"sl": {
+		label: "Slovenščina",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Torej, vselej sem bil anksiozen.",
+			"intro1": "Potem sem bil anksiozen, KER sem bil anksiozen.",
+			"intro2": "Bila je anksioznost do konca.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Živijo, sem Nicky Case,",
+			"prop1": "in to je interaktivna razlaga o nevronih.",
+			"prop2": "Aha! Dejansko lahko sodeluješ,",
+			"prop3": "♬ zakaj torej ne poskusiš ♬",
+			"prop4": "in klikneš na nevron, da vidiš, kaj se zgodi?",
+
+			"prop5": "Opros-TITE, govorim! ... Saj se hecam.",
+
+			"prop6": "Okej, vau, res te je potegnilo not, klikaš VSEPOPREK,",
+			"prop7": "KUL. DOJEMAŠ. SUPER.",
+
+			"prop8": "Jea!",
+			"prop8.5": "Opazuj, kako se signali širijo navzdol,",
+			"prop9": "od nevrona, do nevrona, do nevrona.",
+			"prop10": "Poskusi kliknit še kakšnega.",
+
+			"prop11": "Seveda, to je poenostavljen model,",
+			"prop12": "ampak tako v grobem izgleda, kako delujejo nevroni.",
+			"prop13": "Ena misel sproži naslednjo in tako naprej,",
+			"prop14": "ampak ... v ANKSIOZNIH možganih ...",
+
+			"mesmerizing": "Kar osupljivo, ni?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "TO se zgodi.",
+			"fear1": "Nedolžne misli se povežejo z anksioznimi mislimi.",
+			"fear2": "Jaz osebno sem se tako zelo bal, da bi me videli kot izgubo",
+			"fear3": "da bi si bil slizu z ljudmi,",
+			"fear4": "iiin ...",
+			"fear5": "lukenj.",
+			"fear6": "Ker ... Ne vem, zakaj, ampak tesno nakopičene luknje",
+			"fear7": "me nekako strašijo, a veš? Ne vem.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[ZVOKI]",
+			"hebb1": "Kakor koli ... kako se teh strahov sploh naučimo?",
+			"hebb2": "No, da ti lahko razložim to, naj se znebim vsega tega ...",
+			"hebb3": "in ti dam ...",
+			"hebb4": "to!",
+
+			"hebb5": "Hebbovo učenje.",
+			"hebb6": "“Nevroni, ki se prožijo skupaj, se povezujejo.”",
+
+			"hebb7": "To je pravilo čez palec, ki ga nevroznanstveniki uporabljajo, da opišejo, kako",
+			"hebb8": "nevroni delajo nove povezave.",
+			"hebb9": "Načeloma, če sprožiš en nevron in nato še en nevron,",
+			"hebb10": "se bo prvi nevron povezal Z drugim nevronom.",
+			"hebb11": "Poskusi še ti!",
+
+			"hebb12": "Prepočasi! Ne klikaš dovolj hitro. Poskusi znova?",
+			"hebb13": "Ni bilo dovolj blizu. Poskusi z drugim parom nevronov.",
+
+			"hebb14": "In tako se učimo!",
+			"hebb15": "Seveda, v resničnem življenju se ne učimo tako hitro,",
+			"hebb16": "to simulacijo sem malo pospešil, ja, ampak vseeno.",
+			"hebb17": "Poigraj se še malo, naredi še nekaj povezav,",
+			"hebb18": "naredi morda verigo ali kaj takega.",
+
+			"hebb19": "To pravilo učenja je razlog za to, da če te je kot otroka ugriznil pes,",
+			"hebb20": "lahko razviješ strah pred psi!",
+			"hebb21": "Ker se je sprožil tvoj 'pes' nevron, nato se je sprožil tvoj 'bolečina' nevron.",
+			"hebb22": "In tako se je 'pes' povezal z 'bolečina'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Kakor koli, če se tako učimo, je tukaj, kako se od-učimo, pozabimo naučeno.",
+			
+			"anti1": "Anti-Hebbovo učenje.",
+			"anti2": "“Nevroni, ki se ne prožijo sočasno, izgubijo povezave.”",
+			
+			"anti3": "Še eno pravilo čez palec, ki ga uporabljajo nevroznanstveniki!",
+
+			"anti4": "Torej - če že imaš povezavo od enega do drugega nevrona,",
+			"anti5": "in sprožiš prvi nevron, BREZ DA BI sprožil drugi nevron,",
+			"anti6": "povezava oslabi.",
+			"anti7": "Spet poskusi.",
+
+			"anti8": "Ta nevron ni imel povezav.",
+			"anti9": "Najti moraš enega, ki je povezan.",
+			"anti10": "Ah, ta nevron ima samo povezave DO njega, nima pa povezav OD njega.",
+			"anti11": "Najti moraš enega, ki ima povezave OD njega.",
+
+			"anti12": "Zdaj pa počakaj ...",
+			"anti13": "In poglej! Povezava je šibkejša.",
+			"anti14": "Ponovi to in tokrat bo povezava uničena.",
+
+			"anti15": "In to pravilo pozabljanja naučenega je, da če se bojiš psov,",
+			"anti16": "in si znova in znova izpostavljen prijaznim psom,",
+			"anti17": "se lahko od-učiš tega strahu.",
+			"anti18": "Nevron 'pes' se sproži BREZ proženja nevrona 'bolečina',",
+			"anti19": "in zato - povezava oslabi.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "No, in sedaj, ko vemo, kako se učimo in kako pozabljamo naučeno, ponovno obiščimo ...",
+			"ther1": "... tole.",
+
+			"ther2": "Želim, da prešolaš te možgane.",
+			"ther3": "Na novo ožiči, na novo poveži vsako od teh treh stvari,",
+			"ther4": "od občutenja strahu do občutenja varnosti.",
+
+			"ther5": "Vidiš, preprogramiranje samega sebe lahko kratkoročno povzroči anksioznost ...",
+			"ther6": "... ampak se dolgoročno TAKO zelo izplača.",
+
+			"ther7": "En je, še dva.",
+			"ther8": "Dva sta, še enega.",
+			"ther9": "Jaz. Še vedno. Ne maram. Lukenj.",
+
+			"ther10": "In ... uspelo ti je!",
+
+			"ther11": "Kar si pravkar naredil/a, se imenuje 'terapija z izpostavljanjem'",
+			"ther12": "Je ena izmed najbolj z dokazi podprtih terapij",
+			"ther13": "za zdravljenje specifičnih fobij, PTSD (posttravmatske stresne motnje) in drugih anksioznih motenj.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Ponovno, v resničnem življenju preprogramiranje sebe ni enostavno, ni hitro",
+			"outro1": "a je možno.",
+			"outro2": "Zagotavljam ti -- jaz sem dokaz. --",
+			"outro3": "Je možno.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hej, ogromna zahvala vsem mojim Patreon podpornikom, ker brez njih,",
+			"cred1": "ne bi mogel delati teh čudnih interaktivnih stvari,",
+			"cred2": "in bi si bil najbrž prisiljen poiskati pravo službo.",
+			"cred3": "Tako da če mi želiš pomagati pri tem, da še naprej delam take stvari,",
+			"cred4": "in želiš biti omenjen/a v naslednji stvari, ki jo bom naredil,",
+			"cred5": "pokukaj moj Patreon!",
+
+			"cred6": "Glasbo, ki si jo poslušal/a, je naredila čudovita Phyrnna,",
+			"cred7": "s katero sem sodeloval na dveh pejšnjih projektih, ki mi ju ni uspelo dokončati.",
+
+			"cred8": "Če želiš videti še eno interaktivno razlago, poglej 'Parable of the Polygons'!",
+			"cred9": "To je bilo sodelovanje z Vi Hart -- ja, *tisto* Vi Hart! :D --",
+			"cred10": "o sistemski pristranskosti in raznolikosti.",
+
+			"cred11": "In ne pozabi, ta interaktivna razlaga je bila le uvod.",
+			"cred12": "Tako da če želiš izvedeti še več, *definitivno* poglej nadaljnje branje",
+			"cred13": "v opisu spodaj. ",
+
+			"cred14": "Aaaaaali pa se le poigraj s peskovnikom na levi",
+			"cred15": "ker je precej zabavno.",
+
+			"cred16": "Kakor koli, naj, najlepša hvala za ogled.",
+			"cred17": "",
+			"cred18": "em, igranje? ... ogled?",
+			"cred19": "",
+			"cred20": "oglegranje.",
+			"cred21": "Najlepša hvala za oglegranje.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Preprogramiranje sebe lahko kratkoročno povzroči anksioznost,",
+			"extra1": "ampak se na dolgi rok tako izplača.",
+
+			"extra2": "Pogojen strah.",
+			"extra3": "Strah je izbrisan.",
+
+			"extra4": "Huuu!",
+			"extra5": "ta-daaaaa~",
+
+			"extra6": "Vidiš, trik je, da se IZPOSTAVIŠ temu, česar se bojiš,",
+			"extra7": "ampak na varen način.",
+			"extra8": "Sooči se s svojimi strahovi v varnem okolju.",
+				
+		}
 	}
 
 };

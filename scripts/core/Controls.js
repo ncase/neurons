@@ -147,8 +147,8 @@ for(var i=0;i<languageList.length;i++){
 					'value="'+language.value+'">'+
 					language.label+
 					'</option>';
-	captionsSelect.innerHTML = html;
 }
+captionsSelect.innerHTML = html;
 
 // When the language is changed...
 captionsSelect.onchange = function(){
