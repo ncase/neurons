@@ -1425,17 +1425,17 @@ window.Captions = {
 
 			"prop0": "Ahoj, já jsem Nicky Case,",
 			"prop1": "a toto je interaktivní výklad o neuronech.",
-			"prop2": "Přesně tak! Můžeš si tu s tím hrát",
+			"prop2": "Přesně tak! Můžeš si tu s tím hrát,",
 			"prop3": "♬ tak proč to nezkusíš? ♬",
 			"prop4": "Klikni na neuron a uvidíš, co se stane.",
 
-			"prop5": "S DOVOLENÍM, nevadí ti že s tebou mluvím?! Ale ne, dělám si srandu.",
+			"prop5": "S DOVOLENÍM, nevadí ti, že s tebou mluvím?! Ale ne, dělám si srandu.",
 
-			"prop6": "Ok, super, vážně ti to jde klikat na VŠECHNO,",
+			"prop6": "Ok, super, vážně ti to jde, klikat na VŠECHNO,",
 			"prop7": "BEZVA. MÁŠ TO. SKVĚLE.",
 
 			"prop8": "Jo!",
-			"prop8.5": "Sleduj jak se signály šíří dále,",
+			"prop8.5": "Sleduj, jak se signály šíří dále,",
 			"prop9": "od neuronu k neuronu k neuronu.",
 			"prop10": "Zkus kliknout na nějaké další.",
 
@@ -1452,12 +1452,12 @@ window.Captions = {
 
 			"fear0": "se stane TOHLE.",
 			"fear1": "Nevinné myšlenky jsou spojené s úzkostnými myšlenkami.",
-			"fear2": "Sám jsem se tak bál že v očích ostaních selžu,",
+			"fear2": "Sám jsem se tak bál, že v očích ostatních selžu,",
 			"fear3": "blízkosti k jiným lidem,",
 			"fear4": "a…",
 			"fear5": "děr.",
 			"fear6": "Protože… Nevím proč, ale úzké shluky děr",
-			"fear7": "mě vážně děsí, rozumíš? Fakt.",
+			"fear7": "mě tak nějak děsí, rozumíš?",
 
 			//////////////////////
 			// HEBBIAN LEARNING //
@@ -1465,41 +1465,41 @@ window.Captions = {
 
 			"hebb0": "[Fuj]",
 			"hebb1": "Nicméně… jak se vůbec naučíme takovým obavám?",
-			"hebb2": "Abych tohle vysvětlil, nejprve se zbavíme tohohle všeho…",
+			"hebb2": "Abych to vysvětlil, nejprve se tohohle všeho zbavíme…",
 			"hebb3": "a místo toho se podíváme…",
 			"hebb4": "na tohle!",
 
 			"hebb5": "Hebbovské účení.",
-			"hebb6": "Neurony které se společně aktivují se i společně propojí.",
+			"hebb6": "Neurony, které se společně aktivují, se spolu i propojují.",
 
-			"hebb7": "Tímto pravidlem neurovědci popisují",
+			"hebb7": "Tímto zjednodušeným pravidlem neurovědci popisují,",
 			"hebb8": "jak neurony utváří nová spojení.",
-			"hebb9": "V podstatě když aktivuješ jeden neuron a potom druhý neuron,",
+			"hebb9": "V podstatě když aktivuješ jeden neuron a pak druhý neuron,",
 			"hebb10": "první neuron se připojí K DRUHÉMU neuronu.",
 			"hebb11": "Zkus si to!",
 
 			"hebb12": "Moc pomalu! Musíš na neurony klikat rychleji. Zkusíš to ještě?",
 			"hebb13": "Tyhle neurony jsou od sebe moc daleko. Zkus jiné dva páry.",
 
-			"hebb14": "A tak funguje učení!",
-			"hebb15": "Ve skutečném životě se samozřejmě neučíme tak rychle,",
-			"hebb16": "tahle simulace je zrychlená, ale princip je stejný.",
-			"hebb17": "Zkus si s tím teď trochu pohrát, vytvoř další spojení,",
-			"hebb18": "zkus udělat řetěz nebo něco jiného.",
+			"hebb14": "A takhle se učíme!",
+			"hebb15": "Samozřejmě, že ve skutečném životě se neučíme tak rychle,",
+			"hebb16": "tahle simulace je zrychlená, ale princip stejný.",
+			"hebb17": "Zkus si s tím trochu pohrát, vytvoř další spojení,",
+			"hebb18": "třeba udělej řetěz nebo něco jiného.",
 
-			"hebb19": "Kdyby tě v dětství kousnul pes, tak toto pravidlo učení vysvětluje",
+			"hebb19": "Kdyby tě v dětství kousl pes, tak toto pravidlo učení vysvětluje,",
 			"hebb20": "proč budeš mít strach ze psů!",
-			"hebb21": "Protože se aktivoval neuron ‚pes‘ a pak se aktivoval neron ‚bolest‘.",
-			"hebb22": "A tak se ‚pes‘ spojil s ‚bolestí‘.",
+			"hebb21": "Protože se aktivoval neuron „pes“ a pak se aktivoval neuron „bolest“.",
+			"hebb22": "A tak se „pes“ spojil s „bolestí“.",
 
 			///////////////////////////
 			// ANTI-HEBBIAN LEARNING //
 			///////////////////////////
 
-			"anti0": "Takže takhle se učíme. A teď se podíváme jak se něco odnaučit.",
+			"anti0": "Takže takhle se učíme. A teď jak se něco odnaučíme.",
 
 			"anti1": "Anti-hebbovské učení.",
-			"anti2": "Neurony které se aktivují nezávisle ztratí spojení",
+			"anti2": "Neurony, které se aktivují nezávisle, ztrácí spojení",
 
 			"anti3": "Další pravidlo od neurovědců!",
 
@@ -1509,51 +1509,51 @@ window.Captions = {
 			"anti7": "Opět si to zkus.",
 
 			"anti8": "Tenhle neuron nemá žádná spojení.",
-			"anti9": "Musíš najít nějaký který je propojený.",
-			"anti10": "Aha, ale tenhle neuron má pouze spojení K SOBĚ, ne OD SEBE.",
-			"anti11": "Musíš najít jiný který má spojení OD SEBE.",
+			"anti9": "Musíš najít nějaký propojený.",
+			"anti10": "Ah, ale tenhle neuron má pouze spojení K SOBĚ, ne OD SEBE.",
+			"anti11": "Musíš najít jiný, který má spojení OD SEBE.",
 
 			"anti12": "Teď vydrž…",
-			"anti13": "Vidíš to?! Spojení je slabší.",
-			"anti14": "Zkus to ještě jednou a spojení zcela přerušíš.",
+			"anti13": "Podívej! Spojení je slabší.",
+			"anti14": "Udělej to ještě jednou a spojení se zcela přeruší.",
 
-			"anti15": "Takže podle pravidla odnaučení: pokud máš strach ze psů,",
+			"anti15": "Takže podle pravidla odnaučení: pokud máš strach ze psů",
 			"anti16": "a budeš se opakovaně potkávat s přátelskými psy,",
 			"anti17": "můžeš se tak strachu odnaučit.",
-			"anti18": "Neuron ‚pes‘ se aktivuje BEZ aktivace neuronu ‚bolest‘,",
+			"anti18": "Neuron „pes“ se aktivuje BEZ aktivace neuronu „bolest,“",
 			"anti19": "a proto se spojení oslabí.",
 
 			/////////////
 			// THERAPY //
 			/////////////
 
-			"ther0": "Takže teď když už víme jak se něco naučit a odnaučit, vraťme se zpět…",
+			"ther0": "Takže, teď když už víme, jak se něco naučit a odnaučit, vraťme se zpět…",
 			"ther1": "…sem.",
 
 			"ther2": "Chci po tobě přeučit tento mozek.",
 			"ther3": "Přepoj každou z těchto tří věcí",
-			"ther4": "od pocitu strachu k pocitu bezpěčí.",
+			"ther4": "od pocitu strachu k pocitu bezpečí.",
 
-			"ther5": "Víš, přeučení se sice způsobí krátkodobou úzkost…",
-			"ther6": "…ale TAK MOC se to dlouhodobě vyplatí.",
+			"ther5": "Víš, přeučování ti sice může způsobit krátkodobou úzkost…",
+			"ther6": "…ale z dlouhodobého hlediska to ROZHODNĚ stojí za to!",
 
-			"ther7": "První a dvě zbývají.",
+			"ther7": "První hotov, dvě zbývají.",
 			"ther8": "Dvě máš za sebou, jedna zbývá.",
 			"ther9": "pořád. nemám. rád. díry.",
 
 			"ther10": "A je to!",
 
-			"ther11": "To co se ti právě povedlo se nazývá ‚expoziční terapie.‘",
+			"ther11": "Tomu, co se ti právě povedlo, se říká „expoziční terapie.“",
 			"ther12": "Je to jedna z nejlépe ověřených terapií",
-			"ther13": "pro léčbu fóbií, PTSP, a jiných úzkostných poruch.",
+			"ther13": "pro léčbu fóbií, PTSP a jiných úzkostných poruch.",
 
 			///////////
 			// OUTRO //
 			///////////
 
-			"outro0": "Samozřejmě že ve skutečném životě není přeučení tak snadné, tak rychlé,",
+			"outro0": "Samozřejmě, že ve skutečném životě není přeučování tak snadné, tak rychlé,",
 			"outro1": "ale je to možné.",
-			"outro2": "Vím o čem mluvím – já jsem toho důkazem –",
+			"outro2": "Vím o čem mluvím – jsem toho důkazem –",
 			"outro3": "Je to možné.",
 
 			/////////////
@@ -1568,31 +1568,31 @@ window.Captions = {
 			"cred5": "koukni na můj Patreon!",
 
 			"cred6": "Hudbu, kterou slyšíš, vytvořila skvělá Phyrnna,",
-			"cred7": "se kterou jsem dříve pracoval na dalších dvou projektech které jsem nedokončil.",
+			"cred7": "se kterou jsem dříve pracoval na dalších dvou projektech, které jsem nedokončil.",
 
 			"cred8": "Pro další interaktivní výklad mrkni na Bajku o tvarech!",
 			"cred9": "Je to výsledek spolupráce s Vi Hart – ano, *tou* Vi Hart! :D –",
-			"cred10": "o společenských předsudích a diverzitě",
+			"cred10": "o společenských předsudcích a diverzitě.",
 
-			"cred11": "A především tenhle interaktivní výklad byl pouze úvod.",
+			"cred11": "A pamatuj, tenhle interaktivní výklad byl pouze úvod.",
 			"cred12": "Pokud chceš vědět víc, *rozhodně* prozkoumej další texty",
 			"cred13": "v popisu níže. ",
 
-			"cred14": "A nebooo si můžeš pohrát s neurony vlevo",
+			"cred14": "A nebooo si můžeš pohrát s neurony vlevo,",
 			"cred15": "protože je to docela zábava.",
 
-			"cred16": "Každopádně díky za shlédnutí.",
+			"cred16": "Každopádně, moc díky za zhlédnutí.",
 			"cred17": "",
-			"cred18": "hm, za hraní?… shlédnutí?",
+			"cred18": "hm, za hraní?… zhlédnutí?",
 			"cred19": "",
-			"cred20": "shranutí.",
-			"cred21": "Díky za shranutí.",
+			"cred20": "zhledohraní.",
+			"cred21": "Díky za zhledohraní.",
 
 			//////////////////
 			// EXTRA SHTUFF //
 			//////////////////
 
-			"extra0": "Přeučení se ti možná způsobí krátkodobou úzkost,",
+			"extra0": "Přeučování ti možná způsobí krátkodobou úzkost,",
 			"extra1": "ale dlouhodobě se rozhodně vyplatí.",
 
 			"extra2": "Podmíněný strach.",
