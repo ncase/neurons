@@ -65,6 +65,5 @@ subscribe("/init",function(){
 	// Initialize Shtuff
 	Interactive.init();
 	Narrator.goto("INTRO");
-	//Narrator.music("sfx_loop",{volume:0.05,loop:-1}).goto("THERAPY");
 
 });
