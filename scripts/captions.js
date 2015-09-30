@@ -2214,6 +2214,210 @@ window.Captions = {
 			"extra8": "Affrontez vos peurs dans un environnement sécurisé.",
 				
 		}
+	},
+
+	// French
+	"ro": {
+		label: "Română",
+		captions: {	
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Așa, obișnuiam să am mereu anxietate.",
+			"intro1": "Apoi, deveneam anxios din frica de a nu deveni anxios.",
+			"intro2": "Era anxietate la toate nivelurile.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Bună, sunt Nicky Case,",
+			"prop1": "și aceasta este o explicație interactivă despre neuroni.",
+			"prop2": "Da! Poți chiar să interacționezi cu ea,",
+			"prop3": "♬ așa că de ce nu încerci lucrul acela ♬",
+			"prop4": "și apeși pe un neuron, ca să vezi ce se întamplă?",
+
+			"prop5": "Mă iertați, vorbeam!... Glumesc.",
+
+			"prop6": "Bine, uau, ești chiar entuziasmat, apeși PE TOT",
+			"prop7": "SUPER. TE-AI PRINS. MINUNAT.",
+
+			"prop8": "Da!",
+			"prop8.5": "Privește cum se propagă semnalele,",
+			"prop9": "de la neuron la neuron.",
+			"prop10": "încearcă să mai apeși unii.",
+
+			"prop11": "Desigur, ăsta e un model simplificat,",
+			"prop12": "dar cam așa funcționează neuronii.",
+			"prop13": "Un gând îl declanșează pe altul și așa mai departe",
+			"prop14": "însă... in creierul ANXIOS",
+
+			"mesmerizing": "Cam hipnotizant, nu?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "ASTA se întâmplă.",
+			"fear1": "Gânduri inocente se conectează cu gânduri anxioase.",
+			"fear2": "Personal, obișnuia să îmi fie atât de frică de a fi considerat un ratat,",
+			"fear3": "de a fi aproape de oameni,",
+			"fear4": "și de...",
+			"fear5": "găuri.",
+			"fear6": "Pentru că… Nu știu de ce, dar găurile strâns grupate ",
+			"fear7": "mă cam înspăimântă, știi? Nu știu ce să zic.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SOUNDS]",
+			"hebb1": "În fine, cum învățăm fricile astea în primul rând?",
+			"hebb2": "Ei bine, ca să explicăm, stai să scap de toate astea...",
+			"hebb3": "și să-ți dau...",
+			"hebb4": "asta!",
+
+			"hebb5": "Învățarea Hebbiană.",
+			"hebb6": "“Neuronii care se declanșează împreună, se leagă unul de celălalt.”",
+
+			"hebb7": "Asta este o regulă de bază pe care oamenii de neuroștiință o folosesc pentru a descrie cum",
+			"hebb8": "formează neuronii noi conexiuni.",
+			"hebb9": "Practic, dacă declanșezi un neuron, iar apoi declanșezi altul",
+			"hebb10": "primul neuron se va conecta LA al doilea neuron.",
+			"hebb11": "Încearcă singur!",
+
+			"hebb12": "Prea încet! Nu ai apăsat destul de rapid. Încercăm din nou?",
+			"hebb13": "Nu sunt destul de aproape. Încearcă o nouă pereche de neuroni",
+
+			"hebb14": "Și așa învățăm!",
+			"hebb15": "Desigur, nu învățăm atât de rapid in viața reală,",
+			"hebb16": "Am grăbit simularea asta, dar, oricum.",
+			"hebb17": "Acum joacă-te, creează mai multe conexiuni,",
+			"hebb18": "poate ai putea să faci un lanț sau ceva.",
+
+			"hebb19": "Legea asta de învățare e motivul pentru care, dacă ai fost mușcat de un câine când erai mic,",
+			"hebb20": "poți dezvolta o frică de câini!",
+			"hebb21": "Pentru că s-a declanșat neuronul 'câine', după care s-a declanșat și neuronul 'durere'.",
+			"hebb22": "Și astfel, 'câine' s-a conectat la 'durere'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "În orice caz, dacă așa învățăm, uite cum ne dezvățăm.",
+			
+			"anti1": "Învățarea Anti-Hebbiană.",
+			"anti2": "“Neuronii care nu se declanșează sincronizat, iși pierd legătura.”",
+			
+			"anti3": "Altă regulă de bază pe care oamenii de neuroștiință o folosesc!",
+
+			"anti4": "Deci – dacă deja ai o conexiune de la un neuron la celălalt",
+			"anti5": "și declanșezi primul neuron FĂRĂ să-l declanșezi și pe al doilea ,",
+			"anti6": "conexiunea se slăbește.",
+			"anti7": "Din nou, încearcă singur.",
+
+			"anti8": "Neuronul ăla nu a avut conexiuni.",
+			"anti9": "Trebuie să gasești unul care e conectat.",
+			"anti10": "Ah, deci neuronul ăla are doar conexiuni care se îndreaptă CĂTRE el, dar nu DINSPRE el .",
+			"anti11": "Trebuie să găsești unul care are conexiuni DINSPRE el.",
+
+			"anti12": "Acum așteaptă...",
+			"anti13": "Și uite! Legătura s-a slăbit.",
+			"anti14": "Repetă, și de data asta, legătura va fi complet moartă.",
+
+			"anti15": "Și datorită acestei reguli de dezvățare, dacă ți-e frică de câini,",
+			"anti16": "și ești expus la câini prietenoși de multe ori,",
+			"anti17": "poți să te dezveți de frică.",
+			"anti18": " Neuronul 'câine' se declanșează, FĂRĂ ca neuronul 'durere' să fie declanșat,",  
+			"anti19": "și astfel – legătura se slabește.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Și acum, dacă știm cum învățăm și cum ne dezvățăm, hai să revizităm...",
+
+			"ther1": "...asta.",
+
+			"ther2": "Vreau ca tu să antrenezi creierul acesta din nou.",
+			"ther3": "Creează alte legături, reconectează fiecare dintre aceste trei chestii,",
+			"ther4": "de la frică, la siguranță.",
+
+			"ther5": "Vezi, crearea unor noi legături îți poate cauza anxietate pe termen scurt...",
+			"ther6": "...dar merită ATÂT de mult pe termen îndelungat.",
+
+			"ther7": "Unul s-a dus, au mai rămas doi.",
+			"ther8": "Doi sunt gata, a mai rămas doar unul.",
+			"ther9": " tot. nu. îmi. plac. găurile.",
+
+			"ther10": "Și... ai reușit!",
+
+			"ther11": "Ce tocmai ai făcut se numește 'terapie prin expunere'.",
+			"ther12": "Este una dintre terapiile cel mai bine susținute de dovezi",
+			"ther13": "aplicate în tratarea fobiilor specifice, tulburărilor de stres post-traumatic și a altor boli de anxietate.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Încă o dată, în viața reală, să creezi noi conexiuni neuronale nu e rapid,",
+			"outro1": "dar se poate face.",
+			"outro2": "Îți promit – Sunt dovada --",
+			"outro3": "Poate fi făcută.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hei, multe mulțumiri tuturor susținătorilor mei de pe Patreon, pentru că fără ei,",
+			"cred1": "Nu aș fi capabil să fac aceste chestii interactive ciudate,",
+			"cred2": "și aș fi probabil forțat să-mi găsesc un loc de muncă real.",
+			"cred3": "Așadar, dacă vrei să mă ajuți să continui să fac chestii de genul",
+			"cred4": "și să-ți recunsc contribuția în următorul lucru pe care îl voi face,",
+			"cred5": "verifică-mi profilul de Patreon!",
+
+			"cred6": "Muzica pe care o asculți a fost făcută de Phyrnna,",
+			"cred7": "cu care am mai colaborat în trecut pentru două proiecte pe care nu am reușit să le termin.",
+
+			"cred8": "Pentru o altă explicație interactivă, verifică Parabolă a Poligoanelor (Parable of the Polygons)!",
+			"cred9": "A fost o colaborare pe care am făcut-o cu Vi Hart -- da, *acel* Vi Hart! :D --",
+			"cred10": "despre părtinirea sistemică și diversitate.",
+
+			"cred11": "Și amintește-ti, această explicație interactivă a fost doar o introducere.",
+			"cred12": "Dacă vrei să înveți mai mult, *cu siguranță* verifică lectura aprofundată",
+			"cred13": "este în descrierea de mai jos.",
+
+			"cred14": "Saaaau ai putea pur și simplu să continui să încerci codul din stânga",
+			"cred15": "pentru că e destul de distractiv.",
+
+			"cred16": "În orice caz, îți mulțumesc atât de mult pentru că te-ai uitat.",
+			"cred17": "",
+			"cred18": " jucat?... uitat?",
+			"cred19": "",
+			"cred20": "juitat.",
+			"cred21": "Mulțumesc așa mult pentru că te-ai juitat.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Să te recuplezi poate crea anxietate pe termen scurt,",
+			"extra1": "dar merită pe termen lung.",
+
+			"extra2": "O teamă condiționată.",
+			"extra3": "Frica este stinsă.",
+
+			"extra4": "Uhu!",
+			"extra5": "ta-da~",
+
+			"extra6": "Vezi, treaba e să te EXPUI la ce îți provoacă frică,",
+			"extra7": "dar într-o manieră sigură.",
+			"extra8": "Confruntă-ți temerile într-un spațiu sigur.",
+
+		}
 	}
 
 };

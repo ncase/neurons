@@ -29,6 +29,7 @@ with the exception of a few external libraries and audio stuff I didn't make.
 * Nick
 * Nicole Aptekar
 * Paul Woolcock
+* Piotr Migdał
 * Rachel Nabors
 * Rami Markus Maunula
 * //Richard
