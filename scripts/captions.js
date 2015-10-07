@@ -2418,6 +2418,210 @@ window.Captions = {
 			"extra8": "Confruntă-ți temerile într-un spațiu sigur.",
 
 		}
+	},
+
+	// Polish
+	"pl": {
+		label: "Polski",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Kiedyś zawsze odczuwałem lęk.",
+			"intro1": "Potem zaczynałem odczuwać niepokój na samą myśl o MOŻLIWOŚCI odczuwania lęku.",
+			"intro2": "To jak definicja zaburzeń lękowych od początku do końca.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Cześć, Nazywam się Nicky Case,",
+			"prop1": "a to jest interaktywne wyjaśnienie działania neuronów.",
+			"prop2": "Dokładnie tak! Faktycznie masz tu szanse interaktywnie nimi sterować,",
+			"prop3": "♬ więc dlaczego miałbyś nie spróbować jak to działa♬",
+			"prop4": "kliknij na neuron i zobacz, co się stanie?",
+
+			"prop5": "Hello, ja tu mówię!... tylko żartuję, no klikaj!",
+
+			"prop6": "Dobra, nieźle, chyba naprawdę Ci się podoba, jeśli klikasz WSZEDZIE,",
+			"prop7": "FAJNIE. OGARNIASZ TO. ŚWIETNIE.",
+
+			"prop8": "TAK!",
+			"prop8.5": "Popatrz teraz jak rozchodzą się sygnały,",
+			"prop9": "od neuronu do neuronu do neuronu.",
+			"prop10": "Poklikaj jeszcze na nie.",
+
+			"prop11": "Oczywiście, to jest tylko uproszczony model,",
+			"prop12": "ale tak mniej więcej właśnie działają neurony.",
+			"prop13": "Jedna myśl odpala następną, i tak dalej,",
+			"prop14": "ale... w ZALĘKNIONYM mózgu...",
+
+			"mesmerizing": "Trochę hipnotyzujące, nie?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "OTO co się wydarza.",
+			"fear1": "Niewinne myśli łączą się z myślami zalęknionymi.",
+			"fear2": "Ja osobiście bałem się bycia postrzeganym jako porażka,",
+			"fear3": "bałem się bycia blisko ludzi,",
+			"fear4": "i bałem się...",
+			"fear5": "dziur.",
+			"fear6": "Cóż... Nie wiem doprawdy dlaczego, ale widok nagromadzonych dziurek",
+			"fear7": "jakoś mnie przeraża, rozumiesz? No nie wiem sam.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[Dźwięki]",
+			"hebb1": "W każdym razie... jak uczymy się takich lęków w pierwszej kolejności?",
+			"hebb2": "Cóż, by to wytłumaczyć, musimy się pozbyć tego...",
+			"hebb3": "i dać Ci...",
+			"hebb4": "to!",
+
+			"hebb5": "Uczenie Hebbianowskie.",
+			"hebb6": "“Neurony, które odpalają jednocześnie, łączą się ze sobą.”",
+
+			"hebb7": "To jest praktyczna reguła, której używają neurolodzy, aby opisać w jaki sposób",
+			"hebb8": "neurony wytwarzają nowe połączenia.",
+			"hebb9": "Zasadniczo, jeśli odpalasz jeden neuron, odpal tez drugi,",
+			"hebb10": "pierwszy neuron wytworzy polaczenie DO drugiego neuronu.",
+			"hebb11": "Spróbuj zrobić to sam!",
+
+			"hebb12": "Za wolno! Nie kliknąłeś wystarczająco szybko. To może jeszcze raz?",
+			"hebb13": "Nie są wystarczająco blisko siebie. Spróbuj na innej parze neuronów.",
+
+			"hebb14": "No i to jest właśnie obraz tego, jak się uczymy!",
+			"hebb15": "Oczywiście, nie uczymy się tak szybko w rzeczywistym zżyciu,",
+			"hebb16": "Przyspieszyłem trochę symulację, prawda - ale chodzi o to, że tak to działa.",
+			"hebb17": "Pobaw się tym trochę, stwórz nowe polaczenia,",
+			"hebb18": "zrób łańcuch czy cos w tym stylu.",
+
+			"hebb19": "To właśnie dzięki tej zasadzie uczenia, jeśli ugryzł Cię w dzieciństwie pies,",
+			"hebb20": "mogłeś nabawić się strachu przed psami!",
+			"hebb21": "Ponieważ Twój 'psi' neuron odpalił, a potem wypalił Twój neuron 'bólu'.",
+			"hebb22": "I przez to 'pies' połączył się z 'bólem'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "W każdym razie, jeśli tak się właśnie uczymy, to teraz czas na sposób na to, jak się oduczamy.",
+			
+			"anti1": "Uczenie anty-Hebbianowskie.",
+			"anti2": "“Neurony, które wypalają niezsynchronizowane, tracą polaczenie pomiędzy sobą.”",
+			
+			"anti3": "Kolejna praktyczna reguła neurologów!",
+
+			"anti4": "Tak więc - jeśli miałeś połączenie pomiędzy neuronami,",
+			"anti5": "ale odpaliłeś jeden z nich BEZ odpalania drugiego,",
+			"anti6": "połączenie miedzy nimi słabnie.",
+			"anti7": "Dalej, spróbuj sam.",
+
+			"anti8": "Ten neuron nie ma żadnych polaczeń.",
+			"anti9": "Musisz znaleźć neuron, który jest połączony z innym.",
+			"anti10": "Ach, wiec ten neuron ma polaczenia prowadzące DO niego, ale nie ma żadnych prowadzących OD niego.",
+			"anti11": "Musisz znaleźć neuron, który ma połączenia wychodzące OD siebie.",
+
+			"anti12": "Teraz poczekaj...",
+			"anti13": "I popatrz! Polaczenie słabnie.",
+			"anti14": "Zrób tak jeszcze raz i teraz zobaczysz, jak połączenie zostanie całkowicie unicestwione.",
+
+			"anti15": "I dzięki tej zasadzie oduczania, jeśli bałeś się psów,",
+			"anti16": "ale ciągle napotykasz i napotykasz tylko przyjazne psy,",
+			"anti17": "możesz ewentualnie oduczyć się tego zakodowanego lęku.",
+			"anti18": "Neuron 'pies' zostaje odpalony, ale BEZ odpalania neuronu 'bol',",
+			"anti19": "i przez to - połączenie miedzy nimi słabnie.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Wiec tak właśnie się uczymy i oduczamy, spróbujmy ponownie...",
+			"ther1": "...to.",
+
+			"ther2": "Chce, żebyś prze-trenował ten oto mozg.",
+			"ther3": "pozmieniaj, spróbuj przezwoić każde z tych trzech połączeń,",
+			"ther4": "od uczucia lęku, do poczucia bycia bezpiecznym.",
+
+			"ther5": "Widzisz, przezwajanie może krótkoterminowo również powodować lęk...",
+			"ther6": "...ale jest tego WARTE w dłuższej perspektywie.",
+
+			"ther7": "Jeden z głowy, zostały Ci jeszcze dwa.",
+			"ther8": "Dwa padły, został ostatni.",
+			"ther9": "a ja. wciąż. nie. cierpię. dziur.",
+
+			"ther10": "I... udało Ci się!",
+
+			"ther11": "To co właśnie zrobiłeś nazywa się 'terapią ekspozycji'.",
+			"ther12": "to jedna z najszerzej popartych dowodami terapii dostępnych",
+			"ther13": "w leczeniu specyficznych fobii, zespołu stresu pourazowego i innych zaburzeń lękowych.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Jeszcze raz, w rzeczywistym życiu, przetrenowanie własnego mózgu nie jest łatwe, nie jest szybkie,",
+			"outro1": "ale można to zrobić.",
+			"outro2": "Uwierz -- sam jestem dowodem --",
+			"outro3": "to działa.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hej, wielki dzięki dla wszystkich wspierających mnie poprzez Patreon, bo bez nich,",
+			"cred1": "nie byłbym w stanie zrobić tych dziwnych interaktywnych rzeczy,",
+			"cred2": "i pewnie musiałbym w końcu znaleźć jakaś normalna prace.",
+			"cred3": "Wiec jeśli chciałbyś pomoc mi dalej robić rzeczy jak ta opowieść,",
+			"cred4": "i być wymieniony w kolejnej części,",
+			"cred5": "sprawdź moja stronę na Patreonie!",
+
+			"cred6": "Muzyka, której właśnie słuchasz została stworzona przez cudowną Phyrnne,",
+			"cred7": "z która współpracowałem wcześniej przy dwóch projektach, ale ich nie ukończyłem.",
+
+			"cred8": "Jeśli chciałbyś więcej podobnych interaktywnych lekcji, sprawdź 'Parable of the Polygons'!",
+			"cred9": "Ten projekt robiłem przy współpracy z Vi Hart -- tak, *tą* Vi Hart! :D --",
+			"cred10": "o systematycznej stronniczości i różnorodności.",
+
+			"cred11": "I pamiętaj, ta interaktywna opowieść to tylko wstęp.",
+			"cred12": "Wiec jeśli chcesz nauczyć się więcej, *koniecznie* zapoznaj się z pozycjami",
+			"cred13": "polecanymi w opisie poniżej. ",
+
+			"cred14": "Bąąąądź też możesz pobawić się w ramce z lewej strony",
+			"cred15": "to powinno być całkiem fajne.",
+
+			"cred16": "Tak czy inaczej, wielkie dzięki za oglądanie.",
+			"cred17": "",
+			"cred18": "hmm, może raczej klikanie?... oglądanie?",
+			"cred19": "",
+			"cred20": "klik-glądanie.",
+			"cred21": "Wielkie dzięki za klik-glądanie.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": " przezwajanie może krótkoterminowo również wywołać stany lękowe,",
+			"extra1": " ale jest tego warte w dłuższej perspektywie.",
+
+			"extra2": "Strach warunkowy.",
+			"extra3": "Strach jest unicestwiony.",
+
+			"extra4": "Juhuuu!",
+			"extra5": "ta-da!~",
+
+			"extra6": "Widzisz, ten trik wymaga byś STAWIŁ CZOŁA temu, czego się obawiasz,",
+			"extra7": "ale w bezpiecznych warunkach.",
+			"extra8": "Zmierz się ze swoimi lękami w środowisku, w którym czujesz się bezpieczny.",
+				
+		}
+
 	}
 
 };
