@@ -816,6 +816,209 @@ window.Captions = {
 		}
 	},
 
+	// Portugues (Portugal)
+	"pt-br": {
+		label: "Português do Brasil",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Então, eu sempre costumava ficar ansioso.",
+			"intro1": "Depois começava a ficar ansioso PORQUE sabia que ia ficar ansioso.",
+			"intro2": "Era uma espiral de ansiedade.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Olá, sou o Nicky Case",
+			"prop1": "e esta é uma explicação interativa sobre neurônios.",
+			"prop2": "Sim! Você pode mesmo interagir com isto,",
+			"prop3": "♬ então, porque não tenta experimentar ♬",
+			"prop4": "e clica num neurônio para ver o que acontece?",
+
+			"prop5": "COM LICENÇA, eu estava falando!... Ah, só estou brincando.",
+
+			"prop6": "OK, uau, você está gostando mesmo disto, clicando EM TUDO,",
+			"prop7": "LEGAL. OK. ÓTIMO.",
+
+			"prop8": "Isso!",
+			"prop8.5": "Observe como os sinais se propagam,",
+			"prop9": "de um neurônio para outro, e outro.",
+			"prop10": "Tente clicar em outros neurônios.",
+
+			"prop11": "Claro, este é um modelo simplificado,",
+			"prop12": "mas é mais ou menos como os neurônios funcionam.",
+			"prop13": "Um pensamento ativa o próximo, e assim por diante,",
+			"prop14": "mas... num cérebro ANSIOSO...",
+
+			"mesmerizing": "Fascinante, não é?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "ISTO é o que acontece.",
+			"fear1": "Pensamentos inocentes ligam-se a pensamentos de ansiedade.",
+			"fear2": "Pessoalmente eu costumava ter medo de ser visto como um fracasso,",
+			"fear3": "de estar perto de outras pessoas,",
+			"fear4": "e de...",
+			"fear5": "buracos.",
+			"fear6": "Porque... Eu não sei porquê, mas buracos pequenininhos",
+			"fear7": "me arrepiam, sabe? Não sei explicar.",
+
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SONS]",
+			"hebb1": "Enfim... como é que aprendemos a ter estes medos?",
+			"hebb2": "Bem, para explicar isso, deixe eu me livrar disso tudo...",
+			"hebb3": "e te dar...",
+			"hebb4": "isto!",
+
+			"hebb5": "Teoria Hebbiana de aprendizagem.",
+			"hebb6": "“Neurônios que disparam juntos, ficam interligados.”",
+
+			"hebb7": "Esta é uma regra simples que os neurocientistas usam para descrever como",
+			"hebb8": "os neurônios estabelecem novas ligações.",
+			"hebb9": "Basicamente, caso dispare um neurônio e logo depois outro,",
+			"hebb10": "o primeiro neurônio liga-se ao segundo.",
+			"hebb11": "Tente você mesmo!",
+			
+			"hebb12": "Muito devagar! Você não clicou rápido o suficiente. Tente novamente.",
+			"hebb13": "Não estão pertos o suficiente. Tente um par de neurônios diferente.",
+
+			"hebb14": "E é assim que aprendemos!",
+			"hebb15": "Claro que na vida real não aprendemos assim tão rápido,",
+			"hebb16": "eu acelerei a simulação... mas ainda assim.",
+			"hebb17": "Agora, brinque um pouco, faça mais algumas ligações,",
+			"hebb18": "experimente fazer uma cadeia ou algo parecido.",
+
+			"hebb19": "Esta regra de aprendizagem é o que faz com que, caso tenha sido mordido por um cão quando criança,",
+			"hebb20": "desenvolva um medo de cães!",
+			"hebb21": "Porque o seu neurônio 'cão' disparou e depois o neurônio 'dor' disparou.",
+			"hebb22": "E, assim, o 'cão' fica associado à 'dor'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "De qualquer maneira, se é assim que aprendemos, vou mostrar como desaprendemos.",
+			
+			"anti1": "Teoria Anti-Hebbiana de aprendizagem.",
+			"anti2": "“Neurônio que não disparam ao mesmo tempo, perdem a sua ligação.”",
+			
+			"anti3": "É outra regra simples que os neurocientistas usam!",
+
+			"anti4": "Então - se você já tem uma ligação entre dois neurônios,",
+			"anti5": "e dispara o primeiro neurônio SEM disparar o segundo,",
+			"anti6": "a ligação entre eles enfraquece.",
+			"anti7": "Novamente, tente você mesmo.",
+
+			"anti8": "Esse neurônio não tem nenhuma ligação.",
+			"anti9": "Você precisa encontrar um neurônio que tenha ligações.",
+			"anti10": "Ah, esse neurônio só tem ligações CHEGANDO ele, não tem nenhuma SAINDO dele.",
+			"anti11": "Você precisa encontrar um neurônio que tenha ligações SAINDO dele.",
+
+			"anti12": "Agora espere...",
+			"anti13": "E olhe! A ligação está mais fraca.",
+			"anti14": "Faça isso outra vez, e desta vez a ligação vai mesmo morrer.",
+
+			"anti15": "E esta regra é o que faz com que, caso tenha medo de cães,",
+			"anti16": "mas entra em contato com cães amigáveis muitas e muitas vezes,",
+			"anti17": "você possa desaprender esse medo.",
+			"anti18": "O neurônio 'cão' dispara, SEM que o neurônio 'dor' também dispare,",
+			"anti19": "e, assim, a ligação entre eles enfraquece.",
+			
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Agora que você sabe como aprendemos e desaprendemos, vamos rever...",
+			"ther1": "...isto.",
+			
+			"ther2": "Quero que você treine este cérebro.",
+			"ther3": "Refaça as ligações destas três coisas,",
+			"ther4": "que fazem com que este cérebro sinta medo, para passar a sentir segurança.",
+
+			"ther5": "Perceba que refazer as ligações faz com que sinta ansiedade a curto prazo...",
+			"ther6": "...mas vale MUITO a pena a longo prazo.",
+
+			"ther7": "Um está OK, faltam mais dois.",
+			"ther8": "Dois estão OK, só falta mais um.",
+			"ther9": "Eu... ainda... não... gosto... de... buracos...",
+
+			"ther10": "E... você conseguiu!",
+
+			"ther11": "O que você acabou de fazer é chamado de 'terapia de exposição prolongada'.",
+			"ther12": "É uma das terapias existentes com mais provas",
+			"ther13": "para tratar fobias específicas, estresse pós-traumático e outros tipos de transtornos de ansiedade.",
+			
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Claro que na vida real não é fácil refazer as ligações do nosso cérebro. Não é algo rápido",
+			"outro1": "mas pode ser feito.",
+			"outro2": "Eu te prometo -- sou uma prova viva --",
+			"outro3": "Que isto pode ser feito.",
+			
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Ei, muito obrigado aos meus apoiadores do Patreon, porque sem eles",
+			"cred1": "eu não poderia fazer estas coisas interativas",
+			"cred2": "e provavelmente teria que arrumar um trabalho normal.",
+			"cred3": "Por isso, caso queira me ajudar a continuar fazendo coisas como esta,",
+			"cred4": "e ter seu nome nos créditos da próxima coisa que fizer,",
+			"cred5": "veja o meu perfil do Patreon!",
+
+			"cred6": "A música que você está ouvindo foi criada pela maravilhosa Phyrnna,",
+			"cred7": "com quem já colaborei previamente em dois projetos, mas que falhei em concluir.",
+
+			"cred8": "Para outra explicação interativa, veja a Parábola dos Poligonos (Parable of the Polygons)!",
+			"cred9": "Foi uma colaboração com a Vi Hart -- sim, *essa* Vi Hart! :D --",
+			"cred10": "sobre preconceito e diversidade.",
+
+			"cred11": "E lembre-se, esta explicação interativa é apenas uma introdução.",
+			"cred12": "Por isso, caso queira aprender mais, *realmente* veja os artigos",
+			"cred13": "que estão na descrição lá em baixo.",
+			
+			"cred14": "Ouuuuu você pode continuar brincando aqui à esquerda",
+			"cred15": "porque é bem divertido.",
+
+			"cred16": "De qualquer maneira, muito obrigado por assistir.",
+			"cred17": "",
+			"cred18": "ahn... ter jogado?... ter visto?",
+			"cred19": "",
+			"cred20": "jovisto.",
+			"cred21": "Muito obrigado por ter 'jovisto'.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Refazer ligações faz com que você sinta ansiedade a curto prazo,",
+			"extra1": "mas vale muito a pena a longo prazo.",
+
+			"extra2": "Um medo condicionado.",
+			"extra3": "O medo desapareceu.",
+
+			"extra4": "Uhu!",
+			"extra5": "tá-dá!",
+
+			"extra6": "Sabe, o truque é se EXPÔR ao que você tem medo,",
+			"extra7": "mas de uma maneira segura.",
+			"extra8": "Confronte os seus medos em um ambiente seguro.",
+
+		}
+	},
+
 	// German
 	"de": {
 		label: "Deutsch",
