@@ -51,6 +51,7 @@ Sep 22, 2015: [Mental Floss](http://mentalfloss.com/article/68880/interactive-ga
 Sep 23, 2015: [FlowingData](https://flowingdata.com/2015/09/24/interactive-explanation-for-how-neurons-work/)   
 Sep 25, 2015: [KillScreen](http://killscreendaily.com/articles/your-brain-anxiety-interactive-explanation-nicky-case/)    
 Sep 25, 2015: [FastCompany](http://www.fastcodesign.com/3051494/infographic-of-the-day/learn-how-neurons-work-through-an-autobiographical-interactive-story)    
+Oct 13, 2015: [BoingBoing](http://boingboing.net/2015/10/13/neurotic-neurons-nicky-case.html)    
 
 ---
 
