@@ -53,6 +53,12 @@ Sep 25, 2015: [KillScreen](http://killscreendaily.com/articles/your-brain-anxiet
 Sep 25, 2015: [FastCompany](http://www.fastcodesign.com/3051494/infographic-of-the-day/learn-how-neurons-work-through-an-autobiographical-interactive-story)    
 Oct 13, 2015: [BoingBoing](http://boingboing.net/2015/10/13/neurotic-neurons-nicky-case.html)    
 
+Maybe I need to learn to actually do the boring stuff that comes *after* a project is "complete",
+the press, the maintenance, the aftercare, y'know? And not just ditch my past projects in a jiffy
+like I'm running away from myself.
+
+Nov 11, 2015: [iQ Intel](http://iq.intel.com/video-games-and-mental-illness-combat-stigma/)
+
 ---
 
 **Audio Credits:**    

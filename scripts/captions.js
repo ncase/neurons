@@ -3232,6 +3232,616 @@ window.Captions = {
 		        
 		}
 
+	},
+
+	// Turkish
+	"tr": {
+		label: "Türkçe",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Her zaman kaygı yaşardım.",
+			"intro1": "Sonra, kaygılanacağımı DÜŞÜNEREK kaygılanırdım.",
+			"intro2": "Baştan aşağı kaygı olurdu, her şey.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Selam, ben Nicky Case,",
+			"prop1": "ve bu da nöronlar hakkında etkileşimli bir anlatım.",
+			"prop2": "Evvet! Gerçekten de bununla etkileşebilirsin,",
+			"prop3": "♬ o halde şu şeyi neden denemiyorsun, ♬",
+			"prop4": "ve bir nöronun üzerine tıklayıp ne olacağını görmüyorsun?",
+
+			"prop5": "A-fe-der-sin, konuşuyordum!... Dalga geçiyordum.",
+
+			"prop6": "Tamam, vay, baya sardı seni, HERŞEYİ tıklıyorsun da,",
+			"prop7": "HARİKA. KAPTIN. FEVKALADE.",
+
+			"prop8": "Evet!",
+			"prop8.5": "Sinyallerin nasıl da yayıldığını izle,",
+			"prop9": "bir nörondan diğerine, oradan bir diğerine.",
+			"prop10": "Biraz daha tıklamayı dene.",
+
+			"prop11": "Tabii ki, bu basitleştirilmiş bir model,",
+			"prop12": "ama kabaca nöronlar böyle çalışır.",
+			"prop13": "Bir düşünce bir sonrakini tetikler, ve bir sonrakini,",
+			"prop14": "fakat... KAYGILI bir beyinde...",
+
+			"mesmerizing": "Büyüleyici gibi sanki, değil mi?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "İşte olan BU.",
+			"fear1": "Masum düşünceşer kaygılı düşüncelere bağlanır.",
+			"fear2": "Şahsen, ben bir fiyasko olarak görülmekten çok korkardım,",
+			"fear3": "insanlara kapalı olmaktan,",
+			"fear4": "ve de...",
+			"fear5": "deliklerden.",
+			"fear6": "Çünkü... Neden bilmiyorum, ama sıkışık şekilde bi araya gelmiş delikler",
+			"fear7": "tüylerimi diken diken ediverirdi, bilirsin işte? Bilmiyorum ya.",
+
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SESLER]",
+			"hebb1": "Her neyse... Bir kere, en başında bu korkuları nasıl öğreniyoruz?",
+			"hebb2": "Yani, bunu anlatmak için, müsade edin şunlardan bir kurtulayım...",
+			"hebb3": "ve size...",
+			"hebb4": "bunu vereyim!",
+
+			"hebb5": "Hebb Öğrenmesi.",
+			"hebb6": "“Beraber ateşleyen nöronlar, birbirine bağlanırlar.”",
+
+			"hebb7": "Bu nörobilimcilerin, noronların nasıl yeni bağlantılar oluşturduğunu",
+			"hebb8": "açıklamakta kullandığı temel kuraldır.",
+			"hebb9": "Basitçe, eğer bir nöronu ateşlerseniz, ardından da bir başka nöronu,",
+			"hebb10": "bu ilk nöron ikincisine DOĞRU bir bağlantı kuracaktır.",
+			"hebb11": "Kendin dene!",
+
+			"hebb12": "Çok yavaşsın! Yeterince hızlı tıklamadın. Tekrar dene?",
+			"hebb13": "Yeterince yakın değil. Başka bir çift nöronu dene.",
+
+			"hebb14": "Ve işte böyle öğreniriz!",
+			"hebb15": "Elbette, gerçek hayatta bu kadar hızlı öğrenmeyiz,",
+			"hebb16": "Simülasyonu hızlandırdım, ıı, ama yine de.",
+			"hebb17": "Şimdi biraz kurcala, birkaç bağlantı daha oluştur,",
+			"hebb18": "belki bir zincir falan yap.",
+
+			"hebb19": "Bu öğrenme kuralı, eğer küçükken bir köpek tarafından ısırıldıysanız,",
+			"hebb20": "köpeklere karşı korku geliştirmiş olmanızın sebebidir!",
+			"hebb21": "Çünkü 'köpek' nöronunuz ateşledi, ve sonra da 'acı' nöronunuz ateşledi.",
+			"hebb22": "Ve böylelikle, 'köpek', 'acı'ya bağlanmış oldu.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Neyse, eğer bu şekilde öğreniyorsak, işte nasıl öğrendiğimizi unutabileceğimiz.",
+
+			"anti1": "Zıt Hebb Öğrenmesi.",
+			"anti2": "“Uyumsuz ateşleyen nöronlar, bağlarını kaybeder.”",
+
+			"anti3": "Nörobilimcilerin br başka temel kuralı!",
+
+			"anti4": "Yani - eğer bir nörondan ötekine zaten bir bağınız varsa,",
+			"anti5": "ve birinci nöronu, ikiciyi ATEŞLEMEKSİZİN, ateşlerseniz,",
+			"anti6": "bu bağlantı zayıflar.",
+			"anti7": "Hadi tekrar, dene bakalım.",
+
+			"anti8": "Şu nöronun hiç baplantısı yoktu.",
+			"anti9": "Bağlı olan birini bulmalısın.",
+			"anti10": "Ha, yani şu nöron sadece ONA giden bağlantıları var, fakat ONDAN çıkan yok.",
+			"anti11": "ONDAN bir bağlantısı olanı bulman gerekiyor.",
+
+			"anti12": "Şimdi bekle bakalım...",
+			"anti13": "Ve bak! O bağlantı zayıfladı.",
+			"anti14": "Tekrar yap, ve bu sefer, o bağlantı tamamen ortadan kalkacak.",
+
+			"anti15": "Ve bu öğrendiğini unutma kuralı, eğer köpek korkun varsa,",
+			"anti16": "ve dost canlısı köpeklerle tekrar tekrar karşılaşırsan,",
+			"anti17": "o korkunu unutabileceğinin nedenidir.",
+			"anti18": "'Acı' nöronu ATEŞLEMEKSİZİN 'Köpek' nöronu ateşler,",
+			"anti19": "ve böylelikle - bağlantı zayıflar.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Şimdi artık nasıl öğrendiğimizi ve unuttuğumuzu bildiğine göre, bir tekrar dönelim...",
+			"ther1": "...buna.",
+
+			"ther2": "Bu beyni tekrar eğitmeni istiyorum.",
+			"ther3": "Bu üç şeyin her birini yeniden bağlantılandır,",
+			"ther4": "korku hissinden, güvenlik hissine.",
+
+			"ther5": "Gördün ya, kendini yeniden bağlantılandırmak kısa vadede kaygıya sebep olabilir...",
+			"ther6": "...fakat bu uzun vadede FAZLASIYLA değer.",
+
+			"ther7": "Biri gitti, ikisi kaldı.",
+			"ther8": "İkisi gitti, biri kaldı.",
+			"ther9": "ben. hala. delikleri. sevmiyorum.",
+
+			"ther10": "Ve... başardın!",
+
+			"ther11": "Bu yaptığın şeye 'maruz kalma terapisi' deniyor.",
+			"ther12": "Bu terapi, mevcutlar arasındaki en bulgularla desteklenmiş terapilerden biridir",
+			"ther13": "belirli fobilerin, travma sonrası stres bozukluğunun ve diğer kaygı bozukluklarının tedavisinde kullanılan.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Tekrardan söylemek gerekirse, gerçek hayatta, kendinizi tekrar bağlantılandırmak kolay değildir, çabuk da değildir,",
+			"outro1": "fakat yapılabilirdir.",
+			"outro2": "Size söz veriyorum -- Ben kanıtıyım --",
+			"outro3": "Yapılabilirdir.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hey, tum Patreon destekçilerime kocaman teşekkürler, çünkü onlarsız,",
+			"cred1": "bu garip etkileşimli şeyleri yapamazdım,",
+			"cred2": "ve muhtemelen gerçek bi iş sahibi olmaya zorlanırdım.",
+			"cred3": "İşte eğer bana bu tarz şeyler yapmaya devam etmemde yardımcı olmak istersen,",
+			"cred4": "ve bir sonraki yaptığım şeyde anılmak,",
+			"cred5": "Patreon'uma bir bak!",
+
+			"cred6": "Bu dinlediğiniz müzik harika Phyrnna tarafından yapılmıştır,",
+			"cred7": "ki kendisiyle daha önce bitirmekte başarısız olduğum iki projede çalışmıştık.",
+
+			"cred8": "Bir başka etkileşimli açıklama için, Çokgenlerin Öyküsü (Parable of the Polygons)'a bir bak!",
+			"cred9": "Vi Hart ile -- evet, *o* Vi Hart! :D -- benim ortaklaşa yapımımızdı",
+			"cred10": "sistemli taraflılık ve çeşitlilik hakkında.",
+
+			"cred11": "Ve hatırlayın, bu etkileşimli açıklama sadece bir tanıtımdır.",
+			"cred12": "O yüzden eğer daha fazlasını öğrenmek istersen, *mutlaka* aşağıdaki açıklamadaki",
+			"cred13": "daha fazla okumalar kısmına bakmalısın. ",
+
+			"cred14": "Yadaaaaa sadece soldaki kum havuzunda oynayabilirsin de",
+			"cred15": "çünkü bayağı eğlenceli.",
+
+			"cred16": "Her halükarda, çok çok teşekkür ederim izlediğin için.",
+			"cred17": "",
+			"cred18": "um, oynadığın?... izlediğin?",
+			"cred19": "",
+			"cred20": "oynizlediğin.",
+			"cred21": "Oynizlediğin için çok teşekkür ederim.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Kendini yeniden bağlantılandırmak kısa vadede kaygıya neden olabilir,",
+			"extra1": "fakat uzun vadede buna oldukça değerdir.",
+
+			"extra2": "Bir şartlandırılmış korku.",
+			"extra3": "Korku söndürüldü.",
+
+			"extra4": "Oooo!",
+			"extra5": "ta-daaaa~",
+
+			"extra6": "Gördün ya, püf noktası kendini korktuğun şeye MARUZ bırakmak,",
+			"extra7": "fakat güvenli bir şekilde.",
+			"extra8": "Korkularınla güvenli bir alanda yüzleş.",
+
+		}
+
+	},
+
+	// Norwegian
+	"no": {
+		label: "Norsk",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Før hendte det at jeg ble engstelig.",
+			"intro1": "Etter hvert ble jeg også engstelig FOR Å BLI engstelig.",
+			"intro2": "Det var angst over hele linja.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Hei, jeg heter Nicky Case,",
+			"prop1": "og dette er en utforskbar forklaring om nevroner.",
+			"prop2": "Jepp! Du kan faktisk utforske dette her,",
+			"prop3": "♬ så hvorfor ikke prøve ♬",
+			"prop4": "klikk på et nevron, og se hva som skjer?",
+
+			"prop5": "Unnskyld meg, jeg holdt på å snakke her!... Bare tuller.",
+
+			"prop6": "Ok, wow, du likte virkelig dette, klikker på ALT,",
+			"prop7": "KULT. DU FORSTÅR DET. FLOTT.",
+
+			"prop8": "Ja!",
+			"prop8.5": "Se hvordan signalene forplanter seg nedover,",
+			"prop9": "fra nevron til nevron.",
+			"prop10": "Prøv å klikke på noen flere.",
+
+			"prop11": "Dette er selvfølgelig en forenklet modell,",
+			"prop12": "men dette er omtrent slik nevroner fungerer.",
+			"prop13": "En tanke utløser en annen, og så videre,",
+			"prop14": "men... i en ENGSTELIG hjerne...",
+
+			"mesmerizing": "Ganske fascinerende, ikke sant?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "Da skjer DETTE.",
+			"fear1": "Uskyldige tanker er koblet til engstelige tanker.",
+			"fear2": "Jeg pleide å være redd for å bli sett på som mislykket,",
+			"fear3": "redd for å være nær andre,",
+			"fear4": "og redd for...",
+			"fear5": "hull.",
+			"fear6": "Fordi... Jeg vet ikke hvorfor, men flere hull tett sammen,",
+			"fear7": "det gav meg liksom bare hetta, skjønner du? Jeg vet ikke helt.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[LYDER]",
+			"hebb1": "Uansett... hvordan lærer vi å bli redde for ting i utgangspunktet?",
+			"hebb2": "Vel, for å forklare det, la meg først ta bort alt dette...",
+			"hebb3": "og gi deg...",
+			"hebb4": "dette!",
+
+			"hebb5": "Hebbiansk læring.",
+			"hebb6": "“Nevroner som fyrer sammen, knytter seg sammen.”",
+
+			"hebb7": "Dette er en tommelfingerregel som hjerneforskere bruker for å beskrive hvordan",
+			"hebb8": "nevroner lager nye forbindelser.",
+			"hebb9": "Helt enkelt, om du først fyrer av et nevron, og så fyrer av et annet nevron,",
+			"hebb10": "så vil det første nevronet bli knyttet TIL det andre nevronet.",
+			"hebb11": "Prøv selv!",
+
+			"hebb12": "For sakte! Du klikket ikke fort nok. Vil du prøve igjen? ",
+			"hebb13": "Ikke nært nok. Prøv på nytt med et annet par med nevroner.",
+
+			"hebb14": "Slik er det vi lærer!",
+			"hebb15": "Selvsagt lærer vi ikke så fort i det virkelige liv,",
+			"hebb16": "jeg har økt farten i denne simuleringen, men uansett.",
+			"hebb17": "Lek litt med det, lag noen flere forbindelser,",
+			"hebb18": "forsøk å lage en kjede eller noe.",
+
+			"hebb19": "Denne læreregelen forklarer hvordan det å bli bitt av en hund som barn,",
+			"hebb20": "kan føre til at du utvikler en frykt for hunder!",
+			"hebb21": "Fordi ditt 'hund'-nevron fyrte, og så fyrte ditt 'smerte'-nevron.",
+			"hebb22": "Og slik ble 'hund' forbundet med 'smerte'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Dersom det var måten vi lærer på, her er måten vi av-lærer.",
+			
+			"anti1": "Anti-Hebbiansk læring.",
+			"anti2": "“Nevroner som fyrer usynkront, mister sin forbindelse.”",
+			
+			"anti3": "Det er en annen tommelfingerregel som hjerneforskerne bruker!",
+
+			"anti4": "Så dersom du allerede har en forbindelse fra et nevron til et annet,",
+			"anti5": "og så fyrer det første nevronet UTEN at det andre nevronet fyrer,",
+			"anti6": "så svekkes forbindelsen.",
+			"anti7": "Som før, prøv det ut.",
+
+			"anti8": "Det nevronet har ingen forbindelser.",
+			"anti9": "Du må finne et nevron som er knyttet til andre.",
+			"anti10": "Det nevronet har bare forbindelser som går TIL det, men ingen som går FRA det.",
+			"anti11": "Du må finne et nevron som har forbindelser FRA seg.",
+
+			"anti12": "Så venter du litt...",
+			"anti13": "Og se! Forbindelsen blir svakere.",
+			"anti14": "Gjør det igjen, og denne gangen blir forbindelsen helt borte.",
+
+			"anti15": "Denne avlæringsregelen forklarer hvordan, dersom du har en frykt for hunder,",
+			"anti16": "og så opplever flere vennlige hunder,",
+			"anti17": "kan du avlære frykten.",
+			"anti18": "'Hund'-nevronet fyrer UTEN at 'smerte'-nevronet fyrer,",
+			"anti19": "og derfor blir forbindelsen svakere.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Nå som du vet hvordan vi lærer og avlærer, la oss gå tilbake til...",
+			"ther1": "...dette.",
+
+			"ther2": "Jeg vil at du skal re-trene denne hjernen.",
+			"ther3": "Omkoble, lag nye forbindelser for hver av disse tre tingene,",
+			"ther4": "fra å føle frykt til å føle seg trygg.",
+
+			"ther5": "Det å endre forbindelsene sine kan skape frykt på kort sikt...",
+			"ther6": "...men er helt klart verdt det i det lange løp.",
+
+			"ther7": "Ferdig med én, to igjen.",
+			"ther8": "Ferdig med to, én igjen.",
+			"ther9": "jeg. liker. fortsatt. ikke. hull.",
+
+			"ther10": "Og... du klarte det!",
+
+			"ther11": "Det du nettopp gjorde kalles 'eksponeringsterapi'.",
+			"ther12": "Det er en av de mest bevisbaserte terapiformene vi har",
+			"ther13": "for å behandle spesifikke fobier, PTSD, og andre angstlidelser.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Som sagt, i det virkelige liv er det ikke like lett å endre dine koblinger, det går ikke like fort,",
+			"outro1": "men det kan gjøres.",
+			"outro2": "Det lover jeg – jeg star selv som bevis --",
+			"outro3": "Det kan gjøres.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Tusen takk til alle som støtter meg på Patreon, for uten dem,",
+			"cred1": "kunne jeg ikke laget disse rare interaktive greiene,",
+			"cred2": "og jeg måtte fått meg en skikkelig jobb.",
+			"cred3": "Om du har lyst til å hjelpe meg til å lage ting som dette,",
+			"cred4": "og ønsker å bli nevnt i den neste tingen jeg lager,",
+			"cred5": "sjekk meg ut på Patreon!",
+
+			"cred6": "Musikken du hører er laget av herlige Phyrnna,",
+			"cred7": "som jeg har samarbeidet med på to tidligere prosjekter som jeg aldri fullførte.",
+
+			"cred8": "Om du vil se en annen utforskbar forklaring, sjekk ut 'Parable of the Polygons!'",
+			"cred9": "Den lagde jeg i samarbeid med Vi Hart -- ja, *den* Vi Hart! :D --",
+			"cred10": "om systemisk skjevhet og mangfold.",
+
+			"cred11": "Og husk, denne utforskbare forklaringen var bare en introduksjon.",
+			"cred12": "Om du ønsker å lære mer, bør du *definitivt* sjekke ut forslagene til videre lesing",
+			"cred13": "i beskrivelsen nedenfor.",
+
+			"cred14": "Ellller du kan leke deg med sandkassen til venstre",
+			"cred15": "for det er ganske gøy.",
+
+			"cred16": "Uansett, takk for at du fulgte med.",
+			"cred17": "",
+			"cred18": "eller, lekte?... fulgte med?",
+			"cred19": "",
+			"cred20": "lekte med.",
+			"cred21": "Takk for at du lekte med.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Det å endre forbindelsene sine kan skape frykt på kort sikt...",
+			"extra1": "...men er helt klart verdt det i det lange løp.",
+
+			"extra2": "En betinget frykt.",
+			"extra3": "Frykten slukkes.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "Trikset er å EKSPONERE deg selv for det du er redd for,",
+			"extra7": "men på en trygg måte.",
+			"extra8": "Gjør det du er redd for i sikre omgivelser.",
+				
+		}
+
+	},
+
+	// Korean
+	"ko": {
+		label: "한국어",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "그래, 난 언제나 불안에 시달렸어요",
+			"intro1": "그리고는 언제 불안이 닥쳐올지 모른다는 생각으로 또 불안해하곤 했죠.",
+			"intro2": "불안, 불안 불안의 연속.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "안녕하세요 닉키 케이스 입니다,",
+			"prop1": "여러분이 실습을 통해 뉴런의 작용을 직접 경험해볼 수 있는 프로그램을 만들었어요.",
+			"prop2": "맞아요 직접 해 보실 수 있다니까요,",
+			"prop3": "♬ 자 그럼 한번 해 볼까요♬",
+			"prop4": "아무 뉴런이나 한번 클릭해 보세요. 어떤 일이 일어나죠?",
+
+			"prop5": "어 잠깐만요, 말하는 중인데요!... 하하 농담이예요.",
+
+			"prop6": "오케이, 와우, 정말 열심히 하시네요. 하나도 빠짐없이 클릭하고 계시네요,",
+			"prop7": "좋아요. 바로 그거예요. 멋져요.",
+
+			"prop8": "그렇죠!",
+			"prop8.5": "신경신호가 전달되는 모습을 한번 보세요,",
+			"prop9": "이 뉴런에서 저 뉴런으로.",
+			"prop10": "좀더 여기 저기 클릭해 보세요.",
+
+			"prop11": "물론, 이건 아주단순화된 모델이랍니다,",
+			"prop12": "그래도 뉴런이 어떻게 작동하는지는 알 수가 있죠.",
+			"prop13": "하나의 생각이 다음 생각으로 이어지고, 또 그 다음으로,",
+			"prop14": "하지만... 불안에 빠진 뇌에서는...",
+
+			"mesmerizing": " 황홀하죠, 그렇지 않나요?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "바로 이런 일이 일어나죠.",
+			"fear1": "건강한 생각이 불안한 생각으로 이어지고.",
+			"fear2": "개인적으로, 나는 다른 사람들이 나를 실패작으로 생각할까봐 겁을 먹곤 했죠,",
+			"fear3": "특히나 가까운 주변 사람들에게,",
+			"fear4": "그리고...",
+			"fear5": "구멍들이 무서워요.",
+			"fear6": "왜냐하면... 모..모르겠어요, 그냥 구멍들이 잔뜩 모여 있기만 하면",
+			"fear7": "그냥 무서운기분, 아세요? 설명하기 어려운.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SOUNDS]",
+			"hebb1": "어쨌든... 우리가 이런 공포를 처음부터 어떻게 배우게 되는거죠?",
+			"hebb2": "음, 그걸 설명하기 위해서, 먼저 이걸 전부 다 지워보죠...",
+			"hebb3": "그리고...",
+			"hebb4": "이걸 보세요!",
+
+			"hebb5": "헵의 학습 법칙.",
+			"hebb6": "“함께 발화하는 뉴런들은, 함께 연결된다.”",
+
+			"hebb7": "바로 이게 신경과학자들이 헵의 법칙을 간단하게 설명하는 방식이죠",
+			"hebb8": "뉴런들이 새로운 연결을 만들때.",
+			"hebb9": "기본적으로, 하나의 뉴런이 발화하면, 다른 뉴런의 발화를 일으키게 되고,",
+			"hebb10": "그 첫번째 뉴런에서 두번째 뉴런으로 향하는 연결이 만들어지죠. ",
+			"hebb11": "한번 해 보세요!",
+
+			"hebb12": "너무 느려요! 클릭을 연속해서 빠르게 해 보세요. 자 다시 한번?",
+			"hebb13": "아직도 좀 느려요. 다른 두 뉴런을 선택해서 해 보세요.",
+
+			"hebb14": "바로 이게 우리가 학습하는 원리예요!",
+			"hebb15": "물론, 현실에서는 이렇게 빠르게 배우지는 못하겠죠,",
+			"hebb16": "편의상 시뮬레이션 속도를 좀 높여 봤어요, 하하, 그래도.",
+			"hebb17": "자 한 번 해보세요, 연결을 좀 더 만들어봐요,",
+			"hebb18": "여러개를 줄줄이 연결해 본다든지 해 보세요.",
+
+			"hebb19": "헵의 법칙은, 여러분이 어릴때 개에 물리면,",
+			"hebb20": "왜 개에 대한 공포가 생기는가를 설명해 주죠!",
+			"hebb21": "즉 개 뉴런이 발화할때, 고통을 느끼는 뉴런이 같이 발화하기 때문이죠.",
+			"hebb22": "따라서, '개' 가 '고통'에 연결되었다고 할 수 있죠.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "어쨌든, 우리가 헵의 법칙에 따라 배운다면, 배운 내용이 지워지는 방식은 뭘까요?.",
+			
+			"anti1": "그것은 바로 거꾸로-헵의 법칙.",
+			"anti2": "“뉴런이 나홀로 발화하면, 연결을 잃게 된다.”",
+			
+			"anti3": "다시 한번 쉽게 풀어봤어요!",
+
+			"anti4": "즉 – 한 뉴런이 다른 뉴런과 연결되어 있다가,",
+			"anti5": "두번째 뉴런은 가만히 있고 첫번째 뉴런만 발화한다면,",
+			"anti6": "그 연결은 약화된다는 거죠.",
+			"anti7": "자, 이번에도 한번 해 보세요.",
+
+			"anti8": "그 뉴런은 아예 연결이 없으니 클릭하지 마세요.",
+			"anti9": "어딘가에 연결되어 있는 뉴런을 찾아보세요.",
+			"anti10": "아, 그 뉴런은 받기만 하지 다른 뉴런으로 보내는 연결이 없어서 안되죠.",
+			"anti11": "어디론가 연결을 보내는 뉴런을 찾아서 클릭하세요.",
+
+			"anti12": "자 이제 기다려 보세요...",
+			"anti13": "보세요! 연결이 약해졌죠",
+			"anti14": "한번 더 해보세요, 그리고 나면, 연결이 완전히 사라질 겁니다.",
+
+			"anti15": "바로 이 거꾸로 학습 법칙이 바로, 여러분이 개에 대한 공포가 있다면,",
+			"anti16": "귀여운 개에게 계속해서 노출되는 걸 통해서,",
+			"anti17": "공포학습을 되돌리게 만들 수 있는 원리인거죠.",
+			"anti18": "'개' 뉴런이 발화하되, '고통' 뉴런은 발화하지 않는다,",
+			"anti19": "그렇게 되면 결국 – 연결이 약해진다.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "자 이제 우리가 어떻게 하면 학습하고 그걸 되돌릴 수 있을지 알았으니 다시한번.",
+			"ther1": "...이 주제로 돌아가 보죠.",
+
+			"ther2": "여러분이 직접 뇌를 재연결시켜 보세요.",
+			"ther3": "여기 세 개의 공포 기억 연결들이 있는데 이들을 재연결시켜 보세요,",
+			"ther4": "공포를 느끼는 마음으로부터 안전하게 느끼는 마음으로.",
+
+			"ther5": "보다시피, 여러분의 마음을 새롭게 연결시키기 위해서는 처음에는 어느 정도 불안을 경험할 수 밖에 없어요...",
+			"ther6": "...그렇지만 길게 보면 충분히 가치 있는 경험이죠.",
+
+			"ther7": "자 하나 해 냈고, 이제 두번 남았고.",
+			"ther8": "두번째도 재연결 성공, 이제 한번 남았네요.",
+			"ther9": "나는 지금도 구멍들이 무..무서워요.",
+
+			"ther10": "그리고... 마침내 해냈어요!",
+
+			"ther11": "방금전 여러분들이 한 일이 바로 노출치료라는 겁니다'.",
+			"ther12": "현존하는 모든 치료들 중에 가장 잘 증명된 치료법이죠 ",
+			"ther13": "어떤 대상에 대한 공포, PTSD, 그리고 다른 여러가지 불안장애들에 효과가 있답니다..",
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "물론, 현실에서는, 재연결을 만들어낸다는 건 쉽지 않아요, 이렇게 빨리 되지도 않을 것이고요,",
+			"outro1": "그렇지만 할 수 있어요.",
+			"outro2": "약속하죠—내가 바로 --",
+			"outro3": "재연결이 가능하다는 증거랍니다.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "헤이, 내Patreon  지지자 모두에게 엄청난 감사를, 그분들 없이는,",
+			"cred1": "이 이상한 인터랙티브 비디오를 만들지 못했을 것이기에,",
+			"cred2": "and I'd probably be forced to get a real job.",
+			"cred3": "여러분이 다음에도 내가 이런 비디오 만드는 걸 돕고 싶으시면,",
+			"cred4": "그리고 엔딩 크레딧에 포함되고 싶으시면,",
+			"cred5": "Patreon을 방문해 주세요!",
+
+			"cred6": "여러분이 듣고 계신 신비한 음악은 멋쟁이Phyrnna 가 만들어주었답니다,",
+			"cred7": "이전에 내가 마무리짓지 못한 두 개의 프로젝트에도 음악을 도와 주었죠..",
+
+			"cred8": "또 다른 인터액티브 설명을 보고 싶으면 다각형의 우화 Parable of the Polygons를 방문해 주세요!",
+			"cred9": " 비 하트와의 콜라보 작품이죠 – 맞아요 바로 그 비 하트! :D --",
+			"cred10": "체계적 편향과 다양성에 관한 이야기.",
+
+			"cred11": "한가지 기억하실 것은 이 인터액티브 설명은 그저 시작에 불과하기 때문에.",
+			"cred12": "더 배우고 싶은 분들은, 반드시 더 많은 읽을 거리를 찾으셔야 한다는 점 ",
+			"cred13": "아래 내용을 참조하세요. ",
+
+			"cred14": "아니면 그냥 왼쪽에 있는 모래상자만 가지고 놀 수도 있어요",
+			"cred15": "엄청 재밌거든요.",
+
+			"cred16": "어쨌든, 저의 작품을 보아 주셔서, 감사합니다.",
+			"cred17": "",
+			"cred18": "아니면 가지고 놀아 주셔서 감사하다고 해야 하나?",
+			"cred19": "",
+			"cred20": "놀기도 하고 보기도 하셨죠.",
+			"cred21": "놀고 보아 주셔서 감사합니다.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "재배선은 단기적으로는 공포를 초래할지 모르지만,",
+			"extra1": "결과적으로는 충분히 가치있는 과정이랍니다.",
+
+			"extra2": "조건화된 공포.",
+			"extra3": "공포는 소거되었답니다.",
+
+			"extra4": "오오!",
+			"extra5": "짜잔~",
+
+			"extra6": "보세요, 비결은 바로 여러분이 무서워하는 대상에 노출되는 거랍니다,",
+			"extra7": "그렇지만 안전한 방식으로.",
+			"extra8": "여러분의 공포를 안전한 장소에서 경험하세요.",
+
+		}
 	}
 
 };
