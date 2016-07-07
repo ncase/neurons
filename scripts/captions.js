@@ -3842,6 +3842,210 @@ window.Captions = {
 			"extra8": "여러분의 공포를 안전한 장소에서 경험하세요.",
 
 		}
-	}
+	},
+
+	// Vietnamese
+	"vi": {
+		label: "Tiếng Việt",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Xem nào, tôi đã thường hay bị căng thẳng.",
+			"intro1": "Và rồi tôi lại bị căng thẳng VỀ VIỆC bị căng thẳng.",
+			"intro2": "Cuối cùng thì vẫn là căng thẳng.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Xin chào, tôi là Nicky Case,",
+			"prop1": "Và đây là 1 bài hướng dẫn về nơron mà bạn có thể tương tác trực tiếp.",
+			"prop2": "Yup! Bạn thực sự có thể tương tác với cái này,",
+			"prop3": "♬ vậy tại sao bạn không thử luôn bây giờ nhỉ ♬",
+			"prop4": "và click vào 1 nơron, xem chuyện gì sẽ xảy ra?",
+
+			"prop5": "Ơ nàyyy, Tôi đang nói cơ mà!... Thôi đùa đấy.",
+
+			"prop6": "Okay, wow, bạn thực sự thích trò này rồi đấy, click vào MỌI THỨ,",
+			"prop7": "TUYỆT. ĐƯỢC ĐẤY. RẤT TỐT.",
+
+			"prop8": "Yeah!",
+			"prop8.5": "Xem cách tín hiệu được truyền đi kìa,",
+			"prop9": "Từ nơron này qua nơron khác.",
+			"prop10": "Thử click vài cái nữa xem.",
+
+			"prop11": "Tất nhiên, đây chỉ là một mô hình được tối giản thôi,",
+			"prop12": "Nhưng cái này cũng na ná cách cách nơrơn hoạt động.",
+			"prop13": "Một ý nghĩ dẫn đến các ý nghĩ tiếp theo, và cứ như vậy,",
+			"prop14": "nhưng... trong một bộ não đầy SỰ LO LẮNG...",
+
+			"Mê hoặc": "Trông khá là mê hoặc, đúng ko nào?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "Và đây là những chuyện xảy ra.",
+			"fear1": "Những ý nghĩ căn bản sẽ kết nối với những ý nghĩ lo lắng.",
+			"fear2": "Cá nhân, tôi thường sợ khi bị xem là 1 kẻ thất bại,",
+			"fear3": "và khi ở gần mọi người,",
+			"fear4": "và cả...",
+			"fear5": "những cái lỗ.",
+			"fear6": "Vì... tôi chả biết tại sao nữa, nhưng những đám lỗ xếp sít vào nhau ấy",
+			"fear7": "Bọn chúng làm tôi phát ớn, bạn hiểu chứ? Tôi không biết nữa.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[SOUNDS]",
+			"hebb1": "Dù sao đi nữa... ban đầu tại sao chúng ta có thể học được những nỗi sợ này?",
+			"hebb2": "Chà, để giải thích điều đó, hãy để tôi bỏ qua cái này...",
+			"hebb3": "và cho bạn xem...",
+			"hebb4": "cái này!",
+
+			"hebb5": "Hebbian Learning.",
+			"hebb6": "“Nơron mà đượck kích hoạt cùng nhau, sẽ nối với nhau.”",
+
+			"hebb7": "Đây là 1 cách thô sơ mà các nhà thần kinh học từng dùng để giải thích cho việc",
+			"hebb8": "các nơron tạo liên kết mới như thế nào.",
+			"hebb9": "Cơ bản thì, khi bạn kích hoạt 1 nơrom, và sau đó kích hoạt 1 nơron khác,",
+			"hebb10": "nơron đầu sẽ kết nối VỚI nơron thứ hai.",
+			"hebb11": "Thử luôn nào!",
+
+			"hebb12": "Chậm quá! Bạn click ko đủ nhanh rồi. Thử lại nhé?",
+			"hebb13": "Không đủ gần rồi. Thử cặp nơron khác đi.",
+
+			"hebb14": "Và đó là cách mà chúng ta học!",
+			"hebb15": "Tất nhiên, ở ngoài đời thật ta không học nhanh như thế,",
+			"hebb16": "Trong bản mô phòng này tôi tăng tốc mọi thứ 1 chút, eh, nhưng vẫn vậy.",
+			"hebb17": "Nào, giờ hãy làm thêm một vài kết nối nữa đi,",
+			"hebb18": "có thể làm 1 chỗi hoặc cái gì đó.",
+
+			"hebb19": "Cách học này cũng lí giải cho việc, nếu hồi nhỏ bạn bị chó cắn,",
+			"hebb20": "thì bạn có thể sẽ lớn lên với nỗi sợ chó!",
+			"hebb21": "Bởi vì nơron về 'chó' của bạn được kích hoạt, và rồi nơron 'đau' cũng được kích hoạt.",
+			"hebb22": "Thế nên, 'chó' được kết nối tới 'nỗi đau'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Dù sao thì, nếu đó là cách chúng ta học, thì cách chúng ta loại trừ chúng sẽ là thế này.",
+			
+			"anti1": "Anti-Hebbian Learning.",
+			"anti2": "“Nơron mà được kích hoạt nhưng không đồng bộ, sẽ mất kết nối.”",
+			
+			"anti3": "Một cách giải thích thô sơ khác của các nhà thần kinh học!",
+
+			"anti4": "Vậy nếu – nếu bạn đã có sự kết nối giữa các nơron,",
+			"anti5": "bạn kích hoạt 1 nơron MÀ KHÔNG kích hoạt nơron còn lại,",
+			"anti6": "kết nối giữa chúng sẽ yếu dần.",
+			"anti7": "Một lần nữa, thử xem nào.",
+
+			"anti8": "Nơron đó không có kết nối nào cả.",
+			"anti9": "Bạn cần tìm nơron nào mà có kết nối rồi ấy.",
+			"anti10": "À, nơron đó chỉ có kết nối TỚI nó, chứ TỪ nó thì không.",
+			"anti11": "Bạn cần tìm 1 nơron có kết nối TỪ chính nó.",
+
+			"anti12": "Và giờ thì đợi xem nào...",
+			"anti13": "Và nhìn xem! Kết nối yếu dần rồi.",
+			"anti14": "Thử làm lại xem nào, và lần này, kết nối sẽ hoàn toàn bị loại bỏ.",
+
+			"anti15": "Và cách loại trừ này sẽ lý giải vì sao, nếu bạn có nỗi sợ chó,",
+			"anti16": "và nếu bạn luôn tiếp xúc với những con chó thân thiện,",
+			"anti17": "có thể bạn sẽ gạt bỏ được nỗi sợ ấy.",
+			"anti18": "Nơron về 'Chó' được kích hoạt, MÀ KHÔNG kích hoạt nơron 'đau',",
+			"anti19": "vậy nên – các kết nối yếu dần.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Vậy giờ bạn đã biết cách ta học và loại trừ mợi thứ, hãy cùng xem lại...",
+			"ther1": "...cái này.",
+
+			"ther2": "Tôi muốn bạn đào tạo lại bộ não này.",
+			"ther3": "Nối lại các dây thần kinh, chỉnh lại các kết nối của mỗi cái này,",
+			"ther4": "từ việc cảm thấy sợ, tới việc cảm thấy an toàn.",
+
+			"ther5": "Thấy không, tự nối lại các liên kết có thể dẫn đến căng thẳng trong ngắn hạn...",
+			"ther6": "...nhưng RẤT ĐÁNG để làm trong dài hạn.",
+
+			"ther7": "Xong một cái rồi, còn 2 cái nữa thôi.",
+			"ther8": "Xong hai, còn một nữa thôi.",
+			"ther9": "tôi. Vẫn . không . thích. Lỗ.",
+
+			"ther10": "Và... bạn đã hoàn thành rồi đấy!",
+
+			"ther11": "Điều bạn vừa làm được gọi là 'liệu pháp tự phơi nhiễm'.",
+			"ther12": "Đó là một trong những liệu pháp được sử dụng nhiều nhất",
+			"ther13": "từ việc chữa trị những nỗi sợ cụ thể, rối loạn stress sau sang chấn, cho đến những bệnh tâm thần khác.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Một lần nữa, ngoài đời thưc, tự nối lại các kết nối thần kinh không hề dễ, chúng không hề nhanh,",
+			"outro1": "nhưng chúng có thể thực hiện được.",
+			"outro2": "Tôi hứa với bạn đấy –- Vì tôi là một bằng chứng sống --",
+			"outro3": "Chúng có thể thực hiện được.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hey, cảm ơn rất nhiều những người đã hỗ trợ Patreon của tôi, bởi nếu thiếu họ,",
+			"cred1": "Tôi đã không thể tạo ra những màn tương tác quái dị như thế này,",
+			"cred2": "Và có lễ tôi đã bị bắt đi tìm một công việc thực sự.",
+			"cred3": "Vậy nên nếu bạn muốn giúp tôi tạo mấy cái tương tự như thế này,",
+			"cred4": "và được thêm credit ở những thứ tiếp theo mà tôi làm,",
+			"cred5": "thì check cái Patreon của tôi nhé!",
+
+			"cred6": "Âm nhạc mà bạn đang nghe được sản xuất bởi Phyrnna, một nhạc sỹ tuyệt vời,",
+			"cred7": "đó cũng là người mà tôi đã cùng hợp tác trong hai dự án trước, nhưng mấy dự án đó thất bại mất rồi.",
+
+			"cred8": "Nếu bạn muốn xem những lời giải thích có thể tương tác được như thế này, hãy xem thử Parable of the Polygons!",
+			"cred9": "Đó là 1 dự án hợp tác với Vi Hart – đúng rồi, *Chính nó* Vi Hart! :D --",
+			"cred10": "về các khuynh hướng trong hệ thống và sự đa dạng.",
+
+			"cred11": "Và nhớ này, màn tương tác vừa rồi chỉ là phần mở đầu.",
+			"cred12": "Vậy nên nếu bạn muốn tìm hiểu thêm, *chắn chắn rồi* hãy tham khảo",
+			"cred13": "ở phần mô tả bên dưới nhé. ",
+
+			"cred14": "Hoặcccc bạn có thể chơi với hộp cát bên trái",
+			"cred15": "bởi nó khá là vui đeý.",
+
+			"cred16": "Dù sao thì, cảm ơn bạn nhiều, rất rất nhiều vì đã xem nhé.",
+			"cred17": "",
+			"cred18": "um, vẫn đang chơi hả?... hay đang xem vậy?",
+			"cred19": "",
+			"cred20": "plotching??.",
+			"cred21": "Cám ơn vì đã ở lại xem plot.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Tự nối lại các liên kết thần kinh có thể dẫn đến căng thẳng trong ngắn hạn,",
+			"extra1": "nhưng rất đáng để làm trong dài hạn.",
+
+			"extra2": "Một nỗi sợ có điều kiện.",
+			"extra3": "Nỗi sợ đã bị dập tắt.",
+
+			"extra4": "Húuuu!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "Đó, bí quyết là hãy đối mặt với nỗi sợ của mình,",
+			"extra7": "nhưng trong một cách an toàn thôi nhé.",
+			"extra8": "Đối mặt với nỗi sợ ở một nơi an toàn.",
+				
+		}
+
+	},
 
 };
