@@ -4452,6 +4452,209 @@ window.Captions = {
 	        "extra8": "Сталкиваться со своими страхами надо в безопасной обстановке.",
 
 		}
+	},
+
+	// Hungarian
+	"hu": {
+		label: "Magyar",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Tehát, valaha mindentől szorongtam",
+			"intro1": "Majd a szorongásomTÓL kezdtem szorongani",
+			"intro2": "Szorongás okozta szorongás okozta szorongás.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Szia, Nicky Case vagyok,",
+			"prop1": "és ez egy interaktív magyarázat az idegsejtekről.",
+			"prop2": "Igen! Ez a dolog valóban interaktív,",
+			"prop3": "♬ tehát miért is nem próbálod ki ♬",
+			"prop4": "és kattintasz egy idegsejtre, hogy lásd az eredményt?",
+
+			"prop5": "ELNÉZÉST, éppen beszéltem!... Csak viccelek.",
+
+			"prop6": "Oké, azta, nagyon belejöttél, MINDENRE rákattintasz,",
+			"prop7": "REMEK. ÉRTEM. FANTASZTIKUS.",
+
+			"prop8": "Igen!",
+			"prop8.5": "Figyeld hogyan terjednek szét a jelek,",
+			"prop9": "idegsejtről, idegsejten keresztül, idegsejtre",
+			"prop10": "Még próbálj meg lenyomni párat.",
+
+			"prop11": "Természetesen ez egy leegyszerűsített modell,",
+			"prop12": "de nagyjából így működnek az idegsejtek.",
+			"prop13": "Egy gondolat elindít egy következőt, és így tovább,",
+			"prop14": "de... a SZORONGÓ agy esetében...",
+
+			"mesmerizing": "Egészen lebilincselő, nincs igazam?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "EZ történik",
+			"fear1": "Ártalmatlan gondolatok kapcsolódnak szorongó gondolatokkal.",
+			"fear2": "Részemről, én például féltem, nehogy kudarcként tekintsenek rám,",
+			"fear3": "ha emberek közelében voltam,",
+			"fear4": "valamint...",
+			"fear5": "a lyukaktól.",
+			"fear6": "Mer'... nem is értem, de egy sűrű lyuk-csoportosulás",
+			"fear7": "egyszerűen halálra rémiszt, érted? Nem tudom.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[HANGOK]",
+			"hebb1": "Különben is... eredetileg hogyan sajátítjuk el ezeket a félelmeket?",
+			"hebb2": "Magyarázatként engedd meg, hogy mindezt eltávolítsam...",
+			"hebb3": "és megmutassam neked...",
+			"hebb4": "ezt!",
+
+			"hebb5": "Hebb Szabály.",
+			"hebb6": "“Az együtt elsülő idegsejtek összeköttetnek.”",
+
+			"hebb7": "Ezzel az alapelvvel magyarázzák a neurológusok hogyan",
+			"hebb8": "hoznak idegsejtjeink új kapcsolatokat létre.",
+			"hebb9": "Lényegében, ha elsütsz egy idegsejtet, majd egy következőt,",
+			"hebb10": "akkor az első idegsejt a másodikHOZ fog kötődni.",
+			"hebb11": "Próbáld ki magad is!",
+
+			"hebb12": "Túl lassú! Nem kattintottál elég gyorsan. Megpróbálod újra?",
+			"hebb13": "Ezek túl messze voltak egymástól. Próbálkozz egy másik párral.",
+
+			"hebb14": "Ez tanulásunk folyamata!",
+			"hebb15": "Természetesen a valóságban mindez lassabban történik,",
+			"hebb16": "felgyorsítottam a szimulációt, eh, de a lényeg ugyanaz.",
+			"hebb17": "Most játszadozz, hozz létre még néhány összeköttetést,",
+			"hebb18": "esetleg készíts egy láncot, vagy valamit.",
+
+			"hebb19": "Ez a tanulási szabály okozza, hogyha gyerekként megharapott egy kutya,",
+			"hebb20": "esetleg kialakult nálad a kutyák iránti félelem!",
+			"hebb21": "Mivel a 'kutya' idegsejted, majd a 'fájdalom' idegsejted sült el.",
+			"hebb22": "És ezért 'kutya' összekapcsolódott 'fájdalommal'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Mindenesetre, ha az a tanulás folyamata, íme a felejtésé.",
+			
+			"anti1": "Anti-Hebb Szabály.",
+			"anti2": "“A külön elsülő idegsejtek szétköttetnek.”",
+			
+			"anti3": "A neurológusok egy másik alapelve!",
+
+			"anti4": "Tehát - ha már eleve van kapcsolatod egy idegsejttől egy másikig,",
+			"anti5": "és az első idegsejtet a második NÉLKÜL sütöd el,",
+			"anti6": "a kapcsolat meggyengül.",
+			"anti7": "Ismét, próbáld ki.",
+
+			"anti8": "Annak az idegsejtnek nem voltak kapcsolatai.",
+			"anti9": "Olyat kell találnod, amelyiknek van.",
+			"anti10": "Áh, tehát eme idegsejt kapcsolattal csak FELÉ, de nem FELŐLE rendelkezik.",
+			"anti11": "Olyat kell találnod, amelyik FELŐL érkeznek csatlakozások.",
+
+			"anti12": "Most várj egy kicsit...",
+			"anti13": "És nézd! A kapcsolat meggyengült.",
+			"anti14": "Kattints rá mégegyszer, és ez alkalommal a kapcsolat teljesen meg fog szűnni.",
+
+			"anti15": "És ez a felejtési szabály okozza, hogyha félsz a kutyáktól,",
+			"anti16": "és barátságos kutyáknak vagy kitéve újra és újra,",
+			"anti17": "esetleg elfelejted a félelmed.",
+			"anti18": "'Kutya' idegsejted 'fájdalom' idegsejted NÉLKÜL sül el,",
+			"anti19": "és következménye - a kapcsolat meggyengül.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Tehát most hogy már ismered a tanulás és felejtés folyamatát, látogassuk meg újra...",
+			"ther1": "...ezt.",
+
+			"ther2": "Szeretném, ha újraképeznéd ezt az agyat.",
+			"ther3": "Újrahuzaloznád, újraköttetnéd mindhárom dolgot,",
+			"ther4": "hogy félelem helyett biztonságot érezzenek.",
+
+			"ther5": "Látod, az újrahuzalozás esetleg rövid távú szorongást okozhat...",
+			"ther6": "...de mindez NAGYON megéri hosszú távon.",
+
+			"ther7": "Egy letudva, kettő van hátra.",
+			"ther8": "Kettő letudva, egy van hátra.",
+			"ther9": "még. mindig. nem. szeretem. a lyukakat.",
+
+			"ther10": "És... megcsináltad!",
+
+			"ther11": "Amit éppen végrehajtottál 'feltáró terápiának' hívnak",
+			"ther12": "Ez az egyik legbizonyítottabb az összes terápia közül",
+			"ther13": "speciális fóbiák, poszttraumatikus stressz szindróma, és egyéb szorongásos betegségek kezelésére.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Ismét, a valóságban újrahuzalozni magad nem egyszerű, nem gyors,",
+			"outro1": "de meg lehet tenni.",
+			"outro2": "Megígérem neked -- bizonyíték vagyok rá --",
+			"outro3": "Meg lehet tenni.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hé, óriás köszönet az összes Patreon támogatómnak, hiszen nélkülük",
+			"cred1": "nem lennék képes az ilyen furcsa, interaktív dolgok elkészítésére,",
+			"cred2": "és valószínűleg kénytelen lennék egy valódi munkát szerezni.",
+			"cred3": "Tehát, ha szeretnél segíteni nekem hasonló dolgok további készítésében,",
+			"cred4": "és a következő dolgom stáblistájában megjelenni,",
+			"cred5": "nézd meg a Patreon-om!",
+
+			"cred6": "A zenét, amit jelenleg hallgatsz a csodálatos Phyrnna készítette,",
+			"cred7": "akivel már korábban együttműködtem két projektemnél, melyeket nem sikerült befejeznem.",
+
+			"cred8": "Egy másik interaktív magyarázatért nézd meg a Poligonok Példázatát!",
+			"cred9": "Ez egy eggyütműködés eredménye Vi Hart-tal -- igen, *azzal* a Vi Hart-tal :D --",
+			"cred10": "az előítéletről és a sokféleségről.",
+
+			"cred11": "És emlékkez rá, hogy ez az interaktív magyarázat csak bevezető volt.",
+			"cred12": "Tehát, ha többet akarsz tudni, *mindenképpen* nézz rá a további irodalomra",
+			"cred13": "az alant található leírásban.",
+
+			"cred14": "Vaaaaagy csak játszadozz a bemutatóval a bal oldalon",
+			"cred15": "hiszen elég jó móka.",
+
+			"cred16": "Mindenesetre nagyon, nagyon köszönöm, hogy néztél.",
+			"cred17": "",
+			"cred18": "öhm, játszottál?... néztél?",
+			"cred19": "",
+			"cred20": "jéztél.",
+			"cred21": "Nagyon köszönöm, hogy jéztél.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Az újrahuzalozás esetleg rövid távú szorongást okozhat,",
+			"extra1": "de mindez nagyon megéri hosszú távon.",
+
+			"extra2": "Egy feltételes félelem.",
+			"extra3": "Kioltódik a félelem.",
+
+			"extra4": "Húú!",
+			"extra5": "tá-dááám~",
+
+			"extra6": "Látod, a trükk az, hogy KITEDD magad a félelmeidnek,",
+			"extra7": "de biztonságos módon.",
+			"extra8": "Nézz szembe a félelmeiddel biztonságos környezetben.",
+				
+		}
 	}
 
 };
