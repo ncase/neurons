@@ -4826,6 +4826,209 @@ window.Captions = {
 			"extra8": "Suoci se sa strahom na bezbednom mestu."
 
 		}
+	},
+
+	// Filipino
+	"tl": {
+		label: "Filipino",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Dati, madalas akong mabalisa.",
+			"intro1": "Umaabot sa puntong nababalisa ako DAHIL sa pagkakabalisa.",
+			"intro2": "Pagkabahalang tila walang katapusan.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Kamusta, ako si Nicky Case,",
+			"prop1": "at ito ay isang interaktibong paliwanag tungkol sa neurons.",
+			"prop2": "Oo! Maaari kang aktwal na makipag-ugnay sa ito,",
+			"prop3": "♬ kaya bakit hindi mo subukan itong bagay na ito ♬",
+			"prop4": "pumindot ka ng isang neuron, at tingnan mo kung ano ang mangyayari?",
+
+			"prop5": "Mawalang galang lang, nagsasalita pa ako!... Nagbibiro lang ako.",
+
+			"prop6": "Okay, wow, talagang na e-enjoy mo ito ha, pinipindot mo LAHAT,",
+			"prop7": "AYOS. NAKUHA MO. MAGALING.",
+
+			"prop8": "Ayos!",
+			"prop8.5": "Panoorin mo kung paano ang lumalaganap ang mga signal pababa,",
+			"prop9": "mula neuron sa neuron sa neuron.",
+			"prop10": "Subukan mong pumindot ng iba pa.",
+
+			"prop11": "Syempre, ito ay isang pinasimpleng modelo,",
+			"prop12": "ngunit iyan ay halos kung paano gumagana ang mga neurons.",
+			"prop13": "Isang pag-iisip ang nagpapagalaw sa sunod, at sa mga susunod pa,",
+			"prop14": "pero... sa isang NABABAHALANG utak...",
+
+			"mesmerizing": "Sadyang nakakabighani, hindi ba?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "ITO ang nangyayari.",
+			"fear1": "Inosenteng saloobin kumokonekta sa nakakabahalang pagiisip.",
+			"fear2": "Sa totoo, dati ay takot akong makita bilang isang palpak,",
+			"fear3": "ng pagiging malapit sa mga tao,",
+			"fear4": "at ng...",
+			"fear5": "mga butas.",
+			"fear6": "Kasi... hindi ko alam kung bakit, ngunit ang mga magkakalapit na mga butas",
+			"fear7": "e kinikilabutan ako, alam ninyo yun? Hindi ko alam kung bakit.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[MGA TUNOG]",
+			"hebb1": "Gayon pa man... paano natin ba natututunan ang mga kinakatakutan na ito sa unang lugar?",
+			"hebb2": "Upang mapaliwanag ito, hayaan niyo akong alisin muna ang lahat ng ito...",
+			"hebb3": "at ibigay sa inyo...",
+			"hebb4": "ito!",
+
+			"hebb5": "Hebbian Learning.",
+			"hebb6": "“Ang mga neuron na sabay pumipitik, ay siyang nagkakakabit.”",
+
+			"hebb7": "Ito ay isang alituntunin na ginagamit ng mga neuroscientists para maipaliwanag kung paano",
+			"hebb8": "gumagawa ng mga bagong koneksyon ang mga neuron.",
+			"hebb9": "Karaniwan, kapag nagamit ang isang neuron, at nagamit ang isa pang neuron,",
+			"hebb10": "ang unang neuron ay kakabit sa pangalawang neuron.",
+			"hebb11": "Subukan niyo ito para sa inyong sarili!",
+
+			"hebb12": "Masyadong mabagal! Hindi mo napindot ng sapat na bilis. Subukan mo muli?",
+			"hebb13": "Masyadong malayo. Sumubok ka ng ibang pares ng mga neuron.",
+
+			"hebb14": "Ganoon tayo natututo!",
+			"hebb15": "Syempre, hindi tayo natututo ng ganoong kabilis sa totoong buhay,",
+			"hebb16": "Pinabilis ko ang simulasyon na ito, ngunit pareho lang rin naman.",
+			"hebb17": "Ngayon paglaruan mo pa, gumawa ka ng mas maraming koneksyon,",
+			"hebb18": "siguro gumawa ka ng kadena o kung ano man.",
+
+			"hebb19": "Ang panuntunan sa pagaaral na ito ang dahilan kung bakit, kung ikaw ay nakagat ng aso noong ikaw ay bata pa,",
+			"hebb20": "maaari kang naging matatakutin sa mga aso!",
+			"hebb21": "Dahil ang neuron mo na itinalaga para sa 'aso' ay nagamit, at ang neuron mo na itinalaga para sa 'sakit' ay nagamit din.",
+			"hebb22": "At sa gayon, ang 'aso' ay kumonekta sa 'sakit'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "Gayon pa man, kung ganoon tayo natututo, ito naman ay kung paano natin makakalimutan ang mga dating natutunan.",
+			
+			"anti1": "Anti-Hebbian Learning.",
+			"anti2": "“Ang mga neuron na gumagana ng di sabay-sabay ay nawawalan ng koneksyon sa isa't isa.”",
+			
+			"anti3": "Isa pang alituntunin na ginagamit ng mga neuroscientists!",
+
+			"anti4": "Kaya - kung mayroon ka na koneksyon mula sa isang neuron papunta sa isa pa,",
+			"anti5": "at napagana mo ang unang neuron na HINDI nagamit ang pangalawang neuron,",
+			"anti6": "ang koneksyon nila sa isa't isa ay humihina.",
+			"anti7": "Subukan mo ulit ito.",
+
+			"anti8": "Ang neuron na iyon ay walang mga kakonekta.",
+			"anti9": "Kailangan mo maghanap ng neuron na mayroon kahit isang kakonekta.",
+			"anti10": "Ang neuron na ito ay mayroon lamang mga koneksyon na PAPUNTA sa kanya, pero walang GALING sa kanya.",
+			"anti11": "Kailangan mo maghanap ng neuron na mayroong koneksyon GALING sa kanya.",
+
+			"anti12": "Ngayon hintayin mo...",
+			"anti13": "At ito! Ang koneksyon ay humina.",
+			"anti14": "Gawin mo ulit, at sa susunod, ang koneksyon ay lubos na mawawala.",
+
+			"anti15": "At ito ang dahilan kung bakit kapag takot ka sa mga aso,",
+			"anti16": "at ikaw ay paulit-ulit na iniharap sa mga mababait na aso,",
+			"anti17": "maaari mong makalimutan ang iyong kinakatakutan.",
+			"anti18": "Ang neuron na nakatalaga sa 'aso' ay gumagana, ng HINDI gumagana ang  neuron na nakatalaga sa 'sakit',",
+			"anti19": "at sa gayon - ang koneksyon ay humihina.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Kaya ngayong alam na natin paano tayo natututo at nakakalimot ng natutunan, balikan natin...",
+			"ther1": "...ito.",
+
+			"ther2": "Gusto ko na sanayin mo ang utak na ito.",
+			"ther3": "Pagpalit-palitin muli ang bawat isa sa tatlong mga bagay na ito,",
+			"ther4": "mula sa pakiramdam ng takot, hanggang sa pakiramdam na ligtas.",
+
+			"ther5": "Makikita mo, ang pagsasanay sa iyong sarili ay magdudulot ng pagkakabahala o pagkakabalisa sa panandalian...",
+			"ther6": "...ngunit ito ay napakahalaga sa pangmatagalan.",
+
+			"ther7": "Tapos na ang isa, kulang pa ng dalawa.",
+			"ther8": "Tapos na ang dalawa, isa na lamang ang kulang.",
+			"ther9": "hindi. ko. parin. gusto. ang. mga. butas.",
+
+			"ther10": "At... natapos mo na!",
+
+			"ther11": "Ang ginawa mo na ito ay ang tinatawag na 'exposure therapy'.",
+			"ther12": "Ito ang isa sa mga pinaka evidence-backed na therapy sa ngayon",
+			"ther13": "para sa pagpapagamot ng mga kinakatakutan, PTSD, at iba pang mga anxiety disorder.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Muli kong uulitin, sa totoong buhay, ang pagsasanay ng sarili ay hindi madali, ito ay hindi mabilisang nagagawa,",
+			"outro1": "ngunit maaari itong magawa.",
+			"outro2": "Pinapangako ko sa iyo -- ako mismo ang patunay --",
+			"outro3": "Ito ay maaaring magawa.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Malaking pasasalamat sa mga sumuporta sa akin sa Patreon, dahil kung wala sila,",
+			"cred1": "hindi ako magkakaroon ng pagkakataon gumawa ng mga kakaibang interaktibong bagay tulad nito,",
+			"cred2": "at kakailanganin ko na maghanap ng totoong trabaho.",
+			"cred3": "Kaya kung gusto niyo akong tulungan gumawa ng mga bagay na tulad nito,",
+			"cred4": "at mabigyan ng karangalan sa susunod na gawin ko na bagay,",
+			"cred5": "tingnan niyo ang aking Patreon!",
+
+			"cred6": "Ang tugtuging pinapakinggan ninyo ay ginawa ng kahanga-hangang si Phyrnna,",
+			"cred7": "na nakatrabaho ko sa dalawang proyekto dati na hindi ko natapos.",
+
+			"cred8": "Para sa isa pang interaktibong paliwanag, tingnan mo ang Parable of the Polygons!",
+			"cred9": "Ito ay isang kolaborasyon na ginawa ko kasama ni Vi Hart -- oo, *yung* Vi Hart na iyon! :D --",
+			"cred10": "tungkol sa systemic bias at diversity.",
+
+			"cred11": "At tandaan, itong interaktibong paliwanag na ito ay isang panimula lamang.",
+			"cred12": "Kaya kung gusto mo pa na mas maraming matutunan, *talagang* basahin ang mga karagdagang babasahin",
+			"cred13": "sa paglalarawan sa ibaba. ",
+
+			"cred14": "O hindi kaya ay paglaruan ang sandbox sa kaliwa",
+			"cred15": "dahil sa ito ay medyo masaya.",
+
+			"cred16": "Alinman sa dalawa, maraming, maraming salamat sa panunuod.",
+			"cred17": "",
+			"cred18": "um, paglalaro?... panunuod?",
+			"cred19": "",
+			"cred20": "paglanuod.",
+			"cred21": "Maraming salamat sa paglanuod.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Ang pagsasanay sa iyong sarili ay magdudulot ng pagkakabahala o pagkakabalisa sa panandalian,",
+			"extra1": "ngunit ito ay napakahalaga sa pangmatagalan.",
+
+			"extra2": "Isang takot na nakundisyon.",
+			"extra3": "Ang takot ay napawi.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "Tingnan mo, ang PAGLALANTAD ng iyong sarili sa kung saan ka takot ang solusyon,",
+			"extra7": "ngunit sa isang ligtas na paraan",
+			"extra8": "Harapin ang iyong mga takot sa isang ligtas na espasyo.",
+				
+		}
 	}
 
 };
