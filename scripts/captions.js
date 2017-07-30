@@ -5029,6 +5029,209 @@ window.Captions = {
 			"extra8": "Harapin ang iyong mga takot sa isang ligtas na espasyo.",
 				
 		}
+	},
+
+	// Swedish
+	"sv": {
+		label: "Svenska",
+		captions: {
+
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+
+			"intro0": "Förr kunde jag känna ångest.",
+			"intro1": "Sen kände jag ångest över att känna ångest.",
+			"intro2": "Det var ångest hela vägen.",
+			"intro3": "",
+
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+
+			"prop0": "Hej, jag heter Nicky Case,",
+			"prop1": "och det här är en interaktiv förklaring om nervceller(el. neuron).",
+			"prop2": "Ja! Du kan faktiskt interagera med det här,",
+			"prop3": "♬ så varför prövar du inte det ♬",
+			"prop4": "genom att klicka på en nervcell, och se vad som händer?",
+
+			"prop5": "URSÄKTA mig, Jag pratade här!... Jag skojar bara.",
+
+			"prop6": "Okej, wow, du är verkligen inne i det här, klickandes på ALLTING,",
+			"prop7": "HÄFTIGT. OKEJ. FANTASTISKT.",
+
+			"prop8": "Ja!",
+			"prop8.5": "Kolla hur signalerna fortplantar sig,",
+			"prop9": "från nervcell till nervcell.",
+			"prop10": "Pröva klicka lite mer.",
+
+			"prop11": "Självklart, så är det här en förenklad modell,",
+			"prop12": "men det är ungefär hur en nervcell fungerar.",
+			"prop13": "En tanke leder till en annan, och så vidare,",
+			"prop14": "men... i den ÅNGESTFYLLDA hjärnan...",
+
+			"mesmerizing": "Ganska hypnotiserande, eller hur?",
+
+			//////////////
+			// MY FEARS //
+			//////////////
+
+			"fear0": "det HÄR är vad som händer.",
+			"fear1": "Ofarliga tankar kopplar sig till ångestfyllda tankar.",
+			"fear2": "Själv, så brukade jag vara jätte rädd att bli sedd som en misslyckad person,",
+			"fear3": "att bli för nära folk,",
+			"fear4": "och...",
+			"fear5": "hål.",
+			"fear6": "För att... Jag vet inte varför, men tätt samlade hål",
+			"fear7": "bara ger mig gåshud, du vet? Jag vet inte.",
+			
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+
+			"hebb0": "[LJUD]",
+			"hebb1": "Okej så... hur lär vi oss de här rädslorna till att börja med?",
+			"hebb2": "Jo, för att förklara det, låt mig bara gör mig av med det här...",
+			"hebb3": "och ge er det...",
+			"hebb4": "här!",
+
+			"hebb5": "Hebbiansk inlärning.",
+			"hebb6": "“Nervceller som avfyras tillsammans, sammankopplas.”",
+
+			"hebb7": "Det här är tumregeln som neuroforskare använder för att beskriva hur",
+			"hebb8": "nervceller skapar nya sammankopplingar.",
+			"hebb9": "Förenklat, om du avfyrar en nervcell, och sen avfyrar en annan nervcell,",
+			"hebb10": "den första nervcellen kopplar samman MED den andra nervcellen.",
+			"hebb11": "Pröva själv!",
+
+			"hebb12": "För sakta! Du klickade inte tillräckligt fort. Pröva igen?",
+			"hebb13": "Inte tillräckligt nära. Pröva ett annat par nervceller.",
+
+			"hebb14": "Och det är så vi lär oss!",
+			"hebb15": "Självklart, så lär vi oss inte så fort i verkligheten,",
+			"hebb16": "jag ökade på farten i den här simulationen, men, ändå.",
+			"hebb17": "Lek runt lite, skapa några fler kopplingar,",
+			"hebb18": "kanske gör en kjedja eller något.",
+
+			"hebb19": "Den här inlärningsregeln är varför, om du blev biten av en hund när du var yngre,",
+			"hebb20": "så kanske du utvecklar en rädsla för hundar!",
+			"hebb21": "För att din 'hund' nervcell avfyras, och sen din 'smärta' nervcell avfyras.",
+			"hebb22": "Och därigenom, 'hund' blir kopplad till 'smärta'.",
+
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+
+			"anti0": "I alla fall.",
+			
+			"anti1": "Anti-Hebbiansk inlärning.",
+			"anti2": "“Nervceller som avfyras isär, förlorar sin koppling.”",
+			
+			"anti3": "En till tumregel som neuroforskare har!",
+
+			"anti4": "Alltså - om du redan har en koppling mellan en nervcell och en annan,",
+			"anti5": "och du avfyrar den första nervcellen UTAN att avfyra den andra nervcellen,",
+			"anti6": "kopplingen blir svagare.",
+			"anti7": "Igen, pröva.",
+
+			"anti8": "Den där nervcellen hade inga sammankopplingar.",
+			"anti9": "Du måste hitta en som är sammankopplad.",
+			"anti10": "Ah, så den där nervcellen har kopplingar till sig, men inte IFRÅN sig..",
+			"anti11": "Du måste hitta en som är sammankopplad IFRÅN sig.",
+
+			"anti12": "Ok, vänta på det...",
+			"anti13": "Och kolla! Kopplingen är svagare.",
+			"anti14": "Gör det igen, och den här gången, kommer kopplingen att helt försvinna",
+
+			"anti15": "Och den här avlärningsregeln, är varför om du har en rädsla för hundar,",
+			"anti16": "och du utsätts för snälla hundar igen och igen,",
+			"anti17": "så kan du sluta vara rädd för hundar.",
+			"anti18": "'Hund' nervcellen avfyras, UTAN att 'smärta' nervellen avfyras,",
+			"anti19": "och därför - kopplingen försvagas.",
+
+			/////////////
+			// THERAPY //
+			/////////////
+
+			"ther0": "Så nu när du vet hur vi lär & avlär oss, låt oss återgå till det...",
+			"ther1": "...här.",
+
+			"ther2": "Jag vill att du tränar om den här hjärnan.",
+			"ther3": "Koppla om de här tre sakerna,",
+			"ther4": "från att känna rädsla, till att känna sig säker.",
+
+			"ther5": "Se, att koppla om kan orsaka ångest till en början...",
+			"ther6": "...men det är SÅ värt det till slut.",
+
+			"ther7": "En klar, två till.",
+			"ther8": "Två klar, bara en kvar nu.",
+			"ther9": "jag. gillar. fortfarande. inte. hål.",
+
+			"ther10": "Och... du gjorde det!",
+
+			"ther11": "Vad du precis gjorde kallas 'expneringsterapi'.",
+			"ther12": "Det är en av de mest bevisstödda terapierna som finns",
+			"ther13": "för att behandla fobier, PTSD, och andra ångestsyndrom.",
+
+			///////////
+			// OUTRO //
+			///////////
+
+			"outro0": "Igen, i verkliga livet, är det inte så enkelt att koppla om, det går inte så fort,",
+			"outro1": "men det går att göra.",
+			"outro2": "Jag lovar -- Jag är levande bevis --",
+			"outro3": "Det går.",
+
+			/////////////
+			// CREDITS //
+			/////////////
+
+			"cred0": "Hej, stort tack till alla mina Patreon-supporters, för utan dem,",
+			"cred1": "kunde jag inte göra de här interaktiva sakerna,",
+			"cred2": "och jag skulle nog bli tvingad att skaffa ett riktigt jobb.",
+			"cred3": "Så om du skulle vilja hjälpa mig att göra fler saker som det här,",
+			"cred4": "och bli nämnd i nästa sak jag gör,",
+			"cred5": "kolla på min Patreon!",
+
+			"cred6": "Musiken som du lyssnar på var gjord av den underbara Phyrnna,",
+			"cred7": "som medverkat på två tidigare projekt jag inte lyckades göra klar.",
+
+			"cred8": "För att se en annan interaktiv förklaring, titta på Parable of the Polygons!",
+			"cred9": "Det var ett sammarbete mellan mig och Vi Hart -- ja, *den* Vi Hart! :D --",
+			"cred10": "om systematisk fördomshet och mångfald.",
+
+			"cred11": "Och kom igåg, den här interaktiva förklaringen var bara en introduktion.",
+			"cred12": "Så om du vill se mer, kolla *absolut* på Further Reading",
+			"cred13": "i beskrivningen här nedan. ",
+
+			"cred14": "Ellerrr så kan du leka med sandlådan till vänster",
+			"cred15": "för det är ganska kul.",
+
+			"cred16": "Hur som helst, tack så, så mycket för att du tittade.",
+			"cred17": "",
+			"cred18": "um, spelade?... tittade?",
+			"cred19": "",
+			"cred20": "tittelade.",
+			"cred21": "Tack så mycket för att du tittelade.",
+
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+
+			"extra0": "Att koppla om kan orsaka ångest till en början...,",
+			"extra1": "...men det är så värt det till slut",
+
+			"extra2": "En bunden rädsla.",
+			"extra3": "Rädslan är släckt.",
+
+			"extra4": "Whoo!",
+			"extra5": "ta-dahhh~",
+
+			"extra6": "Så, tricket är att UTSÄTTA sig själv för vad du är rädd för,",
+			"extra7": "men på ett säkert sätt.",
+			"extra8": "Möt din rädsla i ett säkert ställe.",
+				
+		}
 	}
 
 };
