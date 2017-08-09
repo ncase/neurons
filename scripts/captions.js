@@ -5232,6 +5232,389 @@ window.Captions = {
 			"extra8": "Möt din rädsla i ett säkert ställe.",
 				
 		}
+	},
+
+	// Serbian
+	"sr": {
+		label: "српски језик",
+		captions: {             
+
+			//////////////////           
+			// INTRODUCTION //     
+			//////////////////           
+			
+			"intro0": "Dakle, ja sam oduvek patio od anksioznosti.",              
+			"intro1": "A onda bih postajao anksiozan ZBOG osećanja anksioznosti.",              
+			"intro2": "Bila je to anksioznost skroz do kraja.",             
+			"intro3": "",       
+			
+			/////////////////             
+			// PROPAGATION //      
+			/////////////////             
+			 
+
+			"prop0": "Zdravo, ja sam Niki Kejs,",      
+
+			"prop1": "a ovo je interaktivno objašnjenje neurona.",                
+
+			"prop2": "Da! Vi zaista možete da interaktivno komunicirate sa ovim,",               
+
+			"prop3": "♬ tako da, što ne biste probali ♬",       
+
+			"prop4": "i kliknuli na neuron i videli šta se dešava?",  
+
+			 
+
+			"prop5": "Izvinite, ja ovde pričam!... Samo se šalim.",   
+
+			 
+
+			"prop6": "Okej, vau, baš ste se primili i klikćete po SVEMU,",    
+
+			"prop7": "KUL. SHVATILI STE. ODLIČNO.",            
+
+			 
+
+			"prop8": "Tako je!",       
+
+			"prop8.5": "Posmatrajte kako se signali prenose,",         
+
+			"prop9": "od neurona do neurona.",    
+
+			"prop10": "Probajte da kliknete na još neke.",  
+
+			 
+
+			"prop11": "Naravno, ovo je pojednostavljen model,",  
+
+			"prop12": "ali to je otprilike kako neuroni funkcionišu.",             
+
+			"prop13": "Jedna misao je okidač za drugu, i tako dalje i tako dalje,",    
+
+			"prop14": "ali... Kod ANKSIOZNOG mozga...",    
+
+			 
+
+			"mesmerizing": "Zadivljujuće, zar ne?",
+
+			 
+
+			//////////////   
+
+			// MY FEARS //
+
+			//////////////   
+
+			 
+
+			"fear0": "OVO se dešava.",         
+
+			"fear1": "Nevine misli se povezuju sa anksioznim mislima.",     
+
+			"fear2": "Lično sam preplašen da će me drugi posmatrati kao propali slučaj,",   
+
+			"fear3": "plašio sam se bliskosti sa ljudima,",    
+
+			"fear4": "i plašio sam se...",
+			"fear5": "rupa.",              
+
+			"fear6": "Zato što... Ne znam zašto, ali gusto grupisane rupe",  
+
+			"fear7": "me jednostavno plaše, znate? Ne znam.",                       
+
+			 
+
+			//////////////////////   
+
+			// HEBBIAN LEARNING //             
+
+			//////////////////////   
+
+			 
+
+			"hebb0": "[SOUNDS]",  
+
+			"hebb1": "U svakom slučaju... kako mi uopšte i naučimo da imamo strahove?",               
+
+			"hebb2": "Pa, da bih to objasnio, dozvolite mi da uklonim sve ovo...",  
+
+			"hebb3": "i pokažem vam...",    
+
+			"hebb4": "ovo!",             
+
+			 
+
+			"hebb5": "Hebijansko učenje.",               
+
+			"hebb6": "“Neuroni koji su zajedno okinuti, postaju povezani.”",           
+
+			 
+
+			"hebb7": "Ovo je pravilo koje neuronaučnici koriste da opišu kako",     
+
+			"hebb8": "neuroni stvaraju nove veze.",             
+
+			"hebb9": "Praktično, ako okinete jedan neuron, a onda okinete i drugi neuron",             
+
+			"hebb10": "prvi neuron će stvoriti vezu SA drugim neuronom.",              
+
+			"hebb11": "Pokušajte sami!",   
+
+			 
+
+			"hebb12": "Prespori ste! Niste dovoljno brzo kliknuli na njih. Pokušajte ponovo?",       
+
+			"hebb13": "Nisu dovoljno blizu. Pokušajte sa drugim parom neurona.",               
+
+			 
+
+			"hebb14": "I tako izgleda proces našeg učenja!",             
+
+			"hebb15": "Naravno, mi ne učimo baš tom brzinom u stvarnom životu,",             
+
+			"hebb16": "Ubrzao sam simulaciju, ali opet.",   
+
+			"hebb17": "Sada se malo igrajte, napravite još nekoliko veza,",               
+
+			"hebb18": "možda da napravite lanac veza ili tako nešto.",         
+
+			 
+
+			"hebb19": "Ovo pravilo kako učimo je razlog zašto ako vas je ujeo pas kada ste bili dete,",         
+
+			"hebb20": "vi ste možda razvili strah od pasa!",               
+
+			"hebb21": "Zato što je okinut vaš neuron 'pas', a onda je okinut vaš neuron 'bol'.",         
+
+			"hebb22": "I na taj način je 'pas' povezan sa 'bolom'.",  
+
+			 
+
+			///////////////////////////         
+
+			// ANTI-HEBBIAN LEARNING //
+
+			///////////////////////////         
+
+			 
+
+			"anti0": "Dakle, ako ovako izgleda proces učenja, ovako izgleda proces obrnutog učenja.",                        
+
+			 
+
+			"anti1": "Obrnuto Hebijansko učenje.",               
+
+			"anti2": "“Neuroni koji se okidaju bez sinhronizacije, gube vezu između njih.”",                             
+
+			 
+
+			"anti3": "Još jedno pravilo koje imaju neuronaučnici!",                
+
+			 
+
+			"anti4": "Dakle - ako već postoji veza između dva neurona,",    
+
+			"anti5": "i vi okinete prvi neuron BEZ okidanja drugog neurona,",           
+
+			"anti6": "veza između njih slabi",            
+
+			"anti7": "Opet, pokušajte sami.",            
+
+			 
+
+			"anti8": "Taj neuron nema postojeću vezi sa drugim neuronom.",           
+
+			"anti9": "Morate da pronađete neuron koji je povezan sa drugim.",       
+
+			"anti10": "Ah, taj neuron ima vezu koja ide KA njemu, a ne i OD njega.",             
+
+			"anti11": "Morate da pronađete neuron koji ima vezu koja ide OD njega.",         
+
+			 
+
+			"anti12": "Sada sačekajte malo...",         
+
+			"anti13": "I pogledajte! Veza postaje slabija.",
+
+			"anti14": "Uradite to opet i, ovog puta, veza će u potpunosti nestati.",               
+
+			 
+
+			"anti15": "I ovo obrnuto učenje je razlog zašto kada imate strah od pasa,",         
+
+			"anti16": "a izloženi ste prijateljski nastrojenim psima iznova i iznova,",             
+
+			"anti17": "možete da naučite da nestane strah.",            
+
+			"anti18": "'Neuron 'pas' se okine BEZ toga da se okine i neuron 'bol',",  
+
+			"anti19": "i iz tog razloga njihova veza slabi.",   
+
+			 
+
+			/////////////     
+
+			// THERAPY //   
+
+			/////////////     
+
+			 
+
+			"ther0": "Dakle, sada kada znate kao učimo i kako obrnuto učimo, hajde da se ponovo vratimo...",        
+
+			"ther1": "...na ovo.",     
+
+			 
+
+			"ther2": "Želim da reprogramirate vaš mozak.",               
+
+			"ther3": "Ponovo povežite, napravite nove veze između ove tri stvari,",             
+
+			"ther4": "od osećanja straha do osećanja sigurnosti.",                
+
+			 
+
+			"ther5": "Vidite, stvaranjem novih veza u sebi može izazvati kratkoročnu  anksioznost...",         
+
+			"ther6": "...ali je I TE KAKO vredno na duže staze.",        
+
+			 
+
+			"ther7": "Jedna je odrađena, još dve su ostale.",             
+
+			"ther8": "Dve su odrađene, još jedna je ostala.",             
+
+			"ther9": "ja. još uvek. ne. volim. rupe.",              
+
+			 
+
+			"ther10": "I... uspeli ste",            
+
+			 
+
+			"ther11": "Ovo šta ste upravo uradili se zove 'terapija izlaganja'.",          
+
+			"ther12": "To je jedna od najdokazivanijih terapija koje postoje na svetu",        
+
+			"ther13": "za lečenje pojedinačnih fobija, posttraumatskih stresnih poremećaja i drugih poremećaja anksioznosti.",   
+
+			 
+
+			///////////         
+
+			// OUTRO //      
+
+			///////////         
+
+			 
+
+			"outro0": "Opet, stvaranje novih veza u sebi nije lako, nije brzo,",         
+
+			"outro1": "ali je izvodljivo.",     
+
+			"outro2": "Obećavam vam -- ja sam dokaz --",   
+
+			"outro3": "Izvodljivo je.",           
+
+			 
+
+			/////////////     
+
+			// CREDITS //    
+
+			/////////////     
+
+			 
+
+			"cred0": "Hej, ogromnu zahvalnost dugujem svima koji me podržavaju na Patreonu, jer bez njih,",        
+
+			"cred1": "ne bih mogao da pravim ove čudne interaktivne stvari,",        
+
+			"cred2": "i verovatno bih bio primoran da pronađem pravi posao.",       
+
+			"cred3": "Dakle, ako želite da mi pomognete da nastavim da pravim stvari poput ove,",              
+
+			"cred4": "i da vam se zahvalim u sledećoj stvari koju napravim,",            
+
+			"cred5": "pogledajte moj Patreon!",      
+
+			 
+
+			"cred6": "Muzika koju slušate je napravila predivna Firna,",       
+
+			"cred7": "sa kojom sam sarađivao i ranije na dva projekta koja nisam uspeo da završim.",           
+
+			 
+
+			"cred8": "Za druga interaktivna objašnjenja, pogledajte Parabolu poligona!",   
+
+			"cred9": "To je rezultat saradnje koju sam imao sa Vaj Hart -- da, *tom* Vaj Hart! :D --",               
+
+			"cred10": "o sistematskim predrasudama i različitostima.",        
+
+			 
+
+			"cred11": "I zapamtite, ovo interaktivno objašnjenje je samo uvod.",   
+
+			"cred12": "Dakle, ako želite još nešto da naučite, *definitivno* pogledajte preporučenu literaturu",    
+
+			"cred13": "u opisu ispod. ",        
+
+			 
+
+			"cred14": "Iliiiii možete jednostavno da se igrate sa kutijom sa peskom sa leve strane",              
+
+			"cred15": "jer je prilično zabavno.",       
+
+			 
+
+			"cred16": "U svakom slučaju, hvala što ste pogledali ovo.",        
+
+			"cred17": "",      
+
+			"cred18": "hm, igrali se sa ovim?... gledali?",    
+
+			"cred19": "",      
+
+			"cred20": "tapkali.",      
+
+			"cred21": "Hvala na tapkanju.",                
+
+			 
+
+			//////////////////           
+
+			// EXTRA SHTUFF //        
+
+			//////////////////           
+
+			 
+
+			"extra0": "Uspostavljanje novih veza na kratke staze može izazvati anksioznost,",          
+
+			"extra1": "ali je i te kako vredno na duže staze.",            
+
+			 
+
+			"extra2": "Uslovljeni strah.",     
+
+			"extra3": "Strah je iskorenjen.",              
+
+			 
+
+			"extra4": "Jeeea!",         
+
+			"extra5": "ta-da~",         
+
+			 
+
+			"extra6": "Vidite, trik je u tome da sebe IZLAŽETE stvarima kojih se plašite,",    
+
+			"extra7": "ali na siguran način.",              
+
+			"extra8": "Suočite se svojim strahovima u bezbednim okolnostima."                    
+
+		}
 	}
 
 };
