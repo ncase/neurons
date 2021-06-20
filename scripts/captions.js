@@ -57,7 +57,7 @@ window.Captions = {
 			"fear5": "holes.",
 			"fear6": "Coz... I don't know why, but tightly clustered holes",
 			"fear7": "just kinda creep me out, y'know? I dunno.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -96,10 +96,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Anyway, if that's how we learn, here's how we un-learn.",
-			
+
 			"anti1": "Anti-Hebbian Learning.",
 			"anti2": "“Neurons that fire out of sync, lose their link.”",
-			
+
 			"anti3": "Another rule of thumb neuroscientists have!",
 
 			"anti4": "So - if you already have a connection from one neuron to another,",
@@ -203,7 +203,7 @@ window.Captions = {
 			"extra6": "See, the trick is to EXPOSE yourself to what you're afraid of,",
 			"extra7": "but in a safe manner.",
 			"extra8": "Face your fears in a safe space.",
-			
+
 		}
 	},
 
@@ -260,7 +260,7 @@ window.Captions = {
 			"fear5": "agujeros.",
 			"fear6": "Porque... No sé por qué, pero agujeros agrupados",
 			"fear7": "me da ansia, ¿sabes? No lo sé.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -299,10 +299,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "En fin, si así es como uno aprende, y así es como podemos des-aprender.",
-			
+
 			"anti1": "Aprendizaje Anti-Hebbiano.",
 			"anti2": "“Las neuronas que se disparan por separado, perderán su conexión .”",
-			
+
 			"anti3": "¡Otra regla de oro que tienen los neurocientíficos!",
 
 			"anti4": "Así que, si uno ya tiene una conexión de una neurona a otra,",
@@ -406,7 +406,7 @@ window.Captions = {
 			"extra6": "Ve, el truco es EXPONERSE a lo que uno teme,",
 			"extra7": "pero de una manera segura.",
 			"extra8": "Enfrente a sus miedos en un espacio seguro.",
-				
+
 		}
 	},
 
@@ -463,7 +463,7 @@ window.Captions = {
 			"fear5": "gaten.",
 			"fear6": "Omdat... Ik weet niet waarom, maar een cluster van gaten",
 			"fear7": "ik vond het griezelig, weet je? Ik weet ook niet waarom.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -502,10 +502,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Hoe dan ook, als dat is hoe we leren, dan is dit hoe wij afleren.",
-			
+
 			"anti1": "Anti-Hebbiaans Leren.",
 			"anti2": "“Neuronen die niet synchroon vuren, verliezen hun verbinding.”",
-			
+
 			"anti3": "Is een andere vuistregel van neuro-wetenschappers!",
 
 			"anti4": "Dus - als je al een verbindinge hebt van een neuron naar een andere,",
@@ -609,7 +609,7 @@ window.Captions = {
 			"extra6": "De truuk is om zelf BLOOT TE STELLEN aan je aangst,",
 			"extra7": "maar op een veilige manier.",
 			"extra8": "Kom je angsten onder ogen in een veilige situatie.",
-				
+
 		}
 	},
 
@@ -666,7 +666,7 @@ window.Captions = {
 			"fear5": "buracos.",
 			"fear6": "Porque... Eu não sei porquê, mas buraquinhos pequeninos",
 			"fear7": "arrepiam-me todo, sabes? Não sei explicar.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -705,10 +705,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "De qualquer maneira, se é assim que aprendemos, vou-te mostrar como se desaprende.",
-			
+
 			"anti1": "Teoria Anti-Hebbiana de aprendizagem.",
 			"anti2": "“Neurónio que não disparam ao mesmo tempo, perdem a sua ligação.”",
-			
+
 			"anti3": "É outra regra simples que os neurocientistas usam!",
 
 			"anti4": "Então - se já tens uma ligação entre dois neurónios,",
@@ -812,7 +812,7 @@ window.Captions = {
 			"extra6": "O truque é te expores ao que tens medo,",
 			"extra7": "mas de uma maneira segura.",
 			"extra8": "Confronta os teus medos de uma maneira segura.",
-			
+
 		}
 	},
 
@@ -888,7 +888,7 @@ window.Captions = {
 			"hebb9": "Basicamente, caso dispare um neurônio e logo depois outro,",
 			"hebb10": "o primeiro neurônio liga-se ao segundo.",
 			"hebb11": "Tente você mesmo!",
-			
+
 			"hebb12": "Muito devagar! Você não clicou rápido o suficiente. Tente novamente.",
 			"hebb13": "Não estão pertos o suficiente. Tente um par de neurônios diferente.",
 
@@ -908,10 +908,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "De qualquer maneira, se é assim que aprendemos, vou mostrar como desaprendemos.",
-			
+
 			"anti1": "Teoria Anti-Hebbiana de aprendizagem.",
 			"anti2": "“Neurônio que não disparam ao mesmo tempo, perdem a sua ligação.”",
-			
+
 			"anti3": "É outra regra simples que os neurocientistas usam!",
 
 			"anti4": "Então - se você já tem uma ligação entre dois neurônios,",
@@ -933,14 +933,14 @@ window.Captions = {
 			"anti17": "você possa desaprender esse medo.",
 			"anti18": "O neurônio 'cão' dispara, SEM que o neurônio 'dor' também dispare,",
 			"anti19": "e, assim, a ligação entre eles enfraquece.",
-			
+
 			/////////////
 			// THERAPY //
 			/////////////
 
 			"ther0": "Agora que você sabe como aprendemos e desaprendemos, vamos rever...",
 			"ther1": "...isto.",
-			
+
 			"ther2": "Quero que você treine este cérebro.",
 			"ther3": "Refaça as ligações destas três coisas,",
 			"ther4": "que fazem com que este cérebro sinta medo, para passar a sentir segurança.",
@@ -957,7 +957,7 @@ window.Captions = {
 			"ther11": "O que você acabou de fazer é chamado de 'terapia de exposição prolongada'.",
 			"ther12": "É uma das terapias existentes com mais provas",
 			"ther13": "para tratar fobias específicas, estresse pós-traumático e outros tipos de transtornos de ansiedade.",
-			
+
 			///////////
 			// OUTRO //
 			///////////
@@ -966,7 +966,7 @@ window.Captions = {
 			"outro1": "mas pode ser feito.",
 			"outro2": "Eu te prometo -- sou uma prova viva --",
 			"outro3": "Que isto pode ser feito.",
-			
+
 			/////////////
 			// CREDITS //
 			/////////////
@@ -988,7 +988,7 @@ window.Captions = {
 			"cred11": "E lembre-se, esta explicação interativa é apenas uma introdução.",
 			"cred12": "Por isso, caso queira aprender mais, *realmente* veja os artigos",
 			"cred13": "que estão na descrição lá em baixo.",
-			
+
 			"cred14": "Ouuuuu você pode continuar brincando aqui à esquerda",
 			"cred15": "porque é bem divertido.",
 
@@ -1072,7 +1072,7 @@ window.Captions = {
 			"fear5": "Löchern.",
 			"fear6": "Weil… Ich weiß nicht genau warum, aber dicht zusammenliegende Löcher",
 			"fear7": "bereiten mir irgendwie Unwohlsein, weißt du? Ich weiß es nicht.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -1111,10 +1111,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Wie auch immer, so lernen wir. Und so verlernen wir:",
-			
+
 			"anti1": "Anti-Hebbsches Lernen.",
 			"anti2": "“Neuronen, die unabhängig voneinander aktiviert werden, lösen ihre Verbindung.”",
-			
+
 			"anti3": "Eine weitere Faustregel der Neurowissenschaftler!",
 
 			"anti4": "Also – wenn schon eine Verbindung von einem Neuron zu einem anderen besteht,",
@@ -1218,7 +1218,7 @@ window.Captions = {
 			"extra6": "Weißt du, der Trick ist es sich dem zu STELLEN, vor dem man Angst hat,",
 			"extra7": "auf eine sichere Art und Weise.",
 			"extra8": "Stell dich deiner Angst in einer sicheren Umgebung.",
-				
+
 		}
 	},
 
@@ -1863,7 +1863,7 @@ window.Captions = {
 			"fear5": "黑洞.",
 			"fear6": "因为... 我也不知道为什么, 但就是一堆堆小黑洞",
 			"fear7": "会让我起鸡皮疙瘩，你知道为啥么？反正我不知道.",
-			
+
 			//////////////////////
 			//    赫布型记忆    //
 			//////////////////////
@@ -1902,10 +1902,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "如果那是怎么记忆，接下来我们看看怎么遗忘.",
-			
+
 			"anti1": "反-赫布型记忆.",
 			"anti2": "“当两个神经元不同步激活时.”",
-			
+
 			"anti3": "又一个神经系统科学家的经验!",
 
 			"anti4": "如果你已经有一个神经元联系,",
@@ -2009,7 +2009,7 @@ window.Captions = {
 			"extra6": "诀窍就是把自己暴露在所恐惧的事物前,",
 			"extra7": "但要注意安全.",
 			"extra8": "在安全环境下面对恐惧.",
-				
+
 		}
 	},
 
@@ -2066,7 +2066,7 @@ window.Captions = {
 			"fear5": "lukenj.",
 			"fear6": "Ker ... Ne vem, zakaj, ampak tesno nakopičene luknje",
 			"fear7": "me nekako strašijo, a veš? Ne vem.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -2105,10 +2105,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Kakor koli, če se tako učimo, je tukaj, kako se od-učimo, pozabimo naučeno.",
-			
+
 			"anti1": "Anti-Hebbovo učenje.",
 			"anti2": "“Nevroni, ki se ne prožijo sočasno, izgubijo povezave.”",
-			
+
 			"anti3": "Še eno pravilo čez palec, ki ga uporabljajo nevroznanstveniki!",
 
 			"anti4": "Torej - če že imaš povezavo od enega do drugega nevrona,",
@@ -2212,7 +2212,7 @@ window.Captions = {
 			"extra6": "Vidiš, trik je, da se IZPOSTAVIŠ temu, česar se bojiš,",
 			"extra7": "ampak na varen način.",
 			"extra8": "Sooči se s svojimi strahovi v varnem okolju.",
-				
+
 		}
 	},
 
@@ -2269,7 +2269,7 @@ window.Captions = {
 			"fear5": "trous.",
 			"fear6": "Parce que... je ne sais pas pourquoi, mais des tas de petits trous partout",
 			"fear7": "ça me faisait flipper, vous comprenez ? Moi pas.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -2308,10 +2308,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Si c'est la façon dont nous apprenons, voici comment désapprendre.",
-			
+
 			"anti1": "L'anti apprentissage selon Hebb.",
 			"anti2": "“Les neurones qui ne s'activent plus ensemble perdent leurs liens.”",
-			
+
 			"anti3": "C'est une autre règle empirique des neuro-scientifiques !",
 
 			"anti4": "Donc - si il existe déjà une connexion entre deux neurones,",
@@ -2415,14 +2415,14 @@ window.Captions = {
 			"extra6": "Vous voyez, l'astuce est de vous EXPOSER à ce qui vous effraie,",
 			"extra7": "mais de façon non risquée.",
 			"extra8": "Affrontez vos peurs dans un environnement sécurisé.",
-				
+
 		}
 	},
 
 	// French
 	"ro": {
 		label: "Română",
-		captions: {	
+		captions: {
 
 			//////////////////
 			// INTRODUCTION //
@@ -2472,7 +2472,7 @@ window.Captions = {
 			"fear5": "găuri.",
 			"fear6": "Pentru că… Nu știu de ce, dar găurile strâns grupate ",
 			"fear7": "mă cam înspăimântă, știi? Nu știu ce să zic.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -2511,10 +2511,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "În orice caz, dacă așa învățăm, uite cum ne dezvățăm.",
-			
+
 			"anti1": "Învățarea Anti-Hebbiană.",
 			"anti2": "“Neuronii care nu se declanșează sincronizat, iși pierd legătura.”",
-			
+
 			"anti3": "Altă regulă de bază pe care oamenii de neuroștiință o folosesc!",
 
 			"anti4": "Deci – dacă deja ai o conexiune de la un neuron la celălalt",
@@ -2534,7 +2534,7 @@ window.Captions = {
 			"anti15": "Și datorită acestei reguli de dezvățare, dacă ți-e frică de câini,",
 			"anti16": "și ești expus la câini prietenoși de multe ori,",
 			"anti17": "poți să te dezveți de frică.",
-			"anti18": " Neuronul 'câine' se declanșează, FĂRĂ ca neuronul 'durere' să fie declanșat,",  
+			"anti18": " Neuronul 'câine' se declanșează, FĂRĂ ca neuronul 'durere' să fie declanșat,",
 			"anti19": "și astfel – legătura se slabește.",
 
 			/////////////
@@ -2676,7 +2676,7 @@ window.Captions = {
 			"fear5": "dziur.",
 			"fear6": "Cóż... Nie wiem doprawdy dlaczego, ale widok nagromadzonych dziurek",
 			"fear7": "jakoś mnie przeraża, rozumiesz? No nie wiem sam.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -2715,10 +2715,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "W każdym razie, jeśli tak się właśnie uczymy, to teraz czas na sposób na to, jak się oduczamy.",
-			
+
 			"anti1": "Uczenie anty-Hebbianowskie.",
 			"anti2": "“Neurony, które wypalają niezsynchronizowane, tracą polaczenie pomiędzy sobą.”",
-			
+
 			"anti3": "Kolejna praktyczna reguła neurologów!",
 
 			"anti4": "Tak więc - jeśli miałeś połączenie pomiędzy neuronami,",
@@ -2822,7 +2822,7 @@ window.Captions = {
 			"extra6": "Widzisz, ten trik wymaga byś STAWIŁ CZOŁA temu, czego się obawiasz,",
 			"extra7": "ale w bezpiecznych warunkach.",
 			"extra8": "Zmierz się ze swoimi lękami w środowisku, w którym czujesz się bezpieczny.",
-				
+
 		}
 
 	},
@@ -2880,7 +2880,7 @@ window.Captions = {
 			"fear5": "τις τρύπες.",
 			"fear6": "Γιατί... δε ξέρω γιατί, αλλά οι τρύπες που είναι μαζεμένς όλες μαζί τόσο κοντά",
 			"fear7": "με φρικάρουν κάπως, ε ξέρεις; Δε ξέρω.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -2919,10 +2919,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Τέλος πάντων, αν έτσι μαθαίνουμε, έτσι ξε-μαθαίνουμε.",
-			
+
 			"anti1": "Αντι-Hebbian Μάθηση.",
 			"anti2": "“Οι νευρώνες που δε πυροδοτούνται συγχρονισμένα, χάνουν τη σύνδεση τους.”",
-			
+
 			"anti3": "Ένας ακόμη εμπειρικός κανόνας που έχουν οι νευροεπιστήμονες!",
 
 			"anti4": "Λοιπόν - αν έχεις ηδη μια σύνδεση από ένα νευρώνα σε έναν άλλο,",
@@ -3026,7 +3026,7 @@ window.Captions = {
 			"extra6": "Βλέπεις, το κόλπο είναι να ΕΚΘΕΣΕΙΣ τον εαυτό σου σε αυτό που φοβάσαι,",
 			"extra7": "αλλά με ασφαλή τρόπο.",
 			"extra8": "Αντιμετώπισε τους φόβους σου σε ασφαλή χώρο.",
-				
+
 		}
 	},
 
@@ -3083,7 +3083,7 @@ window.Captions = {
 		    "fear5": "الحفر.",
 		    "fear6": "لأنه و لا أعلم لماذا , فالحفر المتجمعة و القريبة من بعضها",
 		    "fear7": "تثير الرعب في داخلي , لا أعلم ؟! أتفهم قصدي ؟",
-		    
+
 		    //////////////////////
 		    // HEBBIAN LEARNING //
 		    //////////////////////
@@ -3122,10 +3122,10 @@ window.Captions = {
 		    ///////////////////////////
 
 		    "anti0": "على أي حال إذا كانت هذه هي الطريقة التي نتعلم بها شيئا (الخوف من الكلاب في المثال السابق) فقكيف يحدث ضد هذ التعلم",
-		    
+
 		    "anti1": "نظرية هيب لمضاد التعلم.",
 		    "anti2": "الخلايا العصبية التي لا تشتعل سوية بشكل متزامن تفقد الصلة فيما بينها ",
-		    
+
 		    "anti3": "قاعدة تجريبية آخرى يمتلكها علماء الأعصاب!",
 
 		    "anti4": "إذا إذا كانت لديك حاليا صلة بين خلية عصبية و آخرى,",
@@ -3229,7 +3229,7 @@ window.Captions = {
 		    "extra6": "أترى , الخدعة هي أن تعرض نفسك لما تخافه",
 		    "extra7": "لكن بطريقة آمنة",
 		    "extra8": "واجه مخاوفك بطريقة آمنة "
-		        
+
 		}
 
 	},
@@ -3491,7 +3491,7 @@ window.Captions = {
 			"fear5": "hull.",
 			"fear6": "Fordi... Jeg vet ikke hvorfor, men flere hull tett sammen,",
 			"fear7": "det gav meg liksom bare hetta, skjønner du? Jeg vet ikke helt.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -3530,10 +3530,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Dersom det var måten vi lærer på, her er måten vi av-lærer.",
-			
+
 			"anti1": "Anti-Hebbiansk læring.",
 			"anti2": "“Nevroner som fyrer usynkront, mister sin forbindelse.”",
-			
+
 			"anti3": "Det er en annen tommelfingerregel som hjerneforskerne bruker!",
 
 			"anti4": "Så dersom du allerede har en forbindelse fra et nevron til et annet,",
@@ -3637,7 +3637,7 @@ window.Captions = {
 			"extra6": "Trikset er å EKSPONERE deg selv for det du er redd for,",
 			"extra7": "men på en trygg måte.",
 			"extra8": "Gjør det du er redd for i sikre omgivelser.",
-				
+
 		}
 
 	},
@@ -3695,7 +3695,7 @@ window.Captions = {
 			"fear5": "구멍들이 무서워요.",
 			"fear6": "왜냐하면... 모..모르겠어요, 그냥 구멍들이 잔뜩 모여 있기만 하면",
 			"fear7": "그냥 무서운기분, 아세요? 설명하기 어려운.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -3734,10 +3734,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "어쨌든, 우리가 헵의 법칙에 따라 배운다면, 배운 내용이 지워지는 방식은 뭘까요?.",
-			
+
 			"anti1": "그것은 바로 거꾸로-헵의 법칙.",
 			"anti2": "“뉴런이 나홀로 발화하면, 연결을 잃게 된다.”",
-			
+
 			"anti3": "다시 한번 쉽게 풀어봤어요!",
 
 			"anti4": "즉 – 한 뉴런이 다른 뉴런과 연결되어 있다가,",
@@ -3897,7 +3897,7 @@ window.Captions = {
 			"fear5": "những cái lỗ.",
 			"fear6": "Vì... tôi chả biết tại sao nữa, nhưng những đám lỗ xếp sít vào nhau ấy",
 			"fear7": "Bọn chúng làm tôi phát ớn, bạn hiểu chứ? Tôi không biết nữa.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -3936,10 +3936,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Dù sao thì, nếu đó là cách chúng ta học, thì cách chúng ta loại trừ chúng sẽ là thế này.",
-			
+
 			"anti1": "Anti-Hebbian Learning.",
 			"anti2": "“Nơron mà được kích hoạt nhưng không đồng bộ, sẽ mất kết nối.”",
-			
+
 			"anti3": "Một cách giải thích thô sơ khác của các nhà thần kinh học!",
 
 			"anti4": "Vậy nếu – nếu bạn đã có sự kết nối giữa các nơron,",
@@ -4043,7 +4043,7 @@ window.Captions = {
 			"extra6": "Đó, bí quyết là hãy đối mặt với nỗi sợ của mình,",
 			"extra7": "nhưng trong một cách an toàn thôi nhé.",
 			"extra8": "Đối mặt với nỗi sợ ở một nơi an toàn.",
-				
+
 		}
 
 	},
@@ -4507,7 +4507,7 @@ window.Captions = {
 			"fear5": "a lyukaktól.",
 			"fear6": "Mer'... nem is értem, de egy sűrű lyuk-csoportosulás",
 			"fear7": "egyszerűen halálra rémiszt, érted? Nem tudom.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -4546,10 +4546,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Mindenesetre, ha az a tanulás folyamata, íme a felejtésé.",
-			
+
 			"anti1": "Anti-Hebb Szabály.",
 			"anti2": "“A külön elsülő idegsejtek szétköttetnek.”",
-			
+
 			"anti3": "A neurológusok egy másik alapelve!",
 
 			"anti4": "Tehát - ha már eleve van kapcsolatod egy idegsejttől egy másikig,",
@@ -4653,7 +4653,7 @@ window.Captions = {
 			"extra6": "Látod, a trükk az, hogy KITEDD magad a félelmeidnek,",
 			"extra7": "de biztonságos módon.",
 			"extra8": "Nézz szembe a félelmeiddel biztonságos környezetben.",
-				
+
 		}
 	},
 
@@ -4666,11 +4666,11 @@ window.Captions = {
 			"intro1": "Onda bih dobio napad anksioznosti, zbog napada anksioznosti",
 			"intro2": "Anksioznost je uvek bila prisutna",
 			"intro3": "",
-		    
+
 		    /////////////////
 			// PROPAGATION //
 			/////////////////
-			
+
 			"prop0": "Cao, ja sam Nicky Case,",
 			"prop1": "I ovo je interaktivno objasnjenje o neuronima",
 			"prop2": "Da! Ovo stvarno mozes da kontrolises",
@@ -4688,11 +4688,11 @@ window.Captions = {
 			"prop13": "jedna misao ispaljuje drugu, ti tako dalje,",
 			"prop14": "ali... u ANKSIOZNOM mozgu...",
 			"mesmerizing": "nekako hipnotise, zar ne?",
-		    
+
 		    //////////////
 			// MY FEARS //
 			//////////////
-			
+
 			"fear0": "OVO se desava.",
 			"fear1": "Nevine misli se povezuju sa anksioznim mislima.",
 			"fear2": "Licno, bojao sam se da budem vidjen kao neuspesan,",
@@ -4701,11 +4701,11 @@ window.Captions = {
 			"fear5": "rupa.",
 			"fear6": "Zato sto... ne znam zasto, ali rupe koje su blizu jedna druge (zgusnute)",
 			"fear7": "nekako se jezim od toga, razumete? Ne znam.",
-		    
+
 		    //////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
-			
+
 			"hebb0": "[ZVUCI]",
 			"hebb1": "Uglavnom... kako mi uopste naucimo ove strahove?",
 			"hebb2": "Pa, da bih objasnio to, prvo cu se resiti svega ovoga...",
@@ -4729,7 +4729,7 @@ window.Captions = {
 			"hebb20": "posle mozes da razvijes strah od pasa!",
 			"hebb21": "Jer se tvoj neuron za 'pse' ispalio, a onda se ispalio i neuron za bol.",
 			"hebb22": "I zato, se 'pas' povezao sa 'bol'",
-		    
+
 		    ///////////////////////////
 			// ANTI-HEBBIAN LEARNING //
 			///////////////////////////
@@ -4754,7 +4754,7 @@ window.Captions = {
 			"anti17": "mozes da ne naucis taj stah.",
 			"anti18": "Pasiji neuron se ispaljuje, bez neurona za 'bol' ,",
 			"anti19": "i zato - konekcija slabi.",
-		    
+
 		    //////////////
 			// TERAPIJA //
 			//////////////
@@ -4773,7 +4773,7 @@ window.Captions = {
 			"ther11": "Sta si ti upravo uradio zove se 'terapija izlaganja'.",
 			"ther12": "To je jedna od najvise prihvacenih terapija",
 			"ther13": "za lecenje specificnih fobija, PTSD, i druge poremecaje anksioznosti.",
-		    
+
 		    ///////////
 			// OUTRO //
 			///////////
@@ -4783,11 +4783,11 @@ window.Captions = {
 
 			"outro2": "Obecavam ti, -- ja sam dokaz --",
 			"outro3":"moze se uraditi.",
-		    
+
 		    /////////////
 			// CREDITS //
 			/////////////
-			
+
 			"cred0": "Veliko hvala mojim Patreon pristalicama, jer bez njih,",
 			"cred1": "ne bih mogao da pravim ove cudne interaktivne stvari,",
 			"cred2": "i verovatno bih bio primoran da nadjem pravi posao.",
@@ -4810,7 +4810,7 @@ window.Captions = {
 			"cred19": "",
 			"cred20": "plotching.",
 			"cred21": "Hvala ti puno za plotching.",
-		    
+
 		    //////////////////
 			// EXTRA SHTUFF //
 			//////////////////
@@ -4881,7 +4881,7 @@ window.Captions = {
 			"fear5": "mga butas.",
 			"fear6": "Kasi... hindi ko alam kung bakit, ngunit ang mga magkakalapit na mga butas",
 			"fear7": "e kinikilabutan ako, alam ninyo yun? Hindi ko alam kung bakit.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -4920,10 +4920,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Gayon pa man, kung ganoon tayo natututo, ito naman ay kung paano natin makakalimutan ang mga dating natutunan.",
-			
+
 			"anti1": "Anti-Hebbian Learning.",
 			"anti2": "“Ang mga neuron na gumagana ng di sabay-sabay ay nawawalan ng koneksyon sa isa't isa.”",
-			
+
 			"anti3": "Isa pang alituntunin na ginagamit ng mga neuroscientists!",
 
 			"anti4": "Kaya - kung mayroon ka na koneksyon mula sa isang neuron papunta sa isa pa,",
@@ -5027,7 +5027,7 @@ window.Captions = {
 			"extra6": "Tingnan mo, ang PAGLALANTAD ng iyong sarili sa kung saan ka takot ang solusyon,",
 			"extra7": "ngunit sa isang ligtas na paraan",
 			"extra8": "Harapin ang iyong mga takot sa isang ligtas na espasyo.",
-				
+
 		}
 	},
 
@@ -5084,7 +5084,7 @@ window.Captions = {
 			"fear5": "hål.",
 			"fear6": "För att... Jag vet inte varför, men tätt samlade hål",
 			"fear7": "bara ger mig gåshud, du vet? Jag vet inte.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -5123,10 +5123,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "I alla fall.",
-			
+
 			"anti1": "Anti-Hebbiansk inlärning.",
 			"anti2": "“Nervceller som avfyras isär, förlorar sin koppling.”",
-			
+
 			"anti3": "En till tumregel som neuroforskare har!",
 
 			"anti4": "Alltså - om du redan har en koppling mellan en nervcell och en annan,",
@@ -5230,389 +5230,389 @@ window.Captions = {
 			"extra6": "Så, tricket är att UTSÄTTA sig själv för vad du är rädd för,",
 			"extra7": "men på ett säkert sätt.",
 			"extra8": "Möt din rädsla i ett säkert ställe.",
-				
+
 		}
 	},
 
 	// Serbian
 	"sr": {
 		label: "српски језик",
-		captions: {             
+		captions: {
 
-			//////////////////           
-			// INTRODUCTION //     
-			//////////////////           
-			
-			"intro0": "Dakle, ja sam oduvek patio od anksioznosti.",              
-			"intro1": "A onda bih postajao anksiozan ZBOG osećanja anksioznosti.",              
-			"intro2": "Bila je to anksioznost skroz do kraja.",             
-			"intro3": "",       
-			
-			/////////////////             
-			// PROPAGATION //      
-			/////////////////             
-			 
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
 
-			"prop0": "Zdravo, ja sam Niki Kejs,",      
+			"intro0": "Dakle, ja sam oduvek patio od anksioznosti.",
+			"intro1": "A onda bih postajao anksiozan ZBOG osećanja anksioznosti.",
+			"intro2": "Bila je to anksioznost skroz do kraja.",
+			"intro3": "",
 
-			"prop1": "a ovo je interaktivno objašnjenje neurona.",                
+			/////////////////
+			// PROPAGATION //
+			/////////////////
 
-			"prop2": "Da! Vi zaista možete da interaktivno komunicirate sa ovim,",               
 
-			"prop3": "♬ tako da, što ne biste probali ♬",       
+			"prop0": "Zdravo, ja sam Niki Kejs,",
 
-			"prop4": "i kliknuli na neuron i videli šta se dešava?",  
+			"prop1": "a ovo je interaktivno objašnjenje neurona.",
 
-			 
+			"prop2": "Da! Vi zaista možete da interaktivno komunicirate sa ovim,",
 
-			"prop5": "Izvinite, ja ovde pričam!... Samo se šalim.",   
+			"prop3": "♬ tako da, što ne biste probali ♬",
 
-			 
+			"prop4": "i kliknuli na neuron i videli šta se dešava?",
 
-			"prop6": "Okej, vau, baš ste se primili i klikćete po SVEMU,",    
 
-			"prop7": "KUL. SHVATILI STE. ODLIČNO.",            
 
-			 
+			"prop5": "Izvinite, ja ovde pričam!... Samo se šalim.",
 
-			"prop8": "Tako je!",       
 
-			"prop8.5": "Posmatrajte kako se signali prenose,",         
 
-			"prop9": "od neurona do neurona.",    
+			"prop6": "Okej, vau, baš ste se primili i klikćete po SVEMU,",
 
-			"prop10": "Probajte da kliknete na još neke.",  
+			"prop7": "KUL. SHVATILI STE. ODLIČNO.",
 
-			 
 
-			"prop11": "Naravno, ovo je pojednostavljen model,",  
 
-			"prop12": "ali to je otprilike kako neuroni funkcionišu.",             
+			"prop8": "Tako je!",
 
-			"prop13": "Jedna misao je okidač za drugu, i tako dalje i tako dalje,",    
+			"prop8.5": "Posmatrajte kako se signali prenose,",
 
-			"prop14": "ali... Kod ANKSIOZNOG mozga...",    
+			"prop9": "od neurona do neurona.",
 
-			 
+			"prop10": "Probajte da kliknete na još neke.",
+
+
+
+			"prop11": "Naravno, ovo je pojednostavljen model,",
+
+			"prop12": "ali to je otprilike kako neuroni funkcionišu.",
+
+			"prop13": "Jedna misao je okidač za drugu, i tako dalje i tako dalje,",
+
+			"prop14": "ali... Kod ANKSIOZNOG mozga...",
+
+
 
 			"mesmerizing": "Zadivljujuće, zar ne?",
 
-			 
 
-			//////////////   
+
+			//////////////
 
 			// MY FEARS //
 
-			//////////////   
+			//////////////
 
-			 
 
-			"fear0": "OVO se dešava.",         
 
-			"fear1": "Nevine misli se povezuju sa anksioznim mislima.",     
+			"fear0": "OVO se dešava.",
 
-			"fear2": "Lično sam preplašen da će me drugi posmatrati kao propali slučaj,",   
+			"fear1": "Nevine misli se povezuju sa anksioznim mislima.",
 
-			"fear3": "plašio sam se bliskosti sa ljudima,",    
+			"fear2": "Lično sam preplašen da će me drugi posmatrati kao propali slučaj,",
+
+			"fear3": "plašio sam se bliskosti sa ljudima,",
 
 			"fear4": "i plašio sam se...",
-			"fear5": "rupa.",              
+			"fear5": "rupa.",
 
-			"fear6": "Zato što... Ne znam zašto, ali gusto grupisane rupe",  
+			"fear6": "Zato što... Ne znam zašto, ali gusto grupisane rupe",
 
-			"fear7": "me jednostavno plaše, znate? Ne znam.",                       
+			"fear7": "me jednostavno plaše, znate? Ne znam.",
 
-			 
 
-			//////////////////////   
 
-			// HEBBIAN LEARNING //             
+			//////////////////////
 
-			//////////////////////   
+			// HEBBIAN LEARNING //
 
-			 
+			//////////////////////
 
-			"hebb0": "[SOUNDS]",  
 
-			"hebb1": "U svakom slučaju... kako mi uopšte i naučimo da imamo strahove?",               
 
-			"hebb2": "Pa, da bih to objasnio, dozvolite mi da uklonim sve ovo...",  
+			"hebb0": "[SOUNDS]",
 
-			"hebb3": "i pokažem vam...",    
+			"hebb1": "U svakom slučaju... kako mi uopšte i naučimo da imamo strahove?",
 
-			"hebb4": "ovo!",             
+			"hebb2": "Pa, da bih to objasnio, dozvolite mi da uklonim sve ovo...",
 
-			 
+			"hebb3": "i pokažem vam...",
 
-			"hebb5": "Hebijansko učenje.",               
+			"hebb4": "ovo!",
 
-			"hebb6": "“Neuroni koji su zajedno okinuti, postaju povezani.”",           
 
-			 
 
-			"hebb7": "Ovo je pravilo koje neuronaučnici koriste da opišu kako",     
+			"hebb5": "Hebijansko učenje.",
 
-			"hebb8": "neuroni stvaraju nove veze.",             
+			"hebb6": "“Neuroni koji su zajedno okinuti, postaju povezani.”",
 
-			"hebb9": "Praktično, ako okinete jedan neuron, a onda okinete i drugi neuron",             
 
-			"hebb10": "prvi neuron će stvoriti vezu SA drugim neuronom.",              
 
-			"hebb11": "Pokušajte sami!",   
+			"hebb7": "Ovo je pravilo koje neuronaučnici koriste da opišu kako",
 
-			 
+			"hebb8": "neuroni stvaraju nove veze.",
 
-			"hebb12": "Prespori ste! Niste dovoljno brzo kliknuli na njih. Pokušajte ponovo?",       
+			"hebb9": "Praktično, ako okinete jedan neuron, a onda okinete i drugi neuron",
 
-			"hebb13": "Nisu dovoljno blizu. Pokušajte sa drugim parom neurona.",               
+			"hebb10": "prvi neuron će stvoriti vezu SA drugim neuronom.",
 
-			 
+			"hebb11": "Pokušajte sami!",
 
-			"hebb14": "I tako izgleda proces našeg učenja!",             
 
-			"hebb15": "Naravno, mi ne učimo baš tom brzinom u stvarnom životu,",             
 
-			"hebb16": "Ubrzao sam simulaciju, ali opet.",   
+			"hebb12": "Prespori ste! Niste dovoljno brzo kliknuli na njih. Pokušajte ponovo?",
 
-			"hebb17": "Sada se malo igrajte, napravite još nekoliko veza,",               
+			"hebb13": "Nisu dovoljno blizu. Pokušajte sa drugim parom neurona.",
 
-			"hebb18": "možda da napravite lanac veza ili tako nešto.",         
 
-			 
 
-			"hebb19": "Ovo pravilo kako učimo je razlog zašto ako vas je ujeo pas kada ste bili dete,",         
+			"hebb14": "I tako izgleda proces našeg učenja!",
 
-			"hebb20": "vi ste možda razvili strah od pasa!",               
+			"hebb15": "Naravno, mi ne učimo baš tom brzinom u stvarnom životu,",
 
-			"hebb21": "Zato što je okinut vaš neuron 'pas', a onda je okinut vaš neuron 'bol'.",         
+			"hebb16": "Ubrzao sam simulaciju, ali opet.",
 
-			"hebb22": "I na taj način je 'pas' povezan sa 'bolom'.",  
+			"hebb17": "Sada se malo igrajte, napravite još nekoliko veza,",
 
-			 
+			"hebb18": "možda da napravite lanac veza ili tako nešto.",
 
-			///////////////////////////         
+
+
+			"hebb19": "Ovo pravilo kako učimo je razlog zašto ako vas je ujeo pas kada ste bili dete,",
+
+			"hebb20": "vi ste možda razvili strah od pasa!",
+
+			"hebb21": "Zato što je okinut vaš neuron 'pas', a onda je okinut vaš neuron 'bol'.",
+
+			"hebb22": "I na taj način je 'pas' povezan sa 'bolom'.",
+
+
+
+			///////////////////////////
 
 			// ANTI-HEBBIAN LEARNING //
 
-			///////////////////////////         
+			///////////////////////////
 
-			 
 
-			"anti0": "Dakle, ako ovako izgleda proces učenja, ovako izgleda proces obrnutog učenja.",                        
 
-			 
+			"anti0": "Dakle, ako ovako izgleda proces učenja, ovako izgleda proces obrnutog učenja.",
 
-			"anti1": "Obrnuto Hebijansko učenje.",               
 
-			"anti2": "“Neuroni koji se okidaju bez sinhronizacije, gube vezu između njih.”",                             
 
-			 
+			"anti1": "Obrnuto Hebijansko učenje.",
 
-			"anti3": "Još jedno pravilo koje imaju neuronaučnici!",                
+			"anti2": "“Neuroni koji se okidaju bez sinhronizacije, gube vezu između njih.”",
 
-			 
 
-			"anti4": "Dakle - ako već postoji veza između dva neurona,",    
 
-			"anti5": "i vi okinete prvi neuron BEZ okidanja drugog neurona,",           
+			"anti3": "Još jedno pravilo koje imaju neuronaučnici!",
 
-			"anti6": "veza između njih slabi",            
 
-			"anti7": "Opet, pokušajte sami.",            
 
-			 
+			"anti4": "Dakle - ako već postoji veza između dva neurona,",
 
-			"anti8": "Taj neuron nema postojeću vezi sa drugim neuronom.",           
+			"anti5": "i vi okinete prvi neuron BEZ okidanja drugog neurona,",
 
-			"anti9": "Morate da pronađete neuron koji je povezan sa drugim.",       
+			"anti6": "veza između njih slabi",
 
-			"anti10": "Ah, taj neuron ima vezu koja ide KA njemu, a ne i OD njega.",             
+			"anti7": "Opet, pokušajte sami.",
 
-			"anti11": "Morate da pronađete neuron koji ima vezu koja ide OD njega.",         
 
-			 
 
-			"anti12": "Sada sačekajte malo...",         
+			"anti8": "Taj neuron nema postojeću vezi sa drugim neuronom.",
+
+			"anti9": "Morate da pronađete neuron koji je povezan sa drugim.",
+
+			"anti10": "Ah, taj neuron ima vezu koja ide KA njemu, a ne i OD njega.",
+
+			"anti11": "Morate da pronađete neuron koji ima vezu koja ide OD njega.",
+
+
+
+			"anti12": "Sada sačekajte malo...",
 
 			"anti13": "I pogledajte! Veza postaje slabija.",
 
-			"anti14": "Uradite to opet i, ovog puta, veza će u potpunosti nestati.",               
+			"anti14": "Uradite to opet i, ovog puta, veza će u potpunosti nestati.",
 
-			 
 
-			"anti15": "I ovo obrnuto učenje je razlog zašto kada imate strah od pasa,",         
 
-			"anti16": "a izloženi ste prijateljski nastrojenim psima iznova i iznova,",             
+			"anti15": "I ovo obrnuto učenje je razlog zašto kada imate strah od pasa,",
 
-			"anti17": "možete da naučite da nestane strah.",            
+			"anti16": "a izloženi ste prijateljski nastrojenim psima iznova i iznova,",
 
-			"anti18": "'Neuron 'pas' se okine BEZ toga da se okine i neuron 'bol',",  
+			"anti17": "možete da naučite da nestane strah.",
 
-			"anti19": "i iz tog razloga njihova veza slabi.",   
+			"anti18": "'Neuron 'pas' se okine BEZ toga da se okine i neuron 'bol',",
 
-			 
+			"anti19": "i iz tog razloga njihova veza slabi.",
 
-			/////////////     
 
-			// THERAPY //   
 
-			/////////////     
+			/////////////
 
-			 
+			// THERAPY //
 
-			"ther0": "Dakle, sada kada znate kao učimo i kako obrnuto učimo, hajde da se ponovo vratimo...",        
+			/////////////
 
-			"ther1": "...na ovo.",     
 
-			 
 
-			"ther2": "Želim da reprogramirate vaš mozak.",               
+			"ther0": "Dakle, sada kada znate kao učimo i kako obrnuto učimo, hajde da se ponovo vratimo...",
 
-			"ther3": "Ponovo povežite, napravite nove veze između ove tri stvari,",             
+			"ther1": "...na ovo.",
 
-			"ther4": "od osećanja straha do osećanja sigurnosti.",                
 
-			 
 
-			"ther5": "Vidite, stvaranjem novih veza u sebi može izazvati kratkoročnu  anksioznost...",         
+			"ther2": "Želim da reprogramirate vaš mozak.",
 
-			"ther6": "...ali je I TE KAKO vredno na duže staze.",        
+			"ther3": "Ponovo povežite, napravite nove veze između ove tri stvari,",
 
-			 
+			"ther4": "od osećanja straha do osećanja sigurnosti.",
 
-			"ther7": "Jedna je odrađena, još dve su ostale.",             
 
-			"ther8": "Dve su odrađene, još jedna je ostala.",             
 
-			"ther9": "ja. još uvek. ne. volim. rupe.",              
+			"ther5": "Vidite, stvaranjem novih veza u sebi može izazvati kratkoročnu  anksioznost...",
 
-			 
+			"ther6": "...ali je I TE KAKO vredno na duže staze.",
 
-			"ther10": "I... uspeli ste",            
 
-			 
 
-			"ther11": "Ovo šta ste upravo uradili se zove 'terapija izlaganja'.",          
+			"ther7": "Jedna je odrađena, još dve su ostale.",
 
-			"ther12": "To je jedna od najdokazivanijih terapija koje postoje na svetu",        
+			"ther8": "Dve su odrađene, još jedna je ostala.",
 
-			"ther13": "za lečenje pojedinačnih fobija, posttraumatskih stresnih poremećaja i drugih poremećaja anksioznosti.",   
+			"ther9": "ja. još uvek. ne. volim. rupe.",
 
-			 
 
-			///////////         
 
-			// OUTRO //      
+			"ther10": "I... uspeli ste",
 
-			///////////         
 
-			 
 
-			"outro0": "Opet, stvaranje novih veza u sebi nije lako, nije brzo,",         
+			"ther11": "Ovo šta ste upravo uradili se zove 'terapija izlaganja'.",
 
-			"outro1": "ali je izvodljivo.",     
+			"ther12": "To je jedna od najdokazivanijih terapija koje postoje na svetu",
 
-			"outro2": "Obećavam vam -- ja sam dokaz --",   
+			"ther13": "za lečenje pojedinačnih fobija, posttraumatskih stresnih poremećaja i drugih poremećaja anksioznosti.",
 
-			"outro3": "Izvodljivo je.",           
 
-			 
 
-			/////////////     
+			///////////
 
-			// CREDITS //    
+			// OUTRO //
 
-			/////////////     
+			///////////
 
-			 
 
-			"cred0": "Hej, ogromnu zahvalnost dugujem svima koji me podržavaju na Patreonu, jer bez njih,",        
 
-			"cred1": "ne bih mogao da pravim ove čudne interaktivne stvari,",        
+			"outro0": "Opet, stvaranje novih veza u sebi nije lako, nije brzo,",
 
-			"cred2": "i verovatno bih bio primoran da pronađem pravi posao.",       
+			"outro1": "ali je izvodljivo.",
 
-			"cred3": "Dakle, ako želite da mi pomognete da nastavim da pravim stvari poput ove,",              
+			"outro2": "Obećavam vam -- ja sam dokaz --",
 
-			"cred4": "i da vam se zahvalim u sledećoj stvari koju napravim,",            
+			"outro3": "Izvodljivo je.",
 
-			"cred5": "pogledajte moj Patreon!",      
 
-			 
 
-			"cred6": "Muzika koju slušate je napravila predivna Firna,",       
+			/////////////
 
-			"cred7": "sa kojom sam sarađivao i ranije na dva projekta koja nisam uspeo da završim.",           
+			// CREDITS //
 
-			 
+			/////////////
 
-			"cred8": "Za druga interaktivna objašnjenja, pogledajte Parabolu poligona!",   
 
-			"cred9": "To je rezultat saradnje koju sam imao sa Vaj Hart -- da, *tom* Vaj Hart! :D --",               
 
-			"cred10": "o sistematskim predrasudama i različitostima.",        
+			"cred0": "Hej, ogromnu zahvalnost dugujem svima koji me podržavaju na Patreonu, jer bez njih,",
 
-			 
+			"cred1": "ne bih mogao da pravim ove čudne interaktivne stvari,",
 
-			"cred11": "I zapamtite, ovo interaktivno objašnjenje je samo uvod.",   
+			"cred2": "i verovatno bih bio primoran da pronađem pravi posao.",
 
-			"cred12": "Dakle, ako želite još nešto da naučite, *definitivno* pogledajte preporučenu literaturu",    
+			"cred3": "Dakle, ako želite da mi pomognete da nastavim da pravim stvari poput ove,",
 
-			"cred13": "u opisu ispod. ",        
+			"cred4": "i da vam se zahvalim u sledećoj stvari koju napravim,",
 
-			 
+			"cred5": "pogledajte moj Patreon!",
 
-			"cred14": "Iliiiii možete jednostavno da se igrate sa kutijom sa peskom sa leve strane",              
 
-			"cred15": "jer je prilično zabavno.",       
 
-			 
+			"cred6": "Muzika koju slušate je napravila predivna Firna,",
 
-			"cred16": "U svakom slučaju, hvala što ste pogledali ovo.",        
+			"cred7": "sa kojom sam sarađivao i ranije na dva projekta koja nisam uspeo da završim.",
 
-			"cred17": "",      
 
-			"cred18": "hm, igrali se sa ovim?... gledali?",    
 
-			"cred19": "",      
+			"cred8": "Za druga interaktivna objašnjenja, pogledajte Parabolu poligona!",
 
-			"cred20": "tapkali.",      
+			"cred9": "To je rezultat saradnje koju sam imao sa Vaj Hart -- da, *tom* Vaj Hart! :D --",
 
-			"cred21": "Hvala na tapkanju.",                
+			"cred10": "o sistematskim predrasudama i različitostima.",
 
-			 
 
-			//////////////////           
 
-			// EXTRA SHTUFF //        
+			"cred11": "I zapamtite, ovo interaktivno objašnjenje je samo uvod.",
 
-			//////////////////           
+			"cred12": "Dakle, ako želite još nešto da naučite, *definitivno* pogledajte preporučenu literaturu",
 
-			 
+			"cred13": "u opisu ispod. ",
 
-			"extra0": "Uspostavljanje novih veza na kratke staze može izazvati anksioznost,",          
 
-			"extra1": "ali je i te kako vredno na duže staze.",            
 
-			 
+			"cred14": "Iliiiii možete jednostavno da se igrate sa kutijom sa peskom sa leve strane",
 
-			"extra2": "Uslovljeni strah.",     
+			"cred15": "jer je prilično zabavno.",
 
-			"extra3": "Strah je iskorenjen.",              
 
-			 
 
-			"extra4": "Jeeea!",         
+			"cred16": "U svakom slučaju, hvala što ste pogledali ovo.",
 
-			"extra5": "ta-da~",         
+			"cred17": "",
 
-			 
+			"cred18": "hm, igrali se sa ovim?... gledali?",
 
-			"extra6": "Vidite, trik je u tome da sebe IZLAŽETE stvarima kojih se plašite,",    
+			"cred19": "",
 
-			"extra7": "ali na siguran način.",              
+			"cred20": "tapkali.",
 
-			"extra8": "Suočite se svojim strahovima u bezbednim okolnostima."                    
+			"cred21": "Hvala na tapkanju.",
+
+
+
+			//////////////////
+
+			// EXTRA SHTUFF //
+
+			//////////////////
+
+
+
+			"extra0": "Uspostavljanje novih veza na kratke staze može izazvati anksioznost,",
+
+			"extra1": "ali je i te kako vredno na duže staze.",
+
+
+
+			"extra2": "Uslovljeni strah.",
+
+			"extra3": "Strah je iskorenjen.",
+
+
+
+			"extra4": "Jeeea!",
+
+			"extra5": "ta-da~",
+
+
+
+			"extra6": "Vidite, trik je u tome da sebe IZLAŽETE stvarima kojih se plašite,",
+
+			"extra7": "ali na siguran način.",
+
+			"extra8": "Suočite se svojim strahovima u bezbednim okolnostima."
 
 		}
 	},
@@ -5620,7 +5620,7 @@ window.Captions = {
 	// Ukrainian
 	"uk": {
 		label: "Українська",
-		captions: { 
+		captions: {
 
 			//////////////////
 			// INTRODUCTION //
@@ -5670,7 +5670,7 @@ window.Captions = {
 			"fear5": "дірок.",
 			"fear6": "Бо... Я не знаю чому, але щільно розташовані діри",
 			"fear7": "мене жахають, розумієте? Я не знаю.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -5709,10 +5709,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Хай там як, якщо так ми навчаємось, то ось як ми відівчаємось.",
-			
+
 			"anti1": "Анти-Геббове навчання.",
 			"anti2": "“Нейрони, що спалахують поза порядком, втрачають свій зв'язок.”",
-			
+
 			"anti3": "Ще одне чудове правило в арсеналі неврологів!",
 
 			"anti4": "Тому - якщо у вас уже був зв'язок між двома нейронами,",
@@ -5816,14 +5816,14 @@ window.Captions = {
 			"extra6": "Бачиш, вся штука полягає у НАРАЖАННІ себе на те, чого ти боїшся,",
 			"extra7": "але безпечними засобами.",
 			"extra8": "Стикайся зі своїми страхами у безпечному просторі.",
-				
+
 		}
 	},
 
 	// Hebrew
 	"he": {
 		label: "עברית",
-		captions: { 
+		captions: {
 
 			//////////////////
 			// INTRODUCTION //
@@ -5873,7 +5873,7 @@ window.Captions = {
 			"fear5": "חורים.",
 			"fear6": "כי... לא יודע, חורים קטנים מקובצים",
 			"fear7": "קצת עושים לי צמרמורת, אתם יודעים? לא יודע...",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -5912,10 +5912,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "למעשה, אם ככה אז לומדים אז זאת הדרך שאנחנו שוכחים את הלמידה",
-			
+
 			"anti1": "למידה אנטי-הביאנית.",
 			"anti2": "“תאי עצב שנורים בלי סנכרון, מאבדים את בקשר”",
-			
+
 			"anti3": "עוד הנחת יסוד למדעני מוח",
 
 			"anti4": "כלומר - אם כבר יש קשר בין תא עצב אחד לשני",
@@ -6019,7 +6019,7 @@ window.Captions = {
 			"extra6": "מבינים, הטריק הוא לחשוף את עצמכם למה שמפחיד אתכם",
 			"extra7": "אבל באופן בטוח",
 			"extra8": "תתמודדו עם הפחדים שלכם במרחב פתוח",
-				
+
 		}
 	},
 
@@ -6076,7 +6076,7 @@ window.Captions = {
 			"fear5": "skylių.",
 			"fear6": "Nes... Nežinau kodėl, bet daug skylių šalia viena kitos",
 			"fear7": "tiesiog baugina mane. Nežinau...",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -6115,10 +6115,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "Na, o kaip išmokome, štai kaip galime atmokti.",
-			
+
 			"anti1": "Anti-hebianinis mokymasis.",
 			"anti2": "„Ta pačia eilės tvarka neįsižiebę neuronai praranda ryšį.“",
-			
+
 			"anti3": "Dar viena neuromokslininkų taisyklė!",
 
 			"anti4": "Taigi, jeigu jau yra jungtis tarp dviejų neuronų,",
@@ -6213,8 +6213,8 @@ window.Captions = {
 			"extra0": "Bandymas iš naujo sujungti dalykus savo galvoje gali kelti nerimą...",
 			"extra1": "...tačiau ilgalaikėje perspektyvoje – tai tikrai verta.",
 
-			"extra2": "Sąlygų sukelta baimė.", 
-			"extra3": "Baimė panaikinta.", 
+			"extra2": "Sąlygų sukelta baimė.",
+			"extra3": "Baimė panaikinta.",
 
 			"extra4": "Ūūū!",
 			"extra5": "ta-daaa~",
@@ -6222,7 +6222,7 @@ window.Captions = {
 			"extra6": "Matai, reikia susidurti su savo baime akis į akį,",
 			"extra7": "tačiau saugioje aplinkoje.",
 			"extra8": "Pažvelkite savo baime į akis saugioje aplinkoje.",
-				
+
 		}
 	},
 
@@ -6279,7 +6279,7 @@ window.Captions = {
 			"fear5": "കുഴികൾ.",
 			"fear6": "എന്തുകൊണ്ട് ആണെന്ന്  എനിക്ക് അറിയില്ല ...എങ്കിലും അടുത്തടുത്തു ഉള്ള കുഴികൾ ",
 			"fear7": "എന്നെ അത് വളരെ ഭയപെടുത്തുമᦱരുന്നു ...എന്തുകൊണ്ട് ആണെന് അറിയില്ല ...നിങ്ങൾക് അറിയുമോ?.",
-			
+
 			//////////////////////
 			// HEBBIAN LEARNING //
 			//////////////////////
@@ -6318,10 +6318,10 @@ window.Captions = {
 			///////////////////////////
 
 			"anti0": "അങ്ങനെ ഇരുന്നാലും ,ഇങ്ങനെ  ആണ് നമ്മൾ ശെരിക്കും പഠിക്കുന്നത് എങ്കിൽ ,നമ്മൾ മറക്കുന്നത് എങ്ങനെ ആണെന് നോക്കാം .",
-			
+
 			"anti1": "ആന്റി ഹെബ്ബയ്യൻ ലേർണിംഗ് .",
 			"anti2": "“ഒരുമിച്ച് നെറോണുകൾ പ്രവർത്തിച്ചില്ലെങ്കിൽ  അവരുടെ ബന്ധം നഷ്ടപ്പെടാൻ കാരണം ആവും .”",
-			
+
 			"anti3": "ന്യൂറോ സയന്റിസ്റ്റുകൾ പറയുന്ന  അടുത്ത കാര്യം ഇതാണ് !",
 
 			"anti4": "ഒരു ന്യൂറോണും ആയിട്ടു ഒരു ബന്ധം ഇപ്പോൾ ഉണ്ടെങ്കിൽ ,",
@@ -6425,7 +6425,154 @@ window.Captions = {
 			"extra6": "കാണുക ഇതിന്റെ ഗുട്ടൻസ്  എന്താണ് എന്ന വെച്ചാൽ പേടി ഉള്ളത് നിങ്ങൾ ചെയ്യാൻ നോക്ക് എന്നതാണ്,",
 			"extra7": "പക്ഷെ സുരക്ഷിതം അയി മാത്രം.",
 			"extra8": "പേടികളെ നിങ്ങൾ ധൈര്യത്തോടെ മുന്നേറുക.",
-				
+
+		}
+	},
+
+	// Indonesian
+	"id": {
+		label: "bahasa Indonesia",
+		captions: {
+			//////////////////
+			// INTRODUCTION //
+			//////////////////
+			"intro0": "Begini, aku selalu merasa cemas.",
+			"intro1": "Lalu aku merasa cemas bahwa aku sedang dilanda kecemasan.",
+			"intro2": "Jadi, semuanya adalah tentang kecemasan.",
+			"intro3": "",
+			/////////////////
+			// PROPAGATION //
+			/////////////////
+			"prop0": "Halo, namaku Nicky Case,",
+			"prop1": "dan ini adalah penjelasan interaktif tentang saraf.",
+			"prop2": "Ya! Kamu bisa berinteraksi dengan permainan ini,",
+			"prop3": "♬ mengapa tidak mencoba memainkannya ♬",
+			"prop4": "klik pada satu neuron, dan lihat apa yang terjadi?",
+			"prop5": "Permisi, aku sedang berbicara!... Aku hanya bercanda.",
+			"prop6": "Baiklah, wow, kau memainkannya dengan sangat baik, dengan mengklik semuanya,",
+			"prop7": "KEREN. AKU MENGERTI. LUAR BIASA.",
+			"prop8": "Ya!",
+			"prop8.5": "Perhatikan bagaimana sinyalnya merambat,",
+			"prop9": "dari satu neuron ke neuron lain ke neuron lain lagi.",
+			"prop10": "Coba klik lebih banyak lagi.",
+			"prop11": "Tentu, ini adalah model yang disederhanakan,",
+			"prop12": "tapi begitulah kira-kira bagaimana saraf bekerja.",
+			"prop13": "Satu impuls mengenai neuron lain, dan seterusnya,", "prop14": "tapi... dalam otak yang mengalami KECEMASAN...",
+			"mesmerizing": "Begitu mempesona, bukan?",
+			//////////////
+			// MY FEARS //
+			//////////////
+			"fear0": "Inilah yang terjadi.",
+			"fear1": "Pikiran biasa terhubung dengan pikiran cemas.",
+			"fear2": "Secara pribadi, aku merasa takut dianggap sebagai orang yang gagal,",
+			"fear3": "takut berada dekat orang-orang,",
+			"fear4": "dan takut pada...",
+			"fear5": "lubang.",
+			"fear6": "Karena... Aku tidak tahu kenapa, tapi lubang-lubang yang berdekatan",
+			"fear7": "membuatku takut, kau tahu? Entahlah.",
+			//////////////////////
+			// HEBBIAN LEARNING //
+			//////////////////////
+			"hebb0": "[SOUNDS]",
+			"hebb1": "Tetapi... bagaimana awalnya kita bisa mempelajari perasaan takut ini?",
+			"hebb2": "Yah, untuk menjelaskannya, aku akan singkirkan ini semua...",
+			"hebb3": "dan memberimu...",
+			"hebb4": "ini!",
+			"hebb5": "Pembelajaran Hebbian.",
+			"hebb6": "“Neuron yang memberi sinyal bersama, akan terhubung bersama.”",
+			"hebb7": "Ini adalah aturan baku bagi para ahli saraf dalam menjelaskan bagaimana",
+			"hebb8": "saraf membuat hubungan baru.",
+			"hebb9": "Pada dasarnya, jika kamu menembak sebuah neuron, kemudian menembak neuron lain,",
+			"hebb10": "neuron pertama akan terhubung dengan neuron kedua.",
+			"hebb11": "Cobalah sendiri!",
+			"hebb12": "Terlalu lambat! Kamu tidak mengklik dengan cukup cepat. Coba lagi?",
+			"hebb13": "Tidak cukup dekat. Coba pasangan neuron yang lain.",
+			"hebb14": "Dan itulah cara kita belajar!",
+			"hebb15": "Tentu, kita tidak belajar secepat itu di kehidupan nyata,",
+			"hebb16": "Aku mempercepat simulasinya, eh, tunggu.",
+			"hebb17": "Sekarang bermainlah, buat beberapa koneksi lagi,",
+			"hebb18": "Mungkin buat sebuah rantai atau yang lain.",
+			"hebb19": "Inilah mengapa, jika kamu pernah digigit anjing waktu masih kecil,",
+			"hebb20": "kamu akan merasa takut pada anjing!",
+			"hebb21": "Karena neuron 'anjing' ditembak, kemudian neuron 'rasa sakit' juga ditembak.",
+			"hebb22": "Sehingga, 'anjing' terkait dengan 'rasa sakit'.",
+			///////////////////////////
+			// ANTI-HEBBIAN LEARNING //
+			///////////////////////////
+			"anti0": "Tapi, jika ada cara untuk belajar, tentu ada cara untuk melupakan.",
+			"anti1": "Pembelajaran Anti-Hebbian.",
+			"anti2": "“Neuron yang tidak tersinkronisasi pada saat menembak, akan kehilangan koneksinya.”",
+			"anti3": "Aturan baku yang lain bagi ahli saraf!",
+			"anti4": "Jadi – jika kamu sudah memiliki koneksi antara neuron yang satu dengan neuron lain,",
+			"anti5": "dan kamu menembak neuron pertama TANPA menembak neuron kedua,",
+			"anti6": "koneksi diantaranya akan melemah.",
+			"anti7": "Ayo kita coba lagi.",
+			"anti8": "Neuron ini tidak terhubung kemanapun.",
+			"anti9": "Kamu perlu menembak neuron yang terhubung.",
+			"anti10": "Ah, jadi neuron itu hanya punya koneksi yang menuju ke arahnya, tapi tidak punya koneksi dari dirinya sendiri.",
+			"anti11": "Kamu perlu menemukan neuron yang memiliki koneksi dari dirinya sendiri.",
+			"anti12": "Sekarang tunggu...",
+			"anti13": "Dan lihat! Koneksinya melemah.",
+			"anti14": "Lakukan lagi, dan kali ini, koneksinya akan hilang.",
+			"anti15": "Dan inilah mengapa, jika kamu takut pada anjing,",
+			"anti16": "dan kamu memegang anjing yang jinak berkali-kali,", "anti17": "Kamu bisa menghilangkan rasa takut itu.",
+			"anti18": "Neuron 'anjing' ditembak, TANPA menembak neuron 'rasa sakit',",
+			"anti19": "Dengan demikian, koneksinya melemah.",
+			/////////////
+			// THERAPY //
+			/////////////
+			"ther0": "Sekarang kamu telah mengetahui bahwa kita bisa mempelajari dan melupakan, mari kembali ke...",
+			"ther1": "...sini.",
+			"ther2": "Aku mau kamu melatih kembali otak ini", "ther3": "Perbaiki koneksi ketiganya,",
+			"ther4": "dari merasa takut, hingga merasa aman.",
+			"ther5": "Lihat, memperbaiki dirimu mungkin akan menyebabkan kecemasan dalam jangka pendek...",
+			"ther6": "...tapi ini sangat menguntungkan untuk jangka panjang.",
+			"ther7": "Satu selesai, dua lagi.",
+			"ther8": "Dua selesai, satu lagi.",
+			"ther9": "Aku. masih. tidak. menyukai. lubang.",
+			"ther10": "Dan... berhasil!",
+			"ther11": "Apa yang baru saja kamu lakukan tadi disebut 'terapi paparan'.",
+			"ther12": "Terapi ini adalah salah satu yang paling terbukti berhasil",
+			"ther13": "untuk mengobati fobia, gangguan stress pasca-trauma, dan kelainan kecemasan lainnya.",
+			///////////
+			// OUTRO //
+			///////////
+			"outro0": "Lagi, dalam kehidupan nyata, penyembuhan diri dari kecemasan tidaklah mudah dan tidak juga cepat,",
+			"outro1": "tapi itu bisa dilakukan.",
+			"outro2": "Aku janji -– Akulah buktinya --",
+			"outro3": "Itu bisa dilakukan.",
+			/////////////
+			// CREDITS //
+			/////////////
+			"cred0": "Hey, terima kasih yang sebesar-besarnya kepada semua pendukung Patreon-ku, karena tanpa mereka,",
+			"cred1": "Aku tidak akan bisa membuat permainan interaktif yang aneh ini,",
+			"cred2": "dan mungkin aku akan terpaksa mencari pekerjaan sungguhan.",
+			"cred3": "Jadi jika kamu berminat membantuku tetap membuat sesuatu seperti ini,",
+			"cred4": "dan memperoleh penghargaan di karyaku selanjutnya,", "cred5": "Kunjungi Patreon-ku!",
+			"cred6": "Musik yang sedang kamu dengarkan dibuat oleh Phyrnna,",
+			"cred7": "yang dengannya, aku telah berkolaborasi dalam 2 proyek yang gagal aku selesaikan.",
+			"cred8": "Untuk penjelasan interaktif lainnya, kunjungi “Parable of the Polygons”!",
+			"cred9": "Hasil kolaborasiku dengan Vi Hart -- ya, Vi Hart! :D --", "cred10": "tentang bias dan keragaman sistemik.",
+			"cred11": "Dan ingat, penjelasan interaktif ini hanyalah pendahuluan.",
+			"cred12": "Jadi jika kamu ingin belajar lebih banyak, klik saja penjelasan lebih lanjut",
+			"cred13": "pada deskripsi dibawah ini. ",
+			"cred14": "Atauuu kamu bisa bermain dengan kotak pasir di sebelah kiri",
+			"cred15": "karena itu sepertinya cukup menyenangkan.",
+			"cred16": "Akhir kata, terima kasih, terima kasih banyak telah menonton.",
+			"cred17": "",
+			"cred18": "um, bermain?... menonton?",
+			"cred19": "",
+			"cred20": "keduanya.",
+			"cred21": "Terima kasih banyak telah menonton dan bermain.",
+			//////////////////
+			// EXTRA SHTUFF //
+			//////////////////
+			"extra0": "Memperbaiki dirimu mungkin akan menyebabkan kecemasan dalam jangka pendek,",
+			"extra1": "Namun itu sepadan untuk jangka panjang.",
+			"extra2": "Ketakutan yang dikondisikan.", "extra3": "Rasa takut itu telah hilang.",
+			"extra4": "Woo Hoo!",
+			"extra5": "ta-dahhh~",
+			"extra6": "Lihat, triknya adalah menyentuhkan kamu dengan apa yang kamu takuti,",
 		}
 	}
 
