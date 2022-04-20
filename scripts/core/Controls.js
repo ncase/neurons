@@ -140,6 +140,7 @@ for(var languageID in window.Captions){
 		label: language.label
 	});
 }
+languageList = languageList.sort((a,b)=>{ return a.label.localeCompare(b.label) }); // SORT
 var html = "";
 for(var i=0;i<languageList.length;i++){
 	var language = languageList[i];
